@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fcffa0678da4f9095f81a1fc120ccec, type: 3}
+  m_Name: EquipmentUpgradePricesConfig
+  m_EditorClassIdentifier: 
+  Prices:
+  - _currentLevel: 0
+    MoneySetup:
+      Count: 500
+    DrawingSetup:
+      Count: 3
+  - _currentLevel: 1
+    MoneySetup:
+      Count: 500
+    DrawingSetup:
+      Count: 6
+  - _currentLevel: 2
+    MoneySetup:
+      Count: 500
+    DrawingSetup:
+      Count: 9
+  - _currentLevel: 3
+    MoneySetup:
+      Count: 500
+    DrawingSetup:
+      Count: 12
+  - _currentLevel: 4
+    MoneySetup:
+      Count: 500
+    DrawingSetup:
+      Count: 15
+  - _currentLevel: 5
+    MoneySetup:
+      Count: 1000
+    DrawingSetup:
+      Count: 18
+  - _currentLevel: 6
+    MoneySetup:
+      Count: 1000
+    DrawingSetup:
+      Count: 21
+  - _currentLevel: 7
+    MoneySetup:
+      Count: 1000
+    DrawingSetup:
+      Count: 24
+  - _currentLevel: 8
+    MoneySetup:
+      Count: 1000
+    DrawingSetup:
+      Count: 27
+  - _currentLevel: 9
+    MoneySetup:
+      Count: 1000
+    DrawingSetup:
+      Count: 30

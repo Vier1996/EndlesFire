@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "919037854481",
+    "project_id": "firefighter-e1359",
+    "storage_bucket": "firefighter-e1359.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:919037854481:android:e59706951676210b7802b0",
+        "android_client_info": {
+          "package_name": "net.alexplay.firefighter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "919037854481-jpgub9tdhb7fskn3h49t74vc8th5f505.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCsp-567lxhOQrxMjeKLa-eCECfSWAh0SQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "919037854481-jpgub9tdhb7fskn3h49t74vc8th5f505.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "919037854481-bbg34c8n1ocqum6uf8l6rqpif0d4e3ue.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "net.alexplay.firefighter"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

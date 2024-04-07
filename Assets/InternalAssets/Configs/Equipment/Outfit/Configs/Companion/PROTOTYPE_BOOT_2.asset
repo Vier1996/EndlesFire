@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 887cba2941e14504690ac30789a7aeec, type: 3}
+  m_Name: PROTOTYPE_BOOT_2
+  m_EditorClassIdentifier: 
+  WeaponType: 1501
+  Name: PROTOTYPE_BOOT_2
+  MaxUpgradeLevel: 10
+  IsWeapon: 0
+  IsOutfit: 1
+  WeaponProjectile: {fileID: 0}
+  AmmoProperties:
+    BaseAmmoAmount: 0
+    ContainsShootingQueue: 0
+    ProjectilesByQueue: 1
+    DelayBetweenProjectiles: 0
+    QueueAsOneProjectile: 0
+    PlayAnimationEveryShoot: 0
+    SegmentShooting: 0
+    SegmantAngle: 0
+    IsThrowable: 0
+    IsAOEDamage: 0
+    Radius: 0
+    DestructByLifeTime: 0
+    LifeTime: 0
+  BaseWeaponProperties:
+    BaseRange: 0
+    BaseRecharging: 0
+    BaseReloadTime: 0
+    BaseAccuracy: 0
+    BaseMovementSpeed: 0
+  ExpandedWeaponProperties:
+    AimingTime: 0
+    CriticalChance: 0
+    CriticalDamageMultiplier: 0
+    IgnoreWallsRaycasting: 0
+  PushMulitplier: 0

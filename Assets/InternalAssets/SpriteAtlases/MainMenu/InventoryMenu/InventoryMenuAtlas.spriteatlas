@@ -1,0 +1,120 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: InventoryMenuAtlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 0
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: Android
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 47
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    - serializedVersion: 3
+      m_BuildTarget: iPhone
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 50
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 793a925b59d68ad4696cca76e247ff7b, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 939a01116f61e414f891864a4d068578, type: 3}
+  - {fileID: 21300000, guid: 789ae322325642b40a6a9004683c0e7c, type: 3}
+  - {fileID: 21300000, guid: 93ff892217ad1034799f923d91038b13, type: 3}
+  - {fileID: 21300000, guid: 9a2dfed23f250d345a5e66fb69404dbb, type: 3}
+  - {fileID: 21300000, guid: 247a2f632b08dae47b990a22b2950134, type: 3}
+  - {fileID: 21300000, guid: d1e8ea93a3687384491d740e59b2ca9a, type: 3}
+  - {fileID: 21300000, guid: c5fda204f7c7d1d488d4e73ba031f8e9, type: 3}
+  - {fileID: 21300000, guid: 26568124200c3e3418f5a51ffb0d51d0, type: 3}
+  - {fileID: 21300000, guid: 3c81fc54b8903af49838cf3706266140, type: 3}
+  - {fileID: 21300000, guid: 641d94e51aee4ab43a10308110444afa, type: 3}
+  - {fileID: 21300000, guid: 7d85c5f5a5f6a2a4c8f5ef2ca56501d5, type: 3}
+  - {fileID: 21300000, guid: f61917f5de3cad54f89bb35037393cfa, type: 3}
+  - {fileID: 21300000, guid: 1b38014614280c84a8699da617c1caba, type: 3}
+  - {fileID: 21300000, guid: c2c34267635d44645bbd5cb28c0a53e5, type: 3}
+  - {fileID: 21300000, guid: 5e3d3cc7958ab154b94288eff4bdedc9, type: 3}
+  - {fileID: 21300000, guid: 83f99928236d9e3458e8054b80a84dbb, type: 3}
+  - {fileID: 21300000, guid: a4d3af48d3171d34088e7d167c026b43, type: 3}
+  - {fileID: 21300000, guid: e91232090498ad0468bedbfc0b092ecb, type: 3}
+  - {fileID: 21300000, guid: a6f6e00c2b6912e49a6ad316d522b8ba, type: 3}
+  - {fileID: -2226182841378132718, guid: b7cf816dd825869419b1e9b23db6c1a4, type: 3}
+  - {fileID: -143886078736744702, guid: b7cf816dd825869419b1e9b23db6c1a4, type: 3}
+  - {fileID: 5864181639528646155, guid: b7cf816dd825869419b1e9b23db6c1a4, type: 3}
+  - {fileID: 8905293749848160202, guid: b7cf816dd825869419b1e9b23db6c1a4, type: 3}
+  - {fileID: 7898414878063205787, guid: b7cf816dd825869419b1e9b23db6c1a4, type: 3}
+  - {fileID: 8905370752328135541, guid: b7cf816dd825869419b1e9b23db6c1a4, type: 3}
+  - {fileID: 21300000, guid: 2f041f1fd1f48ee4a9017e0e04cf248d, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - back (2)
+  - button apart
+  - equipment icon small
+  - plus
+  - up arrow 2
+  - glove icon
+  - boots icon
+  - button green
+  - hat icon
+  - button blue 1
+  - drawing back
+  - line
+  - cell6
+  - armor icon
+  - aim icon
+  - big slot
+  - menu shadow
+  - character button
+  - sell block
+  - pers big_0
+  - pers big_1
+  - pers big_2
+  - pers big_3
+  - pers big_4
+  - pers big_5
+  - back bottom
+  m_RenderDataMap: {}
+  m_Tag: InventoryMenuAtlas
+  m_IsVariant: 0

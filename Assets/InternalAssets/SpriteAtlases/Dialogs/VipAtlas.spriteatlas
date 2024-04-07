@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: VipAtlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 0
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: Android
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 47
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    - serializedVersion: 3
+      m_BuildTarget: iPhone
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 50
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 4cf47420163e0b64bb5c8212560893c5, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 6e8a67b42240c7d489b50092be729726, type: 3}
+  - {fileID: 21300000, guid: c35b511543ac20743805c477d2c2f4d0, type: 3}
+  - {fileID: 21300000, guid: 89cac9c6f141b314b8e2a2921a1eafcf, type: 3}
+  - {fileID: 21300000, guid: 7fd56cc6d94a2314d9b4c1f0de059eca, type: 3}
+  - {fileID: 21300000, guid: a1109f3af70d7be42abf369311f8d27d, type: 3}
+  - {fileID: 21300000, guid: bd92f47aba4e20d44af7988ddefa14e4, type: 3}
+  - {fileID: 21300000, guid: aba1b35cf2be28e4da3c6526791c97e5, type: 3}
+  - {fileID: 21300000, guid: 1a73a86c52c492749819735bf364e3c4, type: 3}
+  - {fileID: -319469171194908686, guid: bda446ff72ce6934bb959702ea5d222f, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - button big gold 1
+  - Layer 643 copy 19
+  - Layer 714
+  - Layer 605
+  - timer 1
+  - Group 105
+  - shadow 2
+  - line 2
+  - cell_0
+  m_RenderDataMap: {}
+  m_Tag: VipAtlas
+  m_IsVariant: 0

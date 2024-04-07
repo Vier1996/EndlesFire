@@ -1,0 +1,84 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: CharacterUpgradeAtlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 0
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: Android
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 47
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    - serializedVersion: 3
+      m_BuildTarget: iPhone
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 50
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 83a6aa9b0d1a92d4a85413ab52517f44, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 7377aee01f5cae74b90804eaccd26824, type: 3}
+  - {fileID: 21300000, guid: 62cf01e383250c14380aa4751f0cadd6, type: 3}
+  - {fileID: 21300000, guid: 05e99455efdcf244fb2f65df8986a708, type: 3}
+  - {fileID: 21300000, guid: e0a64c1726e9a32419c0091bf5d5f12a, type: 3}
+  - {fileID: 21300000, guid: d3e6ec5ace3bd8a4fb7b4f415ad1185d, type: 3}
+  - {fileID: 21300000, guid: a03bbcba8ab4e3a4f86c8d60b5bc1e81, type: 3}
+  - {fileID: 21300000, guid: ddc4dc0ed20cca9489326220c75e32e0, type: 3}
+  - {fileID: 21300000, guid: 30b2c24e382509945a1db27e5b39bc62, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - button blue small
+  - coin icon
+  - cell dark2
+  - cell dark1
+  - cell dark small
+  - big call grey
+  - badge icon
+  - button green big
+  m_RenderDataMap: {}
+  m_Tag: CharacterUpgradeAtlas
+  m_IsVariant: 0

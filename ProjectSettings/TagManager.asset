@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Ground
+  - Wall
+  - FxTemporaire
+  - Missile
+  - ship
+  - asteroid
+  - mainCanvas
+  - MovementComponent
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - LocationStaff
+  - Water
+  - UI
+  - Player
+  - PlayerFounder
+  - Enemy
+  - EnemyFounder
+  - Projectile
+  - EnemyProjectile
+  - Loot
+  - StageTrigger
+  - LocationEdge
+  - SortingColliders
+  - MovementColliders
+  - BulletInteractionCollider
+  - Trap
+  - FVX
+  - Navigation
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: VFX
+    uniqueID: 2834951765
+    locked: 0
+  - name: SpritedInterface
+    uniqueID: 3910564397
+    locked: 0
+  - name: HUD
+    uniqueID: 2834467669
+    locked: 0
+  - name: Dialog
+    uniqueID: 2106271250
+    locked: 0
+  - name: Tutorial
+    uniqueID: 3077460189
+    locked: 0
+  - name: Transfer
+    uniqueID: 3847788563
+    locked: 0

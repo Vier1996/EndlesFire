@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d897ff56d97439d459c934fc7d9ee234, type: 3}
+  m_Name: CaseConfig
+  m_EditorClassIdentifier: 
+  RewardsCount: 2
+  OpenTime: 5
+  Rewards:
+  - Percent: 55
+    Resource: 1
+    ResourceItemView: {fileID: 4264958038314084771, guid: 1314729472806f14b93a0fde9f28d790, type: 3}
+  - Percent: 15
+    Resource: 2
+    ResourceItemView: {fileID: 4264958038314084771, guid: 1314729472806f14b93a0fde9f28d790, type: 3}
+  - Percent: 20
+    Resource: 10
+    ResourceItemView: {fileID: 4264958038314084771, guid: 1314729472806f14b93a0fde9f28d790, type: 3}
+  - Percent: 20
+    Resource: 12
+    ResourceItemView: {fileID: 4264958038314084771, guid: 1314729472806f14b93a0fde9f28d790, type: 3}

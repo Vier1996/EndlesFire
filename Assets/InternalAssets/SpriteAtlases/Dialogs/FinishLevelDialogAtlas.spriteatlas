@@ -1,0 +1,110 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: FinishLevelDialogAtlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 0
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: Android
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 47
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    - serializedVersion: 3
+      m_BuildTarget: iPhone
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 50
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 23dfb7e6fb4684955a28273c475f8c8e, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: e7a47440ffd3e4ed19cd0633f389b4a1, type: 3}
+  - {fileID: 21300000, guid: 3eb99b61e71da4620bfecd1cc19148e4, type: 3}
+  - {fileID: 21300000, guid: b9fc6f22c17d24f519d975f04c72fe64, type: 3}
+  - {fileID: 21300000, guid: 73983a828f4b3440eb3b9b8bf3ca66a3, type: 3}
+  - {fileID: 21300000, guid: 6dac2ba3496544a51baafd9a73bc00fd, type: 3}
+  - {fileID: 21300000, guid: 6fbf3695054a347618c2a97528740a9b, type: 3}
+  - {fileID: 21300000, guid: 238b9795e38594f36b1de77f1d4c5630, type: 3}
+  - {fileID: 21300000, guid: 186ad916ec1714660af5d1dfc4745625, type: 3}
+  - {fileID: 21300000, guid: c56a0f6836ddf4884a9318012e2c9cd6, type: 3}
+  - {fileID: 21300000, guid: 1038ffc88c624451bbe6ce43e37c473b, type: 3}
+  - {fileID: 21300000, guid: 7f9e85695c41940f5adbb1383cdf7d93, type: 3}
+  - {fileID: 21300000, guid: d4dbe3da3a4d741638ba5b63404594dc, type: 3}
+  - {fileID: 21300000, guid: 5f9b5d1c225ad486f984a0561744d41b, type: 3}
+  - {fileID: 21300000, guid: d3493d9c41d514af1bec01bb551f32de, type: 3}
+  - {fileID: 21300000, guid: 3c9e865d515a048118b25fc467b043bb, type: 3}
+  - {fileID: 21300000, guid: d51397adda6c04dfab9bdcd50760115f, type: 3}
+  - {fileID: 21300000, guid: 89bcc8ad669f541fdbdb38fc184db240, type: 3}
+  - {fileID: 21300000, guid: 826c9e7ef561a4c309003132c7bb0572, type: 3}
+  - {fileID: 21300000, guid: 8389788f2dd20498c8970d245f3a0c56, type: 3}
+  - {fileID: 21300000, guid: 69ad75ef2609a47d896dbe4458af60cc, type: 3}
+  - {fileID: 21300000, guid: 953eeeff7a40040b1a29f06f74df7562, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Layer 2024 copy
+  - arrow
+  - icon play
+  - chast1 shadow
+  - line
+  - cell1
+  - button blue square small
+  - chast1
+  - chest1 with shadow
+  - flag fail
+  - shadow
+  - button green big
+  - flag win
+  - text back
+  - button blue square copy 3
+  - button orenge separate
+  - cell2
+  - chast1 no color
+  - counter
+  - button blue big
+  - Layer 1614 copy 5
+  m_RenderDataMap: {}
+  m_Tag: FinishLevelDialogAtlas
+  m_IsVariant: 0

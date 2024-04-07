@@ -1,0 +1,111 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d2b380e022668f4a96e55ad4c4dd5b2, type: 3}
+  m_Name: WeaponModelsCollection
+  m_EditorClassIdentifier: 
+  _weapons:
+  - Type: 2000
+    Reference:
+      m_AssetGUID: fa7c9a9550efd7b4fa7419e0cd30b4a9
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+  - Type: 2001
+    Reference:
+      m_AssetGUID: 2c91d0536031ee54e822296e2770aee4
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+  - Type: 2002
+    Reference:
+      m_AssetGUID: 4050e73e61601c447b25143f2e91c443
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+  - Type: 2500
+    Reference:
+      m_AssetGUID: 2168a19203110c04295890c0ac2cd2ca
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+  - Type: 2501
+    Reference:
+      m_AssetGUID: 6adb407526e2de34bb9174aaf18641a9
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+  - Type: 2502
+    Reference:
+      m_AssetGUID: 8e68a0cade9dfbc4ea24d1ffacbca1ed
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+  - Type: 3000
+    Reference:
+      m_AssetGUID: d4a39a2442ae8194ea24f741955998f1
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+  - Type: 3001
+    Reference:
+      m_AssetGUID: fb9ec9b3f40f7794da923c681a0ec714
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+  - Type: 3002
+    Reference:
+      m_AssetGUID: c91859a0e105a7a42af4d8a83a08b7ea
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+  - Type: 3003
+    Reference:
+      m_AssetGUID: af4c6cecf0a339c438b63e7e5c2f4be4
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+  - Type: 3500
+    Reference:
+      m_AssetGUID: f7f6aa79b171c5d4baa1fc44673ed74c
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+  - Type: 3501
+    Reference:
+      m_AssetGUID: e76109c7b9e9b5a4196c124ed7dc11be
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+  - Type: 3502
+    Reference:
+      m_AssetGUID: a97383b8e2fd508469fbfeaeef31096f
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+  - Type: 4000
+    Reference:
+      m_AssetGUID: 3cb2437d10c4e4c968055f5d73ef26b4
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+  - Type: 4001
+    Reference:
+      m_AssetGUID: 3ebc9639bcbbaec45aacdabd6559503e
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+  - Type: 4002
+    Reference:
+      m_AssetGUID: 63baf967584e06f49a0d05fd3a4914fe
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0

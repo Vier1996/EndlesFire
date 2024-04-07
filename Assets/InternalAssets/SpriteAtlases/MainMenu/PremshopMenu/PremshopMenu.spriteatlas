@@ -1,0 +1,158 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: PremshopMenu
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 0
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: Android
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 47
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    - serializedVersion: 3
+      m_BuildTarget: iPhone
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 50
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 3a77cceed26e2bf48adc7e1644152cfe, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 4e9fb170ab266b54195d8b64c83b66ab, type: 3}
+  - {fileID: 21300000, guid: df9de4a0ae27997428618cb354aa1b90, type: 3}
+  - {fileID: 21300000, guid: 85503ec0f48b7a24d8c8fd23daae9325, type: 3}
+  - {fileID: 21300000, guid: ab86eb11f4cfd0147b81bafc2faad3cc, type: 3}
+  - {fileID: 21300000, guid: a49b81e10f7a8f74ab850b31271ebc91, type: 3}
+  - {fileID: 21300000, guid: 0ffaa292c6adfd54fa176cfd1b904395, type: 3}
+  - {fileID: 21300000, guid: 952fef034916a4c4fb3cc717aa8d5d55, type: 3}
+  - {fileID: 21300000, guid: 76a4c0337204f8f48bbd6b334990eb4d, type: 3}
+  - {fileID: 21300000, guid: d9044d43be4b5834aa95b99e41168ae8, type: 3}
+  - {fileID: 21300000, guid: d50139a32a118d8438e6e862a56e83da, type: 3}
+  - {fileID: 21300000, guid: b3ad2094fc8ac0e42b6fb53e76ea2d63, type: 3}
+  - {fileID: 21300000, guid: 84e283e6015d1cb4e9b3a131fcaad08a, type: 3}
+  - {fileID: 21300000, guid: d5ccc9f6f3e871843b292897c74af4ae, type: 3}
+  - {fileID: 21300000, guid: 8ca967a727072474cb2899302c8942a7, type: 3}
+  - {fileID: 21300000, guid: 0fd55a48debbf3345a8f46435b281fad, type: 3}
+  - {fileID: 21300000, guid: 7e497398d90287a4dba9c501e1c672c0, type: 3}
+  - {fileID: 21300000, guid: 2274d9b85d5c0e94c92cdd9cd852dd37, type: 3}
+  - {fileID: 21300000, guid: 7a602919ffc5a4f41bc9edb38fb845e4, type: 3}
+  - {fileID: 21300000, guid: ecd7fb49b42dd674aa364f6450413f6d, type: 3}
+  - {fileID: 21300000, guid: fc9a9c691494c4545bf24edde4ae93f2, type: 3}
+  - {fileID: 21300000, guid: a9ddf37926f5e0a4e899b00b6d0638f9, type: 3}
+  - {fileID: 21300000, guid: a53baff9e2cf401439b86f74fc5ab31c, type: 3}
+  - {fileID: 21300000, guid: 06bcac0abdb233d408cb109f0621cec7, type: 3}
+  - {fileID: 21300000, guid: 3c28332a344ab944d86a433df3b0920f, type: 3}
+  - {fileID: 21300000, guid: 0f0e9b3ac48fa1342bd65b727c993907, type: 3}
+  - {fileID: 21300000, guid: e3d2456ac9a45584ab276333861ef4c6, type: 3}
+  - {fileID: 21300000, guid: 0ac9e6ba21cba08449c2bda366a7af70, type: 3}
+  - {fileID: 21300000, guid: c98ecaeabc8dc1f49ab635437438e63b, type: 3}
+  - {fileID: 21300000, guid: c685170b11f13c149a85cb1e1a990c1f, type: 3}
+  - {fileID: 21300000, guid: f5be0a8bf81050a41a8c91b0eae82b34, type: 3}
+  - {fileID: 21300000, guid: 89bdbeab30cca3347a3e61f9fa62b52e, type: 3}
+  - {fileID: 21300000, guid: 9335b93c2d4d5eb479657102f4bab970, type: 3}
+  - {fileID: 21300000, guid: 6a00038c440e2f544905a5080783f134, type: 3}
+  - {fileID: -1955448553306655712, guid: 07e870bcd919f2d4ba4f89134f617bc3, type: 3}
+  - {fileID: 21300000, guid: 9330ffecb8cd5bf4199de9bf7ab4e4de, type: 3}
+  - {fileID: 21300000, guid: fad315fcd25d58044b710aa1f876b471, type: 3}
+  - {fileID: 21300000, guid: 64305f5da38092a40a5eb6ef1a454fd3, type: 3}
+  - {fileID: 21300000, guid: b173fc9d3811c481e9b6f0aaac0ae52e, type: 3}
+  - {fileID: 21300000, guid: 6524a5ddeb8dfaa4e80d291f52d5cca7, type: 3}
+  - {fileID: 21300000, guid: b059311e877c8cb4f95d4c7af65b55eb, type: 3}
+  - {fileID: 21300000, guid: 58d5751fabb27824db96c44ae2560501, type: 3}
+  - {fileID: 21300000, guid: 81cbf28f70da6ba48bd4c341badc0e35, type: 3}
+  - {fileID: 21300000, guid: fc549b8f9e6b38e449970425b17c3ad4, type: 3}
+  - {fileID: 21300000, guid: 38fccbff011e15e4ea3093f663bca0b0, type: 3}
+  - {fileID: 21300000, guid: 58cecbff5b12a7f4498a2b0885b2bddd, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - diamonds4
+  - equipment set
+  - button blue big copy 6
+  - x2 back
+  - shop cell
+  - coins2
+  - button blue
+  - coins3
+  - armor (2)
+  - helmet (4)
+  - button green
+  - badge set
+  - diamonds coins
+  - diamonds6
+  - Layer 643 copy 20
+  - diamonds3
+  - ribbon green
+  - shadow
+  - button blocked 1
+  - vialoet button
+  - diamonds5
+  - Layer 758
+  - ribbon violet
+  - bullet shotgun (3)
+  - diamonds1
+  - coin icon copy 1
+  - ribbon yellow
+  - boot (3)
+  - bullet (3)
+  - weapon set
+  - drawings2
+  - glove (3)
+  - chel 1
+  - Background_0
+  - bullet automatic (3)
+  - loght
+  - coins 1
+  - ribbon dark blue
+  - drawings1
+  - diamond
+  - diamonds2
+  - bullet gun (3)
+  - bullet grenade (3)
+  - Layer 643 copy 17
+  - ribbon blue
+  m_RenderDataMap: {}
+  m_Tag: PremshopMenu
+  m_IsVariant: 0

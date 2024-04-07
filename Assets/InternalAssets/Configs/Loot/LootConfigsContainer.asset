@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e771535a7c8c45b9a7762b6182679128, type: 3}
+  m_Name: LootConfigsContainer
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  _configs:
+  - {fileID: 11400000, guid: 2c9b74b596777b541ae2c141eb88ab63, type: 2}
+  - {fileID: 11400000, guid: acbf8b73195798f4da633930fbb77bb8, type: 2}
+  - {fileID: 11400000, guid: 90b96516d9ead694088c0289fe78e172, type: 2}
+  - {fileID: 11400000, guid: eaa7ba1fba571f948884c1d18d76d34b, type: 2}
+  - {fileID: 11400000, guid: e4391e2ab3e861a4e86e5c8371e44c47, type: 2}
+  - {fileID: 11400000, guid: f368f085bdf827c4081afec3fe0e56c3, type: 2}
+  - {fileID: 11400000, guid: 4562c70e502877f49ad530649e6ddf76, type: 2}
+  - {fileID: 11400000, guid: 57d9a87f4bf9b6341b86cf5280001b1d, type: 2}
+  - {fileID: 11400000, guid: 6a790cf599a851348bd6158b231187bc, type: 2}
+  - {fileID: 11400000, guid: da7aebfcf1351494b9558be113c01bf2, type: 2}
+  - {fileID: 11400000, guid: 3c57bfe169af3464fb13e9e8001175d6, type: 2}
+  - {fileID: 11400000, guid: 8908156588f3c8e45a9e519343a3dfc8, type: 2}
+  - {fileID: 11400000, guid: bdbd8bca88f2bbc45beedb333ada97b4, type: 2}
+  - {fileID: 11400000, guid: 9a745acde1f046d45808109be2ef4f94, type: 2}
+  - {fileID: 11400000, guid: 7437204af13a2be448c65427feea6948, type: 2}
+  - {fileID: 11400000, guid: bc0d36281e3ef80469a41613a8cc97d8, type: 2}

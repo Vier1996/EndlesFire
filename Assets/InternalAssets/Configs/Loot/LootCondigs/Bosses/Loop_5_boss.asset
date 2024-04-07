@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16f0ec875ebe9844abc6aee01b84e35c, type: 3}
+  m_Name: Loop_5_boss
+  m_EditorClassIdentifier: 
+  _bindingId: BossRewardsForLoop5
+  _uniqueLoot: 1
+  _equipment: 1
+  _resources: 1
+  _potions: 0
+  _itemSpawnChance: 100
+  _potionSpawnChance: 0
+  <LevelSetType>k__BackingField: 0
+  <LootLevel>k__BackingField: 16
+  <LootLevelDispersion>k__BackingField: 0
+  <LootCount>k__BackingField: 8
+  <LootCountDispersion>k__BackingField: 0
+  _equipmentConfig:
+    _weight: 50
+    <LootElements>k__BackingField:
+    - <Weight>k__BackingField: 100
+      <RarityType>k__BackingField: 1
+    - <Weight>k__BackingField: 100
+      <RarityType>k__BackingField: 1
+    - <Weight>k__BackingField: 100
+      <RarityType>k__BackingField: 1
+    - <Weight>k__BackingField: 100
+      <RarityType>k__BackingField: 2
+  _resourcesConfig:
+    _weight: 50
+    <LootElements>k__BackingField:
+    - <Weight>k__BackingField: 0
+      <ResourceType>k__BackingField: 1
+      <ViewsCount>k__BackingField: 5
+      <DropCount>k__BackingField: 130
+      <DropDispersion>k__BackingField: 20
+      _enablePlus: 1
+      _enableMinus: 0
+    - <Weight>k__BackingField: 0
+      <ResourceType>k__BackingField: 18
+      <ViewsCount>k__BackingField: 5
+      <DropCount>k__BackingField: 12
+      <DropDispersion>k__BackingField: 1
+      _enablePlus: 1
+      _enableMinus: 0
+    - <Weight>k__BackingField: 0
+      <ResourceType>k__BackingField: 8
+      <ViewsCount>k__BackingField: 5
+      <DropCount>k__BackingField: 20
+      <DropDispersion>k__BackingField: 1
+      _enablePlus: 1
+      _enableMinus: 0
+    - <Weight>k__BackingField: 0
+      <ResourceType>k__BackingField: 2
+      <ViewsCount>k__BackingField: 5
+      <DropCount>k__BackingField: 1
+      <DropDispersion>k__BackingField: 1
+      _enablePlus: 1
+      _enableMinus: 0
+  _potionsConfig: []

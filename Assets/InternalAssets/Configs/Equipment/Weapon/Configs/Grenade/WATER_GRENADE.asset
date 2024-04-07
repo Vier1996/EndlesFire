@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 887cba2941e14504690ac30789a7aeec, type: 3}
+  m_Name: WATER_GRENADE
+  m_EditorClassIdentifier: 
+  WeaponType: 4002
+  Name: WATER_GRENADE
+  MaxUpgradeLevel: 10
+  IsWeapon: 1
+  IsOutfit: 0
+  WeaponProjectile: {fileID: 5318080075644703440, guid: 80e4fb438b9ed4abab8d32d0f61cc941, type: 3}
+  AmmoProperties:
+    BaseAmmoAmount: 1
+    ContainsShootingQueue: 0
+    ProjectilesByQueue: 1
+    DelayBetweenProjectiles: 0
+    QueueAsOneProjectile: 0
+    PlayAnimationEveryShoot: 0
+    SegmentShooting: 0
+    SegmantAngle: 0
+    IsThrowable: 1
+    IsAOEDamage: 1
+    Radius: 1.6
+    DestructByLifeTime: 0
+    LifeTime: 0
+  BaseWeaponProperties:
+    BaseRange: 5.4
+    BaseRecharging: 1
+    BaseReloadTime: 15
+    BaseAccuracy: 0
+    BaseMovementSpeed: 3
+  ExpandedWeaponProperties:
+    AimingTime: 0.25
+    CriticalChance: 5
+    CriticalDamageMultiplier: 2
+    IgnoreWallsRaycasting: 1
+  PushMulitplier: 1

@@ -1,0 +1,118 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: MapMenuAtlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 0
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: Android
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 47
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    - serializedVersion: 3
+      m_BuildTarget: iPhone
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 50
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 64ff8595b333ab2458b3332544470d13, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: fcdba8f0474b197458c06e2f7baf3672, type: 3}
+  - {fileID: 21300000, guid: 71622181aa6f0404481866025455664d, type: 3}
+  - {fileID: 21300000, guid: 1c04612251c99e242822aef48be20197, type: 3}
+  - {fileID: 21300000, guid: e6c42144ef77143b6aba384cba41aa88, type: 3}
+  - {fileID: 21300000, guid: 5d792d942e834ff49a36a17eaf9a2b7c, type: 3}
+  - {fileID: 21300000, guid: b7ad46355ee9744229e7bf1026876dee, type: 3}
+  - {fileID: 21300000, guid: 939dc7d511ab2ae41afc086d5510cf0b, type: 3}
+  - {fileID: 21300000, guid: 69327926a66fb024994354219fa8c759, type: 3}
+  - {fileID: 21300000, guid: c6f2b3765d15e2446bc126326ae1b1e5, type: 3}
+  - {fileID: 21300000, guid: bd7f3286ec7393142b202db05a1cf3e1, type: 3}
+  - {fileID: 21300000, guid: e362a8a60d590f64a9434bd11abd5a91, type: 3}
+  - {fileID: 21300000, guid: 65525927a37d77f46a911d90b896a284, type: 3}
+  - {fileID: 21300000, guid: 9ac9258798f15a6489ee838a1c41c17d, type: 3}
+  - {fileID: 21300000, guid: 020f8d386ca4577418425bc12d276b3d, type: 3}
+  - {fileID: 21300000, guid: a074f98944d1c6a49aced7e65de01725, type: 3}
+  - {fileID: 21300000, guid: 67739a99b42f41642959c7d4ad42aa0e, type: 3}
+  - {fileID: 21300000, guid: 6314a6d92b9076e4d8fde804a10c00eb, type: 3}
+  - {fileID: 21300000, guid: 17afbbcb78047d248aae8133b8b5c4f2, type: 3}
+  - {fileID: 21300000, guid: b386589cd4a70bb459aa0b43c6c698c3, type: 3}
+  - {fileID: 21300000, guid: 96d76b1decdb8424e832f0e74eec59b1, type: 3}
+  - {fileID: 21300000, guid: 3306fe5d4476944419af723dd5d8bfc7, type: 3}
+  - {fileID: 21300000, guid: fbbf07ad22d3444f8916887a94fc605b, type: 3}
+  - {fileID: 21300000, guid: ff8e58ad9bcee1142bb71a872345da50, type: 3}
+  - {fileID: 21300000, guid: c181fdce542e103498b1dbf449462750, type: 3}
+  - {fileID: 21300000, guid: 9e1462af324497a498e1f27b3505b781, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - boss icon
+  - Layer 643 copy 15
+  - chest2
+  - chest3 no color
+  - button green big
+  - chest2 no color
+  - sell4
+  - arrow blue
+  - blue
+  - Group 77 copy
+  - village1
+  - yellow
+  - urban1
+  - lab_1
+  - urban2
+  - sell3
+  - chest3
+  - sell2
+  - sell1
+  - Layer 643 copy 16
+  - village2
+  - chast1 no color
+  - chert1
+  - block
+  - sewage_1
+  m_RenderDataMap: {}
+  m_Tag: MapMenuAtlas
+  m_IsVariant: 0

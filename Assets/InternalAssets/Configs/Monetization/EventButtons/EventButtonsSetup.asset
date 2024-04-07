@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e18b51791f984e249e9c5a070d48de7a, type: 3}
+  m_Name: EventButtonsSetup
+  m_EditorClassIdentifier: 
+  EventButtonsSetupData:
+  - SpecialPurposeType: 1
+    EventButton: {fileID: 3648091122412159635, guid: 62491cd65b0e31a478d3d68e0a3a0d70, type: 3}

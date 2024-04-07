@@ -1,0 +1,1510 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6eea89281b79b496b98c36c60810e248, type: 3}
+  m_Name: WeaponBaseDamageConfig
+  m_EditorClassIdentifier: 
+  Data:
+  - WeaponType: 5
+    Items:
+    - Type: 2000
+      Info:
+      - Type: 1
+        BaseValue: 75
+        EnhancementScalingFactor: 0.15
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 2.5
+      - Type: 2
+        BaseValue: 98
+        EnhancementScalingFactor: 0.15
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 2.5
+      - Type: 3
+        BaseValue: 146
+        EnhancementScalingFactor: 0.15
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 2.5
+      - Type: 4
+        BaseValue: 174
+        EnhancementScalingFactor: 0.15
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 2.5
+      - Type: 5
+        BaseValue: 201
+        EnhancementScalingFactor: 0.15
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 2.5
+    - Type: 2001
+      Info:
+      - Type: 1
+        BaseValue: 90
+        EnhancementScalingFactor: 0.15
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 2.7
+      - Type: 2
+        BaseValue: 118
+        EnhancementScalingFactor: 0.15
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 2.7
+      - Type: 3
+        BaseValue: 123
+        EnhancementScalingFactor: 0.15
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 2.7
+      - Type: 4
+        BaseValue: 147
+        EnhancementScalingFactor: 0.15
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 2.7
+      - Type: 5
+        BaseValue: 172
+        EnhancementScalingFactor: 0.15
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 2.7
+    - Type: 2002
+      Info:
+      - Type: 1
+        BaseValue: 120
+        EnhancementScalingFactor: 0.1
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 4.35
+      - Type: 2
+        BaseValue: 207
+        EnhancementScalingFactor: 0.1
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 4.35
+      - Type: 3
+        BaseValue: 253
+        EnhancementScalingFactor: 0.1
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 4.35
+      - Type: 4
+        BaseValue: 299
+        EnhancementScalingFactor: 0.1
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 4.35
+      - Type: 5
+        BaseValue: 345
+        EnhancementScalingFactor: 0.1
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 4.35
+    - Type: 2003
+      Info:
+      - Type: 1
+        BaseValue: 120
+        EnhancementScalingFactor: 0.1
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 4.35
+      - Type: 2
+        BaseValue: 207
+        EnhancementScalingFactor: 0.1
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 4.35
+      - Type: 3
+        BaseValue: 253
+        EnhancementScalingFactor: 0.1
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 4.35
+      - Type: 4
+        BaseValue: 299
+        EnhancementScalingFactor: 0.1
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 4.35
+      - Type: 5
+        BaseValue: 345
+        EnhancementScalingFactor: 0.1
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 4.35
+    - Type: 2004
+      Info:
+      - Type: 1
+        BaseValue: 120
+        EnhancementScalingFactor: 0.1
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 4.35
+      - Type: 2
+        BaseValue: 207
+        EnhancementScalingFactor: 0.1
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 4.35
+      - Type: 3
+        BaseValue: 253
+        EnhancementScalingFactor: 0.1
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 4.35
+      - Type: 4
+        BaseValue: 299
+        EnhancementScalingFactor: 0.1
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 4.35
+      - Type: 5
+        BaseValue: 345
+        EnhancementScalingFactor: 0.1
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 4.35
+    - Type: 2005
+      Info:
+      - Type: 1
+        BaseValue: 120
+        EnhancementScalingFactor: 0.1
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 4.35
+      - Type: 2
+        BaseValue: 207
+        EnhancementScalingFactor: 0.1
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 4.35
+      - Type: 3
+        BaseValue: 253
+        EnhancementScalingFactor: 0.1
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 4.35
+      - Type: 4
+        BaseValue: 299
+        EnhancementScalingFactor: 0.1
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 4.35
+      - Type: 5
+        BaseValue: 345
+        EnhancementScalingFactor: 0.1
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 4.35
+    - Type: 2006
+      Info:
+      - Type: 1
+        BaseValue: 120
+        EnhancementScalingFactor: 0.1
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 4.35
+      - Type: 2
+        BaseValue: 207
+        EnhancementScalingFactor: 0.1
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 4.35
+      - Type: 3
+        BaseValue: 253
+        EnhancementScalingFactor: 0.1
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 4.35
+      - Type: 4
+        BaseValue: 299
+        EnhancementScalingFactor: 0.1
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 4.35
+      - Type: 5
+        BaseValue: 345
+        EnhancementScalingFactor: 0.1
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 4.35
+    - Type: 2007
+      Info:
+      - Type: 1
+        BaseValue: 120
+        EnhancementScalingFactor: 0.1
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 4.35
+      - Type: 2
+        BaseValue: 207
+        EnhancementScalingFactor: 0.1
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 4.35
+      - Type: 3
+        BaseValue: 253
+        EnhancementScalingFactor: 0.1
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 4.35
+      - Type: 4
+        BaseValue: 299
+        EnhancementScalingFactor: 0.1
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 4.35
+      - Type: 5
+        BaseValue: 345
+        EnhancementScalingFactor: 0.1
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 4.35
+    - Type: 2008
+      Info:
+      - Type: 1
+        BaseValue: 120
+        EnhancementScalingFactor: 0.1
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 4.35
+      - Type: 2
+        BaseValue: 207
+        EnhancementScalingFactor: 0.1
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 4.35
+      - Type: 3
+        BaseValue: 253
+        EnhancementScalingFactor: 0.1
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 4.35
+      - Type: 4
+        BaseValue: 299
+        EnhancementScalingFactor: 0.1
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 4.35
+      - Type: 5
+        BaseValue: 345
+        EnhancementScalingFactor: 0.1
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 4.35
+    - Type: 2009
+      Info:
+      - Type: 1
+        BaseValue: 120
+        EnhancementScalingFactor: 0.1
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 4.35
+      - Type: 2
+        BaseValue: 207
+        EnhancementScalingFactor: 0.1
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 4.35
+      - Type: 3
+        BaseValue: 253
+        EnhancementScalingFactor: 0.1
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 4.35
+      - Type: 4
+        BaseValue: 299
+        EnhancementScalingFactor: 0.1
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 4.35
+      - Type: 5
+        BaseValue: 345
+        EnhancementScalingFactor: 0.1
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 4.35
+    - Type: 2010
+      Info:
+      - Type: 1
+        BaseValue: 120
+        EnhancementScalingFactor: 0.1
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 4.35
+      - Type: 2
+        BaseValue: 207
+        EnhancementScalingFactor: 0.1
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 4.35
+      - Type: 3
+        BaseValue: 253
+        EnhancementScalingFactor: 0.1
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 4.35
+      - Type: 4
+        BaseValue: 299
+        EnhancementScalingFactor: 0.1
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 4.35
+      - Type: 5
+        BaseValue: 345
+        EnhancementScalingFactor: 0.1
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 4.35
+    - Type: 2011
+      Info:
+      - Type: 1
+        BaseValue: 120
+        EnhancementScalingFactor: 0.1
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 4.35
+      - Type: 2
+        BaseValue: 207
+        EnhancementScalingFactor: 0.1
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 4.35
+      - Type: 3
+        BaseValue: 253
+        EnhancementScalingFactor: 0.1
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 4.35
+      - Type: 4
+        BaseValue: 299
+        EnhancementScalingFactor: 0.1
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 4.35
+      - Type: 5
+        BaseValue: 345
+        EnhancementScalingFactor: 0.1
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 4.35
+  - WeaponType: 8
+    Items:
+    - Type: 3500
+      Info:
+      - Type: 1
+        BaseValue: 45
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 1.4
+      - Type: 2
+        BaseValue: 50
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 1.4
+      - Type: 3
+        BaseValue: 60
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.05
+        ItemScalingFactor: 1.4
+      - Type: 4
+        BaseValue: 70
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.05
+        ItemScalingFactor: 1.4
+      - Type: 5
+        BaseValue: 80
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.05
+        ItemScalingFactor: 1.4
+    - Type: 3501
+      Info:
+      - Type: 1
+        BaseValue: 40
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.05
+        ItemScalingFactor: 1.2
+      - Type: 2
+        BaseValue: 45
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.05
+        ItemScalingFactor: 1.2
+      - Type: 3
+        BaseValue: 50
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.05
+        ItemScalingFactor: 1.2
+      - Type: 4
+        BaseValue: 60
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.05
+        ItemScalingFactor: 1.2
+      - Type: 5
+        BaseValue: 70
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.05
+        ItemScalingFactor: 1.2
+    - Type: 3502
+      Info:
+      - Type: 1
+        BaseValue: 35
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.05
+        ItemScalingFactor: 1.2
+      - Type: 2
+        BaseValue: 45
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.05
+        ItemScalingFactor: 1.2
+      - Type: 3
+        BaseValue: 40
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.05
+        ItemScalingFactor: 1.2
+      - Type: 4
+        BaseValue: 50
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.05
+        ItemScalingFactor: 1.2
+      - Type: 5
+        BaseValue: 60
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.05
+        ItemScalingFactor: 1.2
+  - WeaponType: 6
+    Items:
+    - Type: 2500
+      Info:
+      - Type: 1
+        BaseValue: 60
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 1.4
+      - Type: 2
+        BaseValue: 72
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 1.4
+      - Type: 3
+        BaseValue: 95
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 1.4
+      - Type: 4
+        BaseValue: 110
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 1.4
+      - Type: 5
+        BaseValue: 125
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 1.4
+    - Type: 2501
+      Info:
+      - Type: 1
+        BaseValue: 41
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 1.6
+      - Type: 2
+        BaseValue: 59
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 1.6
+      - Type: 3
+        BaseValue: 80
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 1.6
+      - Type: 4
+        BaseValue: 90
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 1.6
+      - Type: 5
+        BaseValue: 100
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 1.6
+    - Type: 2502
+      Info:
+      - Type: 1
+        BaseValue: 54
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 1.7
+      - Type: 2
+        BaseValue: 69
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 1.7
+      - Type: 3
+        BaseValue: 66
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 1.7
+      - Type: 4
+        BaseValue: 72
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 1.7
+      - Type: 5
+        BaseValue: 78
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 1.7
+    - Type: 2503
+      Info:
+      - Type: 1
+        BaseValue: 54
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 1.7
+      - Type: 2
+        BaseValue: 69
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 1.7
+      - Type: 3
+        BaseValue: 66
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 1.7
+      - Type: 4
+        BaseValue: 72
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 1.7
+      - Type: 5
+        BaseValue: 78
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 1.7
+    - Type: 2504
+      Info:
+      - Type: 1
+        BaseValue: 54
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 1.7
+      - Type: 2
+        BaseValue: 69
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 1.7
+      - Type: 3
+        BaseValue: 66
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 1.7
+      - Type: 4
+        BaseValue: 72
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 1.7
+      - Type: 5
+        BaseValue: 78
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 1.7
+    - Type: 2505
+      Info:
+      - Type: 1
+        BaseValue: 54
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 1.7
+      - Type: 2
+        BaseValue: 69
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 1.7
+      - Type: 3
+        BaseValue: 66
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 1.7
+      - Type: 4
+        BaseValue: 72
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 1.7
+      - Type: 5
+        BaseValue: 78
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 1.7
+    - Type: 2506
+      Info:
+      - Type: 1
+        BaseValue: 54
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 1.7
+      - Type: 2
+        BaseValue: 69
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 1.7
+      - Type: 3
+        BaseValue: 66
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 1.7
+      - Type: 4
+        BaseValue: 72
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 1.7
+      - Type: 5
+        BaseValue: 78
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 1.7
+    - Type: 2507
+      Info:
+      - Type: 1
+        BaseValue: 54
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 1.7
+      - Type: 2
+        BaseValue: 69
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 1.7
+      - Type: 3
+        BaseValue: 66
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 1.7
+      - Type: 4
+        BaseValue: 72
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 1.7
+      - Type: 5
+        BaseValue: 78
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 1.7
+    - Type: 2508
+      Info:
+      - Type: 1
+        BaseValue: 54
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 1.7
+      - Type: 2
+        BaseValue: 69
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 1.7
+      - Type: 3
+        BaseValue: 66
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 1.7
+      - Type: 4
+        BaseValue: 72
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 1.7
+      - Type: 5
+        BaseValue: 78
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 1.7
+    - Type: 2509
+      Info:
+      - Type: 1
+        BaseValue: 54
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 1.7
+      - Type: 2
+        BaseValue: 69
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 1.7
+      - Type: 3
+        BaseValue: 66
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 1.7
+      - Type: 4
+        BaseValue: 72
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 1.7
+      - Type: 5
+        BaseValue: 78
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 1.7
+    - Type: 2510
+      Info:
+      - Type: 1
+        BaseValue: 54
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 1.7
+      - Type: 2
+        BaseValue: 69
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 1.7
+      - Type: 3
+        BaseValue: 66
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 1.7
+      - Type: 4
+        BaseValue: 72
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 1.7
+      - Type: 5
+        BaseValue: 78
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 1.7
+    - Type: 2511
+      Info:
+      - Type: 1
+        BaseValue: 54
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 1.7
+      - Type: 2
+        BaseValue: 69
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 1.7
+      - Type: 3
+        BaseValue: 66
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 1.7
+      - Type: 4
+        BaseValue: 72
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 1.7
+      - Type: 5
+        BaseValue: 78
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 1.7
+    - Type: 2512
+      Info:
+      - Type: 1
+        BaseValue: 54
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 1.7
+      - Type: 2
+        BaseValue: 69
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 1.7
+      - Type: 3
+        BaseValue: 66
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 1.7
+      - Type: 4
+        BaseValue: 72
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 1.7
+      - Type: 5
+        BaseValue: 78
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 1.7
+    - Type: 2513
+      Info:
+      - Type: 1
+        BaseValue: 54
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 1.7
+      - Type: 2
+        BaseValue: 69
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 1.7
+      - Type: 3
+        BaseValue: 66
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 1.7
+      - Type: 4
+        BaseValue: 72
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 1.7
+      - Type: 5
+        BaseValue: 78
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 1.7
+    - Type: 2514
+      Info:
+      - Type: 1
+        BaseValue: 54
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 1.7
+      - Type: 2
+        BaseValue: 69
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 1.7
+      - Type: 3
+        BaseValue: 66
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 1.7
+      - Type: 4
+        BaseValue: 72
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 1.7
+      - Type: 5
+        BaseValue: 78
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 1.7
+    - Type: 2515
+      Info:
+      - Type: 1
+        BaseValue: 54
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 1.7
+      - Type: 2
+        BaseValue: 69
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 1.7
+      - Type: 3
+        BaseValue: 66
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 1.7
+      - Type: 4
+        BaseValue: 72
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 1.7
+      - Type: 5
+        BaseValue: 78
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 1.7
+    - Type: 2516
+      Info:
+      - Type: 1
+        BaseValue: 54
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 1.7
+      - Type: 2
+        BaseValue: 69
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 1.7
+      - Type: 3
+        BaseValue: 66
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 1.7
+      - Type: 4
+        BaseValue: 72
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 1.7
+      - Type: 5
+        BaseValue: 78
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 1.7
+  - WeaponType: 7
+    Items:
+    - Type: 3000
+      Info:
+      - Type: 1
+        BaseValue: 300
+        EnhancementScalingFactor: 0.1
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 15.5
+      - Type: 2
+        BaseValue: 450
+        EnhancementScalingFactor: 0.1
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 15.5
+      - Type: 3
+        BaseValue: 600
+        EnhancementScalingFactor: 0.1
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 15.5
+      - Type: 4
+        BaseValue: 725
+        EnhancementScalingFactor: 0.1
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 15.5
+      - Type: 5
+        BaseValue: 850
+        EnhancementScalingFactor: 0.1
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 15.5
+    - Type: 3001
+      Info:
+      - Type: 1
+        BaseValue: 200
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 10
+      - Type: 2
+        BaseValue: 289
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 10
+      - Type: 3
+        BaseValue: 370
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 10
+      - Type: 4
+        BaseValue: 455
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 10
+      - Type: 5
+        BaseValue: 540
+        EnhancementScalingFactor: 0.13
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 10
+    - Type: 3002
+      Info:
+      - Type: 1
+        BaseValue: 160
+        EnhancementScalingFactor: 0.15
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 8.8
+      - Type: 2
+        BaseValue: 237
+        EnhancementScalingFactor: 0.15
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 8.8
+      - Type: 3
+        BaseValue: 290
+        EnhancementScalingFactor: 0.15
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 8.8
+      - Type: 4
+        BaseValue: 360
+        EnhancementScalingFactor: 0.15
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 8.8
+      - Type: 5
+        BaseValue: 430
+        EnhancementScalingFactor: 0.15
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 8.8
+    - Type: 3003
+      Info:
+      - Type: 1
+        BaseValue: 330
+        EnhancementScalingFactor: 0.12
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 17
+      - Type: 2
+        BaseValue: 482
+        EnhancementScalingFactor: 0.12
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 17
+      - Type: 3
+        BaseValue: 700
+        EnhancementScalingFactor: 0.12
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 17
+      - Type: 4
+        BaseValue: 850
+        EnhancementScalingFactor: 0.12
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 17
+      - Type: 5
+        BaseValue: 1000
+        EnhancementScalingFactor: 0.12
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 17
+    - Type: 3004
+      Info:
+      - Type: 1
+        BaseValue: 330
+        EnhancementScalingFactor: 0.12
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 17
+      - Type: 2
+        BaseValue: 482
+        EnhancementScalingFactor: 0.12
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 17
+      - Type: 3
+        BaseValue: 700
+        EnhancementScalingFactor: 0.12
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 17
+      - Type: 4
+        BaseValue: 850
+        EnhancementScalingFactor: 0.12
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 17
+      - Type: 5
+        BaseValue: 1000
+        EnhancementScalingFactor: 0.12
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 17
+    - Type: 3005
+      Info:
+      - Type: 1
+        BaseValue: 330
+        EnhancementScalingFactor: 0.12
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 17
+      - Type: 2
+        BaseValue: 482
+        EnhancementScalingFactor: 0.12
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 17
+      - Type: 3
+        BaseValue: 700
+        EnhancementScalingFactor: 0.12
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 17
+      - Type: 4
+        BaseValue: 850
+        EnhancementScalingFactor: 0.12
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 17
+      - Type: 5
+        BaseValue: 1000
+        EnhancementScalingFactor: 0.12
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 17
+    - Type: 3006
+      Info:
+      - Type: 1
+        BaseValue: 330
+        EnhancementScalingFactor: 0.12
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 17
+      - Type: 2
+        BaseValue: 482
+        EnhancementScalingFactor: 0.12
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 17
+      - Type: 3
+        BaseValue: 700
+        EnhancementScalingFactor: 0.12
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 17
+      - Type: 4
+        BaseValue: 850
+        EnhancementScalingFactor: 0.12
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 17
+      - Type: 5
+        BaseValue: 1000
+        EnhancementScalingFactor: 0.12
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 17
+    - Type: 3007
+      Info:
+      - Type: 1
+        BaseValue: 330
+        EnhancementScalingFactor: 0.12
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 17
+      - Type: 2
+        BaseValue: 482
+        EnhancementScalingFactor: 0.12
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 17
+      - Type: 3
+        BaseValue: 700
+        EnhancementScalingFactor: 0.12
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 17
+      - Type: 4
+        BaseValue: 850
+        EnhancementScalingFactor: 0.12
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 17
+      - Type: 5
+        BaseValue: 1000
+        EnhancementScalingFactor: 0.12
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 17
+    - Type: 3008
+      Info:
+      - Type: 1
+        BaseValue: 330
+        EnhancementScalingFactor: 0.12
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 17
+      - Type: 2
+        BaseValue: 482
+        EnhancementScalingFactor: 0.12
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 17
+      - Type: 3
+        BaseValue: 700
+        EnhancementScalingFactor: 0.12
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 17
+      - Type: 4
+        BaseValue: 850
+        EnhancementScalingFactor: 0.12
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 17
+      - Type: 5
+        BaseValue: 1000
+        EnhancementScalingFactor: 0.12
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 17
+    - Type: 309
+      Info:
+      - Type: 1
+        BaseValue: 330
+        EnhancementScalingFactor: 0.12
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 17
+      - Type: 2
+        BaseValue: 482
+        EnhancementScalingFactor: 0.12
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 17
+      - Type: 3
+        BaseValue: 700
+        EnhancementScalingFactor: 0.12
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 17
+      - Type: 4
+        BaseValue: 850
+        EnhancementScalingFactor: 0.12
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 17
+      - Type: 5
+        BaseValue: 1000
+        EnhancementScalingFactor: 0.12
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 17
+    - Type: 3010
+      Info:
+      - Type: 1
+        BaseValue: 330
+        EnhancementScalingFactor: 0.12
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 17
+      - Type: 2
+        BaseValue: 482
+        EnhancementScalingFactor: 0.12
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 17
+      - Type: 3
+        BaseValue: 700
+        EnhancementScalingFactor: 0.12
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 17
+      - Type: 4
+        BaseValue: 850
+        EnhancementScalingFactor: 0.12
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 17
+      - Type: 5
+        BaseValue: 1000
+        EnhancementScalingFactor: 0.12
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 17
+  - WeaponType: 9
+    Items:
+    - Type: 4000
+      Info:
+      - Type: 1
+        BaseValue: 270
+        EnhancementScalingFactor: 0.11
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 13
+      - Type: 2
+        BaseValue: 369
+        EnhancementScalingFactor: 0.11
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 13
+      - Type: 3
+        BaseValue: 400
+        EnhancementScalingFactor: 0.11
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 13
+      - Type: 4
+        BaseValue: 450
+        EnhancementScalingFactor: 0.11
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 13
+      - Type: 5
+        BaseValue: 500
+        EnhancementScalingFactor: 0.11
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 13
+    - Type: 4001
+      Info:
+      - Type: 1
+        BaseValue: 330
+        EnhancementScalingFactor: 0.11
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 17
+      - Type: 2
+        BaseValue: 515
+        EnhancementScalingFactor: 0.11
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 17
+      - Type: 3
+        BaseValue: 670
+        EnhancementScalingFactor: 0.11
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 17
+      - Type: 4
+        BaseValue: 770
+        EnhancementScalingFactor: 0.11
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 17
+      - Type: 5
+        BaseValue: 870
+        EnhancementScalingFactor: 0.11
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 17
+    - Type: 4002
+      Info:
+      - Type: 1
+        BaseValue: 300
+        EnhancementScalingFactor: 0.11
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 14
+      - Type: 2
+        BaseValue: 385
+        EnhancementScalingFactor: 0.11
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 14
+      - Type: 3
+        BaseValue: 500
+        EnhancementScalingFactor: 0.11
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 14
+      - Type: 4
+        BaseValue: 600
+        EnhancementScalingFactor: 0.11
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 14
+      - Type: 5
+        BaseValue: 700
+        EnhancementScalingFactor: 0.11
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 14
+    - Type: 4003
+      Info:
+      - Type: 1
+        BaseValue: 300
+        EnhancementScalingFactor: 0.11
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 14
+      - Type: 2
+        BaseValue: 385
+        EnhancementScalingFactor: 0.11
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 14
+      - Type: 3
+        BaseValue: 500
+        EnhancementScalingFactor: 0.11
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 14
+      - Type: 4
+        BaseValue: 600
+        EnhancementScalingFactor: 0.11
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 14
+      - Type: 5
+        BaseValue: 700
+        EnhancementScalingFactor: 0.11
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 14
+    - Type: 4004
+      Info:
+      - Type: 1
+        BaseValue: 300
+        EnhancementScalingFactor: 0.11
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 14
+      - Type: 2
+        BaseValue: 385
+        EnhancementScalingFactor: 0.11
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 14
+      - Type: 3
+        BaseValue: 500
+        EnhancementScalingFactor: 0.11
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 14
+      - Type: 4
+        BaseValue: 600
+        EnhancementScalingFactor: 0.11
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 14
+      - Type: 5
+        BaseValue: 700
+        EnhancementScalingFactor: 0.11
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 14
+    - Type: 4005
+      Info:
+      - Type: 1
+        BaseValue: 300
+        EnhancementScalingFactor: 0.11
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 14
+      - Type: 2
+        BaseValue: 385
+        EnhancementScalingFactor: 0.11
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 14
+      - Type: 3
+        BaseValue: 500
+        EnhancementScalingFactor: 0.11
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 14
+      - Type: 4
+        BaseValue: 600
+        EnhancementScalingFactor: 0.11
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 14
+      - Type: 5
+        BaseValue: 700
+        EnhancementScalingFactor: 0.11
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 14
+    - Type: 4006
+      Info:
+      - Type: 1
+        BaseValue: 300
+        EnhancementScalingFactor: 0.11
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 14
+      - Type: 2
+        BaseValue: 385
+        EnhancementScalingFactor: 0.11
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 14
+      - Type: 3
+        BaseValue: 500
+        EnhancementScalingFactor: 0.11
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 14
+      - Type: 4
+        BaseValue: 600
+        EnhancementScalingFactor: 0.11
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 14
+      - Type: 5
+        BaseValue: 700
+        EnhancementScalingFactor: 0.11
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 14
+    - Type: 4007
+      Info:
+      - Type: 1
+        BaseValue: 300
+        EnhancementScalingFactor: 0.11
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 14
+      - Type: 2
+        BaseValue: 385
+        EnhancementScalingFactor: 0.11
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 14
+      - Type: 3
+        BaseValue: 500
+        EnhancementScalingFactor: 0.11
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 14
+      - Type: 4
+        BaseValue: 600
+        EnhancementScalingFactor: 0.11
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 14
+      - Type: 5
+        BaseValue: 700
+        EnhancementScalingFactor: 0.11
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 14
+    - Type: 4008
+      Info:
+      - Type: 1
+        BaseValue: 300
+        EnhancementScalingFactor: 0.11
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 14
+      - Type: 2
+        BaseValue: 385
+        EnhancementScalingFactor: 0.11
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 14
+      - Type: 3
+        BaseValue: 500
+        EnhancementScalingFactor: 0.11
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 14
+      - Type: 4
+        BaseValue: 600
+        EnhancementScalingFactor: 0.11
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 14
+      - Type: 5
+        BaseValue: 700
+        EnhancementScalingFactor: 0.11
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 14
+    - Type: 4009
+      Info:
+      - Type: 1
+        BaseValue: 300
+        EnhancementScalingFactor: 0.11
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 14
+      - Type: 2
+        BaseValue: 385
+        EnhancementScalingFactor: 0.11
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 14
+      - Type: 3
+        BaseValue: 500
+        EnhancementScalingFactor: 0.11
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 14
+      - Type: 4
+        BaseValue: 600
+        EnhancementScalingFactor: 0.11
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 14
+      - Type: 5
+        BaseValue: 700
+        EnhancementScalingFactor: 0.11
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 14
+    - Type: 4010
+      Info:
+      - Type: 1
+        BaseValue: 300
+        EnhancementScalingFactor: 0.11
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 14
+      - Type: 2
+        BaseValue: 385
+        EnhancementScalingFactor: 0.11
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 14
+      - Type: 3
+        BaseValue: 500
+        EnhancementScalingFactor: 0.11
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 14
+      - Type: 4
+        BaseValue: 600
+        EnhancementScalingFactor: 0.11
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 14
+      - Type: 5
+        BaseValue: 700
+        EnhancementScalingFactor: 0.11
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 14
+    - Type: 4011
+      Info:
+      - Type: 1
+        BaseValue: 300
+        EnhancementScalingFactor: 0.11
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 14
+      - Type: 2
+        BaseValue: 385
+        EnhancementScalingFactor: 0.11
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 14
+      - Type: 3
+        BaseValue: 500
+        EnhancementScalingFactor: 0.11
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 14
+      - Type: 4
+        BaseValue: 600
+        EnhancementScalingFactor: 0.11
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 14
+      - Type: 5
+        BaseValue: 700
+        EnhancementScalingFactor: 0.11
+        EnhancementEfficiency: 0.02
+        ItemScalingFactor: 14

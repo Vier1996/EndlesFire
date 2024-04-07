@@ -1,0 +1,122 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: OpenChestDIalogAtlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 0
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: Android
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 47
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    - serializedVersion: 3
+      m_BuildTarget: iPhone
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 50
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: c4ab3f27490c3b34f89c41a26ea04c2c, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 7ca0d080a0112b442ad7fd0097e2a6e4, type: 3}
+  - {fileID: 21300000, guid: a0dd44b03e37c914baf87e26f1d1a081, type: 3}
+  - {fileID: 21300000, guid: 020e58a10b378194dafed98fadab4a9a, type: 3}
+  - {fileID: 21300000, guid: e5cf1202051b9de49a9253462c3f106b, type: 3}
+  - {fileID: 21300000, guid: cb1495427d3b80c4799976a91b246837, type: 3}
+  - {fileID: 21300000, guid: 6147eb83c2c122e43bae17b380021021, type: 3}
+  - {fileID: 21300000, guid: 19954ff3a9b56bc45902c69e482617e6, type: 3}
+  - {fileID: 21300000, guid: 8ef9d1546e39860479f19037dc0a5efb, type: 3}
+  - {fileID: 21300000, guid: bd07aa5474f41124cb9a6554a80c58c7, type: 3}
+  - {fileID: 21300000, guid: 216fd765a073b7543b873d151eca5e29, type: 3}
+  - {fileID: 21300000, guid: 20cb1276f25d7284aab237e6051e8b9f, type: 3}
+  - {fileID: 21300000, guid: df77f8b7033549b4fbc15da12e21a68c, type: 3}
+  - {fileID: 21300000, guid: ce45280864e9cde4e9baf825beb55773, type: 3}
+  - {fileID: 21300000, guid: dd3eae283a2b35146a201850159f0885, type: 3}
+  - {fileID: 21300000, guid: 2c181c489d64ac24da6218992f1c52be, type: 3}
+  - {fileID: 21300000, guid: a6dd85f9dbbb1a14bba7e444e8e8c54a, type: 3}
+  - {fileID: 21300000, guid: 06dbdf0a8424a5744b4dddefa9b45117, type: 3}
+  - {fileID: 21300000, guid: 8dd5465bec47439428b9a0135a249a78, type: 3}
+  - {fileID: 21300000, guid: f006cb6b9dd1d514e92f0c63f7d208be, type: 3}
+  - {fileID: 21300000, guid: 40c5eb6cb0a4e9345abef3bc78d2d564, type: 3}
+  - {fileID: 21300000, guid: 4b5246acd673cc345b78d218a3e42ea7, type: 3}
+  - {fileID: 21300000, guid: e60624dc1a593b8448d0cc47f54870c3, type: 3}
+  - {fileID: 21300000, guid: 145372fcc8ad8e94d946c189d7cf594a, type: 3}
+  - {fileID: 21300000, guid: 79ce735d1c820924395e68d4fb795cc2, type: 3}
+  - {fileID: 21300000, guid: 770c39ee5e5241d419cc472a41625feb, type: 3}
+  - {fileID: 21300000, guid: 3d7bf90fe7430a14587329ca41568404, type: 3}
+  - {fileID: 21300000, guid: 649a16ff84c42c545b66c1d3e98b6284, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - chest1 buttom
+  - icon play 1
+  - badge card
+  - money card
+  - button big orange 1
+  - chest3 open
+  - chest3 buttom
+  - chest2 buttom
+  - chest2 open
+  - Layer 1345 copy 2
+  - light1
+  - white card
+  - slot selection 1
+  - light outside
+  - chest3 top
+  - Layer 1366 copy 3
+  - violet card
+  - blue card
+  - diamond card
+  - light2
+  - Layer 1345 copy 4
+  - chest1 top
+  - chest2 top
+  - light inside
+  - button green big 1
+  - boots1-1 copy 2
+  - chest1 open
+  m_RenderDataMap: {}
+  m_Tag: OpenChestDIalogAtlas
+  m_IsVariant: 0

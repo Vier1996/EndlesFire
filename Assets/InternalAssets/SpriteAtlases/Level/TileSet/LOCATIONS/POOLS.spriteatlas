@@ -1,0 +1,116 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: POOLS
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 0
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: Android
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 47
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    - serializedVersion: 3
+      m_BuildTarget: iPhone
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 50
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 00c5cf00afe324fa89abf231d7d78575, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 12109e40ec36140b6a2a0bad345ddb41, type: 3}
+  - {fileID: 21300000, guid: 83c4e270e77a14180b5af15c401ef9be, type: 3}
+  - {fileID: 21300000, guid: c012f8718c4580e44aead5b2dbe47681, type: 3}
+  - {fileID: 21300000, guid: 1f606cd1fa1e949408515fb69430e308, type: 3}
+  - {fileID: 21300000, guid: 4e0a05f1c9b8d446093be6d0a87a62a3, type: 3}
+  - {fileID: 21300000, guid: 68c20ae22306a40ad8a9eebcc9b94a05, type: 3}
+  - {fileID: 21300000, guid: 4d7aa25356f41054e95032b23d1d6fe9, type: 3}
+  - {fileID: 21300000, guid: 6105d7d3492244d479fdd8f1a861a240, type: 3}
+  - {fileID: 21300000, guid: fa23c5f3c82642a4ba5769442bd9cdaf, type: 3}
+  - {fileID: 21300000, guid: e7c350b429be26646bd0e1dd65e5da53, type: 3}
+  - {fileID: 21300000, guid: cc0b6b1591463d54b8b8ab739ac728da, type: 3}
+  - {fileID: 21300000, guid: 0ca4ea350e7df43fba8d826407eac496, type: 3}
+  - {fileID: 21300000, guid: bfed77b50ae7442fba53c23857ef6d6e, type: 3}
+  - {fileID: 21300000, guid: 8428d326b8a5a4fe4a9b3f298e2d64ba, type: 3}
+  - {fileID: 21300000, guid: b5c02d868ba49421cb102efaaff65359, type: 3}
+  - {fileID: 21300000, guid: eff8ed862bc62d548abb8886d1660c5f, type: 3}
+  - {fileID: 21300000, guid: 3c9a99470d4b630449ae3fa9695859d6, type: 3}
+  - {fileID: 21300000, guid: 32314ff7a8eca494ab652b74002b0a9a, type: 3}
+  - {fileID: 21300000, guid: 9e127aa87a48246d1bf3b6ecfb26d047, type: 3}
+  - {fileID: 21300000, guid: 928a0da89d6c64e5fae008563e44e263, type: 3}
+  - {fileID: 21300000, guid: aaefaac8874f446c283ad644749ff130, type: 3}
+  - {fileID: 21300000, guid: 9051300c7dffc43f6b989a187b825b26, type: 3}
+  - {fileID: 21300000, guid: 0404b1cecb72d49cb8fbdcdf70859e6d, type: 3}
+  - {fileID: 21300000, guid: 846c5fbfa2738459585ecb0e2309ee49, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - pool top side6
+  - pool bottom corner
+  - pool top side6
+  - pool top side2 1
+  - pool top corner
+  - pool top side2 1
+  - pool side4 1
+  - pool side3 1
+  - pool top side2 (1)
+  - pool side2 1
+  - pool side1 1
+  - pool top side1
+  - pool side3
+  - water shadow (2)
+  - pool top side2 (1)
+  - pool bottom corner 1
+  - water shadow (2)
+  - pool top side2
+  - water shadow
+  - pool side2
+  - water color
+  - pool water
+  - pool side4
+  - pool side1
+  m_RenderDataMap: {}
+  m_Tag: POOLS
+  m_IsVariant: 0

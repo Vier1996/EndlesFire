@@ -1,0 +1,129 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7484311807980671727
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7484311807980671712}
+  - component: {fileID: 7484311807980671714}
+  - component: {fileID: 7484311807980671713}
+  m_Layer: 2
+  m_Name: StageSpawner_3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7484311807980671712
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7484311807980671727}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &7484311807980671714
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7484311807980671727}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.056437492, y: 0.5290365}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 14.090706, y: 12.1122675}
+  m_EdgeRadius: 0
+--- !u!114 &7484311807980671713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7484311807980671727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d041001e6536d6d4ab6a62d8eebb09d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _customLootBindingsConfig: 0
+  _lootBindingsConfig: {fileID: 0}
+  _spawnerSizeCollider: {fileID: 7484311807980671714}
+  _stageParameters:
+    EnemiesLevel: 0
+    WaveParameters:
+    - SpawnPrice: 15
+      MaxCountAtOneTime: 7
+      DelayBetweenSpawning: 1
+      DelayBetweenNextSpawn: 0.3
+      Enemies:
+      - BaseEnemy: {fileID: 453586564843345929, guid: 46cca1b35d1ad60438e0d8fc65f2edc8, type: 3}
+        MinCount: 1
+        HasLimit: 0
+        MaxCount: 1
+      - BaseEnemy: {fileID: 453586564843345929, guid: fe7e1c6f14798a24b9e31bd835377f07, type: 3}
+        MinCount: 1
+        HasLimit: 0
+        MaxCount: 1
+      - BaseEnemy: {fileID: 453586564843345929, guid: 5fc713ff53d614666969bd22f4d14d12, type: 3}
+        MinCount: 1
+        HasLimit: 0
+        MaxCount: 1
+    - SpawnPrice: 15
+      MaxCountAtOneTime: 7
+      DelayBetweenSpawning: 1
+      DelayBetweenNextSpawn: 0.3
+      Enemies:
+      - BaseEnemy: {fileID: 453586564843345929, guid: 46cca1b35d1ad60438e0d8fc65f2edc8, type: 3}
+        MinCount: 1
+        HasLimit: 0
+        MaxCount: 1
+      - BaseEnemy: {fileID: 453586564843345929, guid: 6cd8d93709e333e4cb3cacf694d560d4, type: 3}
+        MinCount: 1
+        HasLimit: 0
+        MaxCount: 1
+      - BaseEnemy: {fileID: 453586564843345929, guid: 5fc713ff53d614666969bd22f4d14d12, type: 3}
+        MinCount: 1
+        HasLimit: 0
+        MaxCount: 1
+    - SpawnPrice: 15
+      MaxCountAtOneTime: 7
+      DelayBetweenSpawning: 1
+      DelayBetweenNextSpawn: 0.3
+      Enemies:
+      - BaseEnemy: {fileID: 453586564843345929, guid: 46cca1b35d1ad60438e0d8fc65f2edc8, type: 3}
+        MinCount: 1
+        HasLimit: 0
+        MaxCount: 1
+      - BaseEnemy: {fileID: 453586564843345929, guid: fe7e1c6f14798a24b9e31bd835377f07, type: 3}
+        MinCount: 1
+        HasLimit: 0
+        MaxCount: 1
+      - BaseEnemy: {fileID: 453586564843345929, guid: 2e24c52a4d7c7e847846bf7faa035784, type: 3}
+        MinCount: 1
+        HasLimit: 0
+        MaxCount: 1

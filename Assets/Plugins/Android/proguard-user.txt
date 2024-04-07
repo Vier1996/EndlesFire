@@ -1,0 +1,107 @@
+-keep class com.facebook.unity.** {*;}
+-keep class com.facebook.internal.** {*;}
+-keep class com.facebook.FacebookSdk.** {*;}
+-keep class com.android.installreferrer.** { *; }
+-keep class com.android.vending.billing.** { *; }
+-keep class com.android.billingclient.api.** { *; }
+-keep class com.google.android.gms.** { *; }
+-keep class com.gismart.installrefferer.Bridge.** { *; }
+-keep class com.google.games.bridge.HelperFragment.** { *; }
+-keep class com.ironsource.unity.androidbridge.** { *; }
+-keep class com.ironsource.adapters.** { *; }
+-keep class net.alexplay.oil_rush.LegacyDbHelper {*;}
+-keep class com.amplitude.unity.plugins.AmplitudePlugin {*;}
+-keep class com.yandex.metrica.** { *; }
+-keep class com.voxelbusters.nativeplugins.features.gameservices.serviceprovider.google.** { *; }
+-keep class com.bytedance.sdk.openadsdk.*{ public *; }
+-keep class com.google.android.gms.common.ConnectionResult {
+    int SUCCESS;
+}
+-keep class com.google.android.gms.ads.identifier.AdvertisingIdClient {
+    com.google.android.gms.ads.identifier.AdvertisingIdClient$Info getAdvertisingIdInfo(android.content.Context);
+}
+-keep class com.google.android.gms.ads.identifier.AdvertisingIdClient$Info {
+    java.lang.String getId();
+    boolean isLimitAdTrackingEnabled();
+}
+-keep public class com.android.installreferrer.** { *; }
+-keepclassmembers class com.ironsource.sdk.controller.IronSourceWebView$JSInterface {
+    public *;
+}
+-keepclassmembers class * implements android.os.Parcelable {
+    public static final android.os.Parcelable$Creator *;
+}
+-keep public class com.google.android.gms.ads.** {
+   public *;
+}
+
+-dontwarn com.ironsource.mediationsdk.**
+-dontwarn com.ironsource.adapters.**
+-keepattributes JavascriptInterface
+-keepclassmembers class * {
+    @android.webkit.JavascriptInterface <methods>;
+}
+
+-keeppackagenames net.alexplay.oil_rush.** 
+# General
+-keepattributes Signature
+-keepattributes Exceptions
+-keepattributes *Annotation*
+-keepattributes EnclosingMethod
+
+
+# Address Book
+-keep public class com.voxelbusters.nativeplugins.features.addressbook.AddressBookHandler {*; }
+
+#Billing
+-keep public class com.voxelbusters.nativeplugins.features.billing.** {*; }
+-keep class com.android.vending.billing.** {*;}
+-keep public class com.android.vending.billing.IInAppBillingService {*; }
+
+# Amazon API
+-dontwarn com.amazon.**
+-keep class com.amazon.** {*;}
+-keepattributes *Annotation*
+
+#Cloud Services
+-keep public class com.voxelbusters.nativeplugins.features.cloudservices.CloudServicesHandler {*; }
+
+#Game Services
+-keep public class com.voxelbusters.nativeplugins.features.gameservices.GameServicesHandler {*; }
+
+#Media Library
+-keep public class com.voxelbusters.nativeplugins.features.medialibrary.MediaLibraryHandler {*; }
+-dontwarn com.voxelbusters.nativeplugins.features.medialibrary.YoutubePlayerActivity
+
+#Notification Services
+-keep public class com.voxelbusters.nativeplugins.features.notification.NotificationHandler {*; }
+-keep class com.voxelbusters.nativeplugins.externallibrary.notification.shortcutbadger.** {<init>(...); }
+
+#Network Connectivity
+-keep public class com.voxelbusters.nativeplugins.features.reachability.NetworkReachabilityHandler {*; }
+
+#Sharing
+-keep public class com.voxelbusters.nativeplugins.features.sharing.SharingHandler {*; }
+
+#Twitter SDK
+-keep public class com.voxelbusters.nativeplugins.features.socialnetwork.twitter.TwitterHandler {*; }
+
+#UI
+-keep public class com.voxelbusters.nativeplugins.features.ui.UiHandler {*; }
+
+#Utility
+-keep public class com.voxelbusters.nativeplugins.features.utility.UtilityHandler {*; }
+
+#Webview
+-keep public class com.voxelbusters.nativeplugins.features.webview.** {*; }
+
+#External Addons
+-keep public class com.voxelbusters.nativeplugins.features.external.sdk.soomla.soomlagrow.SoomlaGrow {*; }
+-dontwarn com.voxelbusters.nativeplugins.features.external.sdk.soomla.**
+
+
+#NativeBinding Interface
+-keep public class com.voxelbusters.NativeBinding {*; }
+
+
+-keep class com.ironsource.mobileads.** {*; }

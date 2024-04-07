@@ -1,0 +1,172 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: CustomEffectSpriteAtlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 0
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: Android
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 47
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    - serializedVersion: 3
+      m_BuildTarget: iPhone
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 50
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 771b4b66f1421ea4d995a36d44b6bfac, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 5213b351ac9f5814b9579668cc762973, type: 3}
+  - {fileID: 21300000, guid: 3c4f1582ecbb3a84eb56a30ca53dec70, type: 3}
+  - {fileID: 6797878104496889683, guid: 41be6c45477f1a14da1a521e686ee93b, type: 3}
+  - {fileID: 4670917635849972332, guid: 41be6c45477f1a14da1a521e686ee93b, type: 3}
+  - {fileID: 2580774502709460415, guid: 41be6c45477f1a14da1a521e686ee93b, type: 3}
+  - {fileID: -1807167087025875327, guid: 41be6c45477f1a14da1a521e686ee93b, type: 3}
+  - {fileID: -6351004674611062936, guid: 41be6c45477f1a14da1a521e686ee93b, type: 3}
+  - {fileID: -2723917691953750869, guid: 41be6c45477f1a14da1a521e686ee93b, type: 3}
+  - {fileID: -2715073044223314999, guid: 41be6c45477f1a14da1a521e686ee93b, type: 3}
+  - {fileID: 7084317401445830624, guid: 41be6c45477f1a14da1a521e686ee93b, type: 3}
+  - {fileID: 3347881613905051835, guid: 41be6c45477f1a14da1a521e686ee93b, type: 3}
+  - {fileID: 7684965163323633063, guid: 41be6c45477f1a14da1a521e686ee93b, type: 3}
+  - {fileID: -5090487748128137841, guid: 41be6c45477f1a14da1a521e686ee93b, type: 3}
+  - {fileID: -4036029319588984283, guid: 41be6c45477f1a14da1a521e686ee93b, type: 3}
+  - {fileID: 21300000, guid: 65e3afa51a8d6014fb48662c45332db2, type: 3}
+  - {fileID: 21300000, guid: 3240d9f5590125b4b885c8607a08acfd, type: 3}
+  - {fileID: 21300000, guid: be8d21d6eab53bc40bef87f6ba63262b, type: 3}
+  - {fileID: 21300000, guid: dab9a158bafce8e47a593e544efe6c13, type: 3}
+  - {fileID: 21300000, guid: 346394bac0373a24b9e8db7ca6b7d9da, type: 3}
+  - {fileID: 21300000, guid: 31f6384b9eaa38c4587f6d028eee1d09, type: 3}
+  - {fileID: 5720520028452115850, guid: ce065f9c455911e4b8f17f5a7d4add9d, type: 3}
+  - {fileID: 8008705547701652254, guid: ce065f9c455911e4b8f17f5a7d4add9d, type: 3}
+  - {fileID: 3532803890351117682, guid: ce065f9c455911e4b8f17f5a7d4add9d, type: 3}
+  - {fileID: -7936448496873141846, guid: ce065f9c455911e4b8f17f5a7d4add9d, type: 3}
+  - {fileID: -260488870464109349, guid: ce065f9c455911e4b8f17f5a7d4add9d, type: 3}
+  - {fileID: 5151597361655709781, guid: ce065f9c455911e4b8f17f5a7d4add9d, type: 3}
+  - {fileID: 8179340318372457623, guid: ce065f9c455911e4b8f17f5a7d4add9d, type: 3}
+  - {fileID: 21300000, guid: 7470759dd9cda844eb8dff5d7059a899, type: 3}
+  - {fileID: 21300000, guid: 381d3bbd61eac5a44862292b4cffd6ca, type: 3}
+  - {fileID: 21300000, guid: c981bf2e20109a94a8ca116963268472, type: 3}
+  - {fileID: 2938470570783865546, guid: 25b2d65e804e009438199ec14da99b81, type: 3}
+  - {fileID: 4502179582117627898, guid: 25b2d65e804e009438199ec14da99b81, type: 3}
+  - {fileID: -3073226149826396484, guid: 25b2d65e804e009438199ec14da99b81, type: 3}
+  - {fileID: 7981864427885111977, guid: 25b2d65e804e009438199ec14da99b81, type: 3}
+  - {fileID: 861048366620365521, guid: 25b2d65e804e009438199ec14da99b81, type: 3}
+  - {fileID: -7158813693357147371, guid: 25b2d65e804e009438199ec14da99b81, type: 3}
+  - {fileID: -7135938929338233718, guid: 6f7cbbbed078bea4480e6b9c97ee2085, type: 3}
+  - {fileID: 5183168158843029496, guid: 6f7cbbbed078bea4480e6b9c97ee2085, type: 3}
+  - {fileID: -3942754300578765699, guid: 6f7cbbbed078bea4480e6b9c97ee2085, type: 3}
+  - {fileID: 761960120332840939, guid: 6f7cbbbed078bea4480e6b9c97ee2085, type: 3}
+  - {fileID: -6208537605927825039, guid: 6f7cbbbed078bea4480e6b9c97ee2085, type: 3}
+  - {fileID: 1913137918334346111, guid: 6f7cbbbed078bea4480e6b9c97ee2085, type: 3}
+  - {fileID: 2643669699250103027, guid: 6f7cbbbed078bea4480e6b9c97ee2085, type: 3}
+  - {fileID: 9188265383805478775, guid: 6f7cbbbed078bea4480e6b9c97ee2085, type: 3}
+  - {fileID: -911276136234988725, guid: c38e48affbbdd5249b388d4131046170, type: 3}
+  - {fileID: 9062908327654262698, guid: c38e48affbbdd5249b388d4131046170, type: 3}
+  - {fileID: -5087388746787576510, guid: c38e48affbbdd5249b388d4131046170, type: 3}
+  - {fileID: 3534633838125148772, guid: c38e48affbbdd5249b388d4131046170, type: 3}
+  - {fileID: 7333693894844698695, guid: c38e48affbbdd5249b388d4131046170, type: 3}
+  - {fileID: 5218033009961734289, guid: c38e48affbbdd5249b388d4131046170, type: 3}
+  - {fileID: 1146286206542803276, guid: c38e48affbbdd5249b388d4131046170, type: 3}
+  - {fileID: 21300000, guid: a47780fff847a9444830a07bf1637cd0, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - shot f4
+  - shot w1
+  - fire circle_11
+  - fire circle_10
+  - fire circle_4
+  - fire circle_5
+  - fire circle_6
+  - fire circle_7
+  - fire circle_0
+  - fire circle_1
+  - fire circle_2
+  - fire circle_3
+  - fire circle_8
+  - fire circle_9
+  - shot w4
+  - shot f3
+  - shot f
+  - shot w2
+  - shot f2
+  - fire fall (2)
+  - spurt2_0
+  - spurt2_1
+  - spurt2_2
+  - spurt2_3
+  - spurt2_4
+  - spurt2_5
+  - spurt2_6
+  - effect7
+  - explosion2
+  - water fall (2)
+  - effect2_5
+  - effect2_4
+  - effect2_3
+  - effect2_2
+  - effect2_1
+  - effect2_0
+  - explosion water_0
+  - explosion water_1
+  - explosion water_2
+  - explosion water_3
+  - explosion water_4
+  - explosion water_5
+  - explosion water_6
+  - explosion water_7
+  - spurt1_6
+  - spurt1_5
+  - spurt1_4
+  - spurt1_3
+  - spurt1_2
+  - spurt1_1
+  - spurt1_0
+  - shot w3
+  m_RenderDataMap: {}
+  m_Tag: CustomEffectSpriteAtlas
+  m_IsVariant: 0

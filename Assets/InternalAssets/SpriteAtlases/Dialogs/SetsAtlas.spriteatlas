@@ -1,0 +1,92 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: SetsAtlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 0
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: Android
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 47
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    - serializedVersion: 3
+      m_BuildTarget: iPhone
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 50
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 67361372d92087e4ab1da1e0f5a6c144, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 4d8af850d47718b49bac60eaf7fb5ff0, type: 3}
+  - {fileID: 21300000, guid: f9b50e01ce1243f48b5954ac5e15d348, type: 3}
+  - {fileID: 21300000, guid: 5d833c11d00fe8e489c46cedf4c2872f, type: 3}
+  - {fileID: 21300000, guid: 5d537e336af204a4c929917ac96948cc, type: 3}
+  - {fileID: 21300000, guid: e92eda44c69e62747a62806bf6064edd, type: 3}
+  - {fileID: -319469171194908686, guid: 3d50cd45e166dd84e9e4a64e6ea0f6e5, type: 3}
+  - {fileID: 21300000, guid: 9a53c2f5368d1c84a993cbdb883afd35, type: 3}
+  - {fileID: 21300000, guid: a3ceb8e6779583a41be592e30e03d1f7, type: 3}
+  - {fileID: 21300000, guid: 39282187996ac9f47960f8472ca1df4b, type: 3}
+  - {fileID: 21300000, guid: e361a6b91cb80dc4cbb4ab865d19bf2a, type: 3}
+  - {fileID: 21300000, guid: c570341aaca2c3c49b46417fe6036e14, type: 3}
+  - {fileID: 21300000, guid: cf534cba3d18a7047ad86d89bad39d9f, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - close
+  - line 1
+  - start set icon
+  - ribbon blue 1
+  - coins
+  - cell_0
+  - shadow 1
+  - affect
+  - diamonds
+  - x2
+  - button big gold
+  - timer
+  m_RenderDataMap: {}
+  m_Tag: SetsAtlas
+  m_IsVariant: 0

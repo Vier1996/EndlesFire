@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:keep="@string/gcm_defaultSenderId,@string/google_storage_bucket,@string/project_id,@string/google_api_key,@string/google_crash_reporting_api_key,@string/google_app_id,@string/default_web_client_id">
+  <string name="gcm_defaultSenderId" translatable="false">919037854481</string>
+  <string name="google_storage_bucket" translatable="false">firefighter-e1359.appspot.com</string>
+  <string name="project_id" translatable="false">firefighter-e1359</string>
+  <string name="google_api_key" translatable="false">AIzaSyCsp-567lxhOQrxMjeKLa-eCECfSWAh0SQ</string>
+  <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCsp-567lxhOQrxMjeKLa-eCECfSWAh0SQ</string>
+  <string name="google_app_id" translatable="false">1:919037854481:android:e59706951676210b7802b0</string>
+  <string name="default_web_client_id" translatable="false">919037854481-jpgub9tdhb7fskn3h49t74vc8th5f505.apps.googleusercontent.com</string>
+</resources>

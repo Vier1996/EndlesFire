@@ -1,0 +1,1314 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2052d8c3f3c84d3e99387507fc1c20b8, type: 3}
+  m_Name: SoundContainer
+  m_EditorClassIdentifier: 
+  Sounds:
+  - Type: 1
+    SoundInfo:
+      AudioClips:
+      - {fileID: 8300000, guid: b0b0e4f1bb3fc5843830879c98415394, type: 3}
+      - {fileID: 8300000, guid: b3e711aae3287ba45a12edf9284c9688, type: 3}
+      - {fileID: 8300000, guid: d433d8ec2f420ca45ade110d7f96a4fe, type: 3}
+      - {fileID: 8300000, guid: 0c10e0c5da6453a4d86c0c13c04fc3d8, type: 3}
+      VolumeData:
+        ValType: 0
+        ConstantVolume: 1
+        MinVolume: 0
+        MaxVolume: 0
+      PitchData:
+        ValType: 0
+        ConstantPitch: 1
+        MinPitch: 0.8
+        MaxPitch: 1.2
+      MixerGroup: 8
+      SideEffectSound: 1
+      SideEffectData:
+        PercentValueType: 0
+        ConstantSidePercent: 10
+        MinSidePercent: 0
+        MaxSidePercent: 0
+        TimeValueType: 0
+        ConstantSideTime: 0.2
+        MinSideTime: 0
+        MaxSideTime: 0
+  - Type: 2
+    SoundInfo:
+      AudioClips:
+      - {fileID: 8300000, guid: 934d20dd0529d6044a2f56d3338808c3, type: 3}
+      - {fileID: 8300000, guid: b429bd2f48583bd459af2511e3232d0e, type: 3}
+      - {fileID: 8300000, guid: 5ff10821987be184d95dc44876bacd58, type: 3}
+      - {fileID: 8300000, guid: d94f48539eb32094092baade62fd64f2, type: 3}
+      - {fileID: 8300000, guid: 47c3885bd7ce7754ab18e62a58e4fd79, type: 3}
+      - {fileID: 8300000, guid: 42596b8efed492b4089ea9912faac939, type: 3}
+      - {fileID: 8300000, guid: b5a1ca6fbe866fe4ba985ddd9f577417, type: 3}
+      VolumeData:
+        ValType: 0
+        ConstantVolume: 0.05
+        MinVolume: 0
+        MaxVolume: 0
+      PitchData:
+        ValType: 1
+        ConstantPitch: 1
+        MinPitch: 0.8
+        MaxPitch: 1.2
+      MixerGroup: 3
+      SideEffectSound: 0
+      SideEffectData:
+        PercentValueType: 0
+        ConstantSidePercent: 0
+        MinSidePercent: 0
+        MaxSidePercent: 0
+        TimeValueType: 0
+        ConstantSideTime: 0
+        MinSideTime: 0
+        MaxSideTime: 0
+  - Type: 3
+    SoundInfo:
+      AudioClips:
+      - {fileID: 8300000, guid: 4736292bca6582a449d70b17132efe7d, type: 3}
+      VolumeData:
+        ValType: 0
+        ConstantVolume: 1
+        MinVolume: 0
+        MaxVolume: 0
+      PitchData:
+        ValType: 0
+        ConstantPitch: 1
+        MinPitch: 0
+        MaxPitch: 0
+      MixerGroup: 3
+      SideEffectSound: 0
+      SideEffectData:
+        PercentValueType: 0
+        ConstantSidePercent: 0
+        MinSidePercent: 0
+        MaxSidePercent: 0
+        TimeValueType: 0
+        ConstantSideTime: 0
+        MinSideTime: 0
+        MaxSideTime: 0
+  - Type: 4
+    SoundInfo:
+      AudioClips:
+      - {fileID: 8300000, guid: 58478c37865a2244d82324b0a13cfea5, type: 3}
+      VolumeData:
+        ValType: 0
+        ConstantVolume: 1
+        MinVolume: 0
+        MaxVolume: 0
+      PitchData:
+        ValType: 0
+        ConstantPitch: 1
+        MinPitch: 0
+        MaxPitch: 0
+      MixerGroup: 3
+      SideEffectSound: 0
+      SideEffectData:
+        PercentValueType: 0
+        ConstantSidePercent: 0
+        MinSidePercent: 0
+        MaxSidePercent: 0
+        TimeValueType: 0
+        ConstantSideTime: 0
+        MinSideTime: 0
+        MaxSideTime: 0
+  - Type: 5
+    SoundInfo:
+      AudioClips:
+      - {fileID: 8300000, guid: a223c1f8ee2001f42adbdd5a6aa03569, type: 3}
+      - {fileID: 8300000, guid: f50fa89e240cbac42a630411bd45f1ae, type: 3}
+      - {fileID: 8300000, guid: e15324921de382f4883517e733751219, type: 3}
+      VolumeData:
+        ValType: 0
+        ConstantVolume: 1
+        MinVolume: 0
+        MaxVolume: 0
+      PitchData:
+        ValType: 0
+        ConstantPitch: 1
+        MinPitch: 0
+        MaxPitch: 0
+      MixerGroup: 3
+      SideEffectSound: 0
+      SideEffectData:
+        PercentValueType: 0
+        ConstantSidePercent: 0
+        MinSidePercent: 0
+        MaxSidePercent: 0
+        TimeValueType: 0
+        ConstantSideTime: 0
+        MinSideTime: 0
+        MaxSideTime: 0
+  - Type: 6
+    SoundInfo:
+      AudioClips:
+      - {fileID: 8300000, guid: c33337f99f490564c8b09f1ebe3355da, type: 3}
+      VolumeData:
+        ValType: 0
+        ConstantVolume: 1
+        MinVolume: 0
+        MaxVolume: 0
+      PitchData:
+        ValType: 0
+        ConstantPitch: 1
+        MinPitch: 0
+        MaxPitch: 0
+      MixerGroup: 3
+      SideEffectSound: 0
+      SideEffectData:
+        PercentValueType: 0
+        ConstantSidePercent: 0
+        MinSidePercent: 0
+        MaxSidePercent: 0
+        TimeValueType: 0
+        ConstantSideTime: 0
+        MinSideTime: 0
+        MaxSideTime: 0
+  - Type: 7
+    SoundInfo:
+      AudioClips:
+      - {fileID: 8300000, guid: 989e0eeb092b3b142af336aae7085fc7, type: 3}
+      VolumeData:
+        ValType: 0
+        ConstantVolume: 1
+        MinVolume: 0
+        MaxVolume: 0
+      PitchData:
+        ValType: 0
+        ConstantPitch: 1
+        MinPitch: 0
+        MaxPitch: 0
+      MixerGroup: 5
+      SideEffectSound: 0
+      SideEffectData:
+        PercentValueType: 0
+        ConstantSidePercent: 0
+        MinSidePercent: 0
+        MaxSidePercent: 0
+        TimeValueType: 0
+        ConstantSideTime: 0
+        MinSideTime: 0
+        MaxSideTime: 0
+  - Type: 8
+    SoundInfo:
+      AudioClips:
+      - {fileID: 8300000, guid: 49cf228daeeec8b43b784d6e30c31893, type: 3}
+      VolumeData:
+        ValType: 0
+        ConstantVolume: 1
+        MinVolume: 0
+        MaxVolume: 0
+      PitchData:
+        ValType: 0
+        ConstantPitch: 1
+        MinPitch: 0
+        MaxPitch: 0
+      MixerGroup: 5
+      SideEffectSound: 0
+      SideEffectData:
+        PercentValueType: 0
+        ConstantSidePercent: 0
+        MinSidePercent: 0
+        MaxSidePercent: 0
+        TimeValueType: 0
+        ConstantSideTime: 0
+        MinSideTime: 0
+        MaxSideTime: 0
+  - Type: 9
+    SoundInfo:
+      AudioClips:
+      - {fileID: 8300000, guid: ace17bb6d35b1d94099394077afea671, type: 3}
+      VolumeData:
+        ValType: 0
+        ConstantVolume: 1
+        MinVolume: 0
+        MaxVolume: 0
+      PitchData:
+        ValType: 0
+        ConstantPitch: 1
+        MinPitch: 0
+        MaxPitch: 0
+      MixerGroup: 5
+      SideEffectSound: 0
+      SideEffectData:
+        PercentValueType: 0
+        ConstantSidePercent: 0
+        MinSidePercent: 0
+        MaxSidePercent: 0
+        TimeValueType: 0
+        ConstantSideTime: 0
+        MinSideTime: 0
+        MaxSideTime: 0
+  - Type: 10
+    SoundInfo:
+      AudioClips:
+      - {fileID: 8300000, guid: a1fcb5319c54cd943ae033d0ff2b7189, type: 3}
+      VolumeData:
+        ValType: 0
+        ConstantVolume: 1
+        MinVolume: 0
+        MaxVolume: 0
+      PitchData:
+        ValType: 0
+        ConstantPitch: 1
+        MinPitch: 0
+        MaxPitch: 0
+      MixerGroup: 5
+      SideEffectSound: 0
+      SideEffectData:
+        PercentValueType: 0
+        ConstantSidePercent: 0
+        MinSidePercent: 0
+        MaxSidePercent: 0
+        TimeValueType: 0
+        ConstantSideTime: 0
+        MinSideTime: 0
+        MaxSideTime: 0
+  - Type: 11
+    SoundInfo:
+      AudioClips:
+      - {fileID: 8300000, guid: a1fcb5319c54cd943ae033d0ff2b7189, type: 3}
+      VolumeData:
+        ValType: 0
+        ConstantVolume: 1
+        MinVolume: 0
+        MaxVolume: 0
+      PitchData:
+        ValType: 0
+        ConstantPitch: 1
+        MinPitch: 0
+        MaxPitch: 0
+      MixerGroup: 5
+      SideEffectSound: 0
+      SideEffectData:
+        PercentValueType: 0
+        ConstantSidePercent: 0
+        MinSidePercent: 0
+        MaxSidePercent: 0
+        TimeValueType: 0
+        ConstantSideTime: 0
+        MinSideTime: 0
+        MaxSideTime: 0
+  - Type: 12
+    SoundInfo:
+      AudioClips:
+      - {fileID: 8300000, guid: e79004150e9b6b3488bdac48e55933b1, type: 3}
+      VolumeData:
+        ValType: 0
+        ConstantVolume: 1
+        MinVolume: 0
+        MaxVolume: 0
+      PitchData:
+        ValType: 0
+        ConstantPitch: 1
+        MinPitch: 0
+        MaxPitch: 0
+      MixerGroup: 5
+      SideEffectSound: 0
+      SideEffectData:
+        PercentValueType: 0
+        ConstantSidePercent: 0
+        MinSidePercent: 0
+        MaxSidePercent: 0
+        TimeValueType: 0
+        ConstantSideTime: 0
+        MinSideTime: 0
+        MaxSideTime: 0
+  - Type: 13
+    SoundInfo:
+      AudioClips:
+      - {fileID: 8300000, guid: 46e70b3e93361fe41985c71421c8fcd5, type: 3}
+      VolumeData:
+        ValType: 0
+        ConstantVolume: 1
+        MinVolume: 0
+        MaxVolume: 0
+      PitchData:
+        ValType: 0
+        ConstantPitch: 1
+        MinPitch: 0
+        MaxPitch: 0
+      MixerGroup: 5
+      SideEffectSound: 0
+      SideEffectData:
+        PercentValueType: 0
+        ConstantSidePercent: 0
+        MinSidePercent: 0
+        MaxSidePercent: 0
+        TimeValueType: 0
+        ConstantSideTime: 0
+        MinSideTime: 0
+        MaxSideTime: 0
+  - Type: 14
+    SoundInfo:
+      AudioClips:
+      - {fileID: 8300000, guid: 328883e8a835adb44adc4aa523449b57, type: 3}
+      VolumeData:
+        ValType: 0
+        ConstantVolume: 1
+        MinVolume: 0
+        MaxVolume: 0
+      PitchData:
+        ValType: 0
+        ConstantPitch: 1
+        MinPitch: 0
+        MaxPitch: 0
+      MixerGroup: 5
+      SideEffectSound: 0
+      SideEffectData:
+        PercentValueType: 0
+        ConstantSidePercent: 0
+        MinSidePercent: 0
+        MaxSidePercent: 0
+        TimeValueType: 0
+        ConstantSideTime: 0
+        MinSideTime: 0
+        MaxSideTime: 0
+  - Type: 15
+    SoundInfo:
+      AudioClips:
+      - {fileID: 8300000, guid: f342f927713bd7c49a718f3813fe8b30, type: 3}
+      VolumeData:
+        ValType: 0
+        ConstantVolume: 1
+        MinVolume: 0
+        MaxVolume: 0
+      PitchData:
+        ValType: 0
+        ConstantPitch: 1
+        MinPitch: 0
+        MaxPitch: 0
+      MixerGroup: 5
+      SideEffectSound: 0
+      SideEffectData:
+        PercentValueType: 0
+        ConstantSidePercent: 0
+        MinSidePercent: 0
+        MaxSidePercent: 0
+        TimeValueType: 0
+        ConstantSideTime: 0
+        MinSideTime: 0
+        MaxSideTime: 0
+  - Type: 16
+    SoundInfo:
+      AudioClips:
+      - {fileID: 8300000, guid: 7510b7dc35959254ca5059cf5b3c3673, type: 3}
+      VolumeData:
+        ValType: 0
+        ConstantVolume: 1
+        MinVolume: 0
+        MaxVolume: 0
+      PitchData:
+        ValType: 0
+        ConstantPitch: 1
+        MinPitch: 0
+        MaxPitch: 0
+      MixerGroup: 5
+      SideEffectSound: 0
+      SideEffectData:
+        PercentValueType: 0
+        ConstantSidePercent: 0
+        MinSidePercent: 0
+        MaxSidePercent: 0
+        TimeValueType: 0
+        ConstantSideTime: 0
+        MinSideTime: 0
+        MaxSideTime: 0
+  - Type: 17
+    SoundInfo:
+      AudioClips:
+      - {fileID: 8300000, guid: 61b26ef34b2f02746aea96fb9eae42c3, type: 3}
+      VolumeData:
+        ValType: 0
+        ConstantVolume: 1
+        MinVolume: 0
+        MaxVolume: 0
+      PitchData:
+        ValType: 0
+        ConstantPitch: 1
+        MinPitch: 0
+        MaxPitch: 0
+      MixerGroup: 5
+      SideEffectSound: 0
+      SideEffectData:
+        PercentValueType: 0
+        ConstantSidePercent: 0
+        MinSidePercent: 0
+        MaxSidePercent: 0
+        TimeValueType: 0
+        ConstantSideTime: 0
+        MinSideTime: 0
+        MaxSideTime: 0
+  - Type: 18
+    SoundInfo:
+      AudioClips:
+      - {fileID: 8300000, guid: 6d70cd7e3916e4c42a76f6c7e887250f, type: 3}
+      VolumeData:
+        ValType: 0
+        ConstantVolume: 1
+        MinVolume: 0
+        MaxVolume: 0
+      PitchData:
+        ValType: 0
+        ConstantPitch: 1
+        MinPitch: 0
+        MaxPitch: 0
+      MixerGroup: 3
+      SideEffectSound: 0
+      SideEffectData:
+        PercentValueType: 0
+        ConstantSidePercent: 0
+        MinSidePercent: 0
+        MaxSidePercent: 0
+        TimeValueType: 0
+        ConstantSideTime: 0
+        MinSideTime: 0
+        MaxSideTime: 0
+  - Type: 19
+    SoundInfo:
+      AudioClips:
+      - {fileID: 8300000, guid: 7891e3921017e6b439a175ee30b13771, type: 3}
+      VolumeData:
+        ValType: 0
+        ConstantVolume: 1
+        MinVolume: 0
+        MaxVolume: 0
+      PitchData:
+        ValType: 0
+        ConstantPitch: 1
+        MinPitch: 0
+        MaxPitch: 0
+      MixerGroup: 5
+      SideEffectSound: 0
+      SideEffectData:
+        PercentValueType: 0
+        ConstantSidePercent: 0
+        MinSidePercent: 0
+        MaxSidePercent: 0
+        TimeValueType: 0
+        ConstantSideTime: 0
+        MinSideTime: 0
+        MaxSideTime: 0
+  - Type: 20
+    SoundInfo:
+      AudioClips:
+      - {fileID: 8300000, guid: fdce2dfffe6efbe46ae0b4e90960a8c6, type: 3}
+      VolumeData:
+        ValType: 0
+        ConstantVolume: 1
+        MinVolume: 0
+        MaxVolume: 0
+      PitchData:
+        ValType: 0
+        ConstantPitch: 1
+        MinPitch: 0
+        MaxPitch: 0
+      MixerGroup: 3
+      SideEffectSound: 0
+      SideEffectData:
+        PercentValueType: 0
+        ConstantSidePercent: 0
+        MinSidePercent: 0
+        MaxSidePercent: 0
+        TimeValueType: 0
+        ConstantSideTime: 0
+        MinSideTime: 0
+        MaxSideTime: 0
+  - Type: 21
+    SoundInfo:
+      AudioClips:
+      - {fileID: 8300000, guid: 27c4246855dd73d47b84c46e9e54e2e4, type: 3}
+      VolumeData:
+        ValType: 0
+        ConstantVolume: 1
+        MinVolume: 0
+        MaxVolume: 0
+      PitchData:
+        ValType: 0
+        ConstantPitch: 1
+        MinPitch: 0
+        MaxPitch: 0
+      MixerGroup: 3
+      SideEffectSound: 0
+      SideEffectData:
+        PercentValueType: 0
+        ConstantSidePercent: 0
+        MinSidePercent: 0
+        MaxSidePercent: 0
+        TimeValueType: 0
+        ConstantSideTime: 0
+        MinSideTime: 0
+        MaxSideTime: 0
+  - Type: 22
+    SoundInfo:
+      AudioClips:
+      - {fileID: 8300000, guid: 41ecbbef8b83c2a4aa02b217f0ece417, type: 3}
+      VolumeData:
+        ValType: 1
+        ConstantVolume: 0.2
+        MinVolume: 0.1
+        MaxVolume: 0.25
+      PitchData:
+        ValType: 1
+        ConstantPitch: 1
+        MinPitch: 0.8
+        MaxPitch: 1.2
+      MixerGroup: 3
+      SideEffectSound: 0
+      SideEffectData:
+        PercentValueType: 0
+        ConstantSidePercent: 0
+        MinSidePercent: 0
+        MaxSidePercent: 0
+        TimeValueType: 0
+        ConstantSideTime: 0
+        MinSideTime: 0
+        MaxSideTime: 0
+  - Type: 23
+    SoundInfo:
+      AudioClips:
+      - {fileID: 8300000, guid: 659a8b78c3959ff40b33948912c74060, type: 3}
+      - {fileID: 8300000, guid: 9c32f00a11e9bd14eb383650bedc9f09, type: 3}
+      - {fileID: 8300000, guid: e3c6709b8f1708845bd254dc2ac66f28, type: 3}
+      - {fileID: 8300000, guid: 5c53dcbb5fd5af8498a09e9314a0f5c0, type: 3}
+      VolumeData:
+        ValType: 0
+        ConstantVolume: 1
+        MinVolume: 0
+        MaxVolume: 0
+      PitchData:
+        ValType: 0
+        ConstantPitch: 1
+        MinPitch: 0
+        MaxPitch: 0
+      MixerGroup: 3
+      SideEffectSound: 0
+      SideEffectData:
+        PercentValueType: 0
+        ConstantSidePercent: 0
+        MinSidePercent: 0
+        MaxSidePercent: 0
+        TimeValueType: 0
+        ConstantSideTime: 0
+        MinSideTime: 0
+        MaxSideTime: 0
+  - Type: 24
+    SoundInfo:
+      AudioClips:
+      - {fileID: 8300000, guid: 3becddfcf03dd8943a4e90130d12055c, type: 3}
+      - {fileID: 8300000, guid: a4f76edca97132f489507f9eff80e138, type: 3}
+      - {fileID: 8300000, guid: 32061a4196dd7ee4987114ccd3b1826b, type: 3}
+      - {fileID: 8300000, guid: f2b03e46f2fcdc7408a05b65a79189ee, type: 3}
+      - {fileID: 8300000, guid: 126c5a46c00512941aa41dee3bafcb63, type: 3}
+      VolumeData:
+        ValType: 0
+        ConstantVolume: 1
+        MinVolume: 0
+        MaxVolume: 0
+      PitchData:
+        ValType: 0
+        ConstantPitch: 1
+        MinPitch: 0
+        MaxPitch: 0
+      MixerGroup: 3
+      SideEffectSound: 0
+      SideEffectData:
+        PercentValueType: 0
+        ConstantSidePercent: 0
+        MinSidePercent: 0
+        MaxSidePercent: 0
+        TimeValueType: 0
+        ConstantSideTime: 0
+        MinSideTime: 0
+        MaxSideTime: 0
+  - Type: 25
+    SoundInfo:
+      AudioClips:
+      - {fileID: 8300000, guid: a8e27e2b7895c8c4ca909264ddb89c8b, type: 3}
+      - {fileID: 8300000, guid: 05f45ff4cd979494e8c16e204c275fde, type: 3}
+      - {fileID: 8300000, guid: a7ae4b5e99d0fdb489dbc5104b9eec4d, type: 3}
+      VolumeData:
+        ValType: 0
+        ConstantVolume: 1
+        MinVolume: 0
+        MaxVolume: 0
+      PitchData:
+        ValType: 0
+        ConstantPitch: 1
+        MinPitch: 0
+        MaxPitch: 0
+      MixerGroup: 3
+      SideEffectSound: 0
+      SideEffectData:
+        PercentValueType: 0
+        ConstantSidePercent: 0
+        MinSidePercent: 0
+        MaxSidePercent: 0
+        TimeValueType: 0
+        ConstantSideTime: 0
+        MinSideTime: 0
+        MaxSideTime: 0
+  - Type: 26
+    SoundInfo:
+      AudioClips:
+      - {fileID: 8300000, guid: 39fec4029b825c14898ddf07837549ab, type: 3}
+      - {fileID: 8300000, guid: e628ee4bce3789943961c00454685c7a, type: 3}
+      - {fileID: 8300000, guid: 51e3a068dba4296469e9785dbf50d3ae, type: 3}
+      - {fileID: 8300000, guid: ac9872e695505094ba8a45cf06b994e7, type: 3}
+      VolumeData:
+        ValType: 0
+        ConstantVolume: 1
+        MinVolume: 0
+        MaxVolume: 0
+      PitchData:
+        ValType: 0
+        ConstantPitch: 1
+        MinPitch: 0
+        MaxPitch: 0
+      MixerGroup: 3
+      SideEffectSound: 0
+      SideEffectData:
+        PercentValueType: 0
+        ConstantSidePercent: 0
+        MinSidePercent: 0
+        MaxSidePercent: 0
+        TimeValueType: 0
+        ConstantSideTime: 0
+        MinSideTime: 0
+        MaxSideTime: 0
+  - Type: 27
+    SoundInfo:
+      AudioClips:
+      - {fileID: 8300000, guid: 6d18392f80dcef44a9d49bdc48f280b9, type: 3}
+      VolumeData:
+        ValType: 0
+        ConstantVolume: 1
+        MinVolume: 0
+        MaxVolume: 0
+      PitchData:
+        ValType: 0
+        ConstantPitch: 1
+        MinPitch: 0
+        MaxPitch: 0
+      MixerGroup: 3
+      SideEffectSound: 0
+      SideEffectData:
+        PercentValueType: 0
+        ConstantSidePercent: 0
+        MinSidePercent: 0
+        MaxSidePercent: 0
+        TimeValueType: 0
+        ConstantSideTime: 0
+        MinSideTime: 0
+        MaxSideTime: 0
+  - Type: 28
+    SoundInfo:
+      AudioClips:
+      - {fileID: 8300000, guid: a28241330d3ea6b45b5c31a5c4013ec1, type: 3}
+      - {fileID: 8300000, guid: 558eeeef4f3645d478334df4d74e6dac, type: 3}
+      - {fileID: 8300000, guid: c692eaf4c14a0dd4bbfb7911c3f62de1, type: 3}
+      VolumeData:
+        ValType: 0
+        ConstantVolume: 1
+        MinVolume: 0
+        MaxVolume: 0
+      PitchData:
+        ValType: 0
+        ConstantPitch: 1
+        MinPitch: 0
+        MaxPitch: 0
+      MixerGroup: 3
+      SideEffectSound: 0
+      SideEffectData:
+        PercentValueType: 0
+        ConstantSidePercent: 0
+        MinSidePercent: 0
+        MaxSidePercent: 0
+        TimeValueType: 0
+        ConstantSideTime: 0
+        MinSideTime: 0
+        MaxSideTime: 0
+  - Type: 29
+    SoundInfo:
+      AudioClips:
+      - {fileID: 8300000, guid: 1385fe5f48eefb5449bbcdd8975079a0, type: 3}
+      VolumeData:
+        ValType: 0
+        ConstantVolume: 1
+        MinVolume: 0
+        MaxVolume: 0
+      PitchData:
+        ValType: 0
+        ConstantPitch: 1
+        MinPitch: 0
+        MaxPitch: 0
+      MixerGroup: 3
+      SideEffectSound: 0
+      SideEffectData:
+        PercentValueType: 0
+        ConstantSidePercent: 0
+        MinSidePercent: 0
+        MaxSidePercent: 0
+        TimeValueType: 0
+        ConstantSideTime: 0
+        MinSideTime: 0
+        MaxSideTime: 0
+  - Type: 30
+    SoundInfo:
+      AudioClips:
+      - {fileID: 8300000, guid: a913b97e5e7f177408a067a29e2112f6, type: 3}
+      - {fileID: 8300000, guid: f7282c824c3d0f14e816227479087b4f, type: 3}
+      - {fileID: 8300000, guid: 09aa97920a3fb99438be2c3a5734e007, type: 3}
+      VolumeData:
+        ValType: 0
+        ConstantVolume: 1
+        MinVolume: 0
+        MaxVolume: 0
+      PitchData:
+        ValType: 0
+        ConstantPitch: 1
+        MinPitch: 0
+        MaxPitch: 0
+      MixerGroup: 3
+      SideEffectSound: 0
+      SideEffectData:
+        PercentValueType: 0
+        ConstantSidePercent: 0
+        MinSidePercent: 0
+        MaxSidePercent: 0
+        TimeValueType: 0
+        ConstantSideTime: 0
+        MinSideTime: 0
+        MaxSideTime: 0
+  - Type: 34
+    SoundInfo:
+      AudioClips:
+      - {fileID: 8300000, guid: bfb42c849bcd7c34b851179a85d73f2d, type: 3}
+      - {fileID: 8300000, guid: c363a56b2d53bc448bd3c6454bbc27e0, type: 3}
+      - {fileID: 8300000, guid: 3a9bbf330fa4be94abdde1ec2d506dbf, type: 3}
+      - {fileID: 8300000, guid: 22936e3f317e56740b7cb792c0d512bc, type: 3}
+      VolumeData:
+        ValType: 1
+        ConstantVolume: 1
+        MinVolume: 0.4
+        MaxVolume: 0.6
+      PitchData:
+        ValType: 0
+        ConstantPitch: 1
+        MinPitch: 0
+        MaxPitch: 0
+      MixerGroup: 3
+      SideEffectSound: 0
+      SideEffectData:
+        PercentValueType: 0
+        ConstantSidePercent: 0
+        MinSidePercent: 0
+        MaxSidePercent: 0
+        TimeValueType: 0
+        ConstantSideTime: 0
+        MinSideTime: 0
+        MaxSideTime: 0
+  - Type: 31
+    SoundInfo:
+      AudioClips:
+      - {fileID: 8300000, guid: aebe5805528f3734781100514df62bc2, type: 3}
+      - {fileID: 8300000, guid: 51a2b4b4fa21d49478e8ef67a4c50f6a, type: 3}
+      - {fileID: 8300000, guid: 6707b7c5439ab1c47930fb787464c708, type: 3}
+      - {fileID: 8300000, guid: 6e6fec9f7d1ef5040b8a4be3048c8bc4, type: 3}
+      - {fileID: 8300000, guid: 1fc81ccca2dc91840b352423f9091fd9, type: 3}
+      VolumeData:
+        ValType: 0
+        ConstantVolume: 1
+        MinVolume: 0
+        MaxVolume: 0
+      PitchData:
+        ValType: 0
+        ConstantPitch: 1
+        MinPitch: 0
+        MaxPitch: 0
+      MixerGroup: 3
+      SideEffectSound: 0
+      SideEffectData:
+        PercentValueType: 0
+        ConstantSidePercent: 0
+        MinSidePercent: 0
+        MaxSidePercent: 0
+        TimeValueType: 0
+        ConstantSideTime: 0
+        MinSideTime: 0
+        MaxSideTime: 0
+  - Type: 32
+    SoundInfo:
+      AudioClips:
+      - {fileID: 8300000, guid: 13d9564ca0a9ce140ab6d713b7b86893, type: 3}
+      - {fileID: 8300000, guid: f67f55bdbf1eeec45bdb3557adff009f, type: 3}
+      - {fileID: 8300000, guid: 5292d1454b5815e4e9421d150930be8e, type: 3}
+      - {fileID: 8300000, guid: f40d1d3e9ff11f14e9e6f777d7a7fc2d, type: 3}
+      - {fileID: 8300000, guid: 4a3e07e67bdaa504a9f70bdef87d4223, type: 3}
+      VolumeData:
+        ValType: 1
+        ConstantVolume: 1
+        MinVolume: 0.3
+        MaxVolume: 0.5
+      PitchData:
+        ValType: 0
+        ConstantPitch: 1
+        MinPitch: 0
+        MaxPitch: 0
+      MixerGroup: 7
+      SideEffectSound: 0
+      SideEffectData:
+        PercentValueType: 0
+        ConstantSidePercent: 0
+        MinSidePercent: 0
+        MaxSidePercent: 0
+        TimeValueType: 0
+        ConstantSideTime: 0
+        MinSideTime: 0
+        MaxSideTime: 0
+  - Type: 33
+    SoundInfo:
+      AudioClips:
+      - {fileID: 8300000, guid: 16475e524615e75418c8d568321d5212, type: 3}
+      - {fileID: 8300000, guid: 00d4ae8c3ff05ba479d3ffd532140bc6, type: 3}
+      - {fileID: 8300000, guid: 687d2d6faa0a3a446a35b10c1ec3bd75, type: 3}
+      - {fileID: 8300000, guid: 47f451cccdb28a947a55bb413f429d41, type: 3}
+      VolumeData:
+        ValType: 0
+        ConstantVolume: 1
+        MinVolume: 0
+        MaxVolume: 0
+      PitchData:
+        ValType: 0
+        ConstantPitch: 1
+        MinPitch: 0
+        MaxPitch: 0
+      MixerGroup: 3
+      SideEffectSound: 0
+      SideEffectData:
+        PercentValueType: 0
+        ConstantSidePercent: 0
+        MinSidePercent: 0
+        MaxSidePercent: 0
+        TimeValueType: 0
+        ConstantSideTime: 0
+        MinSideTime: 0
+        MaxSideTime: 0
+  - Type: 35
+    SoundInfo:
+      AudioClips:
+      - {fileID: 8300000, guid: 401d5d02b8f54d74c8cfe8996faeae0d, type: 3}
+      VolumeData:
+        ValType: 0
+        ConstantVolume: 1
+        MinVolume: 0
+        MaxVolume: 0
+      PitchData:
+        ValType: 0
+        ConstantPitch: 1
+        MinPitch: 0
+        MaxPitch: 0
+      MixerGroup: 3
+      SideEffectSound: 0
+      SideEffectData:
+        PercentValueType: 0
+        ConstantSidePercent: 0
+        MinSidePercent: 0
+        MaxSidePercent: 0
+        TimeValueType: 0
+        ConstantSideTime: 0
+        MinSideTime: 0
+        MaxSideTime: 0
+  - Type: 36
+    SoundInfo:
+      AudioClips:
+      - {fileID: 8300000, guid: f4ce47972cf97204994546f42b7d4a2f, type: 3}
+      VolumeData:
+        ValType: 0
+        ConstantVolume: 1
+        MinVolume: 0
+        MaxVolume: 0
+      PitchData:
+        ValType: 0
+        ConstantPitch: 1
+        MinPitch: 0
+        MaxPitch: 0
+      MixerGroup: 3
+      SideEffectSound: 0
+      SideEffectData:
+        PercentValueType: 0
+        ConstantSidePercent: 0
+        MinSidePercent: 0
+        MaxSidePercent: 0
+        TimeValueType: 0
+        ConstantSideTime: 0
+        MinSideTime: 0
+        MaxSideTime: 0
+  - Type: 39
+    SoundInfo:
+      AudioClips:
+      - {fileID: 8300000, guid: 35c0b092d86459c468e8853a64ec055a, type: 3}
+      VolumeData:
+        ValType: 0
+        ConstantVolume: 1
+        MinVolume: 0
+        MaxVolume: 0
+      PitchData:
+        ValType: 0
+        ConstantPitch: 1
+        MinPitch: 0
+        MaxPitch: 0
+      MixerGroup: 3
+      SideEffectSound: 0
+      SideEffectData:
+        PercentValueType: 0
+        ConstantSidePercent: 0
+        MinSidePercent: 0
+        MaxSidePercent: 0
+        TimeValueType: 0
+        ConstantSideTime: 0
+        MinSideTime: 0
+        MaxSideTime: 0
+  - Type: 40
+    SoundInfo:
+      AudioClips:
+      - {fileID: 8300000, guid: 505a6f117b6536f40940211461544397, type: 3}
+      - {fileID: 8300000, guid: 18c312f158753f54dbadc73de7ade1af, type: 3}
+      VolumeData:
+        ValType: 0
+        ConstantVolume: 1
+        MinVolume: 0
+        MaxVolume: 0
+      PitchData:
+        ValType: 0
+        ConstantPitch: 1
+        MinPitch: 0
+        MaxPitch: 0
+      MixerGroup: 3
+      SideEffectSound: 0
+      SideEffectData:
+        PercentValueType: 0
+        ConstantSidePercent: 0
+        MinSidePercent: 0
+        MaxSidePercent: 0
+        TimeValueType: 0
+        ConstantSideTime: 0
+        MinSideTime: 0
+        MaxSideTime: 0
+  - Type: 37
+    SoundInfo:
+      AudioClips:
+      - {fileID: 8300000, guid: 8c6bc2865bf4b7741a4a730219f1629e, type: 3}
+      VolumeData:
+        ValType: 0
+        ConstantVolume: 0.5
+        MinVolume: 0
+        MaxVolume: 0
+      PitchData:
+        ValType: 0
+        ConstantPitch: 1
+        MinPitch: 0
+        MaxPitch: 0
+      MixerGroup: 3
+      SideEffectSound: 0
+      SideEffectData:
+        PercentValueType: 0
+        ConstantSidePercent: 0
+        MinSidePercent: 0
+        MaxSidePercent: 0
+        TimeValueType: 0
+        ConstantSideTime: 0
+        MinSideTime: 0
+        MaxSideTime: 0
+  - Type: 38
+    SoundInfo:
+      AudioClips:
+      - {fileID: 8300000, guid: 372ab9b087303714dbfe25ae8dbefc1e, type: 3}
+      - {fileID: 8300000, guid: cc1a1cba7ab45484d97c073d5067b644, type: 3}
+      - {fileID: 8300000, guid: fa49cb09367cea74387fb7c11d021d7e, type: 3}
+      - {fileID: 8300000, guid: 30aec751b55057a4aa75fe1a8f21dfd4, type: 3}
+      VolumeData:
+        ValType: 0
+        ConstantVolume: 1
+        MinVolume: 0
+        MaxVolume: 0
+      PitchData:
+        ValType: 0
+        ConstantPitch: 1
+        MinPitch: 0
+        MaxPitch: 0
+      MixerGroup: 3
+      SideEffectSound: 0
+      SideEffectData:
+        PercentValueType: 0
+        ConstantSidePercent: 0
+        MinSidePercent: 0
+        MaxSidePercent: 0
+        TimeValueType: 0
+        ConstantSideTime: 0
+        MinSideTime: 0
+        MaxSideTime: 0
+  - Type: 41
+    SoundInfo:
+      AudioClips:
+      - {fileID: 8300000, guid: a9f483a2f20667245be6a6b89f4c2538, type: 3}
+      VolumeData:
+        ValType: 0
+        ConstantVolume: 1
+        MinVolume: 0
+        MaxVolume: 0
+      PitchData:
+        ValType: 0
+        ConstantPitch: 1
+        MinPitch: 0
+        MaxPitch: 0
+      MixerGroup: 3
+      SideEffectSound: 0
+      SideEffectData:
+        PercentValueType: 0
+        ConstantSidePercent: 0
+        MinSidePercent: 0
+        MaxSidePercent: 0
+        TimeValueType: 0
+        ConstantSideTime: 0
+        MinSideTime: 0
+        MaxSideTime: 0
+  - Type: 42
+    SoundInfo:
+      AudioClips:
+      - {fileID: 8300000, guid: 71016637f7cf3fc4d9db0eb4583a35a4, type: 3}
+      VolumeData:
+        ValType: 0
+        ConstantVolume: 0.8
+        MinVolume: 0
+        MaxVolume: 0
+      PitchData:
+        ValType: 0
+        ConstantPitch: 1
+        MinPitch: 0
+        MaxPitch: 0
+      MixerGroup: 3
+      SideEffectSound: 0
+      SideEffectData:
+        PercentValueType: 0
+        ConstantSidePercent: 0
+        MinSidePercent: 0
+        MaxSidePercent: 0
+        TimeValueType: 0
+        ConstantSideTime: 0
+        MinSideTime: 0
+        MaxSideTime: 0
+  - Type: 43
+    SoundInfo:
+      AudioClips:
+      - {fileID: 8300000, guid: a848e3b0f69c81f49978a36e41c7c450, type: 3}
+      VolumeData:
+        ValType: 0
+        ConstantVolume: 0.8
+        MinVolume: 0
+        MaxVolume: 0
+      PitchData:
+        ValType: 0
+        ConstantPitch: 1
+        MinPitch: 0
+        MaxPitch: 0
+      MixerGroup: 3
+      SideEffectSound: 0
+      SideEffectData:
+        PercentValueType: 0
+        ConstantSidePercent: 0
+        MinSidePercent: 0
+        MaxSidePercent: 0
+        TimeValueType: 0
+        ConstantSideTime: 0
+        MinSideTime: 0
+        MaxSideTime: 0
+  - Type: 44
+    SoundInfo:
+      AudioClips:
+      - {fileID: 8300000, guid: c6095985374839c47976f57ef7ca696b, type: 3}
+      VolumeData:
+        ValType: 0
+        ConstantVolume: 1
+        MinVolume: 0
+        MaxVolume: 0
+      PitchData:
+        ValType: 0
+        ConstantPitch: 1
+        MinPitch: 0
+        MaxPitch: 0
+      MixerGroup: 3
+      SideEffectSound: 0
+      SideEffectData:
+        PercentValueType: 0
+        ConstantSidePercent: 0
+        MinSidePercent: 0
+        MaxSidePercent: 0
+        TimeValueType: 0
+        ConstantSideTime: 0
+        MinSideTime: 0
+        MaxSideTime: 0
+  - Type: 45
+    SoundInfo:
+      AudioClips:
+      - {fileID: 8300000, guid: a913b97e5e7f177408a067a29e2112f6, type: 3}
+      - {fileID: 8300000, guid: f7282c824c3d0f14e816227479087b4f, type: 3}
+      - {fileID: 8300000, guid: 09aa97920a3fb99438be2c3a5734e007, type: 3}
+      VolumeData:
+        ValType: 0
+        ConstantVolume: 1
+        MinVolume: 0
+        MaxVolume: 0
+      PitchData:
+        ValType: 0
+        ConstantPitch: 1
+        MinPitch: 0
+        MaxPitch: 0
+      MixerGroup: 3
+      SideEffectSound: 0
+      SideEffectData:
+        PercentValueType: 0
+        ConstantSidePercent: 0
+        MinSidePercent: 0
+        MaxSidePercent: 0
+        TimeValueType: 0
+        ConstantSideTime: 0
+        MinSideTime: 0
+        MaxSideTime: 0
+  - Type: 46
+    SoundInfo:
+      AudioClips:
+      - {fileID: 8300000, guid: 497b822f9cf3d9c49b00920f0f75a8c7, type: 3}
+      VolumeData:
+        ValType: 0
+        ConstantVolume: 0.12
+        MinVolume: 0
+        MaxVolume: 0
+      PitchData:
+        ValType: 0
+        ConstantPitch: 1
+        MinPitch: 0
+        MaxPitch: 0
+      MixerGroup: 3
+      SideEffectSound: 0
+      SideEffectData:
+        PercentValueType: 0
+        ConstantSidePercent: 0
+        MinSidePercent: 0
+        MaxSidePercent: 0
+        TimeValueType: 0
+        ConstantSideTime: 0
+        MinSideTime: 0
+        MaxSideTime: 0
+  - Type: 47
+    SoundInfo:
+      AudioClips:
+      - {fileID: 8300000, guid: 333a037ad711aa0428f5e4b9cf24b73b, type: 3}
+      VolumeData:
+        ValType: 0
+        ConstantVolume: 1
+        MinVolume: 0
+        MaxVolume: 0
+      PitchData:
+        ValType: 0
+        ConstantPitch: 1
+        MinPitch: 0
+        MaxPitch: 0
+      MixerGroup: 3
+      SideEffectSound: 0
+      SideEffectData:
+        PercentValueType: 0
+        ConstantSidePercent: 0
+        MinSidePercent: 0
+        MaxSidePercent: 0
+        TimeValueType: 0
+        ConstantSideTime: 0
+        MinSideTime: 0
+        MaxSideTime: 0
+  - Type: 48
+    SoundInfo:
+      AudioClips:
+      - {fileID: 8300000, guid: c7c0d0acd4c900f48802bb00f3ded4a7, type: 3}
+      VolumeData:
+        ValType: 0
+        ConstantVolume: 1
+        MinVolume: 0
+        MaxVolume: 0
+      PitchData:
+        ValType: 0
+        ConstantPitch: 1
+        MinPitch: 0
+        MaxPitch: 0
+      MixerGroup: 3
+      SideEffectSound: 0
+      SideEffectData:
+        PercentValueType: 0
+        ConstantSidePercent: 0
+        MinSidePercent: 0
+        MaxSidePercent: 0
+        TimeValueType: 0
+        ConstantSideTime: 0
+        MinSideTime: 0
+        MaxSideTime: 0
+  - Type: 49
+    SoundInfo:
+      AudioClips:
+      - {fileID: 8300000, guid: 66f2b152fe064dd47ab8a9ea26f13c8a, type: 3}
+      - {fileID: 8300000, guid: 70110c60869614541a4f77543a0afb10, type: 3}
+      - {fileID: 8300000, guid: ebdbadbcfac312241af4722fc5193c53, type: 3}
+      VolumeData:
+        ValType: 0
+        ConstantVolume: 0.1
+        MinVolume: 0
+        MaxVolume: 0
+      PitchData:
+        ValType: 1
+        ConstantPitch: 1
+        MinPitch: 1.5
+        MaxPitch: 1.9
+      MixerGroup: 3
+      SideEffectSound: 0
+      SideEffectData:
+        PercentValueType: 0
+        ConstantSidePercent: 0
+        MinSidePercent: 0
+        MaxSidePercent: 0
+        TimeValueType: 0
+        ConstantSideTime: 0
+        MinSideTime: 0
+        MaxSideTime: 0
+  - Type: 50
+    SoundInfo:
+      AudioClips:
+      - {fileID: 8300000, guid: 84d2f27b4d303794f925179da326ffc1, type: 3}
+      VolumeData:
+        ValType: 0
+        ConstantVolume: 0.15
+        MinVolume: 0
+        MaxVolume: 0
+      PitchData:
+        ValType: 0
+        ConstantPitch: 1
+        MinPitch: 0
+        MaxPitch: 0
+      MixerGroup: 3
+      SideEffectSound: 0
+      SideEffectData:
+        PercentValueType: 0
+        ConstantSidePercent: 0
+        MinSidePercent: 0
+        MaxSidePercent: 0
+        TimeValueType: 0
+        ConstantSideTime: 0
+        MinSideTime: 0
+        MaxSideTime: 0

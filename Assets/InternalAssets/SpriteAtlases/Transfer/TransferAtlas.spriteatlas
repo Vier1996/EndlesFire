@@ -1,0 +1,92 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: TransferAtlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: Android
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 47
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 228abd2657dbf534598899d71e75293f, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 19699830277eca543a67b144655473fd, type: 3}
+  - {fileID: 21300000, guid: 689dca6097a52c04aa2a678e55b6d809, type: 3}
+  - {fileID: 21300000, guid: ffad37f0ba30f0942bb18933bb1331a8, type: 3}
+  - {fileID: 21300000, guid: 2b188b511f537054ebb0ab632823775f, type: 3}
+  - {fileID: 21300000, guid: 741032850b3bdf647966f3b7ba55086a, type: 3}
+  - {fileID: 21300000, guid: 6cc89c95f11a70540bafff7ea1d48bc6, type: 3}
+  - {fileID: 21300000, guid: 96e292e53a675f242b8f55b774762a3b, type: 3}
+  - {fileID: 21300000, guid: 8f5da0087f40aa446b5705000c22ed5c, type: 3}
+  - {fileID: 21300000, guid: c263ce684f4f3f646aafd145d625ee5a, type: 3}
+  - {fileID: 21300000, guid: 4ab81a4aa284b5a4eac5f58ecf14d675, type: 3}
+  - {fileID: 21300000, guid: 1eba4efba732cd847b751047856dabeb, type: 3}
+  - {fileID: 21300000, guid: a23afabc0d5116444bd83c077455cdf5, type: 3}
+  - {fileID: 21300000, guid: 15f88d8dde288bf489c53faa4f758ebd, type: 3}
+  - {fileID: 21300000, guid: 844e722ec9ee93a4f90a9ade22c85bae, type: 3}
+  - {fileID: 21300000, guid: f04045ae8bb31f5428c8b251deb4459b, type: 3}
+  - {fileID: 21300000, guid: c3a6b2ce79f27cb4c851e5ef8d9b3d13, type: 3}
+  - {fileID: 21300000, guid: b429e54f23de14a4fb48cf54e23f9a38, type: 3}
+  - {fileID: 21300000, guid: 4e8ebf9fa0f4a0149a5cb97a3c6a2c40, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - wheal2
+  - Layer 1547
+  - car
+  - wheal3
+  - Layer 1548
+  - progress
+  - train under car
+  - siren lighat red
+  - shadow (2)
+  - character
+  - Layer 1546
+  - _headlight
+  - wheal1
+  - wheal4
+  - siren lighat blue
+  - sniper
+  - train above car
+  - progress bar
+  m_RenderDataMap: {}
+  m_Tag: TransferAtlas
+  m_IsVariant: 0

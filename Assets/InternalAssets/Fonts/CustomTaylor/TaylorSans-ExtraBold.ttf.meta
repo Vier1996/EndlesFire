@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 4d59d9922c59d584497ea6f26cd69aa4
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Taylor Sans
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 2e327b284e89d4e82a7e68fc317bdf6b, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

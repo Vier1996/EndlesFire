@@ -1,0 +1,4747 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f0b0c553be8edd4682e9180fdd13e37, type: 3}
+  m_Name: I2Languages
+  m_EditorClassIdentifier: 
+  mSource:
+    UserAgreesToHaveItOnTheScene: 0
+    UserAgreesToHaveItInsideThePluginsFolder: 0
+    GoogleLiveSyncIsUptoDate: 1
+    mTerms:
+    - Term: APARTINFODIALOG_DISMANTLE_YOUR_EQUIPMENT_TEXT
+      TermType: 0
+      Description: 
+      Languages:
+      - dismantle your <color=#E7D85E>equipment</color> to get <color=#E7D85E>spare
+        parts</color>
+      - "\u0440\u0430\u0437\u0431\u0438\u0440\u0430\u0439\u0442\u0435 \u0432\u0430\u0448\u0435
+        <color=#E7D85E>\u0441\u043D\u0430\u0440\u044F\u0436\u0435\u043D\u0438\u0435</color>,
+        \u0447\u0442\u043E\u0431\u044B \u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044C
+        <color=#E7D85E>\u0437\u0430\u043F\u0447\u0430\u0441\u0442\u0438</color>"
+      - "\u0641\u0643 <color=#E7D85E> <color=#E7D85E> <color=#E7D85E> <color=#E7D85E>
+        \u0627\u0644\u0645\u0639\u062F\u0627\u062A \u0627\u0644\u062E\u0627\u0635\u0629
+        \u0628\u0643 <color=#E7D85E> \u0644\u0644\u062D\u0635\u0648\u0644 \u0639\u0644\u0649
+        <color=#E7D85E> <color=#E7D85E> \u0642\u0637\u0639 \u0627\u0644\u063A\u064A\u0627\u0631"
+      - "\u62C6\u9664\u4F60\u7684 <color=#E7D85E> \u8BBE\u5907 </color> \u4EE5\u83B7\u5F97
+        <color=#E7D85E> \u5907\u4EF6 </color>"
+      - desmantele su <color=#E7D85E> equipo</color> para obtener <color=#E7D85E>
+        repuestos</color>
+      - "desmonte seu <color=#E7D85E> equipamento</color> para obter <color=#E7D85E>
+        pe\xE7as de reposi\xE7\xE3o</color>"
+      - "d\xE9montez votre <color=#E7D85E>\xE9quipement</color> pour obtenir des
+        <color=#E7D85E>pieces d\xE9tach\xE9es</color>"
+      - demonteer uw <color=#E7D85E> apparatuur</color> om <color=#E7D85E> reserveonderdelen</color>
+        te krijgen
+      - smonta la tua <color=#E7D85E> attrezzatura</color> per ottenere <color=#E7D85E>
+        pezzi di ricambio</color>
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: APARTINFODIALOG_EQUIPMENT_RECYCLING_TITLE_TEXT
+      TermType: 0
+      Description: 
+      Languages:
+      - Equipment recycling
+      - "\u043F\u0435\u0440\u0435\u0440\u0430\u0431\u043E\u0442\u043A\u0430 \u0441\u043D\u0430\u0440\u044F\u0436\u0435\u043D\u0438\u044F"
+      - "\u0625\u0639\u0627\u062F\u0629 \u062A\u062F\u0648\u064A\u0631 \u0627\u0644\u0645\u0639\u062F\u0627\u062A"
+      - "\u8BBE\u5907\u56DE\u6536"
+      - Reciclaje de equipos
+      - Reciclagem de equipamentos
+      - "Recyclage des \xE9quipements"
+      - Recycling van apparatuur
+      - Riciclaggio delle apparecchiature
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: APARTINFODIALOG_YOU_CAN_RETURN_BLUEPRINTS_TEXT
+      TermType: 0
+      Description: 
+      Languages:
+      - You can get your <color=#E7D85E> blueprints and coins</color> back if you
+        dismantle the <color=#E7D85E> upgraded item</color>
+      - "\u0412\u044B \u043C\u043E\u0436\u0435\u0442\u0435 \u0432\u0435\u0440\u043D\u0443\u0442\u044C
+        \u0432\u0430\u0448\u0438 <color=#E7D85E>\u0447\u0435\u0440\u0442\u0435\u0436\u0438
+        \u0438 \u043C\u043E\u043D\u0435\u0442\u044B</color>, \u0435\u0441\u043B\u0438
+        \u0440\u0430\u0437\u0431\u0435\u0440\u0435\u0442\u0435 <color=#E7D85E>\u0443\u043B\u0443\u0447\u0448\u0435\u043D\u043D\u044B\u0439
+        \u043F\u0440\u0435\u0434\u043C\u0435\u0442</color>"
+      - "\u064A\u0645\u0643\u0646\u0643 \u0627\u0633\u062A\u0639\u0627\u062F\u0629
+        <color=#E7D85E> \u0627\u0644\u0645\u062E\u0637\u0637\u0627\u062A \u0648\u0627\u0644\u0642\u0637\u0639
+        \u0627\u0644\u0646\u0642\u062F\u064A\u0629 </color> \u0627\u0644\u062E\u0627\u0635\u0629
+        \u0628\u0643 \u0645\u0631\u0629 \u0623\u062E\u0631\u0649 \u0625\u0630\u0627
+        \u0642\u0645\u062A \u0628\u062A\u0641\u0643\u064A\u0643 <color=#E7D85E> \u0627\u0644\u0639\u0646\u0635\u0631
+        \u0627\u0644\u0630\u064A \u062A\u0645\u062A \u062A\u0631\u0642\u064A\u062A\u0647
+        </color>"
+      - "\u4F60\u53EF\u4EE5\u62FF\u56DE\u4F60\u7684 <color=#E7D85E> \u84DD\u56FE\u548C\u91D1\u5E01</color>
+        \u5982\u679C\u4F60\u62C6\u9664 <color=#E7D85E> \u5347\u7EA7\u7684\u9879\u76EE</color>"
+      - Puedes recuperar tus <color=#E7D85E> planos y monedas</color> si desmantelas
+        el <color=#E7D85E> elemento mejorado</color>
+      - "Voc\xEA pode recuperar seus <color=#E7D85E> projetos e moedas</color> se
+        desmontar o <color=#E7D85E> item atualizado</color>"
+      - "Vous pouvez r\xE9cup\xE9rer vos <color=#E7D85E>\_plans et pieces</color>
+        si vous d\xE9montez l'objet <color=#E7D85E>am\xE9lior\xE9</color>"
+      - Je kunt je <color=#E7D85E> blauwdrukken en munten</color> terugkrijgen als
+        je het <color=#E7D85E> geupgradede item</color> ontmantelt
+      - Puoi riavere i tuoi <color=#E7D85E> progetti e monete</color> se smantelli
+        <color=#E7D85E> l'oggetto aggiornato</color>
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: CHANGECHESTDIALOG_REPLACE_CHEST_TITLE_TEXT
+      TermType: 0
+      Description: 
+      Languages:
+      - Replace chest?
+      - "\u0417\u0430\u043C\u0435\u043D\u0438\u0442\u044C \u0441\u0443\u043D\u0434\u0443\u043A?"
+      - "\u0627\u0633\u062A\u0628\u062F\u0627\u0644 \u0627\u0644\u0635\u062F\u0631\u061F"
+      - "\u6362\u80F8\uFF1F"
+      - "\xBFReemplazar cofre?"
+      - Substituir peito?
+      - "Remplacer la poitrine\_?"
+      - Borst vervangen?
+      - Sostituire petto?
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: CHARACTERISTICTYPE_ACCURACY
+      TermType: 0
+      Description: 
+      Languages:
+      - Accuracy
+      - "\u0422\u043E\u0447\u043D\u043E\u0441\u0442\u044C"
+      - "\u062F\u0642\u0629"
+      - "\u51C6\u786E\u6027"
+      - Exactitud
+      - "Precis\xE3o"
+      - "Pr\xE9cision"
+      - Nauwkeurigheid
+      - Precisione
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: CHARACTERISTICTYPE_AIMING_TIME
+      TermType: 0
+      Description: 
+      Languages:
+      - Aiming time
+      - "\u0412\u0440\u0435\u043C\u044F \u043F\u0440\u0438\u0446\u0435\u043B\u0438\u0432\u0430\u043D\u0438\u044F"
+      - "\u0648\u0642\u062A \u0627\u0644\u062A\u0635\u0648\u064A\u0628"
+      - "\u7784\u51C6\u65F6\u95F4"
+      - Tiempo de apuntar
+      - tempo de mira
+      - "Temps de vis\xE9e"
+      - Tijd richten
+      - Tempo di puntamento
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: CHARACTERISTICTYPE_AMMUNITION
+      TermType: 0
+      Description: 
+      Languages:
+      - Ammunition
+      - "\u0411\u043E\u0435\u043F\u0440\u0438\u043F\u0430\u0441\u044B"
+      - "\u0630\u062E\u064A\u0631\u0629"
+      - "\u5F39\u836F"
+      - "Munici\xF3n"
+      - "Muni\xE7\xE3o"
+      - Munition
+      - Munitie
+      - Munizioni
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: CHARACTERISTICTYPE_AOE_DAMAGE
+      TermType: 0
+      Description: 
+      Languages:
+      - AOE damage
+      - "\u0423\u0440\u043E\u043D \u043F\u043E \u043F\u043B\u043E\u0449\u0430\u0434\u0438"
+      - "\u062A\u0644\u0641 \u0645\u0646\u0637\u0642\u0629 AOE"
+      - "\u8303\u56F4\u4F24\u5BB3"
+      - "Da\xF1o AOE"
+      - Dano AOE
+      - "D\xE9g\xE2ts de zone"
+      - AOE-schade
+      - Danno AOE
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: CHARACTERISTICTYPE_BULLETS_PER_SHOOT
+      TermType: 0
+      Description: 
+      Languages:
+      - bullets per shot
+      - "\u043F\u0443\u043B\u044C \u0437\u0430 \u0432\u044B\u0441\u0442\u0440\u0435\u043B"
+      - "\u0627\u0644\u0631\u0635\u0627\u0635 \u0641\u064A \u0643\u0644 \u0637\u0644\u0642\u0629"
+      - "\u6BCF\u53D1\u5B50\u5F39"
+      - balas por disparo
+      - balas por tiro
+      - balles par coup
+      - kogels per schot
+      - proiettili per colpo
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: CHARACTERISTICTYPE_CRITICAL_CHANCE
+      TermType: 0
+      Description: 
+      Languages:
+      - Critical chance
+      - "\u041A\u0440\u0438\u0442\u0438\u0447\u0435\u0441\u043A\u0438\u0439 \u0448\u0430\u043D\u0441"
+      - "\u0641\u0631\u0635\u0629 \u062D\u0627\u0633\u0645\u0629"
+      - "\u5173\u952E\u673A\u4F1A"
+      - "Oportunidad cr\xEDtica"
+      - "Chance cr\xEDtica"
+      - Chance critique
+      - Kritieke kans
+      - Occasione critica
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: CHARACTERISTICTYPE_CRITICAL_DAMAGE
+      TermType: 0
+      Description: 
+      Languages:
+      - Critical damage
+      - "\u041A\u0440\u0438\u0442\u0438\u0447\u0435\u0441\u043A\u0438\u0439 \u0443\u0440\u043E\u043D"
+      - "\u0636\u0631\u0631 \u062C\u0633\u064A\u0645"
+      - "\u66B4\u51FB\u4F24\u5BB3"
+      - "Da\xF1o cr\xEDtico"
+      - "Dano cr\xEDtico"
+      - "D\xE9g\xE2ts critiques"
+      - Kritieke schade
+      - Danno critico
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: CHARACTERISTICTYPE_DAMAGE
+      TermType: 0
+      Description: 
+      Languages:
+      - Damage
+      - "\u0423\u0440\u043E\u043D"
+      - "\u0636\u0631\u0631"
+      - "\u635F\u5BB3"
+      - "Da\xF1o"
+      - Dano
+      - Dommage
+      - Schade
+      - Danno
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: CHARACTERISTICTYPE_EXPLOSION_RADIUS
+      TermType: 0
+      Description: 
+      Languages:
+      - explosion radius
+      - "\u0440\u0430\u0434\u0438\u0443\u0441 \u0432\u0437\u0440\u044B\u0432\u0430"
+      - "\u0646\u0635\u0641 \u0642\u0637\u0631 \u0627\u0644\u0627\u0646\u0641\u062C\u0627\u0631"
+      - "\u7206\u70B8\u534A\u5F84"
+      - "radio de explosi\xF3n"
+      - "raio de explos\xE3o"
+      - rayon d'explosion
+      - explosie straal
+      - raggio di esplosione
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: CHARACTERISTICTYPE_EXTRA_DAMAGE
+      TermType: 0
+      Description: 
+      Languages:
+      - extra damage
+      - "\u0431\u043E\u043D\u0443\u0441 \u043A \u0443\u0440\u043E\u043D\u0443"
+      - "\u0636\u0631\u0631 \u0627\u0636\u0627\u0641\u064A"
+      - "\u989D\u5916\u4F24\u5BB3"
+      - "da\xF1o adicional"
+      - dano extra
+      - "bonus de d\xE9g\xE2ts"
+      - extra schade
+      - danno aggiuntivo
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: CHARACTERISTICTYPE_EXTRA_HEALTH
+      TermType: 0
+      Description: 
+      Languages:
+      - extra health
+      - "\u0431\u043E\u043D\u0443\u0441 \u043A \u0437\u0434\u043E\u0440\u043E\u0432\u044C\u044E"
+      - "\u0635\u062D\u0629 \u0627\u0636\u0627\u0641\u064A\u0629"
+      - "\u989D\u5916\u7684\u5065\u5EB7"
+      - salud extra
+      - "sa\xFAde extra"
+      - "sant\xE9 suppl\xE9mentaire"
+      - extra gezondheid
+      - salute in piu
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: CHARACTERISTICTYPE_RANGE
+      TermType: 0
+      Description: 
+      Languages:
+      - Range
+      - "\u0414\u0438\u0430\u043F\u0430\u0437\u043E\u043D"
+      - "\u064A\u062A\u0631\u0627\u0648\u062D"
+      - "\u8303\u56F4"
+      - Rango
+      - Faixa
+      - Gamme
+      - Bereik
+      - Allineare
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: CHARACTERISTICTYPE_RELOADING
+      TermType: 0
+      Description: 
+      Languages:
+      - Reloading
+      - "\u041F\u0435\u0440\u0435\u0437\u0430\u0440\u044F\u0434\u043A\u0430"
+      - "\u0625\u0639\u0627\u062F\u0629 \u0627\u0644\u062A\u062D\u0645\u064A\u0644"
+      - "\u91CD\u88C5"
+      - Recargando
+      - Recarregando
+      - Rechargement
+      - Herladen
+      - Ricaricare
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: CHARACTERISTICTYPE_RESISTANCE_OF_ALL_ATTACKS
+      TermType: 0
+      Description: 
+      Languages:
+      - all resistance
+      - "\u0437\u0430\u0449\u0438\u0442\u0430 \u043E\u0442 \u0432\u0441\u0435\u0433\u043E
+        \u0443\u0440\u043E\u043D\u0430"
+      - "\u0643\u0644 \u0627\u0644\u0645\u0642\u0627\u0648\u0645\u0629"
+      - "\u6240\u6709\u963B\u529B"
+      - toda resistencia
+      - "toda resist\xEAncia"
+      - "toute r\xE9sistance"
+      - alle weerstand
+      - ogni resistenza
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: CHARACTERISTICTYPE_RESISTANCE_OF_EXPLOSION_ATTACKS
+      TermType: 0
+      Description: 
+      Languages:
+      - explosion resistance
+      - "\u0417\u0430\u0449\u0438\u0442\u0430 \u043E\u0442 \u0432\u0437\u0440\u044B\u0432\u043E\u0432"
+      - "\u0645\u0642\u0627\u0648\u0645\u0629 \u0627\u0644\u0627\u0646\u0641\u062C\u0627\u0631"
+      - "\u9632\u7206\u6027"
+      - resistencia a explosiones
+      - "resist\xEAncia \xE0 explos\xE3o"
+      - "r\xE9sistance aux explosions"
+      - explosie weerstand
+      - resistenza all'esplosione
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: CHARACTERISTICTYPE_RESISTANCE_OF_MELEE_ATTACKS
+      TermType: 0
+      Description: 
+      Languages:
+      - melee resistance
+      - "\u0437\u0430\u0449\u0438\u0442\u0430 \u0432 \u0431\u043B\u0438\u0436\u043D\u0435\u043C
+        \u0431\u043E\u044E"
+      - "\u0645\u0642\u0627\u0648\u0645\u0629 \u0627\u0644\u0627\u0634\u062A\u0628\u0627\u0643"
+      - "\u8FD1\u6218\u62B5\u6297"
+      - resistencia cuerpo a cuerpo
+      - "resist\xEAncia corpo a corpo"
+      - "r\xE9sistance au corps \xE0 corps"
+      - melee weerstand
+      - resistenza corpo a corpo
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: CHARACTERISTICTYPE_RESISTANCE_OF_RANGE_ATTACKS
+      TermType: 0
+      Description: 
+      Languages:
+      - range resistance
+      - "\u0437\u0430\u0449\u0438\u0442\u0430 \u0432 \u0434\u0430\u043B\u044C\u043D\u0435\u043C
+        \u0431\u043E\u044E"
+      - "\u0645\u0642\u0627\u0648\u0645\u0629 \u0627\u0644\u0646\u0637\u0627\u0642"
+      - "\u91CF\u7A0B\u7535\u963B"
+      - rango de resistencia
+      - "resist\xEAncia de alcance"
+      - "gamme de r\xE9sistance"
+      - bereik weerstand
+      - resistenza di portata
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: CHARACTERISTICTYPE_SHOOTING_SPEED
+      TermType: 0
+      Description: 
+      Languages:
+      - Shooting speed
+      - "\u0421\u043A\u043E\u0440\u043E\u0441\u0442\u044C \u0441\u0442\u0440\u0435\u043B\u044C\u0431\u044B"
+      - "\u0633\u0631\u0639\u0629 \u0627\u0637\u0644\u0627\u0642 \u0627\u0644\u0646\u0627\u0631"
+      - "\u62CD\u6444\u901F\u5EA6"
+      - Velocidad de disparo
+      - Velocidade de tiro
+      - Vitesse de prise de vue
+      - Schiet snelheid
+      - "Velocit\xE0 di tiro"
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: CHARACTERISTICVIEW_PARAMETER_MISSING_TEXT
+      TermType: 0
+      Description: 
+      Languages:
+      - "no \nparameter"
+      - "\u041F\u0430\u0440\u0430\u043C\u0435\u0442\u0440 \n\u043E\u0442\u0441\u0443\u0442\u0441\u0442\u0432\u0443\u0435\u0442"
+      - "\u0627\u0644\u0645\u0639\u0644\u0645\u0629 \u0645\u0641\u0642\u0648\u062F\u0629"
+      - "\u7F3A\u5C11\u53C2\u6570"
+      - "Falta el \npar\xE1metro"
+      - "Par\xE2metro \nausente"
+      - "Parametre \nmanquant"
+      - "Parameter \nontbreekt"
+      - "Parametro \nmancante"
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: CHESTREWARD_BLUEPRINTS
+      TermType: 0
+      Description: 
+      Languages:
+      - Blueprints
+      - "\u0427\u0435\u0440\u0442\u0435\u0436\u0438"
+      - "\u0627\u0644\u0645\u062E\u0637\u0637\u0627\u062A"
+      - "\u84DD\u56FE"
+      - Planos
+      - Plantas
+      - Plans
+      - Blauwdrukken
+      - Progetti
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: CHESTREWARD_CRYSTALS
+      TermType: 0
+      Description: 
+      Languages:
+      - Crystals
+      - "\u041A\u0440\u0438\u0441\u0442\u0430\u043B\u043B\u044B"
+      - "\u0628\u0644\u0648\u0631\u0627\u062A"
+      - "\u6C34\u6676"
+      - Cristales
+      - Cristais
+      - Cristaux
+      - Kristallen
+      - Cristalli
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: CHESTREWARD_MONEY
+      TermType: 0
+      Description: 
+      Languages:
+      - Money
+      - "\u0414\u0435\u043D\u044C\u0433\u0438"
+      - "\u0645\u0627\u0644"
+      - "\u94B1"
+      - Dinero
+      - Dinheiro
+      - Argent
+      - Geld
+      - Soldi
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: CHESTREWARD_TOKENS
+      TermType: 0
+      Description: 
+      Languages:
+      - Tokens
+      - "\u0416\u0435\u0442\u043E\u043D\u044B"
+      - "\u0627\u0644\u0631\u0645\u0648\u0632"
+      - "\u4EE3\u5E01"
+      - Fichas
+      - Fichas
+      - Jetons
+      - Munten
+      - Gettoni
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: CHESTREWARD_WEAPONS
+      TermType: 0
+      Description: 
+      Languages:
+      - Weapons
+      - "\u041E\u0440\u0443\u0436\u0438\u0435"
+      - "\u0623\u0633\u0644\u062D\u0629"
+      - "\u6B66\u5668"
+      - Armas
+      - Armas
+      - Armes
+      - Wapens
+      - Armi
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: CHESTTYPE_BASIC
+      TermType: 0
+      Description: 
+      Languages:
+      - basic
+      - "\u041E\u0431\u044B\u0447\u043D\u044B\u0439"
+      - "\u0639\u0627\u062F\u064A"
+      - "\u666E\u901A\u7684"
+      - "Com\xFAn"
+      - "Ordin\xE1rio"
+      - Ordinaire
+      - Normaal
+      - Ordinario
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: CHESTTYPE_GOLDEN
+      TermType: 0
+      Description: 
+      Languages:
+      - golden
+      - "\u0417\u043E\u043B\u043E\u0442\u043E\u0439"
+      - "\u0630\u0647\u0628\u064A"
+      - "\u91D1\u7684"
+      - dorado
+      - dourado
+      - "dor\xE9"
+      - gouden
+      - d'oro
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: CHESTTYPE_RED
+      TermType: 0
+      Description: 
+      Languages:
+      - Red
+      - "\u041A\u0440\u0430\u0441\u043D\u044B\u0439"
+      - "\u0623\u062D\u0645\u0631"
+      - "\u7EA2\u8272\u7684"
+      - Rojo
+      - Vermelho
+      - Rouge
+      - Rood
+      - Rosso
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: COMMON_APART_TEXT
+      TermType: 0
+      Description: 
+      Languages:
+      - Disassemble
+      - "\u0420\u0430\u0437\u043E\u0431\u0440\u0430\u0442\u044C"
+      - "\u062A\u0641\u0643\u064A\u0643"
+      - "\u62C6\u5378"
+      - Desmontar
+      - Desmontar
+      - "D\xE9monter"
+      - Demonteren
+      - Smontare
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: COMMON_APPLY_TEXT
+      TermType: 0
+      Description: 
+      Languages:
+      - Apply
+      - "\u041F\u0440\u0438\u043C\u0435\u043D\u0438\u0442\u044C"
+      - "\u064A\u062A\u0642\u062F\u0645"
+      - "\u7533\u8BF7"
+      - Aplicar
+      - Aplicar
+      - Appliquer
+      - Toepassen
+      - Fare Domanda A
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: COMMON_BACK_TEXT
+      TermType: 0
+      Description: 
+      Languages:
+      - Back
+      - "\u043D\u0430\u0437\u0430\u0434"
+      - "\u062E\u0644\u0641"
+      - "\u540E\u9000"
+      - "Atr\xE1s"
+      - Voltar
+      - Dos
+      - Rug
+      - Indietro
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: COMMON_CHARACTERISTICS_TEXT
+      TermType: 0
+      Description: 
+      Languages:
+      - characteristics
+      - "\u0445\u0430\u0440\u0430\u043A\u0442\u0435\u0440\u0438\u0441\u0442\u0438\u043A\u0438"
+      - "\u0635\u0641\u0627\u062A"
+      - "\u7279\u5F81"
+      - "caracter\xEDsticas"
+      - "caracter\xEDsticas"
+      - "caract\xE9ristiques"
+      - kenmerken
+      - caratteristiche
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: COMMON_CHOOSE_TEXT
+      TermType: 0
+      Description: 
+      Languages:
+      - Choose
+      - "\u0412\u044B\u0431\u0440\u0430\u0442\u044C"
+      - "\u064A\u062E\u062A\u0627\u0631"
+      - "\u9009\u62E9"
+      - Elegir
+      - Escolher
+      - Choisir
+      - Kiezen
+      - Scegliere
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: COMMON_COINS_TEXT
+      TermType: 0
+      Description: 
+      Languages:
+      - Coins
+      - "\u041C\u043E\u043D\u0435\u0442\u044B"
+      - "\u0639\u0645\u0644\u0627\u062A \u0645\u0639\u062F\u0646\u064A\u0629"
+      - "\u786C\u5E01"
+      - Monedas
+      - Moedas
+      - Pieces De Monnaie
+      - Munten
+      - Monete
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: COMMON_CONTINUE_TEXT
+      TermType: 0
+      Description: 
+      Languages:
+      - Continue
+      - "\u0414\u0430\u043B\u0435\u0435"
+      - "\u064A\u0643\u0645\u0644"
+      - "\u7EE7\u7EED"
+      - Continuar
+      - Continuar
+      - Continuer
+      - Doorgaan
+      - Continua
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: COMMON_COUNT_SHORT_TEXT
+      TermType: 0
+      Description: 
+      Languages:
+      - Pc.
+      - "\u0428\u0442."
+      - "\u0627\u0644\u0643\u0645\u0628\u064A\u0648\u062A\u0631."
+      - "\u4E2A\u4EBA\u7535\u8111\u3002"
+      - Ordenador Personal.
+      - Pc.
+      - Pc.
+      - Pc.
+      - Pc.
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: COMMON_DAYS_SHORT_TEXT
+      TermType: 0
+      Description: 
+      Languages:
+      - D
+      - "\u0414"
+      - "\u0623\u064A\u0627\u0645"
+      - "\u5929"
+      - D
+      - D
+      - J
+      - D
+      - G
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: COMMON_DAY_SHORT
+      TermType: 0
+      Description: 
+      Languages:
+      - d.
+      - "\u0434."
+      - "\u064A"
+      - "\u5929."
+      - d.
+      - d.
+      - j.
+      - d.
+      - g.
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: COMMON_EXIT_TEXT
+      TermType: 0
+      Description: 
+      Languages:
+      - Exit
+      - "\u0412\u044B\u0439\u0442\u0438"
+      - "\u0627\u0644\u062E\u0631\u0648\u062C"
+      - "\u51FA\u53BB"
+      - Salir
+      - Sair
+      - Sortir
+      - Uitgaan
+      - Esci
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: COMMON_FREE_TEXT
+      TermType: 0
+      Description: 
+      Languages:
+      - For Free
+      - "\u0411\u0435\u0441\u043F\u043B\u0430\u0442\u043D\u043E"
+      - "\u0645\u062C\u0627\u0646\u0627"
+      - "\u514D\u8D39"
+      - Gratis
+      - "De Gra\xE7a"
+      - Gratuitement
+      - Gratis
+      - Gratuito
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: COMMON_GET_TEXT
+      TermType: 0
+      Description: 
+      Languages:
+      - Get
+      - "\u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044C"
+      - "\u064A\u062D\u0635\u0644"
+      - "\u5F97\u5230"
+      - Conseguir
+      - Pegar
+      - Obtenir
+      - Krijgen
+      - Ottenere
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: COMMON_HOURS_SHORT_TEXT
+      TermType: 0
+      Description: 
+      Languages:
+      - H
+      - "\u0427"
+      - "\u0633\u0627\u0639\u0627\u062A"
+      - "\u5C0F\u65F6"
+      - H
+      - H
+      - H
+      - U
+      - O
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: COMMON_HOUR_SHORT
+      TermType: 0
+      Description: 
+      Languages:
+      - h.
+      - "\u0447."
+      - "\u0633"
+      - "\u5C0F\u65F6."
+      - h.
+      - h.
+      - h.
+      - u.
+      - h.
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: COMMON_INFO_TEXT
+      TermType: 0
+      Description: 
+      Languages:
+      - Info
+      - "\u0418\u043D\u0444\u043E"
+      - "\u0645\u0639\u0644\u0648\u0645\u0627\u062A"
+      - "\u4FE1\u606F"
+      - "Informaci\xF3n"
+      - "Informa\xE7\xE3o"
+      - Info
+      - Informatie
+      - Informazioni
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: COMMON_MAX_LEVEL_TEXT
+      TermType: 0
+      Description: 
+      Languages:
+      - Max Level
+      - "\u041C\u0430\u043A\u0441\u0438\u043C\u0430\u043B\u044C\u043D\u044B\u0439
+        \u0443\u0440\u043E\u0432\u0435\u043D\u044C"
+      - "\u0627\u0639\u0644\u0649 \u0645\u0633\u062A\u0648\u0649"
+      - "\u6700\u5927\u7B49\u7EA7"
+      - "M\xE1ximo nivel"
+      - "N\xEDvel m\xE1ximo"
+      - Niveau maximum
+      - Maximale niveau
+      - Livello massimo
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: COMMON_METERS_SHORT_TEXT
+      TermType: 0
+      Description: 
+      Languages:
+      - m.
+      - "\u043C."
+      - "\u0645."
+      - "\u7C73\u3002"
+      - m.
+      - m.
+      - M.
+      - M.
+      - M.
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: COMMON_MINUTE_SHORT
+      TermType: 0
+      Description: 
+      Languages:
+      - m.
+      - "\u043C."
+      - "\u062F"
+      - "\u5206."
+      - m.
+      - m.
+      - m.
+      - m.
+      - m.
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: COMMON_MISSION_TEXT
+      TermType: 0
+      Description: 
+      Languages:
+      - Mission
+      - "\u041C\u0438\u0441\u0441\u0438\u044F"
+      - "\u0645\u0647\u0645\u0629"
+      - "\u4F7F\u547D"
+      - "Misi\xF3n"
+      - "Miss\xE3o"
+      - Mission
+      - Missie
+      - Missione
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: COMMON_OK_TEXT
+      TermType: 0
+      Description: 
+      Languages:
+      - ok
+      - OK
+      - "\u0646\u0639\u0645"
+      - "\u597D\u7684"
+      - OK
+      - OK
+      - d'accord
+      - OK
+      - OK
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: COMMON_OPEN_ITEM_NOW_TEXT
+      TermType: 0
+      Description: 
+      Languages:
+      - Open Now
+      - "\u043E\u0442\u043A\u0440\u044B\u0442\u044C \u0441\u0435\u0439\u0447\u0430\u0441"
+      - "\u0645\u0641\u062A\u0648\u062D \u0627\u0644\u0627\u0646"
+      - "\u73B0\u5728\u5F00\u95E8\u4E86"
+      - Abierto Ahora
+      - Abra Agora
+      - Ouvrez Maintenant
+      - Nu Open
+      - Aperto Adesso
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: COMMON_OPEN_ITEM_TEXT
+      TermType: 0
+      Description: 
+      Languages:
+      - Open
+      - "\u043E\u0442\u043A\u0440\u044B\u0442\u044C"
+      - "\u064A\u0641\u062A\u062D"
+      - "\u6253\u5F00"
+      - Abierto
+      - Abrir
+      - Ouvrir
+      - Open
+      - Aprire
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: COMMON_PAUSE_TEXT
+      TermType: 0
+      Description: 
+      Languages:
+      - Pause
+      - "\u041F\u0430\u0443\u0437\u0430"
+      - "\u064A\u0648\u0642\u0641"
+      - "\u6682\u505C"
+      - Pausa
+      - Pausa
+      - Pause
+      - Pauze
+      - Pausa
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: COMMON_PLAY_TEXT
+      TermType: 0
+      Description: 
+      Languages:
+      - Play
+      - "\u0418\u0433\u0440\u0430\u0442\u044C"
+      - "\u064A\u0644\u0639\u0628"
+      - "\u73A9"
+      - Jugar
+      - Jogar
+      - Jouer
+      - Toneelstuk
+      - Giocare
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: COMMON_POINTS_SHORT_TEXT
+      TermType: 0
+      Description: 
+      Languages:
+      - Pts.
+      - "\u0415\u0434."
+      - "\u0646\u0642\u0627\u0637"
+      - "\u79EF\u5206"
+      - Puntos
+      - Pts.
+      - Pts.
+      - Punten
+      - Punti
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: COMMON_POWER_TEXT
+      TermType: 0
+      Description: 
+      Languages:
+      - Power
+      - "\u041C\u043E\u0449\u044C"
+      - "\u0642\u0648\u0629"
+      - "\u529B\u91CF"
+      - Fuerza
+      - Poder
+      - Pouvoir
+      - Stroom
+      - Energia
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: COMMON_REPLACE_TEXT
+      TermType: 0
+      Description: 
+      Languages:
+      - Replace
+      - "\u0417\u0430\u043C\u0435\u043D\u0438\u0442\u044C"
+      - "\u064A\u0633\u062A\u0628\u062F\u0644"
+      - "\u4EE3\u66FF"
+      - Reemplazar
+      - Substituir
+      - Remplacer
+      - Vervangen
+      - Sostituire
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: COMMON_RESOURCES_TEXT
+      TermType: 0
+      Description: 
+      Languages:
+      - Resources
+      - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B"
+      - "\u0645\u0648\u0627\u0631\u062F"
+      - "\u8D44\u6E90"
+      - Recursos
+      - Recursos
+      - Ressources
+      - Bronnen
+      - Risorse
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: COMMON_RETURN_ITEM_TEXT
+      TermType: 0
+      Description: 
+      Languages:
+      - Return
+      - "\u0412\u0435\u0440\u043D\u0443\u0442\u044C"
+      - "\u064A\u0639\u0648\u062F"
+      - "\u8FD4\u56DE"
+      - Devolver
+      - Retornar
+      - Retour
+      - Opbrengst
+      - Ritorno
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: COMMON_RETURN_SELF_TEXT
+      TermType: 0
+      Description: 
+      Languages:
+      - Return
+      - "\u0412\u0435\u0440\u043D\u0443\u0442\u044C\u0441\u044F"
+      - "\u064A\u0639\u0648\u062F"
+      - "\u8FD4\u56DE"
+      - Devolver
+      - Retornar
+      - Retour
+      - Opbrengst
+      - Ritorno
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: COMMON_SECONDS_SHORT_TEXT
+      TermType: 0
+      Description: 
+      Languages:
+      - s
+      - "\u0441"
+      - "\u062B\u0627\u0646\u064A\u0629"
+      - "\u79D2\u3002"
+      - s
+      - s
+      - s
+      - s
+      - s
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: COMMON_SECOND_SHORT
+      TermType: 0
+      Description: 
+      Languages:
+      - s.
+      - "\u0421\u0435\u043A."
+      - "\u062B"
+      - "\u79D2."
+      - s.
+      - s.
+      - s.
+      - s.
+      - s.
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: COMMON_SHORT_LEVEL_TEXT
+      TermType: 0
+      Description: 
+      Languages:
+      - lvl
+      - "\u0443\u0440"
+      - "\u0645\u0633\u062A\u0648\u0649"
+      - "\u7B49\u7EA7"
+      - nivel
+      - lvl
+      - niveau
+      - niveau
+      - liv
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: COMMON_SHORT_MINUTES_TEXT
+      TermType: 0
+      Description: 
+      Languages:
+      - m
+      - "\u043C"
+      - "\u062F\u0642\u0627\u0626\u0642"
+      - "\u5206\u949F"
+      - m
+      - m
+      - m
+      - m
+      - m
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: COMMON_SHORT_POWER_TEXT
+      TermType: 0
+      Description: 
+      Languages:
+      - CP
+      - "\u0411\u041C"
+      - "\u0642\u0648\u0629"
+      - "\u529B\u91CF"
+      - CP
+      - PC
+      - PC
+      - KK
+      - PC
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: COMMON_SPECIALS_TEXT
+      TermType: 0
+      Description: 
+      Languages:
+      - specials
+      - "\u041E\u0441\u043E\u0431\u0435\u043D\u043D\u043E\u0441\u0442\u0438"
+      - "\u0627\u0644\u0639\u0631\u0648\u0636 \u0627\u0644\u062E\u0627\u0635\u0629"
+      - "\u7279\u4EF7\u5546\u54C1"
+      - especiales
+      - especiais
+      - promotions
+      - speciale aanbiedingen
+      - speciali
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: COMMON_TUTORIAL_TEXT
+      TermType: 0
+      Description: 
+      Languages:
+      - Tutorial
+      - "\u041E\u0431\u0443\u0447\u0435\u043D\u0438\u0435"
+      - "\u062F\u0631\u0633 \u062A\u0639\u0644\u064A\u0645\u064A"
+      - "\u6559\u7A0B"
+      - Tutorial
+      - Tutorial
+      - Didacticiel
+      - Zelfstudie
+      - Tutorial
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: COMMON_UPGRADED_TEXT
+      TermType: 0
+      Description: 
+      Languages:
+      - Upgraded
+      - "\u0423\u043B\u0443\u0447\u0448\u0435\u043D\u043E"
+      - "\u062A\u0631\u0642\u064A\u0629"
+      - "\u5347\u7EA7"
+      - Actualizado
+      - Atualizado
+      - "Am\xE9lior\xE9"
+      - Opgewaardeerd
+      - Aggiornato
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: COMMON_UPGRADE_TEXT
+      TermType: 0
+      Description: 
+      Languages:
+      - Upgrade
+      - "\u0423\u043B\u0443\u0447\u0448\u0438\u0442\u044C"
+      - "\u064A\u0631\u0642\u064A"
+      - "\u5347\u7EA7"
+      - Mejora
+      - Atualizar
+      - "Am\xE9liorer"
+      - Upgrade
+      - Aggiornamento
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: COMMON_VIP_TEXT
+      TermType: 0
+      Description: 
+      Languages:
+      - Vip
+      - Vip
+      - "\u0643\u0628\u0627\u0631 \u0627\u0644\u0634\u062E\u0635\u064A\u0627\u062A"
+      - "\u8D35\u5BBE"
+      - VIP
+      - Vip
+      - VIP
+      - Vip
+      - Vip
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: COMMON_WEAPONS_TEXT
+      TermType: 0
+      Description: 
+      Languages:
+      - Weapons
+      - "\u041E\u0440\u0443\u0436\u0438\u0435"
+      - "\u0633\u0644\u0627\u062D"
+      - "\u6B66\u5668"
+      - Arma
+      - Arma
+      - Arme
+      - Wapen
+      - Arma
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: COMMON_ZONE_TEXT
+      TermType: 0
+      Description: 
+      Languages:
+      - Zone
+      - "\u0417\u043E\u043D\u0430"
+      - "\u0645\u0646\u0637\u0642\u0629"
+      - "\u533A"
+      - Zona
+      - Zona
+      - Zone
+      - Zone
+      - Zona
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: DAILYVIPPRIZESDIALOG_DAILY_PRIZES_TITLE_TEXT
+      TermType: 0
+      Description: 
+      Languages:
+      - Daily prizes
+      - "\u0415\u0436\u0435\u0434\u043D\u0435\u0432\u043D\u044B\u0435 \u043F\u0440\u0438\u0437\u044B"
+      - "\u0627\u0644\u062C\u0648\u0627\u0626\u0632 \u0627\u0644\u064A\u0648\u0645\u064A\u0629"
+      - "\u6BCF\u65E5\u5956\u54C1"
+      - premios diarios
+      - "pr\xEAmios di\xE1rios"
+      - "Prix \u200B\u200Bquotidiens"
+      - Dagelijkse prijzen
+      - Premi giornalieri
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: DAILYVIPPRIZESDIALOG_REWARD_TEXT
+      TermType: 0
+      Description: 
+      Languages:
+      - Your reward
+      - "\u0412\u0430\u0448\u0430 \u043D\u0430\u0433\u0440\u0430\u0434\u0430"
+      - "\u0645\u0643\u0627\u0641\u0623\u062A\u0643"
+      - "\u4F60\u7684\u5956\u8D4F"
+      - Tu recompensa
+      - Sua recompensa
+      - "Ta r\xE9compense"
+      - Je beloning
+      - Il tuo premio
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: DAILY_PURCHASE_AUTOMATIC_RIFLE
+      TermType: 0
+      Description: 
+      Languages:
+      - automatic rifle Drawings
+      - "\u0447\u0435\u0440\u0442\u0435\u0436\u0435\u0439 \u0430\u0432\u0442\u043E\u043C\u0430\u0442\u0430"
+      - "\u0631\u0633\u0648\u0645\u0627\u062A \u0628\u0646\u062F\u0642\u064A\u0629
+        \u0622\u0644\u064A\u0629"
+      - "\u81EA\u52A8\u6B65\u67AA\u56FE\u7EB8"
+      - "rifle autom\xE1tico dibujos"
+      - "Desenhos de rifle autom\xE1tico"
+      - Dessins de fusil automatique
+      - automatisch geweer Tekeningen
+      - fucile automatico Disegni
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: DAILY_PURCHASE_BODY
+      TermType: 0
+      Description: 
+      Languages:
+      - Armor Blueprints
+      - "\u0447\u0435\u0440\u0442\u0435\u0436\u0435\u0439 \u0431\u0440\u043E\u043D\u0438"
+      - "\u0645\u062E\u0637\u0637\u0627\u062A \u0627\u0644\u062F\u0631\u0648\u0639"
+      - "\u88C5\u7532\u84DD\u56FE"
+      - Planos De Armadura
+      - Plantas De Armadura
+      - Plans D'armure
+      - Pantser Blauwdrukken
+      - Progetti Di Armature
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: DAILY_PURCHASE_BOOT
+      TermType: 0
+      Description: 
+      Languages:
+      - Drawings Of Shoes
+      - "\u0447\u0435\u0440\u0442\u0435\u0436\u0435\u0439 \u0431\u043E\u0442\u0438\u043D\u043E\u043A"
+      - "\u0631\u0633\u0648\u0645\u0627\u062A \u0627\u0644\u0623\u062D\u0630\u064A\u0629"
+      - "\u978B\u5B50\u7684\u56FE\u7EB8"
+      - Dibujos De Zapatos
+      - Desenhos De Sapatos
+      - Dessins De Chaussures
+      - Tekeningen Van Schoenen
+      - Disegni Di Scarpe
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: DAILY_PURCHASE_CRYSTALS
+      TermType: 0
+      Description: 
+      Languages:
+      - Crystals
+      - "\u043A\u0440\u0438\u0441\u0442\u0430\u043B\u043E\u0432"
+      - "\u0628\u0644\u0648\u0631\u0627\u062A"
+      - "\u6C34\u6676"
+      - Cristales
+      - Cristais
+      - Cristaux
+      - Kristallen
+      - Cristalli
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: DAILY_PURCHASE_FREE
+      TermType: 0
+      Description: 
+      Languages:
+      - For Free
+      - "\u0411\u0435\u0441\u043F\u043B\u0430\u0442\u043D\u043E"
+      - "\u0645\u062C\u0627\u0646\u0627"
+      - "\u514D\u8D39"
+      - Gratis
+      - "De Gra\xE7a"
+      - Gratuitement
+      - Gratis
+      - Gratuito
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: DAILY_PURCHASE_GLOVE
+      TermType: 0
+      Description: 
+      Languages:
+      - Glove Drawings
+      - "\u0447\u0435\u0440\u0442\u0435\u0436\u0435\u0439 \u043F\u0435\u0440\u0447\u0430\u0442\u043E\u043A"
+      - "\u0631\u0633\u0648\u0645\u0627\u062A \u0627\u0644\u0642\u0641\u0627\u0632\u0627\u062A"
+      - "\u624B\u5957\u56FE\u7EB8"
+      - Dibujos De Guantes
+      - Desenhos De Luvas
+      - Dessins De Gants
+      - Handschoen Tekeningen
+      - Disegni Di Guanti
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: DAILY_PURCHASE_GRENADE
+      TermType: 0
+      Description: 
+      Languages:
+      - Drawings Of Grenades
+      - "\u0447\u0435\u0440\u0442\u0435\u0436\u0435\u0439 \u0433\u0440\u0430\u043D\u0430\u0442"
+      - "\u0631\u0633\u0648\u0645\u0627\u062A \u0627\u0644\u0642\u0646\u0627\u0628\u0644
+        \u0627\u0644\u064A\u062F\u0648\u064A\u0629"
+      - "\u624B\u69B4\u5F39\u7684\u56FE\u7EB8"
+      - Dibujos De Granadas
+      - Desenhos De Granadas
+      - Dessins De Grenades
+      - Tekeningen Van Granaten
+      - Disegni Di Granate
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: DAILY_PURCHASE_HELMET
+      TermType: 0
+      Description: 
+      Languages:
+      - Helmet Drawings
+      - "\u0447\u0435\u0440\u0442\u0435\u0436\u0435\u0439 \u0448\u043B\u0435\u043C\u0430"
+      - "\u0631\u0633\u0648\u0645\u0627\u062A \u062E\u0648\u0630\u0629"
+      - "\u5934\u76D4\u56FE\u7EB8"
+      - Dibujos De Casco
+      - Desenhos De Capacete
+      - Dessins De Casque
+      - Helm Tekeningen
+      - Disegni Del Casco
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: DAILY_PURCHASE_MONEY
+      TermType: 0
+      Description: 
+      Languages:
+      - Coins
+      - "\u043C\u043E\u043D\u0435\u0442"
+      - "\u0639\u0645\u0644\u0627\u062A \u0645\u0639\u062F\u0646\u064A\u0629"
+      - "\u786C\u5E01"
+      - Monedas
+      - Moedas
+      - "Pi\xE8ces De Monnaie"
+      - Munten
+      - Monete
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: DAILY_PURCHASE_PISTOL
+      TermType: 0
+      Description: 
+      Languages:
+      - Pistol Drawings
+      - "\u0447\u0435\u0440\u0442\u0435\u0436\u0435\u0439 \u043F\u0438\u0441\u0442\u043E\u043B\u0435\u0442\u0430"
+      - "\u0631\u0633\u0648\u0645\u0627\u062A \u0645\u0633\u062F\u0633"
+      - "\u624B\u67AA\u56FE\u7EB8"
+      - Dibujos De Pistola
+      - Desenhos De Pistola
+      - Dessins De Pistolet
+      - Pistool Tekeningen
+      - Disegni Di Pistole
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: DAILY_PURCHASE_RIFLE
+      TermType: 0
+      Description: 
+      Languages:
+      - Rifle Drawings
+      - "\u0447\u0435\u0440\u0442\u0435\u0436\u0435\u0439 \u0432\u0438\u043D\u0442\u043E\u0432\u043A\u0438"
+      - "\u0631\u0633\u0648\u0645\u0627\u062A \u0628\u0646\u062F\u0642\u064A\u0629"
+      - "\u6B65\u67AA\u56FE\u7EB8"
+      - Dibujos De Rifles
+      - Desenhos De Rifle
+      - Dessins De Fusil
+      - Geweer Tekeningen
+      - Disegni Di Fucili
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: DAILY_PURCHASE_SHOTGUN
+      TermType: 0
+      Description: 
+      Languages:
+      - Shotgun Blueprints
+      - "\u0447\u0435\u0440\u0442\u0435\u0436\u0435\u0439 \u0434\u0440\u043E\u0431\u043E\u0432\u0438\u043A\u0430"
+      - "\u0645\u062E\u0637\u0637\u0627\u062A \u0628\u0646\u062F\u0642\u064A\u0629"
+      - "\u9730\u5F39\u67AA\u84DD\u56FE"
+      - Planos De Escopeta
+      - Plantas De Espingarda
+      - Plans De Fusil De Chasse
+      - Jachtgeweer Blauwdrukken
+      - Progetti Di Fucili
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: DAILY_PURCHASE_TAKEN
+      TermType: 0
+      Description: 
+      Languages:
+      - Bought
+      - "\u041A\u0443\u043F\u043B\u0435\u043D\u043E"
+      - "\u0645\u064F\u0634\u062A\u0631\u0649"
+      - "\u4E70"
+      - "Compr\xF3"
+      - Comprado
+      - "Achet\xE9"
+      - Gekocht
+      - Comprato
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: DAILY_PURCHASE_TITLE
+      TermType: 0
+      Description: 
+      Languages:
+      - Daily purposes
+      - "\u0415\u0436\u0435\u0434\u043D\u0435\u0432\u043D\u044B\u0435 \u043F\u0440\u0435\u0434\u043B\u043E\u0436\u0435\u043D\u0438\u044F"
+      - "\u0627\u0644\u0635\u0641\u0642\u0627\u062A \u0627\u0644\u064A\u0648\u0645\u064A\u0629"
+      - "\u6BCF\u65E5\u4F18\u60E0"
+      - Ofertas diarias
+      - "Ofertas di\xE1rias"
+      - Offres quotidiennes
+      - Dagelijkse Aanbiedingen
+      - Offerte giornaliere
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: DAILY_PURCHASE_TOKEN
+      TermType: 0
+      Description: 
+      Languages:
+      - Tokens
+      - "\u0436\u0435\u0442\u043E\u043D\u043E\u0432"
+      - "\u0627\u0644\u0631\u0645\u0648\u0632"
+      - "\u4EE3\u5E01"
+      - Fichas
+      - Fichas
+      - Jetons
+      - Munten
+      - Gettoni
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: PROTOTYPE_ARMOR
+      TermType: 0
+      Description: 
+      Languages:
+      - firefighter armor
+      - "\u0411\u0440\u043E\u043D\u044F \u043F\u043E\u0436\u0430\u0440\u043D\u0438\u043A\u0430"
+      - "\u062F\u0631\u0639 \u0631\u062C\u0627\u0644 \u0627\u0644\u0627\u0637\u0641\u0627\u0621"
+      - "\u6D88\u9632\u5458\u76D4\u7532"
+      - armadura de bombero
+      - armadura de bombeiro
+      - armure de pompier
+      - brandweerman pantser
+      - armatura da vigile del fuoco
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: PROTOTYPE_ARMOR_2
+      TermType: 0
+      Description: 
+      Languages:
+      - steel armor
+      - "\u0421\u0442\u0430\u043B\u044C\u043D\u0430\u044F \u0431\u0440\u043E\u043D\u044F"
+      - "\u062F\u0631\u0639 \u0641\u0648\u0644\u0627\u0630\u064A"
+      - "\u94A2\u94C1\u76D4\u7532"
+      - armadura de acero
+      - "armadura de a\xE7o"
+      - armure en acier
+      - stalen pantser
+      - armatura d'acciaio
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: AUG_AUTOMATIC_RIFLE
+      TermType: 0
+      Description: 
+      Languages:
+      - AUG
+      - "\u0410\u0423\u0413"
+      - "\u0623\u063A\u0633\u0637\u0633"
+      - "\u516B\u6708"
+      - AUG
+      - AUG
+      - AUG
+      - AUG
+      - AUG
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: P83_AUTOMATIC_RIFLE
+      TermType: 0
+      Description: 
+      Languages:
+      - P83
+      - "\u042083"
+      - "\u0635 83"
+      - P83
+      - P83
+      - P83
+      - P83
+      - P83
+      - P83
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: UMP_AUTOMATIC_RIFLE
+      TermType: 0
+      Description: 
+      Languages:
+      - UMP
+      - "\u0423\u041C\u041F"
+      - UMP
+      - "\u6CF5"
+      - UMP
+      - UMP
+      - UMP
+      - UMP
+      - UMP
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: PROTOTYPE_BOOT
+      TermType: 0
+      Description: 
+      Languages:
+      - Fireman's Boots
+      - "\u0421\u0430\u043F\u043E\u0433\u0438 \u043F\u043E\u0436\u0430\u0440\u043D\u0438\u043A\u0430"
+      - "\u0623\u062D\u0630\u064A\u0629 \u0631\u062C\u0627\u0644 \u0627\u0644\u0625\u0637\u0641\u0627\u0621"
+      - "\u6D88\u9632\u5458\u7684\u9774\u5B50"
+      - Botas de bombero
+      - botas de bombeiro
+      - Bottes de pompier
+      - Brandweerlaarzen
+      - Stivali da pompiere
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: PROTOTYPE_BOOT_2
+      TermType: 0
+      Description: 
+      Languages:
+      - Fireproof boots
+      - "\u041E\u0433\u043D\u0435\u0443\u043F\u043E\u0440\u043D\u044B\u0435 \u0441\u0430\u043F\u043E\u0433\u0438"
+      - "\u0623\u062D\u0630\u064A\u0629 \u0645\u0642\u0627\u0648\u0645\u0629 \u0644\u0644\u062D\u0631\u064A\u0642"
+      - "\u9632\u706B\u9774"
+      - "Botas ign\xEDfugas"
+      - "Botas \xE0 prova de fogo"
+      - Bottes ignifuges
+      - Brandwerende laarzen
+      - Stivali ignifughi
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: PROTOTYPE_GLOVES
+      TermType: 0
+      Description: 
+      Languages:
+      - firefighter gloves
+      - "\u041F\u0435\u0440\u0447\u0430\u0442\u043A\u0438 \u043F\u043E\u0436\u0430\u0440\u043D\u0438\u043A\u0430"
+      - "\u0642\u0641\u0627\u0632\u0627\u062A \u0631\u062C\u0627\u0644 \u0627\u0644\u0627\u0637\u0641\u0627\u0621"
+      - "\u6D88\u9632\u624B\u5957"
+      - guantes de bombero
+      - luvas de bombeiro
+      - gants de pompier
+      - brandweerhandschoenen
+      - guanti da pompiere
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: PROTOTYPE_GLOVES_2
+      TermType: 0
+      Description: 
+      Languages:
+      - Steel gloves
+      - "\u0421\u0442\u0430\u043B\u044C\u043D\u044B\u0435 \u043F\u0435\u0440\u0447\u0430\u0442\u043A\u0438"
+      - "\u0642\u0641\u0627\u0632\u0627\u062A \u0641\u0648\u0644\u0627\u0630\u064A\u0629"
+      - "\u94A2\u624B\u5957"
+      - Guantes de acero
+      - "luvas de a\xE7o"
+      - Gants en acier
+      - Stalen handschoenen
+      - Guanti d'acciaio
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: EXPLOSIVE_GRENADE
+      TermType: 0
+      Description: 
+      Languages:
+      - Explosive grenade
+      - "\u0420\u0430\u0437\u0440\u044B\u0432\u043D\u0430\u044F \u0433\u0440\u0430\u043D\u0430\u0442\u0430"
+      - "\u0642\u0646\u0628\u0644\u0629 \u0645\u062A\u0641\u062C\u0631\u0629"
+      - "\u7206\u70B8\u624B\u69B4\u5F39"
+      - granada explosiva
+      - granada explosiva
+      - Grenade explosive
+      - Explosieve granaat
+      - Granata esplosiva
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: FRAGMENTATION_GRENADE
+      TermType: 0
+      Description: 
+      Languages:
+      - Frag grenade
+      - "\u041E\u0441\u043A\u043E\u043B\u043E\u0447\u043D\u0430\u044F \u0433\u0440\u0430\u043D\u0430\u0442\u0430"
+      - "\u0633\u0641\u0631 \u0648 \u0627\u0644\u0633\u064A\u0627\u062D\u0629 \u0642\u0646\u0628\u0644\u0629
+        \u064A\u062F\u0648\u064A\u0629"
+      - "\u7834\u7247\u624B\u69B4\u5F39"
+      - "Granada de fragmentaci\xF3n"
+      - "Granada de fragmenta\xE7\xE3o"
+      - "Grenade \xE0 fragmentation"
+      - Frag granaat
+      - Granata a frammentazione
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: WATER_GRENADE
+      TermType: 0
+      Description: 
+      Languages:
+      - water grenadeater grenade
+      - "\u0432\u043E\u0434\u044F\u043D\u0430\u044F \u0433\u0440\u0430\u043D\u0430\u0442\u0430"
+      - "\u0642\u0646\u0628\u0644\u0629 \u0627\u0644\u0645\u064A\u0627\u0647"
+      - "\u6C34\u624B\u69B4\u5F39"
+      - granada de agua
+      - "granada de granada de \xE1gua"
+      - "grenade \xE0 eau"
+      - watergranaat granaat
+      - granata granata ad acqua
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: PROTOTYPE_HELMET
+      TermType: 0
+      Description: 
+      Languages:
+      - firefighter helmet
+      - "\u0428\u043B\u0435\u043C \u043F\u043E\u0436\u0430\u0440\u043D\u0438\u043A\u0430"
+      - "\u062E\u0648\u0630\u0629 \u0631\u062C\u0627\u0644 \u0627\u0644\u0627\u0637\u0641\u0627\u0621"
+      - "\u6D88\u9632\u5934\u76D4"
+      - casco de bombero
+      - capacete de bombeiro
+      - casque de pompier
+      - brandweer helm
+      - elmetto da pompiere
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: PROTOTYPE_HELMET_2
+      TermType: 0
+      Description: 
+      Languages:
+      - steel helmet
+      - "\u0421\u0442\u0430\u043B\u044C\u043D\u043E\u0439  \u0448\u043B\u0435\u043C"
+      - "\u062E\u0648\u0630\u0629 \u0627\u0644\u0635\u0644\u0628"
+      - "\u94A2\u76D4"
+      - casco de acero
+      - "capacete de a\xE7o"
+      - casque en acier
+      - stalen helm
+      - elmo d'acciaio
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: BLASTER_PISTOL
+      TermType: 0
+      Description: 
+      Languages:
+      - Blaster
+      - "\u0411\u043B\u0430\u0441\u0442\u0435\u0440"
+      - "\u0627\u0644\u0646\u0627\u0633\u0641"
+      - "\u51B2\u51FB\u6CE2"
+      - Blaster
+      - Blaster
+      - Blaster
+      - Blaster
+      - Blaster
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: GLOCK_PISTOL
+      TermType: 0
+      Description: 
+      Languages:
+      - Glock
+      - "\u0413\u043B\u043E\u043A"
+      - "\u063A\u0644\u0648\u0643"
+      - "\u683C\u6D1B\u514B"
+      - Glock
+      - Glock
+      - Glock
+      - Glok
+      - Glock
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: MAGNUM_PISTOL
+      TermType: 0
+      Description: 
+      Languages:
+      - Digle
+      - "\u0414\u0438\u0433\u043B"
+      - "\u062D\u0641\u0631"
+      - "\u8FEA\u683C\u5C14"
+      - Digle
+      - Digle
+      - Digle
+      - Digle
+      - Digle
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: XM7_RIFLE
+      TermType: 0
+      Description: 
+      Languages:
+      - XM-7
+      - "\u0425\u043C-7"
+      - Xm-7
+      - Xm-7
+      - Xm-7
+      - Xm-7
+      - Xm-7
+      - Xm-7
+      - Xm-7
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: XM45_RIFLE
+      TermType: 0
+      Description: 
+      Languages:
+      - XM-45
+      - "\u0425\u043C-45"
+      - Xm-45
+      - Xm-45
+      - Xm-45
+      - Xm-45
+      - Xm-45
+      - Xm-45
+      - Xm-45
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: M85_RIFLE
+      TermType: 0
+      Description: 
+      Languages:
+      - "\u041C85"
+      - "\u041C85"
+      - "\u041C85"
+      - "\u041C85"
+      - "\u041C85"
+      - "\u041C85"
+      - "\u041C85"
+      - "\u041C85"
+      - M85
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: M007_RIFLE
+      TermType: 0
+      Description: 
+      Languages:
+      - M007
+      - "\u041C007"
+      - "\u0645 007"
+      - M007
+      - M007
+      - M007
+      - M007
+      - M007
+      - M007
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: ENERGETIC_SHOTGUN
+      TermType: 0
+      Description: 
+      Languages:
+      - Energy Shotgun
+      - "\u042D\u043D\u0435\u0440\u0433\u0435\u0442\u0438\u0447\u0435\u0441\u043A\u0438\u0439
+        \u0414\u0440\u043E\u0431\u043E\u0432\u0438\u043A"
+      - "\u0628\u0646\u062F\u0642\u064A\u0629 \u0627\u0644\u0637\u0627\u0642\u0629"
+      - "\u80FD\u91CF\u9730\u5F39\u67AA"
+      - "Escopeta De Energ\xEDa"
+      - Espingarda De Energia
+      - "Fusil \xC0 Pompe \xC0 Energie"
+      - Energie Jachtgeweer
+      - Fucile A Energia
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: PUMP_SHOTGUN
+      TermType: 0
+      Description: 
+      Languages:
+      - Pump Shotgun
+      - "\u041F\u043E\u043C\u043F\u043E\u0432\u044B\u0439 \u0414\u0440\u043E\u0431\u043E\u0432\u0438\u043A"
+      - "\u0645\u0636\u062E\u0629 \u0628\u0646\u062F\u0642\u064A\u0629"
+      - "\u9730\u5F39\u67AA"
+      - Escopeta
+      - Bombear Espingarda
+      - "Fusil \xC0 Pompe"
+      - Pomp Jachtgeweer
+      - Fucile A Pompa
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: P72_SHOTGUN
+      TermType: 0
+      Description: 
+      Languages:
+      - P72
+      - "\u042072"
+      - "\u0635 72"
+      - P72
+      - P72
+      - P72
+      - P72
+      - P72
+      - P72
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: EXPANDINVENTORYDIALOG_TITLE_GET_SPACE_TEXT
+      TermType: 0
+      Description: 
+      Languages:
+      - Get space for equipment
+      - "\u041F\u043E\u043B\u0443\u0447\u0438\u0442\u0435 \u043C\u0435\u0441\u0442\u043E
+        \u0434\u043B\u044F \u0441\u043D\u0430\u0440\u044F\u0436\u0435\u043D\u0438\u044F"
+      - "\u0627\u062D\u0635\u0644 \u0639\u0644\u0649 \u0645\u0633\u0627\u062D\u0629
+        \u0644\u0644\u0645\u0639\u062F\u0627\u062A"
+      - "\u4E3A\u88C5\u5907\u817E\u51FA\u7A7A\u95F4"
+      - Obtenga espacio para el equipo
+      - "Obtenha espa\xE7o para o equipamento"
+      - "Obtenez de la place pour l'\xE9quipement"
+      - Zorg voor ruimte voor uitrusting
+      - Trova spazio per l'attrezzatura
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: EXPANDINVENTORYDIALOG_UPGRADE_TEXT
+      TermType: 0
+      Description: 
+      Languages:
+      - Upgrade<color=#FBDC32> (<color=#FBDC32>1)</color>
+      - "\u0443\u043B\u0443\u0447\u0448\u0438\u0442\u044C<color=#FBDC32>(+1)</color>"
+      - "\u062A\u062D\u0633\u064A\u0646 <color=#FBDC32> (<color=#FBDC32>1) </color>"
+      - "\u6539\u8FDB<color=#FBDC32> (<color=#FBDC32>1)</color>"
+      - Mejorar<color=#FBDC32> (<color=#FBDC32>1)</color>
+      - Melhorar<color=#FBDC32> (<color=#FBDC32>1)</color>
+      - "Am\xE9liorer<color=#FBDC32> (<color=#FBDC32>1)</color>"
+      - Verbeteren<color=#FBDC32> (<color=#FBDC32>1)</color>
+      - Migliorare<color=#FBDC32> (<color=#FBDC32>1)</color>
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: FINISHLEVELDIALOG_COLLECTED_ITEMS_TEXT
+      TermType: 0
+      Description: 
+      Languages:
+      - Collected items
+      - "\u0421\u043E\u0431\u0440\u0430\u043D\u043D\u044B\u0435 \u043F\u0440\u0435\u0434\u043C\u0435\u0442\u044B"
+      - "\u0627\u0644\u0639\u0646\u0627\u0635\u0631 \u0627\u0644\u0645\u062C\u0645\u0639\u0629"
+      - "\u6536\u85CF\u54C1"
+      - "Art\xEDculos recogidos"
+      - itens coletados
+      - "Objets collect\xE9s"
+      - Verzamelde artikelen
+      - Oggetti raccolti
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: FINISHLEVELDIALOG_COMPLETE_TEXT
+      TermType: 0
+      Description: 
+      Languages:
+      - Done!
+      - "\u0412\u044B\u043F\u043E\u043B\u043D\u0435\u043D\u043E!"
+      - "\u0645\u0646\u062A\u0647\u064A!"
+      - "\u5B8C\u6BD5\uFF01"
+      - "\xA1Hecho!"
+      - Feito!
+      - Fait!
+      - Klaar!
+      - Fatto!
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: FINISHLEVELDIALOG_FAILED_TEXT
+      TermType: 0
+      Description: 
+      Languages:
+      - Failed!
+      - "\u041F\u0440\u043E\u0432\u0430\u043B\u0435\u043D\u043E!"
+      - "\u0641\u0634\u0644!"
+      - "\u5931\u8D25\u7684\uFF01"
+      - "\xA1Fallido!"
+      - Fracassado!
+      - "Echou\xE9!"
+      - Mislukt!
+      - Fallito!
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: FINISHLEVELDIALOG_LOSE_TEXT
+      TermType: 0
+      Description: 
+      Languages:
+      - Lose
+      - "\u043F\u043E\u0442\u0435\u0440\u044F\u0442\u044C"
+      - "\u064A\u062E\u0633\u0631"
+      - "\u5931\u53BB"
+      - Perder
+      - Perder
+      - Perdre
+      - Verliezen
+      - Perdere
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: FINISHLEVELDIALOG_LOSTLOOT_TEXT
+      TermType: 0
+      Description: 
+      Languages:
+      - Lost loot
+      - "\u041F\u043E\u0442\u0435\u0440\u044F\u043D\u043D\u0430\u044F \u0434\u043E\u0431\u044B\u0447\u0430"
+      - "\u0627\u0644\u0645\u0633\u0631\u0648\u0642\u0627\u062A \u0627\u0644\u0645\u0641\u0642\u0648\u062F\u0629"
+      - "\u4E22\u5931\u7684\u6218\u5229\u54C1"
+      - "Bot\xEDn perdido"
+      - Pilhagem perdida
+      - Butin perdu
+      - Verloren buit
+      - Bottino perduto
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: FINISHLEVELDIALOG_NO_COLLECTED_ITEMS_TEXT
+      TermType: 0
+      Description: 
+      Languages:
+      - No Collected Items
+      - "\u043D\u0435\u0442 \u0441\u043E\u0431\u0440\u0430\u043D\u043D\u044B\u0445
+        \u043F\u0440\u0435\u0434\u043C\u0435\u0442\u043E\u0432"
+      - "\u0644\u0627 \u062A\u0648\u062C\u062F \u0639\u0646\u0627\u0635\u0631 \u0645\u062C\u0645\u0639\u0629"
+      - "\u6CA1\u6709\u6536\u96C6\u5230\u7684\u7269\u54C1"
+      - "Sin Art\xEDculos Recogidos"
+      - Nenhum Item Coletado
+      - "Aucun Objet Collect\xE9"
+      - Geen Verzamelde Items
+      - Nessun Oggetto Raccolto
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: FINISHLEVELDIALOG_NO_FREE_CELLS_TEXT
+      TermType: 0
+      Description: 
+      Languages:
+      - No Free Slots
+      - "\u043D\u0435\u0442 \u0441\u0432\u043E\u0431\u043E\u0434\u043D\u044B\u0445
+        \u044F\u0447\u0435\u0435\u043A"
+      - "\u0644\u0627 \u062A\u0648\u062C\u062F \u0641\u062A\u062D\u0627\u062A \u0645\u062C\u0627\u0646\u064A\u0629"
+      - "\u6CA1\u6709\u7A7A\u95F2\u63D2\u69FD"
+      - No Hay Espacios Libres
+      - Sem Slots Livres
+      - "Pas De Cr\xE9neaux Libres"
+      - Geen Vrije Plaatsen
+      - Nessuno Slot Libero
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: FINISHLEVELDIALOG_OPEN_NOW_TEXT
+      TermType: 0
+      Description: 
+      Languages:
+      - Open Now
+      - "\u041E\u0442\u043A\u0440\u044B\u0442\u044C \u0421\u0435\u0439\u0447\u0430\u0441"
+      - "\u0645\u0641\u062A\u0648\u062D \u0627\u0644\u0627\u0646"
+      - "\u73B0\u5728\u5F00\u95E8\u4E86"
+      - Abierto Ahora
+      - Abra Agora
+      - Ouvrez Maintenant
+      - Nu Open
+      - Aperto Adesso
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: FINISHLEVELDIALOG_UPGRADE_EQUIPMENT_OFFER_TEXT
+      TermType: 0
+      Description: 
+      Languages:
+      - Upgrade your equipment to get stronger!
+      - "\u0423\u043B\u0443\u0447\u0448\u0430\u0439\u0442\u0435 \u0441\u043D\u0430\u0440\u044F\u0436\u0435\u043D\u0438\u0435,
+        \u0447\u0442\u043E\u0431\u044B \u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442\u044C\u0441\u044F
+        \u0441\u0438\u043B\u044C\u043D\u0435\u0435!"
+      - "\u0642\u0645 \u0628\u062A\u0631\u0642\u064A\u0629 \u0645\u0639\u062F\u0627\u062A\u0643
+        \u0644\u062A\u0635\u0628\u062D \u0623\u0642\u0648\u0649!"
+      - "\u5347\u7EA7\u4F60\u7684\u88C5\u5907\u4EE5\u53D8\u5F97\u66F4\u5F3A\uFF01"
+      - "\xA1Mejora tu equipo para ser m\xE1s fuerte!"
+      - Atualize seu equipamento para ficar mais forte!
+      - "Am\xE9liorez votre \xE9quipement pour devenir plus fort\_!"
+      - Upgrade je uitrusting om sterker te worden!
+      - Aggiorna la tua attrezzatura per diventare piu forte!
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: GDPR_ACCEPT
+      TermType: 0
+      Description: 
+      Languages:
+      - Accept
+      - "\u041F\u0440\u0438\u043D\u044F\u0442\u044C"
+      - "\u064A\u0642\u0628\u0644"
+      - "\u63A5\u53D7"
+      - Aceptar
+      - Aceitar
+      - Accepter
+      - Aanvaarden
+      - Accettare
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: GDPR_DECLINE
+      TermType: 0
+      Description: 
+      Languages:
+      - Do not allow
+      - "\u041D\u0435 \u0440\u0430\u0437\u0440\u0435\u0448\u0430\u0442\u044C"
+      - "\u0644\u0627 \u062A\u0633\u0645\u062D"
+      - "\u4E0D\u5141\u8BB8"
+      - No permitir
+      - "N\xE3o permita"
+      - Ne permettent pas
+      - Niet toestaan
+      - Non permettere
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: GDPR_DESCRIPTION
+      TermType: 0
+      Description: 
+      Languages:
+      - 'By clicking on the "Accept" button, you confirm that you have carefully
+        read and agree to our:'
+      - "\u041D\u0430\u0436\u0430\u0432 \u043D\u0430 \u043A\u043D\u043E\u043F\u043A\u0443
+        \"\u041F\u0440\u0438\u043D\u044F\u0442\u044C\", \u0432\u044B \u043F\u043E\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0430\u0435\u0442\u0435,
+        \u0447\u0442\u043E \u0432\u043D\u0438\u043C\u0430\u0442\u0435\u043B\u044C\u043D\u043E
+        \u043F\u0440\u043E\u0447\u043B\u0438 \u0438 \u0441\u043E\u0433\u043B\u0430\u0448\u0430\u0435\u0442\u0435\u0441\u044C
+        \u0441 \u043D\u0430\u0448\u0438\u043C\u0438:"
+      - "\u0628\u0627\u0644\u0646\u0642\u0631 \u0641\u0648\u0642 \u0627\u0644\u0632\u0631
+        \"\u0642\u0628\u0648\u0644\" \u060C \u0641\u0625\u0646\u0643 \u062A\u0624\u0643\u062F
+        \u0623\u0646\u0643 \u0642\u062F \u0642\u0631\u0623\u062A \u0628\u0639\u0646\u0627\u064A\u0629
+        \u0648\u0648\u0627\u0641\u0642\u062A \u0639\u0644\u0649:"
+      - "\u5355\u51FB\u201C\u63A5\u53D7\u201D\u6309\u94AE\uFF0C\u5373\u8868\u793A\u60A8\u786E\u8BA4\u5DF2\u4ED4\u7EC6\u9605\u8BFB\u5E76\u540C\u610F\u6211\u4EEC\u7684\uFF1A"
+      - "Al hacer clic en el bot\xF3n \"Aceptar\", confirma que ha le\xEDdo atentamente
+        y est\xE1 de acuerdo con nuestros:"
+      - "Ao clicar no bot\xE3o \"Aceitar\", voc\xEA confirma que leu atentamente
+        e concorda com nossos:"
+      - "En cliquant sur le bouton \"Accepter\", vous confirmez avoir lu attentivement
+        et accept\xE9 nos :"
+      - 'Door op de knop "Accepteren" te klikken, bevestigt u dat u onze:'
+      - 'Cliccando sul pulsante "Accetta", confermi di aver letto attentamente e
+        di accettare le nostre:'
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: GDPR_PRIVATE_POLICY
+      TermType: 0
+      Description: 
+      Languages:
+      - '- Privacy Policy.'
+      - "- \u041F\u043E\u043B\u0438\u0442\u0438\u043A\u043E\u0439 \u043A\u043E\u043D\u0444\u0438\u0434\u0435\u043D\u0446\u0438\u0430\u043B\u044C\u043D\u043E\u0441\u0442\u0438."
+      - "- \u0633\u064A\u0627\u0633\u0629 \u0627\u0644\u062E\u0635\u0648\u0635\u064A\u0629."
+      - "- \u9690\u79C1\u653F\u7B56\u3002"
+      - "- Pol\xEDtica de privacidad."
+      - "- Pol\xEDtica de Privacidade."
+      - "- Politique de confidentialit\xE9."
+      - '- Privacybeleid.'
+      - '- Politica sulla riservatezza.'
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: GDPR_TERMS_OF_USE
+      TermType: 0
+      Description: 
+      Languages:
+      - '- Terms of Use'
+      - "- \u0423\u0441\u043B\u043E\u0432\u0438\u044F\u043C\u0438 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u044F"
+      - "- \u0634\u0631\u0648\u0637 \u0627\u0644\u0627\u0633\u062A\u062E\u062F\u0627\u0645"
+      - "- \u4F7F\u7528\u6761\u6B3E"
+      - '- Condiciones de uso'
+      - '- Termos de uso'
+      - '- Conditions d''utilisation'
+      - '- Gebruiksvoorwaarden'
+      - '- Termini di utilizzo'
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: GDPR_TITLE
+      TermType: 0
+      Description: 
+      Languages:
+      - Terms of Use and Privacy Policy
+      - "\u0423\u0441\u043B\u043E\u0432\u0438\u044F \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u044F
+        \u0438 \u041F\u043E\u043B\u0438\u0442\u0438\u043A\u0430 \u043A\u043E\u043D\u0444\u0438\u0434\u0435\u043D\u0446\u0438\u0430\u043B\u044C\u043D\u043E\u0441\u0442\u0438"
+      - "\u0634\u0631\u0648\u0637 \u0627\u0644\u0627\u0633\u062A\u062E\u062F\u0627\u0645
+        \u0648 \u0633\u064A\u0627\u0633\u0629 \u0627\u0644\u062E\u0635\u0648\u0635\u064A\u0629"
+      - "\u4F7F\u7528\u6761\u6B3E\u548C\u9690\u79C1\u653F\u7B56"
+      - "T\xE9rminos de uso y pol\xEDtica de privacidad"
+      - Termos de uso e politica de privacidade
+      - "Conditions d'utilisation et politique de confidentialit\xE9"
+      - Gebruiksvoorwaarden en privacybeleid
+      - Condizioni d'uso e Informativa sulla privacy
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: IAP_ONE_TIME_DRAWING_SET
+      TermType: 0
+      Description: 
+      Languages:
+      - <color=#56FCED> 50</color> Of All Drawings
+      - "\u043F\u043E <color=#56FCED>50</color> \u0432\u0441\u0435\u0445 \u0447\u0435\u0440\u0442\u0435\u0436\u0435\u0439"
+      - "<color=#56FCED> 50 </color> \u0644\u062C\u0645\u064A\u0639 \u0627\u0644\u0631\u0633\u0648\u0645\u0627\u062A"
+      - "<color=#56FCED> 50</color> \u6240\u6709\u56FE\u7EB8"
+      - <color=#56FCED> 50</color> De Todos Los Dibujos
+      - <color=#56FCED> 50</color> De Todos Os Desenhos
+      - <color=#56FCED> 50</color> De Tous Les Dessins
+      - <color=#56FCED> 50</color> Van Alle Tekeningen
+      - <color=#56FCED> 50</color> Di Tutti I Disegni
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: IAP_ONE_TIME_EQUIPMENT_SET
+      TermType: 0
+      Description: 
+      Languages:
+      - <color=#DDA7FE>50</color> For All Equipment
+      - "\u043F\u043E <color=#DDA7FE>50</color> \u0432\u0441\u0435\u0433\u043E \u043E\u0431\u043E\u0440\u0443\u0434\u043E\u0432\u0430\u043D\u0438\u044F"
+      - "<color=#DDA7FE> 50 </color> \u0644\u062C\u0645\u064A\u0639 \u0627\u0644\u0645\u0639\u062F\u0627\u062A"
+      - "<color=#DDA7FE>50</color> \u6240\u6709\u88C5\u5907"
+      - <color=#DDA7FE>50</color> Para Todos Los Equipos
+      - <color=#DDA7FE>50</color> Para Todos Os Equipamentos
+      - "<color=#DDA7FE>50</color> Pour Tous Les \xE9quipements"
+      - <color=#DDA7FE>50</color> Voor Alle Apparatuur
+      - <color=#DDA7FE>50</color> Per Tutte Le Apparecchiature
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: MAINMENU_CHARACTERS_TEXT
+      TermType: 0
+      Description: 
+      Languages:
+      - Character
+      - "\u041F\u0435\u0440\u0441\u043E\u043D\u0430\u0436"
+      - "\u0634\u062E\u0635\u064A\u0629"
+      - "\u7279\u70B9"
+      - Personaje
+      - Personagem
+      - Personnage
+      - Karakter
+      - Carattere
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: MAINMENU_DAMAGE_BONUS_TEXT
+      TermType: 0
+      Description: 
+      Languages:
+      - Damage bonus
+      - "\u0411\u043E\u043D\u0443\u0441 \u043A \u0443\u0440\u043E\u043D\u0443"
+      - "\u0645\u0643\u0627\u0641\u0623\u0629 \u0627\u0644\u0636\u0631\u0631"
+      - "\u4F24\u5BB3\u52A0\u6210"
+      - "Bono de da\xF1o"
+      - Bonus de dano
+      - "Bonus de d\xE9g\xE2ts"
+      - Schadebonus
+      - Bonus danni
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: MAINMENU_DAYS_REMAINING_TEXT
+      TermType: 0
+      Description: 
+      Languages:
+      - Days
+      - "\u0414\u043D\u044F"
+      - "\u0623\u064A\u0627\u0645"
+      - "\u5929"
+      - "D\xEDas"
+      - Dias
+      - Jours
+      - Dagen
+      - Giorni
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: MAINMENU_DIAMOND_OFFERS_TEXT
+      TermType: 0
+      Description: 
+      Languages:
+      - diamond offers
+      - "\u0430\u043B\u043C\u0430\u0437\u043D\u044B\u0435 \u043F\u0440\u0435\u0434\u043B\u043E\u0436\u0435\u043D\u0438\u044F"
+      - "\u0639\u0631\u0648\u0636 \u0627\u0644\u0645\u0627\u0633"
+      - "\u6C34\u6676"
+      - ofertas de diamantes
+      - ofertas de diamante
+      - offres de diamants
+      - diamanten aanbiedingen
+      - offerte di diamanti
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: MAINMENU_EVERY_WEEK_FIRST_PURCHASE_BONUS_TEXT
+      TermType: 0
+      Description: 
+      Languages:
+      - Every week first purchase bonus
+      - "\u041D\u0435\u0434\u0435\u043B\u044C\u043D\u044B\u0439 \u0431\u043E\u043D\u0443\u0441
+        \u0437\u0430 \u043F\u0435\u0440\u0432\u0443\u044E \u043F\u043E\u043A\u0443\u043F\u043A\u0443"
+      - "\u0645\u0643\u0627\u0641\u0623\u0629 \u0627\u0644\u0634\u0631\u0627\u0621
+        \u0627\u0644\u0623\u0648\u0644\u0649 \u0627\u0644\u0623\u0633\u0628\u0648\u0639\u064A\u0629"
+      - "\u6BCF\u5468\u9996\u6B21\u8D2D\u4E70\u5956\u52B1"
+      - Bono Semanal Por Primera Compra
+      - Bonus Semanal De Primeira Compra
+      - Prime De Premier Achat Hebdomadaire
+      - Wekelijkse Eerste Aankoopbonus
+      - Bonus Settimanale Sul Primo Acquisto
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: MAINMENU_FIRST_PURCHASE_BONUS_TEXT
+      TermType: 0
+      Description: 
+      Languages:
+      - First purchase bonus
+      - "\u0411\u043E\u043D\u0443\u0441 \u0437\u0430 \u043F\u0435\u0440\u0432\u0443\u044E
+        \u043F\u043E\u043A\u0443\u043F\u043A\u0443"
+      - "\u0645\u0643\u0627\u0641\u0623\u0629 \u0627\u0644\u0634\u0631\u0627\u0621
+        \u0627\u0644\u0623\u0648\u0644\u0649"
+      - "\u9996\u6B21\u8D2D\u4E70\u5956\u91D1"
+      - Bono de primera compra
+      - Bonus de primeira compra
+      - Prime de premier achat
+      - Eerste aankoopbonus
+      - Bonus primo acquisto
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: MAINMENU_HEALTH_TEXT
+      TermType: 0
+      Description: 
+      Languages:
+      - Health
+      - "\u0417\u0434\u043E\u0440\u043E\u0432\u044C\u0435"
+      - "\u0635\u062D\u0629"
+      - "\u5065\u5EB7"
+      - Salud
+      - "Sa\xFAde"
+      - "Sant\xE9"
+      - Gezondheid
+      - Salute
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: MAINMENU_HOURS_REMAINING_TEXT
+      TermType: 0
+      Description: 
+      Languages:
+      - Hours
+      - "\u0427\u0430\u0441\u043E\u0432"
+      - "\u0633\u0627\u0639\u0627\u062A"
+      - "\u5C0F\u65F6"
+      - Horas
+      - Horas
+      - Heures
+      - Uur
+      - Ore
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: MAINMENU_INVENTORY_TEXT
+      TermType: 0
+      Description: 
+      Languages:
+      - Inventory
+      - "\u0418\u043D\u0432\u0435\u043D\u0442\u0430\u0440\u044C"
+      - "\u062C\u0631\u062F"
+      - "\u5B58\u8D27"
+      - Inventario
+      - "Invent\xE1rio"
+      - Inventaire
+      - Inventaris
+      - Inventario
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: MAINMENU_MAP_TEXT
+      TermType: 0
+      Description: 
+      Languages:
+      - Missions
+      - "\u041C\u0438\u0441\u0441\u0438\u0438"
+      - "\u0627\u0644\u0628\u0639\u062B\u0627\u062A"
+      - "\u4EFB\u52A1"
+      - Misiones
+      - Missoes
+      - Missions
+      - Missies
+      - Missioni
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: MAINMENU_MONEY_OFFERS_TEXT
+      TermType: 0
+      Description: 
+      Languages:
+      - Money offers
+      - "\u0434\u0435\u043D\u0435\u0436\u043D\u044B\u0435 \u043F\u0440\u0435\u0434\u043B\u043E\u0436\u0435\u043D\u0438\u044F"
+      - "\u0639\u0631\u0648\u0636 \u0627\u0644\u0646\u0642\u0648\u062F"
+      - "\u91D1\u94B1\u63D0\u8BAE"
+      - ofertas de dinero
+      - ofertas de dinheiro
+      - Offres d'argent
+      - Geld aanbiedingen
+      - Offerte di denaro
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: MAINMENU_NEW_IN_TEXT
+      TermType: 0
+      Description: 
+      Languages:
+      - new in
+      - "\u043D\u043E\u0432\u043E\u0435 \u0447\u0435\u0440\u0435\u0437"
+      - "\u0627\u0644\u062C\u062F\u064A\u062F \u0641\u064A"
+      - "\u65B0\u7684"
+      - nuevo en
+      - novo em
+      - nouvelle dans
+      - nieuw in
+      - "Novit\xE0"
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: MAINMENU_ONETIME_OFFER_TEXT
+      TermType: 0
+      Description: 
+      Languages:
+      - One time offer
+      - "\u0420\u0430\u0437\u043E\u0432\u043E\u0435 \u043F\u0440\u0435\u0434\u043B\u043E\u0436\u0435\u043D\u0438\u0435"
+      - "\u0639\u0631\u0636 \u0645\u0631\u0629 \u0648\u0627\u062D\u062F\u0629"
+      - "\u4E00\u6B21\u6027\u62A5\u4EF7"
+      - "Oferta \xFAnica"
+      - "Oferta \xFAnica"
+      - Offre unique
+      - Eenmalig aanbod
+      - Offerta una tantum
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: MAINMENU_STORE_TEXT
+      TermType: 0
+      Description: 
+      Languages:
+      - store
+      - "\u043C\u0430\u0433\u0430\u0437\u0438\u043D"
+      - "\u0645\u062D\u0644"
+      - "\u5E97\u94FA"
+      - almacenar
+      - loja
+      - magasin
+      - winkel
+      - negozio
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: MAINMENU_VIP_ACCOUNT_TEXT
+      TermType: 0
+      Description: 
+      Languages:
+      - VIP account
+      - "VIP \u0430\u043A\u043A\u0430\u0443\u043D\u0442"
+      - "\u062D\u0633\u0627\u0628 VIP"
+      - "\u8D35\u5BBE\u8D26\u6237"
+      - cuenta vip
+      - conta vip
+      - compte VIP
+      - VIP-account
+      - Conto VIP
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: NARRATIVE_1_DELIVERY_african1
+      TermType: 0
+      Description: 
+      Languages:
+      - Mister fireman, there are monsters ahead. Could you deal with them?
+      - "\u041C\u0438\u0441\u0442\u0435\u0440 \u043F\u043E\u0436\u0430\u0440\u043D\u044B\u0439,
+        \u0442\u0430\u043C \u0432\u043F\u0435\u0440\u0435\u0434\u0438 \u043C\u043E\u043D\u0441\u0442\u0440\u044B.
+        \u041D\u0435 \u043C\u043E\u0433\u043B\u0438 \u0431\u044B \u0432\u044B \u0440\u0430\u0437\u043E\u0431\u0440\u0430\u0442\u044C\u0441\u044F
+        \u0441 \u043D\u0438\u043C\u0438?"
+      - "\u0633\u064A\u062F \u0631\u062C\u0644 \u0627\u0644\u0625\u0637\u0641\u0627\u0621
+        \u060C \u0647\u0646\u0627\u0643 \u0648\u062D\u0648\u0634 \u0623\u0645\u0627\u0645\u0643.
+        \u0647\u0644 \u064A\u0645\u0643\u0646\u0643 \u0627\u0644\u062A\u0639\u0627\u0645\u0644
+        \u0645\u0639\u0647\u0645\u061F"
+      - "\u6D88\u9632\u5458\u5148\u751F\uFF0C\u524D\u9762\u6709\u602A\u7269\u3002\u4F60\u80FD\u5BF9\u4ED8\u4ED6\u4EEC\u5417\uFF1F"
+      - "Se\xF1or bombero, hay monstruos por delante. \xBFPodr\xEDas tratar con ellos?"
+      - "Senhor bombeiro, h\xE1 monstros \xE0 frente. Voc\xEA poderia lidar com eles?"
+      - Monsieur le pompier, il y a des monstres devant nous. Pourriez-vous les traiter
+        ?
+      - Meneer brandweerman, er zijn monsters in het verschiet. Zou je met ze kunnen
+        omgaan?
+      - Signor pompiere, ci sono dei mostri davanti. Potresti occupartene?
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: NARRATIVE_1_DELIVERY_african2
+      TermType: 0
+      Description: 
+      Languages:
+      - Climbed up the stairs. Okay, I've got to go, good luck!
+      - "\u041F\u043E\u0434\u043D\u044F\u043B\u0441\u044F \u043F\u043E \u043B\u0435\u0441\u0442\u043D\u0438\u0446\u0435.
+        \u041B\u0430\u0434\u043D\u043E, \u043C\u043D\u0435 \u043F\u043E\u0440\u0430,
+        \u0443\u0434\u0430\u0447\u0438!"
+      - "\u0635\u0639\u062F \u0627\u0644\u062F\u0631\u062C. \u062D\u0633\u0646\u064B\u0627
+        \u060C \u064A\u062C\u0628 \u0623\u0646 \u0623\u0630\u0647\u0628 \u060C \u062D\u0638\u064B\u0627
+        \u0633\u0639\u064A\u062F\u064B\u0627!"
+      - "\u722C\u4E0A\u4E86\u697C\u68AF\u3002\u597D\u5427\uFF0C\u6211\u5F97\u8D70\u4E86\uFF0C\u795D\u4F60\u597D\u8FD0\uFF01"
+      - "Sub\xED las escaleras. Vale, me tengo que ir, \xA1buena suerte!"
+      - Subiu as escadas. Ok, eu tenho que ir, boa sorte!
+      - "Mont\xE9 les escaliers. Bon, je dois y aller, bonne chance !"
+      - "De trap opgeklommen. Ok\xE9, ik moet gaan, succes!"
+      - "Sal\xEC le scale. Ok, devo andare, buona fortuna!"
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: NARRATIVE_1_DELIVERY_player1
+      TermType: 0
+      Description: 
+      Languages:
+      - How...how did you even get here?
+      - "\u041A\u0430\u043A...\u043A\u0430\u043A \u0442\u044B \u0432\u043E\u043E\u0431\u0449\u0435
+        \u0441\u044E\u0434\u0430 \u043F\u043E\u043F\u0430\u043B?"
+      - "\u0643\u064A\u0641 ... \u0643\u064A\u0641 \u0648\u0635\u0644\u062A \u0625\u0644\u0649
+        \u0647\u0646\u0627\u061F"
+      - "\u4F60\u2026\u2026\u4F60\u600E\u4E48\u5230\u8FD9\u91CC\u6765\u7684\uFF1F"
+      - "\xBFC\xF3mo... c\xF3mo llegaste aqu\xED?"
+      - "Como... como voc\xEA chegou aqui?"
+      - "Comment... comment es-tu arriv\xE9e ici ?"
+      - Hoe... hoe ben je hier gekomen?
+      - Come... come sei arrivato qui?
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: NARRATIVE_1_LODGER_korean1
+      TermType: 0
+      Description: 
+      Languages:
+      - I just moved in and the house is on fire again!
+      - "\u042F \u0442\u043E\u043B\u044C\u043A\u043E \u043F\u0435\u0440\u0435\u0435\u0445\u0430\u043B
+        \u0438 \u0432\u043E\u0442 \u0434\u043E\u043C \u0441\u043D\u043E\u0432\u0430
+        \u0433\u043E\u0440\u0438\u0442!"
+      - "\u0644\u0642\u062F \u0627\u0646\u062A\u0642\u0644\u062A \u0644\u0644\u062A\u0648
+        \u0625\u0644\u0649 \u0627\u0644\u0645\u0646\u0632\u0644 \u0648\u0627\u0634\u062A\u0639\u0644\u062A
+        \u0627\u0644\u0646\u064A\u0631\u0627\u0646 \u0645\u0631\u0629 \u0623\u062E\u0631\u0649!"
+      - "\u6211\u521A\u642C\u8FDB\u6765\uFF0C\u623F\u5B50\u53C8\u7740\u706B\u4E86\uFF01"
+      - "\xA1Me acabo de mudar y ahora la casa est\xE1 en llamas otra vez!"
+      - "Acabei de me mudar e a casa est\xE1 pegando fogo de novo!"
+      - "Je viens d'emm\xE9nager et maintenant la maison est \xE0 nouveau en feu
+        !"
+      - Ik ben net verhuisd en het huis staat weer in brand!
+      - "Mi sono appena trasferito e la casa \xE8 di nuovo in fiamme!"
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: NARRATIVE_1_LODGER_korean2
+      TermType: 0
+      Description: 
+      Languages:
+      - Perhaps you need to have time to collect things before everything burned
+        down.
+      - "\u041F\u043E\u0436\u0430\u043B\u0443\u0439, \u043D\u0443\u0436\u043D\u043E
+        \u0443\u0441\u043F\u0435\u0442\u044C \u0441\u043E\u0431\u0440\u0430\u0442\u044C
+        \u0432\u0435\u0449\u0438 \u043F\u043E\u043A\u0430 \u0432\u0441\u0435 \u043D\u0435
+        \u0441\u0433\u043E\u0440\u0435\u043B\u043E."
+      - "\u0631\u0628\u0645\u0627 \u062A\u062D\u062A\u0627\u062C \u0625\u0644\u0649
+        \u0648\u0642\u062A \u0644\u062C\u0645\u0639 \u0627\u0644\u0623\u0634\u064A\u0627\u0621
+        \u0642\u0628\u0644 \u0623\u0646 \u064A\u062D\u062A\u0631\u0642 \u0643\u0644
+        \u0634\u064A\u0621."
+      - "\u4E5F\u8BB8\u4F60\u9700\u8981\u6709\u65F6\u95F4\u5728\u4E00\u5207\u90FD\u88AB\u70E7\u6BC1\u4E4B\u524D\u6536\u96C6\u4E1C\u897F\u3002"
+      - Tal vez necesite tener tiempo para recolectar cosas antes de que todo se
+        queme.
+      - "Talvez voc\xEA precise de tempo para coletar as coisas antes que tudo queime."
+      - "Peut-\xEAtre avez-vous besoin de temps pour ramasser des choses avant que
+        tout ne br\xFBle."
+      - Misschien moet je tijd hebben om dingen te verzamelen voordat alles afbrandt.
+      - Forse devi avere il tempo di raccogliere le cose prima che tutto vada a fuoco.
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: NARRATIVE_1_LODGER_player1
+      TermType: 0
+      Description: 
+      Languages:
+      - You don't seem to be very lucky.
+      - "\u041F\u043E\u0445\u043E\u0436\u0435 \u0432\u0430\u043C \u043D\u0435 \u043E\u0447\u0435\u043D\u044C
+        \u0432\u0435\u0437\u0435\u0442."
+      - "\u0644\u0627 \u064A\u0628\u062F\u0648 \u0623\u0646\u0643 \u0645\u062D\u0638\u0648\u0638
+        \u062C\u062F\u064B\u0627."
+      - "\u4F60\u4F3C\u4E4E\u4E0D\u662F\u5F88\u5E78\u8FD0\u3002"
+      - No pareces tener mucha suerte.
+      - "Voc\xEA n\xE3o parece ter muita sorte."
+      - Vous n'avez pas l'air d'avoir beaucoup de chance.
+      - Je lijkt niet veel geluk te hebben.
+      - Non sembri molto fortunato.
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: NARRATIVE_1_OLDMAN_ded1
+      TermType: 0
+      Description: 
+      Languages:
+      - I lost my lucky rabbit foot in a fire! I can't leave without her!
+      - "\u042F \u043F\u043E\u0442\u0435\u0440\u044F\u043B \u0441\u0432\u043E\u044E
+        \u0441\u0447\u0430\u0441\u0442\u043B\u0438\u0432\u0443\u044E \u043A\u0440\u043E\u043B\u0438\u0447\u044C\u044E
+        \u043B\u0430\u043F\u043A\u0443 \u0432 \u043E\u0433\u043D\u0435! \u042F \u043D\u0435
+        \u043C\u043E\u0433\u0443 \u0443\u0439\u0442\u0438 \u0431\u0435\u0437 \u043D\u0435\u0435!"
+      - "\u0644\u0642\u062F \u0641\u0642\u062F\u062A \u0642\u062F\u0645 \u0627\u0644\u0623\u0631\u0646\u0628
+        \u0627\u0644\u0645\u062D\u0638\u0648\u0638\u0629 \u0641\u064A \u062D\u0631\u064A\u0642!
+        \u0644\u0627 \u0623\u0633\u062A\u0637\u064A\u0639 \u0627\u0644\u0645\u063A\u0627\u062F\u0631\u0629
+        \u0628\u062F\u0648\u0646\u0647\u0627!"
+      - "\u6211\u7684\u5E78\u8FD0\u5154\u811A\u5931\u706B\u4E86\uFF01\u6CA1\u6709\u5979\u6211\u4E0D\u80FD\u79BB\u5F00\uFF01"
+      - "\xA1Perd\xED mi pata de conejo de la suerte en un incendio! \xA1No puedo
+        irme sin ella!"
+      - "Perdi meu p\xE9 de coelho da sorte em um inc\xEAndio! Eu n\xE3o posso sair
+        sem ela!"
+      - "J'ai perdu ma patte de lapin porte-bonheur dans un incendie\_! Je ne peux
+        pas partir sans elle !"
+      - Ik verloor mijn gelukkige konijnenpoot in een brand! Ik kan niet vertrekken
+        zonder haar!
+      - Ho perso la mia fortunata zampa di coniglio in un incendio! Non posso partire
+        senza di lei!
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: NARRATIVE_1_OLDMAN_ded2
+      TermType: 0
+      Description: 
+      Languages:
+      - But I must find them, otherwise I am doomed!
+      - "\u041D\u043E \u044F \u0434\u043E\u043B\u0436\u0435\u043D \u043D\u0430\u0439\u0442\u0438
+        \u0438\u0445, \u0438\u043D\u0430\u0447\u0435 \u044F \u043E\u0431\u0440\u0435\u0447\u0435\u043D!"
+      - "\u0644\u0643\u0646 \u064A\u062C\u0628 \u0623\u0646 \u0623\u062C\u062F\u0647\u0645
+        \u060C \u0648\u0625\u0644\u0627 \u0641\u0625\u0646\u0646\u064A \u0645\u062D\u0643\u0648\u0645
+        \u0639\u0644\u064A\u0647!"
+      - "\u4F46\u6211\u5FC5\u987B\u627E\u5230\u4ED6\u4EEC\uFF0C\u5426\u5219\u6211\u5C31\u5B8C\u86CB\u4E86\uFF01"
+      - "\xA1Pero debo encontrarlos, de lo contrario estoy condenado!"
+      - "Mas devo encontr\xE1-los, sen\xE3o estou condenado!"
+      - Mais je dois les trouver, sinon je suis perdu !
+      - Maar ik moet ze vinden, anders ben ik gedoemd!
+      - Ma devo trovarli, altrimenti sono condannato!
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: NARRATIVE_1_OLDMAN_player1
+      TermType: 0
+      Description: 
+      Languages:
+      - Sir, it's not safe here.
+      - "\u0421\u044D\u0440, \u0437\u0434\u0435\u0441\u044C \u043D\u0435\u0431\u0435\u0437\u043E\u043F\u0430\u0441\u043D\u043E."
+      - "\u0633\u064A\u062F\u064A \u060C \u0627\u0644\u0648\u0636\u0639 \u0644\u064A\u0633
+        \u0622\u0645\u0646\u064B\u0627 \u0647\u0646\u0627."
+      - "\u5148\u751F\uFF0C\u8FD9\u91CC\u4E0D\u5B89\u5168\u3002"
+      - "Se\xF1or, no es seguro aqu\xED."
+      - "Senhor, aqui n\xE3o \xE9 seguro."
+      - "Monsieur, ce n'est pas s\xFBr ici."
+      - Meneer, het is hier niet veilig.
+      - "Signore, non \xE8 sicuro qui."
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: NARRATIVE_2_DELIVERY_african1
+      TermType: 0
+      Description: 
+      Languages:
+      - Can you already deal with these monsters? They prevent me from delivering
+        food
+      - "\u041C\u043E\u0436\u0435\u0442 \u0442\u044B \u0443\u0436\u0435 \u0440\u0430\u0437\u0431\u0435\u0440\u0435\u0448\u044C\u0441\u044F
+        \u0441 \u044D\u0442\u0438\u043C\u0438 \u043C\u043E\u043D\u0441\u0442\u0440\u0430\u043C\u0438?
+        \u041E\u043D\u0438 \u043C\u0435\u0448\u0430\u044E\u0442 \u043C\u043D\u0435
+        \u0434\u043E\u0441\u0442\u0430\u0432\u043B\u044F\u0442\u044C \u0435\u0434\u0443"
+      - "\u0647\u0644 \u064A\u0645\u0643\u0646\u0643 \u0628\u0627\u0644\u0641\u0639\u0644
+        \u0627\u0644\u062A\u0639\u0627\u0645\u0644 \u0645\u0639 \u0647\u0630\u0647
+        \u0627\u0644\u0648\u062D\u0648\u0634\u061F \u0645\u0646\u0639\u0648\u0646\u064A
+        \u0645\u0646 \u062A\u0648\u0635\u064A\u0644 \u0627\u0644\u0637\u0639\u0627\u0645"
+      - "\u4F60\u5DF2\u7ECF\u53EF\u4EE5\u5BF9\u4ED8\u8FD9\u4E9B\u602A\u7269\u4E86\u5417\uFF1F\u4ED6\u4EEC\u4E0D\u8BA9\u6211\u9001\u98DF\u7269"
+      - "\xBFYa puedes lidiar con estos monstruos? Me impiden entregar comida"
+      - "Voc\xEA j\xE1 consegue lidar com esses monstros? Eles me impedem de entregar
+        comida"
+      - "Pouvez-vous d\xE9j\xE0 faire face \xE0 ces monstres? Ils m'emp\xEAchent
+        de livrer de la nourriture"
+      - Kun jij deze monsters al aan? Ze voorkomen dat ik eten bezorg
+      - "Puoi gi\xE0 affrontare questi mostri? Mi impediscono di consegnare il cibo"
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: NARRATIVE_2_DELIVERY_african2
+      TermType: 0
+      Description: 
+      Languages:
+      - A couple of burning monsters won't stop me from getting a tip!
+      - "\u041F\u0430\u0440\u043E\u0447\u043A\u0430 \u0433\u043E\u0440\u044F\u0449\u0438\u0445
+        \u0447\u0443\u0434\u043E\u0432\u0438\u0449 \u043D\u0435 \u043F\u043E\u043C\u0435\u0448\u0430\u0435\u0442
+        \u043C\u043D\u0435 \u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044C \u0447\u0430\u0435\u0432\u044B\u0435!"
+      - "\u0632\u0648\u062C\u0627\u0646 \u0645\u0646 \u0627\u0644\u0648\u062D\u0648\u0634
+        \u0627\u0644\u0645\u062D\u062A\u0631\u0642\u0629 \u0644\u0646 \u064A\u0645\u0646\u0639\u0646\u064A
+        \u0645\u0646 \u0627\u0644\u062D\u0635\u0648\u0644 \u0639\u0644\u0649 \u0645\u0639\u0644\u0648\u0645\u0627\u062A
+        \u0633\u0631\u064A\u0629!"
+      - "\u51E0\u4E2A\u71C3\u70E7\u7684\u602A\u7269\u4E0D\u4F1A\u963B\u6B62\u6211\u5F97\u5230\u5C0F\u8D39\uFF01"
+      - "\xA1Un par de monstruos en llamas no impedir\xE1n que reciba una propina!"
+      - "Alguns monstros em chamas n\xE3o v\xE3o me impedir de receber uma gorjeta!"
+      - "Quelques monstres br\xFBlants ne m'emp\xEAcheront pas d'avoir un pourboire
+        !"
+      - "Een paar brandende monsters weerhouden me er niet van om een \u200B\u200Bfooi
+        te krijgen!"
+      - Un paio di mostri in fiamme non mi impediranno di ricevere una mancia!
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: NARRATIVE_2_DELIVERY_player1
+      TermType: 0
+      Description: 
+      Languages:
+      - Why don't you just leave?
+      - "\u041F\u043E\u0447\u0435\u043C\u0443 \u0431\u044B \u0442\u0435\u0431\u0435
+        \u043F\u0440\u043E\u0441\u0442\u043E \u043D\u0435 \u0443\u0439\u0442\u0438?"
+      - "\u0644\u0645\u0627\u0630\u0627 \u0644\u0627 \u062A\u063A\u0627\u062F\u0631
+        \u0641\u0642\u0637\u061F"
+      - "\u4F60\u4E3A\u4EC0\u4E48\u4E0D\u79BB\u5F00\uFF1F"
+      - "\xBFPor qu\xE9 no te vas?"
+      - "Por que voc\xEA simplesmente n\xE3o vai embora?"
+      - Pourquoi ne partez-vous pas ?
+      - Waarom ga je niet gewoon weg?
+      - "Perch\xE9 non te ne vai?"
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: NARRATIVE_2_LODGER_korean1
+      TermType: 0
+      Description: 
+      Languages:
+      - I saw you fight that monster.
+      - "\u042F \u0432\u0438\u0434\u0435\u043B, \u043A\u0430\u043A \u0432\u044B \u0441\u0440\u0430\u0436\u0430\u043B\u0438\u0441\u044C
+        \u0441 \u0442\u0435\u043C \u043C\u043E\u043D\u0441\u0442\u0440\u043E\u043C."
+      - "\u0631\u0623\u064A\u062A\u0643 \u062A\u0642\u0627\u062A\u0644 \u0647\u0630\u0627
+        \u0627\u0644\u0648\u062D\u0634."
+      - "\u6211\u770B\u5230\u4F60\u548C\u90A3\u4E2A\u602A\u7269\u6218\u6597\u4E86\u3002"
+      - Te vi luchar contra ese monstruo.
+      - "Eu vi voc\xEA lutar contra aquele monstro."
+      - Je t'ai vu combattre ce monstre.
+      - Ik zag je vechten tegen dat monster.
+      - Ti ho visto combattere quel mostro.
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: NARRATIVE_2_LODGER_korean2
+      TermType: 0
+      Description: 
+      Languages:
+      - Don't exaggerate, this is not the first time I've been in this situation.
+      - "\u041D\u0435 \u043F\u0440\u0435\u0443\u0432\u0435\u043B\u0438\u0447\u0438\u0432\u0430\u0439\u0442\u0435,
+        \u044F \u043D\u0435 \u043F\u0435\u0440\u0432\u044B\u0439 \u0440\u0430\u0437
+        \u043F\u043E\u043F\u0430\u0434\u0430\u044E \u0432 \u0442\u0430\u043A\u0443\u044E
+        \u0441\u0438\u0442\u0443\u0430\u0446\u0438\u044E."
+      - "\u0644\u0627 \u062A\u0628\u0627\u0644\u063A \u060C \u0647\u0630\u0647 \u0644\u064A\u0633\u062A
+        \u0627\u0644\u0645\u0631\u0629 \u0627\u0644\u0623\u0648\u0644\u0649 \u0627\u0644\u062A\u064A
+        \u0623\u0643\u0648\u0646 \u0641\u064A\u0647\u0627 \u0641\u064A \u0647\u0630\u0627
+        \u0627\u0644\u0645\u0648\u0642\u0641."
+      - "\u522B\u5938\u5F20\uFF0C\u8FD9\u4E0D\u662F\u6211\u7B2C\u4E00\u6B21\u9047\u5230\u8FD9\u79CD\u60C5\u51B5\u3002"
+      - "No exageres, no es la primera vez que me encuentro en esta situaci\xF3n."
+      - "N\xE3o exagere, n\xE3o \xE9 a primeira vez que estou nessa situa\xE7\xE3o."
+      - "N'exag\xE9rez pas, ce n'est pas la premi\xE8re fois que je suis dans cette
+        situation."
+      - Overdrijf niet, dit is niet de eerste keer dat ik in deze situatie zit.
+      - "Non esagerare, non \xE8 la prima volta che mi trovo in questa situazione."
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: NARRATIVE_2_LODGER_player1
+      TermType: 0
+      Description: 
+      Languages:
+      - You need to leave, it's dangerous here.
+      - "\u0412\u0430\u043C \u043D\u0443\u0436\u043D\u043E \u0443\u0445\u043E\u0434\u0438\u0442\u044C,
+        \u0437\u0434\u0435\u0441\u044C \u043E\u043F\u0430\u0441\u043D\u043E."
+      - "\u064A\u062C\u0628 \u0623\u0646 \u062A\u063A\u0627\u062F\u0631 \u060C \u0641\u0627\u0644\u0623\u0645\u0631
+        \u062E\u0637\u064A\u0631 \u0647\u0646\u0627."
+      - "\u4F60\u5FC5\u987B\u79BB\u5F00\uFF0C\u8FD9\u91CC\u5F88\u5371\u9669\u3002"
+      - "Tienes que irte, es peligroso aqu\xED."
+      - "Voc\xEA precisa sair, \xE9 perigoso aqui."
+      - Tu dois partir, c'est dangereux ici.
+      - Je moet weg, het is hier gevaarlijk.
+      - "Devi andartene, \xE8 pericoloso qui."
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: NARRATIVE_2_OLDMAN_ded1
+      TermType: 0
+      Description: 
+      Languages:
+      - I collect everything that can bring good luck. I already have a rabbit's
+        foot, a horseshoe, a figurine of a cat...
+      - "\u042F \u0441\u043E\u0431\u0438\u0440\u0430\u044E \u0432\u0441\u0435 \u0447\u0442\u043E
+        \u043C\u043E\u0436\u0435\u0442 \u043F\u0440\u0438\u043D\u043E\u0441\u0438\u0442\u044C
+        \u0443\u0434\u0430\u0447\u0443. \u0423 \u043C\u0435\u043D\u044F \u0443\u0436\u0435
+        \u0435\u0441\u0442\u044C \u043A\u0440\u043E\u043B\u0438\u0447\u044C\u044F
+        \u043B\u0430\u043F\u043A\u0430, \u043F\u043E\u0434\u043A\u043E\u0432\u0430,
+        \u0441\u0442\u0430\u0442\u0443\u044D\u0442\u043A\u0430 \u043A\u043E\u0442\u0430..."
+      - "\u0623\u0642\u0648\u0645 \u0628\u062C\u0645\u0639 \u0643\u0644 \u0645\u0627
+        \u064A\u0645\u0643\u0646 \u0623\u0646 \u064A\u062C\u0644\u0628 \u0627\u0644\u062D\u0638
+        \u0627\u0644\u0633\u0639\u064A\u062F. \u0644\u062F\u064A \u0628\u0627\u0644\u0641\u0639\u0644
+        \u0642\u062F\u0645 \u0623\u0631\u0646\u0628 \u060C \u062D\u062F\u0648\u0629
+        \u062D\u0635\u0627\u0646 \u060C \u062A\u0645\u062B\u0627\u0644 \u0642\u0637\u0629
+        ..."
+      - "\u6211\u6536\u96C6\u6240\u6709\u80FD\u5E26\u6765\u597D\u8FD0\u7684\u4E1C\u897F\u3002\u6211\u5DF2\u7ECF\u6709\u4E86\u4E00\u53EA\u5154\u811A\u3001\u4E00\u53EA\u9A6C\u8E44\u94C1\u3001\u4E00\u53EA\u732B\u7684\u96D5\u50CF\u2026\u2026"
+      - Colecciono todo lo que puede traer buena suerte. Ya tengo una pata de conejo,
+        una herradura, una figurita de gato...
+      - "Eu coleciono tudo o que pode trazer boa sorte. J\xE1 tenho p\xE9 de coelho,
+        ferradura, estatueta de gato..."
+      - "Je collectionne tout ce qui peut porter chance. J'ai d\xE9j\xE0 une patte
+        de lapin, un fer \xE0 cheval, une figurine de chat..."
+      - Ik verzamel alles wat geluk kan brengen. Ik heb al een konijnenpoot, een
+        hoefijzer, een beeldje van een kat...
+      - "Raccolgo tutto ci\xF2 che pu\xF2 portare fortuna. Ho gi\xE0 una zampa di
+        coniglio, un ferro di cavallo, una statuina di un gatto..."
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: NARRATIVE_2_OLDMAN_ded2
+      TermType: 0
+      Description: 
+      Languages:
+      - Until I lost them, there were no fire monsters here!
+      - "\u041F\u043E\u043A\u0430 \u044F \u0438\u0445 \u043D\u0435 \u043F\u043E\u0442\u0435\u0440\u044F\u043B,
+        \u043E\u0433\u043D\u0435\u043D\u043D\u044B\u0445 \u0447\u0443\u0434\u043E\u0432\u0438\u0449
+        \u0442\u0443\u0442 \u043D\u0435 \u0431\u044B\u043B\u043E!"
+      - "\u062D\u062A\u0649 \u0641\u0642\u062F\u062A\u0647\u0645 \u060C \u0644\u0645
+        \u064A\u0643\u0646 \u0647\u0646\u0627\u0643 \u0648\u062D\u0648\u0634 \u0646\u0627\u0631
+        \u0647\u0646\u0627!"
+      - "\u5728\u6211\u5931\u53BB\u5B83\u4EEC\u4E4B\u524D\uFF0C\u8FD9\u91CC\u6839\u672C\u5C31\u6CA1\u6709\u706B\u9B54\uFF01"
+      - "\xA1Hasta que los perd\xED, no hab\xEDa monstruos de fuego aqu\xED!"
+      - "At\xE9 que eu os perdi, n\xE3o havia monstros de fogo aqui!"
+      - "Jusqu'\xE0 ce que je les perde, il n'y avait pas de monstres de feu ici\_!"
+      - Totdat ik ze verloor, waren hier geen vuurmonsters!
+      - "Finch\xE9 non li ho persi, qui non c'erano mostri di fuoco!"
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: NARRATIVE_2_OLDMAN_player1
+      TermType: 0
+      Description: 
+      Languages:
+      - What makes you think they work?
+      - "\u0421 \u0447\u0435\u0433\u043E \u0432\u044B \u0432\u043E\u043E\u0431\u0449\u0435
+        \u0432\u0437\u044F\u043B\u0438, \u0447\u0442\u043E \u043E\u043D\u0438 \u0440\u0430\u0431\u043E\u0442\u0430\u044E\u0442?"
+      - "\u0645\u0627 \u0627\u0644\u0630\u064A \u064A\u062C\u0639\u0644\u0643 \u062A\u0639\u062A\u0642\u062F
+        \u0623\u0646\u0647\u0645 \u064A\u0639\u0645\u0644\u0648\u0646\u061F"
+      - "\u662F\u4EC0\u4E48\u8BA9\u60A8\u8BA4\u4E3A\u5B83\u4EEC\u6709\u6548\uFF1F"
+      - "\xBFQu\xE9 te hace pensar que funcionan?"
+      - "O que faz voc\xEA pensar que eles funcionam?"
+      - Qu'est-ce qui vous fait penser qu'ils fonctionnent ?
+      - Waarom denk je dat ze werken?
+      - Cosa ti fa pensare che funzionino?
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: NARRATIVE_3_DELIVERY_african1
+      TermType: 0
+      Description: 
+      Languages:
+      - It used to be easier to deliver orders to this house
+      - "\u0420\u0430\u043D\u044C\u0448\u0435 \u0432 \u044D\u0442\u043E\u0442 \u0434\u043E\u043C
+        \u0431\u044B\u043B\u043E \u043F\u0440\u043E\u0449\u0435 \u0434\u043E\u0441\u0442\u0430\u0432\u043B\u044F\u0442\u044C
+        \u0437\u0430\u043A\u0430\u0437\u044B"
+      - "\u0643\u0627\u0646 \u0645\u0646 \u0627\u0644\u0623\u0633\u0647\u0644 \u062A\u0648\u0635\u064A\u0644
+        \u0627\u0644\u0637\u0644\u0628\u0627\u062A \u0625\u0644\u0649 \u0647\u0630\u0627
+        \u0627\u0644\u0645\u0646\u0632\u0644"
+      - "\u4EE5\u524D\u5411\u8FD9\u5BB6\u9001\u8D27\u66F4\u5BB9\u6613"
+      - "Sol\xEDa \u200B\u200Bser m\xE1s f\xE1cil entregar pedidos a esta casa."
+      - "Antigamente era mais f\xE1cil entregar encomendas nesta casa"
+      - "Auparavant, il \xE9tait plus facile de livrer des commandes \xE0 cette maison"
+      - Vroeger was het makkelijker om bestellingen naar dit huis te brengen
+      - "Prima era pi\xF9 facile consegnare gli ordini a questa casa"
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: NARRATIVE_3_DELIVERY_african2
+      TermType: 0
+      Description: 
+      Languages:
+      - The fire monsters haven't tried to burn it before, genius.
+      - "\u041E\u0433\u043D\u0435\u043D\u043D\u044B\u0435 \u043C\u043E\u043D\u0441\u0442\u0440\u044B
+        \u0440\u0430\u043D\u044C\u0448\u0435 \u043D\u0435 \u043F\u044B\u0442\u0430\u043B\u0438\u0441\u044C
+        \u0435\u0433\u043E \u0441\u0436\u0435\u0447\u044C, \u0433\u0435\u043D\u0438\u0439."
+      - "\u0648\u062D\u0648\u0634 \u0627\u0644\u0646\u0627\u0631 \u0644\u0645 \u062A\u062D\u0627\u0648\u0644
+        \u062D\u0631\u0642\u0647\u0627 \u0645\u0646 \u0642\u0628\u0644 \u0623\u064A\u0647\u0627
+        \u0627\u0644\u0639\u0628\u0642\u0631\u064A."
+      - "\u706B\u9B54\u8FD8\u6CA1\u6709\u8BD5\u8FC7\u70E7\u5B83\u5462\uFF0C\u5929\u624D\u3002"
+      - Los monstruos de fuego no han intentado quemarlo antes, genio.
+      - "Os monstros de fogo n\xE3o tentaram queim\xE1-lo antes, g\xEAnio."
+      - "Les monstres du feu n'ont jamais essay\xE9 de le br\xFBler auparavant, g\xE9nie."
+      - De vuurmonsters hebben nog niet eerder geprobeerd het te verbranden, genie.
+      - I mostri di fuoco non hanno mai provato a bruciarlo prima, genio.
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: NARRATIVE_3_DELIVERY_player1
+      TermType: 0
+      Description: 
+      Languages:
+      - And what has changed?
+      - "\u0418 \u0447\u0442\u043E \u0436\u0435 \u043F\u043E\u043C\u0435\u043D\u044F\u043B\u043E\u0441\u044C?"
+      - "\u0648\u0645\u0627 \u0627\u0644\u0630\u064A \u062A\u063A\u064A\u0631\u061F"
+      - "\u53D1\u751F\u4E86\u4EC0\u4E48\u53D8\u5316\uFF1F"
+      - "\xBFY qu\xE9 ha cambiado?"
+      - E o que mudou?
+      - "Et qu'est-ce qui a chang\xE9 ?"
+      - En wat is er veranderd?
+      - "E cosa \xE8 cambiato?"
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: NARRATIVE_3_LODGER_korean1
+      TermType: 0
+      Description: 
+      Languages:
+      - Bravo, you are doing a great job.
+      - "\u0411\u0440\u0430\u0432\u043E, \u0432\u044B \u0445\u043E\u0440\u043E\u0448\u043E
+        \u0432\u044B\u043F\u043E\u043B\u043D\u044F\u0435\u0442\u0435 \u0441\u0432\u043E\u044E
+        \u0440\u0430\u0431\u043E\u0442\u0443."
+      - "\u0628\u0631\u0627\u0641\u0648 \u060C \u0623\u0646\u062A \u062A\u0642\u0648\u0645
+        \u0628\u0639\u0645\u0644 \u0631\u0627\u0626\u0639."
+      - "\u592A\u68D2\u4E86\uFF0C\u4F60\u505A\u5F97\u5F88\u597D\u3002"
+      - "Bravo, est\xE1s haciendo un gran trabajo."
+      - "Bravo, voc\xEA est\xE1 fazendo um \xF3timo trabalho."
+      - Bravo, vous faites un excellent travail.
+      - Bravo, je doet het geweldig.
+      - Bravo, stai facendo un ottimo lavoro.
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: NARRATIVE_3_LODGER_korean2
+      TermType: 0
+      Description: 
+      Languages:
+      - I agree, I think it's time. Say hello to the knight.
+      - "\u0421\u043E\u0433\u043B\u0430\u0441\u0435\u043D, \u0434\u0443\u043C\u0430\u044E
+        \u043C\u043D\u0435 \u043F\u043E\u0440\u0430. \u041F\u0435\u0440\u0435\u0434\u0430\u0432\u0430\u0439\u0442\u0435
+        \u043F\u0440\u0438\u0432\u0435\u0442 \u0440\u044B\u0446\u0430\u0440\u044E."
+      - "\u0623\u0648\u0627\u0641\u0642 \u060C \u0623\u0639\u062A\u0642\u062F \u0623\u0646
+        \u0627\u0644\u0648\u0642\u062A \u0642\u062F \u062D\u0627\u0646. \u0642\u0644
+        \u0645\u0631\u062D\u0628\u0627 \u0644\u0644\u0641\u0627\u0631\u0633."
+      - "\u6211\u540C\u610F\uFF0C\u6211\u8BA4\u4E3A\u662F\u65F6\u5019\u4E86\u3002\u5411\u9A91\u58EB\u95EE\u597D\u3002"
+      - Estoy de acuerdo, creo que es hora. Saluda al caballero.
+      - "Concordo, acho que est\xE1 na hora. Diga ol\xE1 ao cavaleiro."
+      - Je suis d'accord, je pense qu'il est temps. Dites bonjour au chevalier.
+      - Ik ben het ermee eens, ik denk dat het tijd is. Zeg hallo tegen de ridder.
+      - Sono d'accordo, penso sia giunto il momento. Saluta il cavaliere.
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: NARRATIVE_3_LODGER_player1
+      TermType: 0
+      Description: 
+      Languages:
+      - Your infatuation seems unhealthy to me
+      - "\u0412\u0430\u0448\u0435 \u0443\u0432\u043B\u0435\u0447\u0435\u043D\u0438\u0435
+        \u043A\u0430\u0436\u0435\u0442\u0441\u044F \u043C\u043D\u0435 \u043D\u0435\u0437\u0434\u043E\u0440\u043E\u0432\u044B\u043C"
+      - "\u064A\u0628\u062F\u0648 \u0623\u0646 \u0627\u0641\u062A\u062A\u0627\u0646\u0643
+        \u063A\u064A\u0631 \u0635\u062D\u064A \u0628\u0627\u0644\u0646\u0633\u0628\u0629
+        \u0644\u064A"
+      - "\u4F60\u7684\u8FF7\u604B\u5BF9\u6211\u6765\u8BF4\u4F3C\u4E4E\u4E0D\u5065\u5EB7"
+      - Tu enamoramiento me parece malsano
+      - "Sua paix\xE3o parece doentia para mim"
+      - Ton engouement me semble malsain
+      - Je verliefdheid lijkt me ongezond
+      - La tua infatuazione mi sembra malsana
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: NARRATIVE_3_OLDMAN_ded1
+      TermType: 0
+      Description: 
+      Languages:
+      - I found my lucky deck of cards!
+      - "\u042F \u043D\u0430\u0448\u0435\u043B \u0441\u0432\u043E\u044E \u0441\u0447\u0430\u0441\u0442\u043B\u0438\u0432\u0443\u044E
+        \u043A\u043E\u043B\u043E\u0434\u0443 \u043A\u0430\u0440\u0442!"
+      - "\u0644\u0642\u062F \u0648\u062C\u062F\u062A \u0645\u062C\u0645\u0648\u0639\u062A\u064A
+        \u0627\u0644\u0645\u062D\u0638\u0648\u0638\u0629 \u0645\u0646 \u0627\u0644\u0628\u0637\u0627\u0642\u0627\u062A!"
+      - "\u6211\u627E\u5230\u4E86\u6211\u7684\u5E78\u8FD0\u724C\uFF01"
+      - "\xA1Encontr\xE9 mi mazo de cartas de la suerte!"
+      - Encontrei meu baralho de cartas da sorte!
+      - "J'ai trouv\xE9 mon jeu de cartes porte-bonheur\_!"
+      - Ik heb mijn gelukkige kaartspel gevonden!
+      - Ho trovato il mio mazzo di carte fortunato!
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: NARRATIVE_3_OLDMAN_ded2
+      TermType: 0
+      Description: 
+      Languages:
+      - Well, take care of them! I'm almost done
+      - "\u041D\u0443 \u0432\u043E\u0442 \u0438 \u0437\u0430\u0439\u043C\u0438\u0441\u044C
+        \u0438\u043C! \u042F \u043F\u043E\u0447\u0442\u0438 \u0437\u0430\u043A\u043E\u043D\u0447\u0438\u043B"
+      - "\u062D\u0633\u0646\u064B\u0627 \u060C \u0627\u0639\u062A\u0646\u064A \u0628\u0647\u0645!
+        \u0644\u0642\u062F \u0627\u0646\u062A\u0647\u064A\u062A \u062A\u0642\u0631\u064A\u0628\u0627"
+      - "\u597D\u5427\uFF0C\u7167\u987E\u4ED6\u4EEC\uFF01\u6211\u5C31\u5FEB\u5B8C\u6210\u4E86"
+      - "\xA1Pues cu\xEDdalos! casi termino"
+      - Bem, cuide deles! Estou quase pronto
+      - Eh bien, prenez-en soin ! j'ai presque fini
+      - Nou, zorg goed voor ze! ik ben bijna klaar
+      - Bene, prenditi cura di loro! ho quasi finito
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: NARRATIVE_3_OLDMAN_player1
+      TermType: 0
+      Description: 
+      Languages:
+      - The fire is spreading fast...
+      - "\u041E\u0433\u043E\u043D\u044C \u0431\u044B\u0441\u0442\u0440\u043E \u0440\u0430\u0441\u043F\u0440\u043E\u0441\u0442\u0440\u0430\u043D\u044F\u0435\u0442\u0441\u044F..."
+      - "\u0627\u0644\u0646\u0627\u0631 \u062A\u0646\u062A\u0634\u0631 \u0628\u0633\u0631\u0639\u0629
+        ..."
+      - "\u706B\u52BF\u6B63\u5728\u8FC5\u901F\u8513\u5EF6\u2026\u2026"
+      - "El fuego se est\xE1 propagando r\xE1pidamente..."
+      - "O fogo est\xE1 se espalhando rapidamente..."
+      - Le feu se propage rapidement...
+      - Het vuur verspreidt zich snel...
+      - Il fuoco si sta diffondendo velocemente...
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: NARRATIVE_4_DELIVERY_african1
+      TermType: 0
+      Description: 
+      Languages:
+      - You know, this isn't the first house on fire I've delivered food to.
+      - "\u0417\u043D\u0430\u0435\u0448\u044C, \u044D\u0442\u043E \u043D\u0435 \u043F\u0435\u0440\u0432\u044B\u0439
+        \u0433\u043E\u0440\u044F\u0449\u0438\u0439 \u0434\u043E\u043C \u0432 \u043A\u043E\u0442\u043E\u0440\u044B\u0439
+        \u044F \u0434\u043E\u0441\u0442\u0430\u0432\u043B\u044F\u044E \u0435\u0434\u0443"
+      - "\u0643\u0645\u0627 \u062A\u0639\u0644\u0645 \u060C \u0647\u0630\u0627 \u0644\u064A\u0633
+        \u0623\u0648\u0644 \u0645\u0646\u0632\u0644 \u062A\u062D\u062A\u0631\u0642
+        \u0641\u064A\u0647 \u0627\u0644\u0646\u0627\u0631 \u0642\u0645\u062A \u0628\u062A\u0648\u0635\u064A\u0644
+        \u0627\u0644\u0637\u0639\u0627\u0645 \u0625\u0644\u064A\u0647."
+      - "\u4F60\u77E5\u9053\uFF0C\u8FD9\u4E0D\u662F\u6211\u9001\u98DF\u7269\u5230\u7684\u7B2C\u4E00\u4E2A\u7740\u706B\u7684\u623F\u5B50\u3002"
+      - "Sabes, esta no es la primera casa en llamas a la que entregu\xE9 comida."
+      - "Sabes, esta n\xE3o \xE9 a primeira casa a arder onde entrego comida."
+      - "Vous savez, ce n'est pas la premi\xE8re maison en feu \xE0 laquelle je livre
+        de la nourriture."
+      - Weet je, dit is niet het eerste huis dat in brand staat waar ik eten heb
+        bezorgd.
+      - "Sai, questa non \xE8 la prima casa in fiamme a cui consegno del cibo."
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: NARRATIVE_4_DELIVERY_african2
+      TermType: 0
+      Description: 
+      Languages:
+      - So it is, this is the 5th house. For some reason they order pizza every time.
+      - "\u0422\u0430\u043A \u0438 \u0435\u0441\u0442\u044C, \u044D\u0442\u043E \u0443\u0436\u0435
+        5 \u0434\u043E\u043C. \u041A\u0430\u0436\u0434\u044B\u0439 \u0440\u0430\u0437
+        \u043F\u043E\u0447\u0435\u043C\u0443-\u0442\u043E \u0437\u0430\u043A\u0430\u0437\u044B\u0432\u0430\u044E\u0442
+        \u043F\u0438\u0446\u0446\u0443."
+      - "\u0647\u0630\u0627 \u0647\u0648 \u0627\u0644\u0645\u0646\u0632\u0644 \u0627\u0644\u062E\u0627\u0645\u0633.
+        \u0644\u0633\u0628\u0628 \u0645\u0627 \u064A\u0637\u0644\u0628\u0648\u0646
+        \u0627\u0644\u0628\u064A\u062A\u0632\u0627 \u0641\u064A \u0643\u0644 \u0645\u0631\u0629."
+      - "\u5C31\u662F\u8FD9\u6837\uFF0C\u8FD9\u662F\u7B2C 5 \u5BAB\u3002\u51FA\u4E8E\u67D0\u79CD\u539F\u56E0\uFF0C\u4ED6\u4EEC\u6BCF\u6B21\u90FD\u70B9\u62AB\u8428\u3002"
+      - "As\xED es, esta es la quinta casa. Por alguna raz\xF3n, siempre piden pizza."
+      - "Assim \xE9, esta \xE9 a 5\xAA casa. Por algum motivo, eles sempre pedem
+        pizza."
+      - "C'est donc, c'est la 5e maison. Pour une raison quelconque, ils commandent
+        une pizza \xE0 chaque fois."
+      - Dus het is, dit is het 5e huis. Om de een of andere reden bestellen ze elke
+        keer pizza.
+      - "Cos\xEC \xE8, questa \xE8 la quinta casa. Per qualche ragione ordinano la
+        pizza ogni volta."
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: NARRATIVE_4_DELIVERY_player1
+      TermType: 0
+      Description: 
+      Languages:
+      - Really?
+      - "\u041D\u0435\u0443\u0436\u0435\u043B\u0438?"
+      - "\u062D\u0642\u064B\u0627\u061F"
+      - "\u771F\u7684\u5417\uFF1F"
+      - "\xBFEn Realidad?"
+      - Realmente?
+      - Vraiment ?
+      - Echt?
+      - Veramente?
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: NARRATIVE_4_LODGER_korean1
+      TermType: 0
+      Description: 
+      Languages:
+      - Do you want pizza?
+      - "\u0425\u043E\u0442\u0438\u0442\u0435 \u043F\u0438\u0446\u0446\u044B?"
+      - "\u0647\u0644 \u062A\u0631\u064A\u062F \u0627\u0644\u0628\u064A\u062A\u0632\u0627\u061F"
+      - "\u4F60\u8981\u62AB\u8428\u5417\uFF1F"
+      - "\xBFQuieres pizza?"
+      - "Voc\xEA quer pizza?"
+      - Veux-tu de la Pizza?
+      - Wil je pizza?
+      - Vuoi la pizza?
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: NARRATIVE_4_LODGER_korean2
+      TermType: 0
+      Description: 
+      Languages:
+      - Don't you like to eat something while watching the show? I have to go
+      - "\u0420\u0430\u0437\u0432\u0435 \u0432\u044B \u043D\u0435 \u043B\u044E\u0431\u0438\u0442\u0435
+        \u043F\u043E\u0435\u0441\u0442\u044C \u0447\u0442\u043E-\u043D\u0438\u0431\u0443\u0434\u044C
+        \u043F\u043E\u043A\u0430 \u0441\u043C\u043E\u0442\u0440\u0438\u0442\u0435
+        \u0448\u043E\u0443? \u041C\u043D\u0435 \u043F\u043E\u0440\u0430."
+      - "\u0623\u0644\u0627 \u062A\u062D\u0628 \u0623\u0646 \u062A\u0623\u0643\u0644
+        \u0634\u064A\u0626\u064B\u0627 \u0623\u062B\u0646\u0627\u0621 \u0645\u0634\u0627\u0647\u062F\u0629
+        \u0627\u0644\u0639\u0631\u0636\u061F \u064A\u062C\u0628 \u0639\u0644\u0649 
+        \u0623\u0646 \u0623\u0630\u0647\u0628"
+      - "\u4F60\u4E0D\u559C\u6B22\u4E00\u8FB9\u770B\u8282\u76EE\u4E00\u8FB9\u5403\u4E1C\u897F\u5417\uFF1F\u6211\u5F97\u8D70\u4E86"
+      - "\xBFNo te gusta comer algo mientras ves el programa? tengo que ir"
+      - "Voc\xEA n\xE3o gosta de comer alguma coisa enquanto assiste ao programa?
+        Eu tenho que ir"
+      - "Vous n'aimez pas manger quelque chose en regardant l'\xE9mission ? Je dois
+        y aller"
+      - Eet je niet graag iets terwijl je naar de show kijkt? ik moet gaan
+      - Non ti piace mangiare qualcosa mentre guardi lo spettacolo? devo andare
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: NARRATIVE_4_LODGER_player1
+      TermType: 0
+      Description: 
+      Languages:
+      - How can you even think about food at a time like this?!
+      - "\u041A\u0430\u043A \u0432\u043E\u043E\u0431\u0449\u0435 \u043C\u043E\u0436\u043D\u043E
+        \u0434\u0443\u043C\u0430\u0442\u044C \u043E \u0435\u0434\u0435 \u0432 \u0442\u0430\u043A\u043E\u0439
+        \u043C\u043E\u043C\u0435\u043D\u0442?!"
+      - "\u0643\u064A\u0641 \u064A\u0645\u0643\u0646\u0643 \u062D\u062A\u0649 \u0627\u0644\u062A\u0641\u0643\u064A\u0631
+        \u0641\u064A \u0627\u0644\u0637\u0639\u0627\u0645 \u0641\u064A \u0648\u0642\u062A
+        \u0645\u062B\u0644 \u0647\u0630\u0627 \u061F!"
+      - "\u8FD9\u79CD\u65F6\u5019\u600E\u4E48\u8FD8\u60F3\u7740\u5403\u7684\u5462\uFF01"
+      - "\xA1\xBFC\xF3mo puedes siquiera pensar en comida en un momento como este?!"
+      - "Como voc\xEA pode pensar em comida em um momento como este?!"
+      - "Comment pouvez-vous m\xEAme penser \xE0 la nourriture \xE0 un moment comme
+        celui-ci\_?\_!"
+      - Hoe kun je op zo'n moment aan eten denken?!
+      - Come puoi anche solo pensare al cibo in un momento come questo?!
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: NARRATIVE_4_OLDMAN_ded1
+      TermType: 0
+      Description: 
+      Languages:
+      - I found 12 more items. And some weird delivery guy.
+      - "\u042F \u043D\u0430\u0448\u0435\u043B \u0435\u0449\u0435 12 \u043F\u0440\u0435\u0434\u043C\u0435\u0442\u043E\u0432.
+        \u0418 \u043A\u0430\u043A\u043E\u0433\u043E-\u0442\u043E \u0441\u0442\u0440\u0430\u043D\u043D\u043E\u0433\u043E
+        \u0434\u043E\u0441\u0442\u0430\u0432\u0449\u0438\u043A\u0430."
+      - "\u0644\u0642\u062F \u0648\u062C\u062F\u062A 12 \u0639\u0646\u0627\u0635\u0631
+        \u0623\u062E\u0631\u0649. \u0648\u0631\u062C\u0644 \u062A\u0648\u0635\u064A\u0644
+        \u063A\u0631\u064A\u0628."
+      - "\u6211\u53C8\u627E\u5230\u4E86 12 \u4EF6\u7269\u54C1\u3002\u8FD8\u6709\u4E00\u4E9B\u5947\u602A\u7684\u9001\u8D27\u5458\u3002"
+      - "Encontr\xE9 12 art\xEDculos m\xE1s. Y un repartidor raro."
+      - Encontrei mais 12 itens. E um entregador esquisito.
+      - "J'ai trouv\xE9 12 autres articles. Et un livreur bizarre."
+      - Ik heb nog 12 items gevonden. En een rare bezorger.
+      - Ho trovato altri 12 articoli. E uno strano fattorino.
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: NARRATIVE_4_OLDMAN_ded2
+      TermType: 0
+      Description: 
+      Languages:
+      - And I told you that all my talismans work. Look...
+      - "\u0410 \u044F \u0442\u0435\u0431\u0435 \u0433\u043E\u0432\u043E\u0440\u0438\u043B,
+        \u0447\u0442\u043E \u0432\u0441\u0435 \u043C\u043E\u0438 \u0442\u0430\u043B\u0438\u0441\u043C\u0430\u043D\u044B
+        \u0440\u0430\u0431\u043E\u0442\u0430\u044E\u0442. \u0421\u043C\u043E\u0442\u0440\u0438..."
+      - "\u0648\u0642\u0644\u062A \u0644\u0643 \u0623\u0646 \u0643\u0644 \u062A\u0639\u0648\u064A\u0630\u0627\u062A\u064A
+        \u062A\u0639\u0645\u0644. \u064A\u0646\u0638\u0631..."
+      - "\u6211\u544A\u8BC9\u8FC7\u4F60\u6211\u6240\u6709\u7684\u62A4\u8EAB\u7B26\u90FD\u6709\u6548\u3002\u770B..."
+      - Y te dije que todos mis talismanes funcionan. Mirar...
+      - "E eu disse a voc\xEA que todos os meus talism\xE3s funcionam. Olhar..."
+      - Et je vous ai dit que tous mes talismans fonctionnent. Regarder...
+      - En ik zei je dat al mijn talismannen werken. Kijk...
+      - E ti ho detto che tutti i miei talismani funzionano. Aspetto...
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: NARRATIVE_4_OLDMAN_player1
+      TermType: 0
+      Description: 
+      Languages:
+      - How do you even get past the monsters?
+      - "\u041A\u0430\u043A \u0432\u044B \u0432\u043E\u043E\u0431\u0449\u0435 \u043F\u0440\u043E\u0445\u043E\u0434\u0438\u0442\u0435
+        \u043C\u0438\u043C\u043E \u0447\u0443\u0434\u043E\u0432\u0438\u0449?"
+      - "\u0643\u064A\u0641 \u064A\u0645\u0643\u0646\u0643 \u062A\u062C\u0627\u0648\u0632
+        \u0627\u0644\u0648\u062D\u0648\u0634\u061F"
+      - "\u4F60\u751A\u81F3\u5982\u4F55\u901A\u8FC7\u602A\u7269\uFF1F"
+      - "\xBFC\xF3mo pasas a trav\xE9s de los monstruos?"
+      - "Como voc\xEA consegue passar pelos monstros?"
+      - "Comment arrivez-vous m\xEAme \xE0 d\xE9passer les monstres?"
+      - Hoe kom je zelfs voorbij de monsters?
+      - Come fai a superare i mostri?
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: NARRATIVE_5_DELIVERY_african1
+      TermType: 0
+      Description: 
+      Languages:
+      - Last order! I'm almost done.
+      - "\u041F\u043E\u0441\u043B\u0435\u0434\u043D\u0438\u0439 \u0437\u0430\u043A\u0430\u0437!
+        \u042F \u043F\u043E\u0447\u0442\u0438 \u0437\u0430\u043A\u043E\u043D\u0447\u0438\u043B."
+      - "\u0622\u062E\u0631 \u0637\u0644\u0628! \u0644\u0642\u062F \u0627\u0646\u062A\u0647\u064A\u062A
+        \u062A\u0642\u0631\u064A\u0628\u0627."
+      - "\u6700\u540E\u7684\u8BA2\u5355\uFF01\u6211\u5C31\u5FEB\u5B8C\u6210\u4E86\u3002"
+      - "\xA1\xDAltimo pedido! Casi termino."
+      - "\xDAltimo pedido! Estou quase pronto."
+      - "Derni\xE8re commande! J'ai presque fini."
+      - Laatste order! Ik ben bijna klaar.
+      - Ultimo ordine! Ho quasi finito.
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: NARRATIVE_5_DELIVERY_african2
+      TermType: 0
+      Description: 
+      Languages:
+      - Of course, I still have a lot of orders all over the city.
+      - "\u041A\u043E\u043D\u0435\u0447\u043D\u043E, \u0443 \u043C\u0435\u043D\u044F
+        \u0435\u0449\u0435 \u043A\u0443\u0447\u0430 \u0437\u0430\u043A\u0430\u0437\u043E\u0432
+        \u043F\u043E \u0432\u0441\u0435\u043C\u0443 \u0433\u043E\u0440\u043E\u0434\u0443."
+      - "\u0628\u0627\u0644\u0637\u0628\u0639 \u060C \u0644\u0627 \u064A\u0632\u0627\u0644
+        \u0644\u062F\u064A \u0627\u0644\u0643\u062B\u064A\u0631 \u0645\u0646 \u0627\u0644\u0637\u0644\u0628\u0627\u062A
+        \u0641\u064A \u062C\u0645\u064A\u0639 \u0623\u0646\u062D\u0627\u0621 \u0627\u0644\u0645\u062F\u064A\u0646\u0629."
+      - "\u5F53\u7136\uFF0C\u6211\u73B0\u5728\u6EE1\u57CE\u7684\u8BA2\u5355\u8FD8\u662F\u4E0D\u5C11\u7684\u3002"
+      - "Por supuesto, todav\xEDa tengo muchos pedidos por toda la ciudad."
+      - Claro, ainda tenho muitos pedidos por toda a cidade.
+      - "Bien s\xFBr, j'ai encore beaucoup de commandes dans toute la ville."
+      - Natuurlijk heb ik nog steeds veel bestellingen door de hele stad.
+      - "Certo, ho ancora molti ordini in tutta la citt\xE0."
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: NARRATIVE_5_DELIVERY_player1
+      TermType: 0
+      Description: 
+      Languages:
+      - And will you finally leave?
+      - "\u0418 \u0442\u044B \u043D\u0430\u043A\u043E\u043D\u0435\u0446 \u0443\u0439\u0434\u0435\u0448\u044C?"
+      - "\u0648\u0647\u0644 \u0633\u062A\u063A\u0627\u062F\u0631 \u0623\u062E\u064A\u0631\u064B\u0627\u061F"
+      - "\u4F60\u6700\u7EC8\u4F1A\u79BB\u5F00\u5417\uFF1F"
+      - "\xBFY finalmente te ir\xE1s?"
+      - "E voc\xEA vai finalmente sair?"
+      - Et partirez-vous enfin ?
+      - En ga je eindelijk weg?
+      - E alla fine te ne andrai?
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: NARRATIVE_5_LODGER_korean1
+      TermType: 0
+      Description: 
+      Languages:
+      - How do you like this flying fiery head?
+      - "\u041A\u0430\u043A \u0432\u0430\u043C \u044D\u0442\u0430 \u043B\u0435\u0442\u0430\u044E\u0449\u0430\u044F
+        \u043E\u0433\u043D\u0435\u043D\u043D\u0430\u044F \u0433\u043E\u043B\u043E\u0432\u0430?"
+      - "\u0643\u064A\u0641 \u062A\u062D\u0628 \u0647\u0630\u0627 \u0627\u0644\u0631\u0623\u0633
+        \u0627\u0644\u0646\u0627\u0631\u064A \u0627\u0644\u0637\u0627\u0626\u0631\u061F"
+      - "\u559C\u6B22\u8FD9\u4E2A\u98DE\u626C\u7684\u706B\u70ED\u5934\u50CF\u5417\uFF1F"
+      - "\xBFQu\xE9 te parece esta cabeza de fuego voladora?"
+      - "Como voc\xEA gosta desta cabe\xE7a de fogo voadora?"
+      - "Comment aimez-vous cette t\xEAte de feu volante?"
+      - Wat vind je van deze vliegende vurige kop?
+      - Come ti piace questa testa di fuoco volante?
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: NARRATIVE_5_LODGER_korean2
+      TermType: 0
+      Description: 
+      Languages:
+      - I'm trying for you, I think you'll like the next one more.
+      - "\u042F \u0436\u0435 \u0434\u043B\u044F \u0432\u0430\u0441 \u0441\u0442\u0430\u0440\u0430\u044E\u0441\u044C,
+        \u0434\u0443\u043C\u0430\u044E \u0441\u043B\u0435\u0434\u0443\u044E\u0449\u0438\u0439
+        \u0432\u0430\u043C \u043F\u043E\u043D\u0440\u0430\u0432\u0438\u0442\u0441\u044F
+        \u0431\u043E\u043B\u044C\u0448\u0435."
+      - "\u0623\u0646\u0627 \u0623\u062D\u0627\u0648\u0644 \u0645\u0646 \u0623\u062C\u0644\u0643
+        \u060C \u0623\u0639\u062A\u0642\u062F \u0623\u0646\u0643 \u0633\u062A\u062D\u0628
+        \u0627\u0644\u062A\u0627\u0644\u064A \u0623\u0643\u062B\u0631."
+      - "\u6211\u6B63\u5728\u4E3A\u4F60\u52AA\u529B\uFF0C\u6211\u60F3\u4F60\u4F1A\u66F4\u559C\u6B22\u4E0B\u4E00\u4E2A\u3002"
+      - "Lo intento por ti, creo que te gustar\xE1 m\xE1s el siguiente."
+      - "Estou tentando por voc\xEA, acho que voc\xEA vai gostar mais do pr\xF3ximo."
+      - J'essaie pour vous, je pense que vous aimerez davantage le prochain.
+      - Ik probeer het voor je, ik denk dat je de volgende leuker zult vinden.
+      - "Ci sto provando per te, penso che il prossimo ti piacer\xE0 di pi\xF9."
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: NARRATIVE_5_LODGER_player1
+      TermType: 0
+      Description: 
+      Languages:
+      - Why are you interested in this at all?
+      - "\u041F\u043E\u0447\u0435\u043C\u0443 \u044D\u0442\u043E \u0432\u043E\u043E\u0431\u0449\u0435
+        \u0432\u0430\u0441 \u0438\u043D\u0442\u0435\u0440\u0435\u0441\u0443\u0435\u0442?"
+      - "\u0644\u0645\u0627\u0630\u0627 \u0623\u0646\u062A \u0645\u0647\u062A\u0645
+        \u0628\u0647\u0630\u0627 \u0639\u0644\u0649 \u0627\u0644\u0625\u0637\u0644\u0627\u0642\u061F"
+      - "\u4F60\u4E3A\u4EC0\u4E48\u5BF9\u8FD9\u4E2A\u611F\u5174\u8DA3\uFF1F"
+      - "\xBFPor qu\xE9 est\xE1s interesado en esto en absoluto?"
+      - "Por que voc\xEA est\xE1 interessado nisso?"
+      - "Pourquoi \xEAtes-vous int\xE9ress\xE9 par tout cela?"
+      - "Waarom ben je hier \xFCberhaupt in ge\xEFnteresseerd?"
+      - "Perch\xE9 sei interessato a questo?"
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: NARRATIVE_5_OLDMAN_ded1
+      TermType: 0
+      Description: 
+      Languages:
+      - I need to find my four leaf clover. I can't leave without it!
+      - "\u041C\u043D\u0435 \u043D\u0443\u0436\u043D\u043E \u043D\u0430\u0439\u0442\u0438
+        \u0441\u0432\u043E\u0439 \u0447\u0435\u0442\u044B\u0440\u0435\u0445\u043B\u0438\u0441\u0442\u043D\u044B\u0439
+        \u043A\u043B\u0435\u0432\u0435\u0440. \u042F \u043D\u0435 \u043C\u043E\u0433\u0443
+        \u0443\u0439\u0442\u0438 \u0431\u0435\u0437 \u043D\u0435\u0433\u043E!"
+      - "\u0623\u0631\u064A\u062F \u0623\u0646 \u0623\u062C\u062F \u0623\u0631\u0628\u0639
+        \u0623\u0648\u0631\u0627\u0642 \u0628\u0631\u0633\u064A\u0645. \u0644\u0627
+        \u0623\u0633\u062A\u0637\u064A\u0639 \u0627\u0644\u0645\u063A\u0627\u062F\u0631\u0629
+        \u0628\u062F\u0648\u0646\u0647!"
+      - "\u6211\u9700\u8981\u627E\u5230\u6211\u7684\u56DB\u53F6\u8349\u3002\u6CA1\u6709\u5B83\u6211\u4E0D\u80FD\u79BB\u5F00\uFF01"
+      - "Necesito encontrar mi tr\xE9bol de cuatro hojas. \xA1No puedo irme sin \xE9l!"
+      - "Preciso encontrar meu trevo de quatro folhas. Eu n\xE3o posso sair sem ele!"
+      - "Je dois trouver mon tr\xE8fle \xE0 quatre feuilles. Je ne peux pas partir
+        sans \xE7a !"
+      - Ik moet mijn klavertje vier vinden. Ik kan niet weg zonder!
+      - Devo trovare il mio quadrifoglio. Non posso partire senza!
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: NARRATIVE_5_OLDMAN_ded2
+      TermType: 0
+      Description: 
+      Languages:
+      - Secret! Suddenly you want to take a couple.
+      - "\u0421\u0435\u043A\u0440\u0435\u0442! \u0412\u0434\u0440\u0443\u0433 \u0432\u044B
+        \u0437\u0430\u0445\u043E\u0442\u0438\u0442\u0435 \u0432\u0437\u044F\u0442\u044C
+        \u0441\u0435\u0431\u0435 \u043F\u0430\u0440\u043E\u0447\u043A\u0443."
+      - "\u0633\u0631! \u0641\u062C\u0623\u0629 \u062A\u0631\u064A\u062F \u0623\u0646
+        \u062A\u0623\u062E\u0630 \u0632\u0648\u062C\u064A\u0646."
+      - "\u79D8\u5BC6\uFF01\u7A81\u7136\u60F3\u5E26\u4E00\u5BF9\u3002"
+      - "\xA1Secreto! De repente quieres tomar una pareja."
+      - "Segredo! De repente, voc\xEA quer levar um casal."
+      - Secret! Soudain, vous voulez prendre un couple.
+      - Geheim! Plots wil je er een paar nemen.
+      - Segreto! All'improvviso vuoi prenderne un paio.
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: NARRATIVE_5_OLDMAN_player1
+      TermType: 0
+      Description: 
+      Languages:
+      - How many mascots do you have? You've been collecting them for a long time
+      - "\u0421\u043A\u043E\u043B\u044C\u043A\u043E \u0432\u043E\u043E\u0431\u0449\u0435
+        \u0443 \u0432\u0430\u0441 \u0442\u0430\u043B\u0438\u0441\u043C\u0430\u043D\u043E\u0432?
+        \u0412\u044B \u0443\u0436\u0435 \u0434\u043E\u043B\u0433\u043E \u0438\u0445
+        \u0441\u043E\u0431\u0438\u0440\u0430\u0435\u0442\u0435"
+      - "\u0643\u0645 \u0639\u062F\u062F \u0627\u0644\u062A\u0645\u064A\u0645\u0629
+        \u0644\u062F\u064A\u0643\u061F \u0644\u0642\u062F \u0643\u0646\u062A \u062A\u062C\u0645\u0639\u0647\u0645
+        \u0644\u0641\u062A\u0631\u0629 \u0637\u0648\u064A\u0644\u0629"
+      - "\u4F60\u6709\u51E0\u4E2A\u5409\u7965\u7269\uFF1F\u4F60\u5DF2\u7ECF\u6536\u96C6\u5B83\u4EEC\u5F88\u957F\u65F6\u95F4\u4E86"
+      - "\xBFCu\xE1ntas mascotas tienes? Los has estado coleccionando durante mucho
+        tiempo."
+      - "Quantos mascotes voc\xEA tem? Voc\xEA os coleciona h\xE1 muito tempo"
+      - Combien de mascottes avez-vous ? Vous les collectionnez depuis longtemps
+      - Hoeveel mascottes heb je? Je verzamelt ze al heel lang
+      - Quante mascotte hai? Li collezioni da molto tempo
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: NARRATIVE_6_DELIVERY_african1
+      TermType: 0
+      Description: 
+      Languages:
+      - I'm finally done. Thanks for helping with the monsters. It was...hot.
+      - "\u042F \u043D\u0430\u043A\u043E\u043D\u0435\u0446 \u0437\u0430\u043A\u043E\u043D\u0447\u0438\u043B.
+        \u0421\u043F\u0430\u0441\u0438\u0431\u043E \u0437\u0430 \u043F\u043E\u043C\u043E\u0449\u044C
+        \u0441 \u043C\u043E\u043D\u0441\u0442\u0440\u0430\u043C\u0438. \u042D\u0442\u043E
+        \u0431\u044B\u043B\u043E...\u0433\u043E\u0440\u044F\u0447\u043E."
+      - "\u0644\u0642\u062F \u0627\u0646\u062A\u0647\u064A\u062A \u0623\u062E\u064A\u0631\u064B\u0627.
+        \u0634\u0643\u0631\u0627 \u0644\u0644\u0645\u0633\u0627\u0639\u062F\u0629
+        \u0645\u0639 \u0627\u0644\u0648\u062D\u0648\u0634. \u0644\u0642\u062F \u0643\u0627\u0646
+        \u062D\u0627\u0631\u0627."
+      - "\u6211\u7EC8\u4E8E\u5B8C\u6210\u4E86\u3002\u611F\u8C22\u60A8\u5E2E\u52A9\u6253\u602A\u517D\u3002\u5B83\u662F\u70ED\u7684\u3002"
+      - "Finalmente termin\xE9. Gracias por ayudar con los monstruos. Hacia calor."
+      - Eu finalmente terminei. Obrigado por ajudar com os monstros. Estava quente.
+      - "J'ai enfin termin\xE9. Merci pour votre aide avec les monstres. C'\xE9tait
+        chaud."
+      - Ik ben eindelijk klaar. Bedankt voor het helpen met de monsters. Het was
+        heet.
+      - Finalmente ho finito. Grazie per l'aiuto con i mostri. Faceva caldo.
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: NARRATIVE_6_DELIVERY_african2
+      TermType: 0
+      Description: 
+      Languages:
+      - I'll treat you to food next time!
+      - "\u0412 \u0441\u043B\u0435\u0434\u0443\u044E\u0449\u0438\u0439 \u0440\u0430\u0437
+        \u0443\u0433\u043E\u0449\u0443 \u0442\u0435\u0431\u044F \u0435\u0434\u043E\u0439!"
+      - "\u0633\u0623\u0639\u0627\u0644\u062C\u0643 \u0628\u0627\u0644\u0637\u0639\u0627\u0645
+        \u0641\u064A \u0627\u0644\u0645\u0631\u0629 \u0627\u0644\u0642\u0627\u062F\u0645\u0629!"
+      - "\u4E0B\u6B21\u8BF7\u4F60\u5403\u996D\uFF01"
+      - "\xA1Te invitar\xE9 a comer la pr\xF3xima vez!"
+      - "Vou trat\xE1-lo com comida da pr\xF3xima vez!"
+      - "Je t'offrirai de la nourriture la prochaine fois\_!"
+      - Ik trakteer je de volgende keer op eten!
+      - "Ti offrir\xF2 del cibo la prossima volta!"
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: NARRATIVE_6_DELIVERY_player1
+      TermType: 0
+      Description: 
+      Languages:
+      - This is my job
+      - "\u042D\u0442\u043E \u043C\u043E\u044F \u0440\u0430\u0431\u043E\u0442\u0430"
+      - "\u0647\u0630\u0647 \u0647\u064A \u0648\u0638\u064A\u0641\u062A\u064A"
+      - "\u8FD9\u662F\u6211\u7684\u5DE5\u4F5C"
+      - Este es mi trabajo
+      - "Este \xE9 o meu trabalho"
+      - C'est mon travail
+      - Dit is mijn werk
+      - "Questo \xE8 il mio lavoro"
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: NARRATIVE_6_LODGER_korean1
+      TermType: 0
+      Description: 
+      Languages:
+      - We met again! How do you feel about dragons?
+      - "\u041C\u044B \u0441\u043D\u043E\u0432\u0430 \u0432\u0441\u0442\u0440\u0435\u0442\u0438\u043B\u0438\u0441\u044C!
+        \u041A\u0430\u043A \u0432\u044B \u043E\u0442\u043D\u043E\u0441\u0438\u0442\u0435\u0441\u044C
+        \u043A \u0434\u0440\u0430\u043A\u043E\u043D\u0430\u043C?"
+      - "\u0627\u0644\u062A\u0642\u064A\u0646\u0627 \u0645\u0631\u0629 \u0623\u062E\u0631\u0649!
+        \u0645\u0627 \u0647\u0648 \u0634\u0639\u0648\u0631\u0643 \u062A\u062C\u0627\u0647
+        \u0627\u0644\u062A\u0646\u0627\u0646\u064A\u0646\u061F"
+      - "\u6211\u4EEC\u53C8\u89C1\u9762\u4E86\uFF01\u4F60\u89C9\u5F97\u9F99\u600E\u4E48\u6837\uFF1F"
+      - "\xA1Nos encontramos de nuevo! \xBFQu\xE9 opinas de los dragones?"
+      - "N\xF3s nos encontramos novamente! Como voc\xEA se sente sobre drag\xF5es?"
+      - Nous nous sommes revus ! Que pensez-vous des dragons ?
+      - We hebben elkaar weer ontmoet! Wat vind je van draken?
+      - Ci siamo incontrati di nuovo! Cosa ne pensi dei draghi?
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: NARRATIVE_6_LODGER_korean2
+      TermType: 0
+      Description: 
+      Languages:
+      - I'm just a scientist, there is no need to throw empty accusations. However,
+        we will never see each other again.
+      - "\u042F \u0432\u0441\u0435\u0433\u043E \u043B\u0438\u0448\u044C \u0443\u0447\u0435\u043D\u044B\u0439,
+        \u043D\u0435\u0437\u0430\u0447\u0435\u043C \u0440\u0430\u0437\u0431\u0440\u0430\u0441\u044B\u0432\u0430\u0442\u044C\u0441\u044F
+        \u043F\u0443\u0441\u0442\u044B\u043C\u0438 \u043E\u0431\u0432\u0438\u043D\u0435\u043D\u0438\u044F\u043C\u0438.
+        \u0412\u043F\u0440\u043E\u0447\u0435\u043C, \u043C\u044B \u0432\u0441\u0435
+        \u0440\u0430\u0432\u043D\u043E \u0431\u043E\u043B\u044C\u0448\u0435 \u043D\u0435
+        \u0443\u0432\u0438\u0434\u0438\u043C\u0441\u044F"
+      - "\u0623\u0646\u0627 \u0645\u062C\u0631\u062F \u0639\u0627\u0644\u0645 \u060C
+        \u0644\u0627 \u062F\u0627\u0639\u064A \u0644\u0625\u0644\u0642\u0627\u0621
+        \u0627\u062A\u0647\u0627\u0645\u0627\u062A \u0641\u0627\u0631\u063A\u0629.
+        \u0648\u0645\u0639 \u0630\u0644\u0643 \u060C \u0644\u0646 \u0646\u0631\u0649
+        \u0628\u0639\u0636\u0646\u0627 \u0627\u0644\u0628\u0639\u0636 \u0645\u0631\u0629
+        \u0623\u062E\u0631\u0649."
+      - "\u6211\u53EA\u662F\u4E00\u4E2A\u79D1\u5B66\u5BB6\uFF0C\u6CA1\u6709\u5FC5\u8981\u7A7A\u53E3\u65E0\u51ED\u3002\u7136\u800C\uFF0C\u6211\u4EEC\u518D\u4E5F\u89C1\u4E0D\u5230\u5BF9\u65B9\u4E86\u3002"
+      - "Solo soy un cient\xEDfico, no hay necesidad de lanzar acusaciones vac\xEDas.
+        Sin embargo, nunca nos volveremos a ver."
+      - "Sou apenas um cientista, n\xE3o h\xE1 necessidade de lan\xE7ar acusa\xE7\xF5es
+        vazias. No entanto, nunca mais nos veremos."
+      - "Je ne suis qu'un scientifique, il n'est pas n\xE9cessaire de lancer des
+        accusations vides. Cependant, nous ne nous reverrons jamais."
+      - Ik ben maar een wetenschapper, het is niet nodig om loze beschuldigingen
+        te uiten. We zullen elkaar echter nooit meer zien.
+      - "Sono solo uno scienziato, non c'\xE8 bisogno di lanciare accuse vuote. Tuttavia,
+        non ci rivedremo mai pi\xF9."
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: NARRATIVE_6_LODGER_player1
+      TermType: 0
+      Description: 
+      Languages:
+      - You seem very suspicious to me. It all seems to be your doing.
+      - "\u0422\u044B \u043A\u0430\u0436\u0435\u0448\u044C\u0441\u044F \u043C\u043D\u0435
+        \u043E\u0447\u0435\u043D\u044C \u043F\u043E\u0434\u043E\u0437\u0440\u0438\u0442\u0435\u043B\u044C\u043D\u044B\u043C.
+        \u041A\u0430\u0436\u0435\u0442\u0441\u044F \u0432\u0441\u0435 \u044D\u0442\u043E
+        \u0432\u0430\u0448\u0438\u0445 \u0440\u0443\u043A \u0434\u0435\u043B\u043E"
+      - "\u064A\u0628\u062F\u0648 \u0623\u0646\u0643 \u0645\u0631\u064A\u0628 \u062C\u062F\u0627
+        \u0628\u0627\u0644\u0646\u0633\u0628\u0629 \u0644\u064A. \u064A\u0628\u062F\u0648
+        \u0623\u0646 \u0627\u0644\u0623\u0645\u0631 \u0643\u0644\u0647 \u0645\u0646
+        \u0635\u0646\u0639\u0643."
+      - "\u4F60\u5BF9\u6211\u6765\u8BF4\u4F3C\u4E4E\u5F88\u53EF\u7591\u3002\u8FD9\u4E00\u5207\u4F3C\u4E4E\u90FD\u662F\u4F60\u505A\u7684\u3002"
+      - Me pareces muy sospechoso. Todo parece ser obra tuya.
+      - "Voc\xEA me parece muito suspeito. Tudo parece ser obra sua."
+      - "Vous me semblez tr\xE8s suspect. Tout semble \xEAtre votre fait."
+      - Je lijkt me erg achterdochtig. Het lijkt allemaal jouw werk te zijn.
+      - Mi sembri molto sospettoso. Tutto sembra essere opera tua.
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: NARRATIVE_6_OLDMAN_ded1
+      TermType: 0
+      Description: 
+      Languages:
+      - I finally collected all my 93 mascots!!!
+      - "\u042F \u043D\u0430\u043A\u043E\u043D\u0435\u0446 \u0441\u043E\u0431\u0440\u0430\u043B
+        \u0432\u0441\u0435 \u0441\u0432\u043E\u0438 93 \u0442\u0430\u043B\u0438\u0441\u043C\u0430\u043D\u0430!!!"
+      - "\u0644\u0642\u062F \u062C\u0645\u0639\u062A \u0623\u062E\u064A\u0631\u064B\u0627
+        \u0643\u0644 \u0645\u0627 \u0639\u0646\u062F\u064A \u0645\u0646 \u0627\u0644\u062A\u0645\u064A\u0645\u0629
+        \u0627\u0644\u0628\u0627\u0644\u063A \u0639\u062F\u062F\u0647\u0627 93 !!!"
+      - "\u6211\u7EC8\u4E8E\u96C6\u9F50\u4E86\u6211\u6240\u6709\u7684 93 \u4E2A\u5409\u7965\u7269\uFF01\uFF01\uFF01"
+      - "\xA1\xA1\xA1Finalmente coleccion\xE9 todas mis 93 mascotas!!!"
+      - Finalmente coletei todos os meus 93 mascotes!!!
+      - "J'ai enfin r\xE9cup\xE9r\xE9 toutes mes 93 mascottes !!!"
+      - Ik heb eindelijk al mijn 93 mascottes verzameld!!!
+      - Finalmente ho raccolto tutte le mie 93 mascotte!!!
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: NARRATIVE_6_OLDMAN_ded2
+      TermType: 0
+      Description: 
+      Languages:
+      - Here, you can take a couple. There are a lot of monsters ahead, they will
+        obviously come in handy for you.
+      - "\u0412\u043E\u0442, \u043C\u043E\u0436\u0435\u0448\u044C \u0432\u0437\u044F\u0442\u044C
+        \u043F\u0430\u0440\u043E\u0447\u043A\u0443. \u0412\u043F\u0435\u0440\u0435\u0434\u0438
+        \u043A\u0443\u0447\u0430 \u0447\u0443\u0434\u0438\u0449, \u0442\u0435\u0431\u0435
+        \u043E\u043D\u0438 \u044F\u0432\u043D\u043E \u043F\u0440\u0438\u0433\u043E\u0434\u044F\u0442\u0441\u044F"
+      - "\u0647\u0646\u0627 \u060C \u064A\u0645\u0643\u0646\u0643 \u0623\u0646 \u062A\u0623\u062E\u0630
+        \u0632\u0648\u062C\u064A\u0646. \u0647\u0646\u0627\u0643 \u0627\u0644\u0643\u062B\u064A\u0631
+        \u0645\u0646 \u0627\u0644\u0648\u062D\u0648\u0634 \u0623\u0645\u0627\u0645\u0643
+        \u060C \u0648\u0645\u0646 \u0627\u0644\u0648\u0627\u0636\u062D \u0623\u0646\u0647\u0627
+        \u0633\u062A\u0643\u0648\u0646 \u0641\u064A \u0645\u062A\u0646\u0627\u0648\u0644
+        \u064A\u062F\u064A\u0643."
+      - "\u5728\u8FD9\u91CC\uFF0C\u4F60\u53EF\u4EE5\u5E26\u4E00\u5BF9\u3002\u524D\u9762\u6709\u5F88\u591A\u602A\u7269\uFF0C\u5B83\u4EEC\u663E\u7136\u4F1A\u5BF9\u4F60\u6D3E\u4E0A\u7528\u573A\u3002"
+      - "Aqu\xED, usted puede tomar un par. Hay muchos monstruos por delante, obviamente
+        te ser\xE1n \xFAtiles."
+      - "Aqui, voc\xEA pode levar um par. Existem muitos monstros pela frente, eles
+        obviamente ser\xE3o \xFAteis para voc\xEA."
+      - "Ici, vous pouvez prendre un couple. Il y a beaucoup de monstres \xE0 venir,
+        ils vous seront \xE9videmment utiles."
+      - Hier kun je er een paar nemen. Er zijn veel monsters in het verschiet, ze
+        zullen je duidelijk van pas komen.
+      - Ecco, puoi prenderne un paio. Ci sono molti mostri davanti, ovviamente ti
+        torneranno utili.
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: NARRATIVE_6_OLDMAN_player1
+      TermType: 0
+      Description: 
+      Languages:
+      - You must be joking?
+      - "\u0412\u044B \u043D\u0430\u0432\u0435\u0440\u043D\u043E\u0435 \u0448\u0443\u0442\u0438\u0442\u0435?"
+      - "\u0644\u0627 \u0628\u062F \u0645\u0646 \u0627\u0646\u0643 \u062A\u0645\u0632\u062D\u061F"
+      - "\u4F60\u4E00\u5B9A\u662F\u5728\u5F00\u73A9\u7B11\uFF1F"
+      - "\xBFUsted debe estar bromeando?"
+      - "Voc\xEA deve estar brincando?"
+      - Tu blagues?
+      - Je maakt een grapje?
+      - Stai scherzando?
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: NOTIFICATION_CHEST_DECRIPTION
+      TermType: 0
+      Description: 
+      Languages:
+      - Log in to claim your reward!
+      - "\u0417\u0430\u0439\u0434\u0438\u0442\u0435 \u0447\u0442\u043E\u0431\u044B
+        \u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044C \u043D\u0430\u0433\u0440\u0430\u0434\u0443!"
+      - "\u062A\u0633\u062C\u064A\u0644 \u0627\u0644\u062F\u062E\u0648\u0644 \u0644\u0644\u0645\u0637\u0627\u0644\u0628\u0629
+        \u0628\u062C\u0627\u0626\u0632\u062A\u0643!"
+      - "\u767B\u5F55\u9886\u53D6\u60A8\u7684\u5956\u52B1\uFF01"
+      - "\xA1Inicia sesi\xF3n para reclamar tu recompensa!"
+      - "Fa\xE7a login para reivindicar sua recompensa!"
+      - "Connectez-vous pour r\xE9clamer votre r\xE9compense\_!"
+      - Log in om uw beloning te claimen!
+      - Accedi per richiedere il tuo premio!
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: NOTIFICATION_CHEST_TITLE
+      TermType: 0
+      Description: 
+      Languages:
+      - The chest is open!
+      - "\u0421\u0443\u043D\u0434\u0443\u043A \u043E\u0442\u043A\u0440\u044B\u0442!"
+      - "\u0627\u0644\u0635\u0646\u062F\u0648\u0642 \u0645\u0641\u062A\u0648\u062D!"
+      - "\u80F8\u819B\u6253\u5F00\u4E86\uFF01"
+      - "\xA1El cofre est\xE1 abierto!"
+      - "O peito est\xE1 aberto!"
+      - Le coffre est ouvert !
+      - De kist is open!
+      - "Il petto \xE8 aperto!"
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: NOTIFICATION_PLAYER_MISSING_DESCRIPTION
+      TermType: 0
+      Description: 
+      Languages:
+      - Let's continue the battle with the fire monsters.
+      - "\u0414\u0430\u0432\u0430\u0439 \u043F\u0440\u043E\u0434\u043E\u043B\u0436\u0438\u043C
+        \u0431\u0438\u0442\u0432\u0443 \u0441 \u043E\u0433\u043D\u0435\u043D\u043D\u044B\u043C\u0438
+        \u043C\u043E\u043D\u0441\u0442\u0440\u0430\u043C\u0438."
+      - "\u062F\u0639\u0646\u0627 \u0646\u0648\u0627\u0635\u0644 \u0627\u0644\u0645\u0639\u0631\u0643\u0629
+        \u0645\u0639 \u0648\u062D\u0648\u0634 \u0627\u0644\u0646\u0627\u0631."
+      - "\u8BA9\u6211\u4EEC\u7EE7\u7EED\u4E0E\u706B\u602A\u517D\u7684\u6218\u6597\u3002"
+      - Continuemos la batalla con los monstruos de fuego.
+      - Vamos continuar a batalha com os monstros de fogo.
+      - Continuons la bataille avec les monstres de feu.
+      - Laten we de strijd met de vuurmonsters voortzetten.
+      - Continuiamo la battaglia con i mostri di fuoco.
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: NOTIFICATION_PLAYER_MISSING_TITLE
+      TermType: 0
+      Description: 
+      Languages:
+      - The world is in danger!
+      - "\u041C\u0438\u0440 \u0432 \u043E\u043F\u0430\u0441\u043D\u043E\u0441\u0442\u0438!"
+      - "\u0627\u0644\u0639\u0627\u0644\u0645 \u0641\u064A \u062E\u0637\u0631!"
+      - "\u4E16\u754C\u5371\u5728\u65E6\u5915\uFF01"
+      - "\xA1El mundo est\xE1 en peligro!"
+      - "O mundo est\xE1 em perigo!"
+      - Le monde est en danger !
+      - De wereld is in gevaar!
+      - "Il mondo \xE8 in pericolo!"
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: NOTIFICATION_PREMSHOP_REWARD_DECRIPTION
+      TermType: 0
+      Description: 
+      Languages:
+      - We have prepared a gift! Come in to pick up.
+      - "\u041C\u044B \u043F\u043E\u0434\u0433\u043E\u0442\u043E\u0432\u0438\u043B\u0438
+        \u043F\u043E\u0434\u0430\u0440\u043E\u043A! \u0417\u0430\u0439\u0434\u0438
+        \u0447\u0442\u043E\u0431\u044B \u0437\u0430\u0431\u0440\u0430\u0442\u044C."
+      - "\u0623\u0639\u062F\u062F\u0646\u0627 \u0647\u062F\u064A\u0629! \u062A\u0639\u0627\u0644
+        \u0644\u0627\u0644\u062A\u0642\u0627\u0637."
+      - "\u6211\u4EEC\u51C6\u5907\u4E86\u793C\u7269\uFF01\u8FDB\u6765\u53D6\u8D27\u3002"
+      - "\xA1Hemos preparado un regalo! Entra a recoger."
+      - "N\xF3s preparamos um presente! Entre para pegar."
+      - "Nous vous avons pr\xE9par\xE9 un cadeau ! Venez chercher."
+      - We hebben een cadeau voorbereid! Kom binnen om op te halen.
+      - Abbiamo preparato un regalo! Entra a ritirare.
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: NOTIFICATION_PREMSHOP_REWARD_TITLE
+      TermType: 0
+      Description: 
+      Languages:
+      - Free Reward!
+      - "\u0411\u0435\u0441\u043F\u043B\u0430\u0442\u043D\u0430\u044F \u043D\u0430\u0433\u0440\u0430\u0434\u0430!"
+      - "\u0645\u0643\u0627\u0641\u0623\u0629 \u0645\u062C\u0627\u0646\u064A\u0629!"
+      - "\u514D\u8D39\u5956\u52B1\uFF01"
+      - "\xA1Recompensa gratis!"
+      - "Recompensa gr\xE1tis!"
+      - "R\xE9compense gratuite\_!"
+      - Gratis beloning!
+      - Ricompensa gratuita!
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: NPC_AFRICAN_MAN
+      TermType: 0
+      Description: 
+      Languages:
+      - Deliveryman
+      - "\u0414\u043E\u0441\u0442\u0430\u0432\u0449\u0438\u043A"
+      - "\u0631\u062C\u0644 \u0627\u0644\u062A\u0648\u0635\u064A\u0644"
+      - "\u90AE\u9012\u5458"
+      - Repartidor
+      - Entregador
+      - Livreur
+      - Postbode
+      - Fattorino
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: NPC_KOREAN_GIRL
+      TermType: 0
+      Description: 
+      Languages:
+      - Tenant
+      - "\u0416\u0438\u043B\u0435\u0446"
+      - "\u0645\u0633\u062A\u0623\u062C\u0631"
+      - "\u79DF\u6237"
+      - Arrendatario
+      - Inquilino
+      - Locataire
+      - Huurder
+      - Inquilino
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: NPC_PLAYER
+      TermType: 0
+      Description: 
+      Languages:
+      - You
+      - "\u0412\u044B"
+      - "\u0623\u0646\u062A"
+      - "\u4F60"
+      - "T\xFA"
+      - "Voc\xEA"
+      - Toi
+      - Jij
+      - Voi
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: NPC_SIMPLE_GIRL
+      TermType: 0
+      Description: 
+      Languages:
+      - Whore
+      - "\u041A\u0443\u0440\u0432\u0430"
+      - "\u0639\u0627\u0647\u0631\u0629"
+      - "\u5993\u5973"
+      - Puta
+      - Prostituta
+      - Putain
+      - Hoer
+      - Puttana
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: NPC_SIMPLE_OLD_MAN
+      TermType: 0
+      Description: 
+      Languages:
+      - Old Man
+      - "\u0421\u0442\u0430\u0440\u0438\u043A"
+      - "\u0631\u062C\u0644 \u0639\u062C\u0648\u0632"
+      - "\u8001\u4EBA"
+      - Anciano
+      - Velhote
+      - Vieil Homme
+      - Oude Man
+      - Vecchio Uomo
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: PUSH_TO_TALK
+      TermType: 0
+      Description: 
+      Languages:
+      - Talk
+      - "\u041F\u043E\u0433\u043E\u0432\u043E\u0440\u0438\u0442\u044C"
+      - "\u064A\u062A\u062D\u062F\u062B"
+      - "\u8BB2\u8BDD"
+      - Hablar
+      - Falar
+      - Parler
+      - Gesprek
+      - Parlare
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: RECOMENDED_BATTLE_POWER
+      TermType: 0
+      Description: 
+      Languages:
+      - Recommended CP
+      - "\u0420\u0435\u043A\u043E\u043C\u0435\u043D\u0434\u0443\u0435\u043C\u0430\u044F
+        \u0411\u041C"
+      - "\u0642\u0648\u0629 \u0627\u0644\u0642\u062A\u0627\u0644 \u0627\u0644\u0645\u0648\u0635\u0649
+        \u0628\u0647\u0627"
+      - "\u5EFA\u8BAECP"
+      - CP recomendado
+      - CP recomendado
+      - "CP recommand\xE9"
+      - Aanbevolen CP
+      - CP raccomandato
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: SETTINGS_CLEAR_PROGRESS_TEXT
+      TermType: 0
+      Description: 
+      Languages:
+      - Reset progress
+      - "\u0421\u0431\u0440\u043E\u0441\u0438\u0442\u044C \u043F\u0440\u043E\u0433\u0440\u0435\u0441\u0441"
+      - "\u0625\u0639\u0627\u062F\u0629 \u062A\u0639\u064A\u064A\u0646 \u0627\u0644\u062A\u0642\u062F\u0645"
+      - "\u91CD\u7F6E\u8FDB\u5EA6"
+      - Restablecer progreso
+      - Redefinir progresso
+      - "R\xE9initialiser la progression"
+      - Voortgang resetten
+      - Reimposta i progressi
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: SETTINGS_LANGUAGE_TEXT
+      TermType: 0
+      Description: 
+      Languages:
+      - language
+      - "\u044F\u0437\u044B\u043A"
+      - "\u0644\u063A\u0629"
+      - "\u8BED\u8A00"
+      - idioma
+      - linguagem
+      - langue
+      - taal
+      - lingua
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: SETTINGS_LOGIN_TEXT
+      TermType: 0
+      Description: 
+      Languages:
+      - Login to services
+      - "\u0412\u043E\u0439\u0442\u0438 \u0432 \u0441\u0435\u0440\u0432\u0438\u0441\u044B"
+      - "\u062A\u0633\u062C\u064A\u0644 \u0627\u0644\u062F\u062E\u0648\u0644 \u0625\u0644\u0649
+        \u0627\u0644\u062E\u062F\u0645\u0627\u062A"
+      - "\u767B\u5F55\u670D\u52A1"
+      - "Iniciar sesi\xF3n en servicios"
+      - "Entrar nos servi\xE7os"
+      - Se connecter aux services
+      - Inloggen op diensten
+      - Accedi ai servizi
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: SETTINGS_LOGOUT_TEXT
+      TermType: 0
+      Description: 
+      Languages:
+      - Sign out of services
+      - "\u0412\u044B\u0439\u0442\u0438 \u0438\u0437 \u0441\u0435\u0440\u0432\u0438\u0441\u043E\u0432"
+      - "\u062A\u0633\u062C\u064A\u0644 \u0627\u0644\u062E\u0631\u0648\u062C \u0645\u0646
+        \u0627\u0644\u062E\u062F\u0645\u0627\u062A"
+      - "\u6CE8\u9500\u670D\u52A1"
+      - "Cerrar sesi\xF3n de servicios"
+      - "Sair dos servi\xE7os"
+      - "Se d\xE9connecter des services"
+      - Meld u af bij services
+      - Esci dai servizi
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: SETTINGS_MUSIC_TEXT
+      TermType: 0
+      Description: 
+      Languages:
+      - music
+      - "\u043C\u0443\u0437\u044B\u043A\u0430"
+      - "\u0645\u0648\u0633\u064A\u0642\u0649"
+      - "\u97F3\u4E50"
+      - "m\xFAsica"
+      - "m\xFAsica"
+      - musique
+      - muziek
+      - musica
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: SETTINGS_RESTORE_PURCHASES
+      TermType: 0
+      Description: 
+      Languages:
+      - Restore purchases
+      - "\u0412\u043E\u0441\u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442\u044C
+        \u043F\u043E\u043A\u0443\u043F\u043A\u0438"
+      - "\u0627\u0633\u062A\u0639\u0627\u062F\u0629 \u0627\u0644\u0645\u0634\u062A\u0631\u064A\u0627\u062A"
+      - "\u6062\u590D\u8D2D\u4E70"
+      - Restaurar las compras
+      - Restaurar compras
+      - Restaurer les achats
+      - Herstel aankopen
+      - Ripristinare gli acquisti
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: SETTINGS_SAVE_PROGRESS_TEXT
+      TermType: 0
+      Description: 
+      Languages:
+      - save progress
+      - "\u0441\u043E\u0445\u0440\u0430\u043D\u0438\u0442\u044C \u043F\u0440\u043E\u0433\u0440\u0435\u0441\u0441"
+      - "\u0627\u062D\u0641\u0638 \u0627\u0644\u062A\u0642\u062F\u0645"
+      - "\u4FDD\u5B58\u8FDB\u5EA6"
+      - guardar progreso
+      - salvar progresso
+      - enregistrer la progression
+      - voortgang opslaan
+      - salvare i progressi
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: SETTINGS_SETTINGS_TEXT
+      TermType: 0
+      Description: 
+      Languages:
+      - settings
+      - "\u043D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0438"
+      - "\u0625\u0639\u062F\u0627\u062F\u0627\u062A"
+      - "\u8BBE\u7F6E"
+      - ajustes
+      - "configura\xE7oes"
+      - parametres
+      - instellingen
+      - impostazioni
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: SETTINGS_SOUND_TEXT
+      TermType: 0
+      Description: 
+      Languages:
+      - sound
+      - "\u0437\u0432\u0443\u043A"
+      - "\u0635\u0648\u062A"
+      - "\u58F0\u97F3"
+      - sonido
+      - som
+      - son
+      - geluid
+      - suono
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: SETTINGS_VIBRATION_TEXT
+      TermType: 0
+      Description: 
+      Languages:
+      - vibration
+      - "\u0412\u0438\u0431\u0440\u0430\u0446\u0438\u044F"
+      - "\u0627\u0647\u062A\u0632\u0627\u0632"
+      - "\u632F\u52A8"
+      - "vibraci\xF3n"
+      - "vibra\xE7\xE3o"
+      - vibration
+      - trilling
+      - vibrazione
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: SKILL_OUTFIT_ADRENALIZED
+      TermType: 0
+      Description: 
+      Languages:
+      - Increased movement speed for 3 seconds after taking damage
+      - "\u041A \u0441\u043A\u043E\u0440\u043E\u0441\u0442\u0438 \u043F\u0435\u0440\u0435\u0434\u0432\u0438\u0436\u0435\u043D\u0438\u044F
+        \u043D\u0430 3 \u0441\u0435\u043A\u0443\u043D\u0434\u044B \u043F\u043E\u0441\u043B\u0435
+        \u043F\u043E\u043B\u0443\u0447\u0435\u043D\u0438\u044F \u0443\u0440\u043E\u043D\u0430"
+      - "\u0632\u064A\u0627\u062F\u0629 \u0633\u0631\u0639\u0629 \u0627\u0644\u062D\u0631\u0643\u0629
+        \u0644\u0645\u062F\u0629 3 \u062B\u0648\u0627\u0646 \u0628\u0639\u062F \u062A\u0639\u0631\u0636\u0647\u0627
+        \u0644\u0644\u0636\u0631\u0631"
+      - "\u53D7\u5230\u4F24\u5BB3\u540E\u79FB\u52A8\u901F\u5EA6\u589E\u52A0 3 \u79D2"
+      - "Aumento de la velocidad de movimiento durante 3 segundos despu\xE9s de recibir
+        da\xF1o"
+      - "Velocidade de movimento aumentada por 3 segundos ap\xF3s receber dano"
+      - "Augmentation de la vitesse de d\xE9placement pendant 3 secondes apres avoir
+        subi des d\xE9g\xE2ts"
+      - Verhoogde bewegingssnelheid gedurende 3 seconden na schade te hebben opgelopen
+      - "Velocit\xE0 di movimento aumentata per 3 secondi dopo aver subito danni"
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: SKILL_OUTFIT_AMBUSH
+      TermType: 0
+      Description: 
+      Languages:
+      - Crit Chance while Health is Full
+      - "\u0428\u0430\u043D\u0441 \u043A\u0440\u0438\u0442\u0430 \u043F\u043E\u043A\u0430
+        \u0437\u0434\u043E\u0440\u043E\u0432\u044C\u0435 \u043F\u043E\u043B\u043D\u043E\u0435"
+      - "\u0641\u0631\u0635\u0629 \u0627\u0644\u062D\u0631\u062C\u0629 \u0628\u064A\u0646\u0645\u0627
+        \u0627\u0644\u0635\u062D\u0629 \u0645\u0645\u062A\u0644\u0626\u0629"
+      - "\u751F\u547D\u503C\u6EE1\u65F6\u66B4\u51FB\u51E0\u7387"
+      - "Crit Chance mientras la salud est\xE1 llena"
+      - "Crit Chance enquanto a sa\xFAde est\xE1 cheia"
+      - "Chance de critique pendant que la sant\xE9 est pleine"
+      - Kans op voltreffer terwijl gezondheid vol is
+      - "Probabilit\xE0 critica mentre la salute e piena"
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: SKILL_OUTFIT_AMPLIFYING
+      TermType: 0
+      Description: 
+      Languages:
+      - For each currently reloading weapon, your pistols take additional damage
+      - "\u0417\u0430 \u043A\u0430\u0436\u0434\u043E\u0435 \u043F\u0435\u0440\u0435\u0437\u0430\u0440\u044F\u0436\u0430\u044E\u0449\u0435\u0435\u0441\u044F
+        \u0432 \u0434\u0430\u043D\u043D\u044B\u0439 \u043C\u043E\u043C\u0435\u043D\u0442
+        \u043E\u0440\u0443\u0436\u0438\u0435 \u0432\u0430\u0448\u0438 \u043F\u0438\u0441\u0442\u043E\u043B\u0435\u0442\u044B
+        \u043F\u043E\u043B\u0443\u0447\u0430\u044E\u0442 \u0434\u043E\u043F\u043E\u043B\u043D\u0438\u0442\u0435\u043B\u044C\u043D\u044B\u0439
+        \u0443\u0440\u043E\u043D"
+      - "\u0644\u0643\u0644 \u0633\u0644\u0627\u062D \u064A\u062A\u0645 \u0625\u0639\u0627\u062F\u0629
+        \u0634\u062D\u0646\u0647 \u062D\u0627\u0644\u064A\u064B\u0627 \u060C \u062A\u062A\u0633\u0628\u0628
+        \u0645\u0633\u062F\u0633\u0627\u062A\u0643 \u0641\u064A \u0623\u0636\u0631\u0627\u0631
+        \u0625\u0636\u0627\u0641\u064A\u0629"
+      - "\u5BF9\u4E8E\u6BCF\u4E2A\u5F53\u524D\u6B63\u5728\u91CD\u65B0\u52A0\u8F7D\u7684\u6B66\u5668\uFF0C\u60A8\u7684\u624B\u67AA\u90FD\u4F1A\u53D7\u5230\u989D\u5916\u7684\u4F24\u5BB3"
+      - "Por cada arma que se est\xE9 recargando, tus pistolas reciben da\xF1o adicional"
+      - Para cada arma atualmente recarregada, suas pistolas recebem dano adicional
+      - "Pour chaque arme en cours de rechargement, vos pistolets subissent des d\xE9g\xE2ts
+        suppl\xE9mentaires"
+      - Voor elk momenteel herladend wapen lopen je pistolen extra schade op
+      - Per ogni arma attualmente in fase di ricarica, le tue pistole subiscono danni
+        aggiuntivi
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: SKILL_OUTFIT_ARMADILLO
+      TermType: 0
+      Description: 
+      Languages:
+      - Protection for 5 seconds when the weapon is reloading
+      - "\u0417\u0430\u0449\u0438\u0442\u044B \u043D\u0430 5 \u0441\u0435\u043A\u0443\u043D\u0434,
+        \u043A\u043E\u0433\u0434\u0430 \u043E\u0440\u0443\u0436\u0438\u0435 \u043F\u0435\u0440\u0435\u0437\u0430\u0440\u044F\u0436\u0430\u0435\u0442\u0441\u044F"
+      - "\u062D\u0645\u0627\u064A\u0629 \u0644\u0645\u062F\u0629 5 \u062B\u0648\u0627\u0646
+        \u0639\u0646\u062F \u0625\u0639\u0627\u062F\u0629 \u0634\u062D\u0646 \u0627\u0644\u0633\u0644\u0627\u062D"
+      - "\u6B66\u5668\u88C5\u586B\u65F6\u4FDD\u62A4 5 \u79D2"
+      - "Protecci\xF3n durante 5 segundos cuando el arma se est\xE1 recargando"
+      - "Prote\xE7\xE3o por 5 segundos quando a arma est\xE1 recarregando"
+      - Protection pendant 5 secondes lors du rechargement de l'arme
+      - Bescherming gedurende 5 seconden wanneer het wapen wordt herladen
+      - Protezione per 5 secondi durante la ricarica dell'arma
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: SKILL_OUTFIT_BOMBARDIER
+      TermType: 0
+      Description: 
+      Languages:
+      - Explosive Damage
+      - "\u0423\u0440\u043E\u043D \u043E\u0442 \u0432\u0437\u0440\u044B\u0432\u043E\u0432"
+      - "\u0627\u0644\u0636\u0631\u0631 \u0627\u0644\u0646\u0627\u062C\u0645 \u0639\u0646
+        \u0627\u0644\u0627\u0646\u0641\u062C\u0627\u0631"
+      - "\u7206\u70B8\u4F24\u5BB3"
+      - "Da\xF1o explosivo"
+      - Dano Explosivo
+      - "D\xE9g\xE2ts explosifs"
+      - Explosieve schade
+      - Danno esplosivo
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: SKILL_OUTFIT_DEADEYE
+      TermType: 0
+      Description: 
+      Languages:
+      - Sniper Rifle Damage
+      - "\u0423\u0440\u043E\u043D \u0441\u043D\u0430\u0439\u043F\u0435\u0440\u0441\u043A\u0438\u0445
+        \u0432\u0438\u043D\u0442\u043E\u0432\u043E\u043A"
+      - "\u0636\u0631\u0631 \u0628\u0646\u062F\u0642\u064A\u0629 \u0627\u0644\u0642\u0646\u0635"
+      - "\u72D9\u51FB\u67AA\u4F24\u5BB3"
+      - "Da\xF1o de rifle de francotirador"
+      - "Dano do Rifle de Precis\xE3o"
+      - "D\xE9g\xE2ts du fusil de sniper"
+      - Scherpschuttersgeweer schade
+      - Danno del fucile di precisione
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: SKILL_OUTFIT_ENFORCER
+      TermType: 0
+      Description: 
+      Languages:
+      - Shotgun Damage
+      - "\u0423\u0440\u043E\u043D \u0434\u0440\u043E\u0431\u043E\u0432\u0438\u043A\u043E\u0432"
+      - "\u0636\u0631\u0631 \u0627\u0644\u0628\u0646\u062F\u0642\u064A\u0629"
+      - "\u9730\u5F39\u67AA\u4F24\u5BB3"
+      - "Da\xF1o de escopeta"
+      - Dano de Espingarda
+      - "D\xE9g\xE2ts de fusil de chasse"
+      - Jachtgeweer schade
+      - Danno da fucile
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: SKILL_OUTFIT_EVASIVE
+      TermType: 0
+      Description: 
+      Languages:
+      - Chance to avoid damage
+      - "\u0428\u0430\u043D\u0441 \u0438\u0437\u0431\u0435\u0436\u0430\u0442\u044C
+        \u0443\u0440\u043E\u043D\u0430"
+      - "\u0641\u0631\u0635\u0629 \u0644\u062A\u062C\u0646\u0628 \u0627\u0644\u0636\u0631\u0631"
+      - "\u907F\u514D\u4F24\u5BB3\u7684\u673A\u4F1A"
+      - "Posibilidad de evitar da\xF1os"
+      - Chance de evitar dano
+      - "Chance d'\xE9viter les d\xE9g\xE2ts"
+      - Kans om schade te voorkomen
+      - "Possibilit\xE0 di evitare danni"
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: SKILL_OUTFIT_GUNSLINGER
+      TermType: 0
+      Description: 
+      Languages:
+      - Pistol Damage
+      - "\u0423\u0440\u043E\u043D \u043F\u0438\u0441\u0442\u043E\u043B\u0435\u0442\u043E\u0432"
+      - "\u0636\u0631\u0631 \u0627\u0644\u0645\u0633\u062F\u0633"
+      - "\u624B\u67AA\u4F24\u5BB3"
+      - "Da\xF1o de pistola"
+      - Dano de Pistola
+      - Dommages au pistolet
+      - Pistool schade
+      - Danni da pistola
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: SKILL_OUTFIT_MARAUDER
+      TermType: 0
+      Description: 
+      Languages:
+      - Assault Damage
+      - "\u0423\u0440\u043E\u043D \u0430\u0432\u0442\u043E\u043C\u0430\u0442\u043E\u0432"
+      - "\u0636\u0631\u0631 \u0627\u0644\u0627\u0639\u062A\u062F\u0627\u0621"
+      - "\u7A81\u51FB\u4F24\u5BB3"
+      - "Da\xF1o de asalto"
+      - Dano de Assalto
+      - "D\xE9g\xE2ts d'assaut"
+      - Aanval schade
+      - Danno d'assalto
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: SKILL_OUTFIT_PRECISE
+      TermType: 0
+      Description: 
+      Languages:
+      - + To Weapon Accuracy
+      - "+ \u043A \u0442\u043E\u0447\u043D\u043E\u0441\u0442\u0438 \u043E\u0440\u0443\u0436\u0438\u044F"
+      - "+ \u0644\u062F\u0642\u0629 \u0627\u0644\u0633\u0644\u0627\u062D"
+      - "+ \u6B66\u5668\u7CBE\u5EA6"
+      - "+ A La Precisi\xF3n Del Arma"
+      - "+ Para A Precis\xE3o Da Arma"
+      - "+ \xE0 La Pr\xE9cision De L'arme"
+      - + Tot Wapennauwkeurigheid
+      - + Alla Precisione Dell'arma
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: SKILL_OUTFIT_PROTECTIVE
+      TermType: 0
+      Description: 
+      Languages:
+      - Protection for 5 seconds after killing an enemy
+      - "\u0417\u0430\u0449\u0438\u0442\u044B \u043D\u0430  5 \u0441\u0435\u043A\u0443\u043D\u0434
+        \u043F\u043E\u0441\u043B\u0435 \u0443\u0431\u0438\u0439\u0441\u0442\u0432\u0430
+        \u0432\u0440\u0430\u0433\u0430"
+      - "\u062D\u0645\u0627\u064A\u0629 \u0644\u0645\u062F\u0629 5 \u062B\u0648\u0627\u0646
+        \u0628\u0639\u062F \u0642\u062A\u0644 \u0627\u0644\u0639\u062F\u0648"
+      - "\u6740\u6B7B\u654C\u4EBA\u540E\u4FDD\u62A4 5 \u79D2"
+      - "Protecci\xF3n durante 5 segundos despu\xE9s de matar a un enemigo"
+      - "Prote\xE7\xE3o por 5 segundos ap\xF3s matar um inimigo"
+      - "Protection pendant 5 secondes apres avoir tu\xE9 un ennemi"
+      - Bescherming gedurende 5 seconden na het doden van een vijand
+      - Protezione per 5 secondi dopo aver ucciso un nemico
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: SKILL_OUTFIT_SHARPSHOOTER
+      TermType: 0
+      Description: 
+      Languages:
+      - Decreased Sniper Rifle Aiming Time
+      - "\u0423\u043C\u0435\u043D\u044C\u0448\u0435\u043D\u0438\u0435 \u0432\u0440\u0435\u043C\u0435\u043D\u0438
+        \u043F\u0440\u0438\u0446\u0435\u043B\u0438\u0432\u0430\u043D\u0438\u044F
+        \u0441\u043D\u0430\u0439\u043F\u0435\u0440\u0441\u043A\u043E\u0439 \u0432\u0438\u043D\u0442\u043E\u0432\u043A\u0438 "
+      - "\u062A\u0642\u0644\u064A\u0644 \u0648\u0642\u062A \u0627\u0644\u062A\u0635\u0648\u064A\u0628
+        \u0628\u0628\u0646\u062F\u0642\u064A\u0629 \u0627\u0644\u0642\u0646\u0635"
+      - "\u51CF\u5C11\u72D9\u51FB\u6B65\u67AA\u7784\u51C6\u65F6\u95F4"
+      - "Disminuci\xF3n Del Tiempo De Punter\xEDa Del Rifle De Francotirador"
+      - "Diminui\xE7\xE3o Do Tempo De Mira Do Rifle Sniper"
+      - "Diminution Du Temps De Vis\xE9e Du Fusil De Sniper"
+      - Verkorte Richttijd Van Sluipschuttersgeweer
+      - Diminuito Il Tempo Di Puntamento Del Fucile Di Precisione
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: SKILL_OUTFIT_SHIELDING
+      TermType: 0
+      Description: 
+      Languages:
+      - Max HP protection at the start of each stage
+      - "\u0417\u0430\u0449\u0438\u0442\u044B \u043E\u0442 \u043C\u0430\u043A\u0441\u0438\u043C\u0430\u043B\u044C\u043D\u043E\u0433\u043E
+        HP \u0432 \u043D\u0430\u0447\u0430\u043B\u0435 \u043A\u0430\u0436\u0434\u043E\u0433\u043E
+        \u044D\u0442\u0430\u043F\u0430"
+      - "\u0623\u0642\u0635\u0649 \u062D\u0645\u0627\u064A\u0629 \u0645\u0646 HP
+        \u0641\u064A \u0628\u062F\u0627\u064A\u0629 \u0643\u0644 \u0645\u0631\u062D\u0644\u0629"
+      - "\u6BCF\u4E2A\u9636\u6BB5\u5F00\u59CB\u65F6\u7684\u6700\u5927HP\u4FDD\u62A4"
+      - "Protecci\xF3n Max HP al comienzo de cada etapa"
+      - "Prote\xE7\xE3o m\xE1xima de HP no in\xEDcio de cada est\xE1gio"
+      - "Protection Max HP au d\xE9but de chaque \xE9tape"
+      - Maximale HP-bescherming aan het begin van elke fase
+      - Max HP protezione all'inizio di ogni fase
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: SKILL_OUTFIT_SLAYER
+      TermType: 0
+      Description: 
+      Languages:
+      - Pistol damage against elites and bosses
+      - "\u0423\u0440\u043E\u043D \u043F\u0438\u0441\u0442\u043E\u043B\u0435\u0442\u043E\u0432
+        \u043F\u043E \u044D\u043B\u0438\u0442\u043D\u044B\u043C \u043F\u0440\u043E\u0442\u0438\u0432\u043D\u0438\u043A\u0430\u043C
+        \u0438 \u0431\u043E\u0441\u0441\u0430\u043C"
+      - "\u0627\u0644\u0636\u0631\u0631 \u0628\u0627\u0644\u0645\u0633\u062F\u0633
+        \u0636\u062F \u0627\u0644\u0646\u062E\u0628 \u0648\u0627\u0644\u0631\u0624\u0633\u0627\u0621"
+      - "\u5BF9\u7CBE\u82F1\u548C\u8001\u677F\u7684\u624B\u67AA\u4F24\u5BB3"
+      - "Da\xF1o de pistola contra \xE9lites y jefes."
+      - Dano de pistola contra elites e chefes
+      - "D\xE9g\xE2ts du pistolet contre les \xE9lites et les boss"
+      - Pistoolschade tegen elites en bazen
+      - "Danno da pistola contro \xE9lite e boss"
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: SKILL_OUTFIT_VAMPIRIC
+      TermType: 0
+      Description: 
+      Languages:
+      - Maximum Health Healed on Killing an Enemy
+      - "\u041B\u0435\u0447\u0435\u043D\u0438\u044F \u043E\u0442 \u043C\u0430\u043A\u0441\u0438\u043C\u0430\u043B\u044C\u043D\u043E\u0433\u043E
+        \u0437\u0434\u043E\u0440\u043E\u0432\u044C\u044F \u043F\u0440\u0438 \u0443\u0431\u0438\u0439\u0441\u0442\u0432\u0435
+        \u0432\u0440\u0430\u0433\u0430"
+      - "\u0627\u0644\u0635\u062D\u0629 \u0627\u0644\u0642\u0635\u0648\u0649 \u062A\u0644\u062A\u0626\u0645
+        \u0639\u0646\u062F \u0642\u062A\u0644 \u0627\u0644\u0639\u062F\u0648"
+      - "\u6740\u6B7B\u654C\u4EBA\u65F6\u6062\u590D\u6700\u5927\u751F\u547D\u503C"
+      - "M\xE1xima salud curada al matar a un enemigo"
+      - "Vida m\xE1xima curada ao matar um inimigo"
+      - "Sant\xE9 maximale gu\xE9rie en tuant un ennemi"
+      - Maximale gezondheid genezen na het doden van een vijand
+      - Salute massima guarita uccidendo un nemico
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: SKILL_WEAPON_ACCURACY
+      TermType: 0
+      Description: 
+      Languages:
+      - Bullet spread reduction
+      - "\u0423\u043C\u0435\u043D\u044C\u0448\u0435\u043D\u0438\u0435 \u0440\u0430\u0437\u0431\u0440\u043E\u0441\u0430
+        \u043F\u0443\u043B\u044C"
+      - "\u0627\u0644\u062D\u062F \u0645\u0646 \u0627\u0646\u062A\u0634\u0627\u0631
+        \u0627\u0644\u0631\u0635\u0627\u0635\u0629"
+      - "\u51CF\u5C11\u5B50\u5F39\u6563\u5E03"
+      - "Reducci\xF3n de la dispersi\xF3n de balas"
+      - "Redu\xE7\xE3o do spread de balas"
+      - "R\xE9duction de la propagation des balles"
+      - Vermindering van de verspreiding van kogels
+      - Riduzione della diffusione dei proiettili
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: SKILL_WEAPON_AMMUNITION
+      TermType: 0
+      Description: 
+      Languages:
+      - Ammunition
+      - "\u0431\u043E\u0435\u043F\u0440\u0438\u043F\u0430\u0441\u043E\u0432"
+      - "\u0630\u062E\u064A\u0631\u0629"
+      - "\u5F39\u836F"
+      - "Munici\xF3n"
+      - "Muni\xE7\xE3o"
+      - Munition
+      - Munitie
+      - Munizioni
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: SKILL_WEAPON_BLEED
+      TermType: 0
+      Description: 
+      Languages:
+      - ' Bleeds from Max HP over 3 seconds'
+      - " \u0418\u0441\u0442\u0435\u043A\u0430\u0435\u0442 \u043A\u0440\u043E\u0432\u044C\u044E
+        \u043E\u0442 \u041C\u0430\u043A\u0441\u0438\u043C\u0430\u043B\u044C\u043D\u043E\u0433\u043E
+        HP \u0432 \u0442\u0435\u0447\u0435\u043D\u0438\u0435 3 \u0441\u0435\u043A\u0443\u043D\u0434"
+      - " \u064A\u0646\u0632\u0641 \u0645\u0646 Max HP \u062E\u0644\u0627\u0644 3
+        \u062B\u0648\u0627\u0646\u064D"
+      - " 3 \u79D2\u5185\u4ECE Max HP \u6D41\u8840"
+      - ' Sangra de Max HP durante 3 segundos'
+      - ' Sangra de Max HP mais de 3 segundos'
+      - ' Saigne de Max HP en 3 secondes'
+      - ' Bloedt van Max HP gedurende 3 seconden'
+      - ' Sanguina da HP massimi in 3 secondi'
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: SKILL_WEAPON_BULLET_SPEED
+      TermType: 0
+      Description: 
+      Languages:
+      - Bullet speed
+      - "\u0421\u043A\u043E\u0440\u043E\u0441\u0442\u044C \u043F\u0443\u043B\u0438"
+      - "\u0633\u0631\u0639\u0629 \u0627\u0644\u0631\u0635\u0627\u0635\u0629"
+      - "\u5B50\u5F39\u901F\u5EA6"
+      - Velocidad de bala
+      - Velocidade da bala
+      - Vitesse de balle
+      - Kogel snelheid
+      - "Velocit\xE0 del proiettile"
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: SKILL_WEAPON_CALL_LIGHTING_STRIKE
+      TermType: 0
+      Description: 
+      Languages:
+      - Chance to strike with lightning when an enemy dies
+      - "\u0428\u0430\u043D\u0441 \u0443\u0434\u0430\u0440\u0438\u0442\u044C \u043C\u043E\u043B\u043D\u0438\u0435\u0439,
+        \u043A\u043E\u0433\u0434\u0430 \u0432\u0440\u0430\u0433 \u0443\u043C\u0438\u0440\u0430\u0435\u0442"
+      - "\u0641\u0631\u0635\u0629 \u0644\u0636\u0631\u0628 \u0627\u0644\u0628\u0631\u0642
+        \u0639\u0646\u062F\u0645\u0627 \u064A\u0645\u0648\u062A \u0639\u062F\u0648"
+      - "\u654C\u4EBA\u6B7B\u4EA1\u65F6\u6709\u51E0\u7387\u7528\u95EA\u7535\u51FB\u4E2D"
+      - Probabilidad de golpear con un rayo cuando un enemigo muere.
+      - Chance de atacar com um raio quando um inimigo morre
+      - Chance de frapper avec la foudre lorsqu'un ennemi meurt
+      - Kans om met de bliksem in te slaan wanneer een vijand sterft
+      - "Possibilit\xE0 di colpire con un fulmine quando un nemico muore"
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: SKILL_WEAPON_CRITICAL_CHANCE
+      TermType: 0
+      Description: 
+      Languages:
+      - Critical Strike Chance
+      - "\u0428\u0430\u043D\u0441 \u043A\u0440\u0438\u0442\u0438\u0447\u0435\u0441\u043A\u043E\u0433\u043E
+        \u0443\u0434\u0430\u0440\u0430"
+      - "\u0641\u0631\u0635\u0629 \u0636\u0631\u0628\u0629 \u062D\u0627\u0633\u0645\u0629"
+      - "\u66B4\u51FB\u7387"
+      - "Chance De Golpe Cr\xEDtico"
+      - "Chance De Acerto Cr\xEDtico"
+      - Chance De Coup Critique
+      - Kritieke Slagkans
+      - "Probabilit\xE0 Di Colpo Critico"
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: SKILL_WEAPON_CRITICAL_DAMAGE
+      TermType: 0
+      Description: 
+      Languages:
+      - Critical Damage
+      - "\u041A\u0440\u0438\u0442\u0438\u0447\u0435\u0441\u043A\u0438\u0439 \u0443\u0440\u043E\u043D"
+      - "\u0636\u0631\u0631 \u062C\u0633\u064A\u0645"
+      - "\u4E25\u91CD\u4F24\u5BB3"
+      - "Da\xF1o Cr\xEDtico"
+      - "Dano Cr\xEDtico"
+      - "D\xE9g\xE2ts Critiques"
+      - Kritieke Schade
+      - Danno Critico
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: SKILL_WEAPON_DAMAGE
+      TermType: 0
+      Description: 
+      Languages:
+      - Damage
+      - "\u0423\u0440\u043E\u043D\u0430"
+      - "\u0636\u0631\u0631"
+      - "\u635F\u5BB3"
+      - "Da\xF1o"
+      - Dano
+      - Dommage
+      - Schade
+      - Danno
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: SKILL_WEAPON_DAMAGE_AFTER_HIT_FOR_TREE_SECONDS
+      TermType: 0
+      Description: 
+      Languages:
+      - Damage For 3 Seconds On Hit
+      - "\u0423\u0440\u043E\u043D\u0430 \u043D\u0430 3 \u0441\u0435\u043A\u0443\u043D\u0434\u044B
+        \u043F\u0440\u0438 \u043F\u043E\u043F\u0430\u0434\u0430\u043D\u0438\u0438"
+      - "\u0627\u0644\u0636\u0631\u0631 \u0644\u0645\u062F\u0629 3 \u062B\u0648\u0627\u0646
+        \u0639\u0644\u0649 \u0627\u0644\u0636\u0631\u0628\u0629"
+      - "\u51FB\u4E2D\u65F6\u9020\u6210 3 \u79D2\u4F24\u5BB3"
+      - "Da\xF1o Durante 3 Segundos Al Golpear"
+      - Dano Por 3 Segundos Ao Acertar
+      - "D\xE9g\xE2ts Pendant 3 Secondes En Cas De Coup"
+      - Schade Gedurende 3 Seconden Bij Hit
+      - Danni Per 3 Secondi Al Colpo
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: SKILL_WEAPON_DAMAGE_AFTER_KILL_FOR_TREE_SECONDS
+      TermType: 0
+      Description: 
+      Languages:
+      - Damage For 3 Seconds After Killing
+      - "\u0423\u0440\u043E\u043D\u0430 \u0432 \u0442\u0435\u0447\u0435\u043D\u0438\u0435
+        3 \u0441\u0435\u043A\u0443\u043D\u0434 \u043F\u043E\u0441\u043B\u0435 \u0443\u0431\u0438\u0439\u0441\u0442\u0432\u0430"
+      - "\u0627\u0644\u0636\u0631\u0631 \u0644\u0645\u062F\u0629 3 \u062B\u0648\u0627\u0646
+        \u0628\u0639\u062F \u0627\u0644\u0642\u062A\u0644"
+      - "\u51FB\u6740\u540E3\u79D2\u4F24\u5BB3"
+      - "Da\xF1o Durante 3 Segundos Despu\xE9s De Matar"
+      - "Dano Por 3 Segundos Ap\xF3s Matar"
+      - "D\xE9g\xE2ts Pendant 3 Secondes Apres Avoir Tu\xE9"
+      - Schade Gedurende 3 Seconden Na Het Doden
+      - Danni Per 3 Secondi Dopo L'uccisione
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: SKILL_WEAPON_DAMAGE_BY_DISTANCE
+      TermType: 0
+      Description: 
+      Languages:
+      - Damage at a distance
+      - "\u0423\u0440\u043E\u043D \u043D\u0430 \u0440\u0430\u0441\u0441\u0442\u043E\u044F\u043D\u0438\u0438"
+      - "\u0627\u0644\u0636\u0631\u0631 \u0639\u0646 \u0628\u0639\u062F"
+      - "\u8FDC\u8DDD\u79BB\u4F24\u5BB3"
+      - "Da\xF1o a distancia"
+      - "Danos \xE0 dist\xE2ncia"
+      - "D\xE9g\xE2ts \xE0 distance"
+      - Schade op afstand
+      - Danni a distanza
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: SKILL_WEAPON_DAMAGE_BY_EMPTY_BULLET
+      TermType: 0
+      Description: 
+      Languages:
+      - Damage For Each Missing Bullet In The Magazine
+      - "\u0423\u0440\u043E\u043D\u0430 \u0437\u0430 \u043A\u0430\u0436\u0434\u0443\u044E
+        \u043D\u0435\u0434\u043E\u0441\u0442\u0430\u044E\u0449\u0443\u044E \u043F\u0443\u043B\u044E
+        \u0432 \u043C\u0430\u0433\u0430\u0437\u0438\u043D\u0435"
+      - "\u0627\u0644\u0636\u0631\u0631 \u0644\u0643\u0644 \u0631\u0635\u0627\u0635\u0629
+        \u0645\u0641\u0642\u0648\u062F\u0629 \u0641\u064A \u0627\u0644\u0645\u062C\u0644\u0629"
+      - "\u5F39\u5323\u4E2D\u6BCF\u9897\u7F3A\u5931\u5B50\u5F39\u7684\u4F24\u5BB3"
+      - "Da\xF1o Por Cada Bala Faltante En El Cargador"
+      - Dano Para Cada Bala Perdida No Carregador
+      - "D\xE9g\xE2ts Pour Chaque Balle Manquante Dans Le Chargeur"
+      - Schade Voor Elke Ontbrekende Kogel In Het Magazijn
+      - Danno Per Ogni Proiettile Mancante Nel Caricatore
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: SKILL_WEAPON_DAMAGE_FOR_BOSS_ENEMIES
+      TermType: 0
+      Description: 
+      Languages:
+      - Damage to bosses
+      - "\u0423\u0440\u043E\u043D \u0431\u043E\u0441\u0441\u0430\u043C"
+      - "\u0627\u0644\u0636\u0631\u0631 \u0627\u0644\u0630\u064A \u064A\u0644\u062D\u0642
+        \u0628\u0627\u0644\u0631\u0624\u0633\u0627\u0621"
+      - "\u5BF9\u8001\u677F\u7684\u4F24\u5BB3"
+      - "Da\xF1o a los jefes"
+      - Danos aos chefes
+      - "D\xE9g\xE2ts aux boss"
+      - Schade aan bazen
+      - Danni ai capi
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: SKILL_WEAPON_DAMAGE_FOR_ELIT_ENEMIES
+      TermType: 0
+      Description: 
+      Languages:
+      - Elite Damage
+      - "\u0423\u0440\u043E\u043D \u043F\u043E \u044D\u043B\u0438\u0442\u0435"
+      - "\u0636\u0631\u0631 \u0627\u0644\u0646\u062E\u0628\u0629"
+      - "\u7CBE\u82F1\u4F24\u5BB3"
+      - "Da\xF1o de \xE9lite"
+      - Dano de Elite
+      - "D\xE9g\xE2ts d'\xE9lite"
+      - Elite schade
+      - "Danno \xE9lite"
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: SKILL_WEAPON_DAMAGE_FOR_ENEMY_WITH_HALF_HP
+      TermType: 0
+      Description: 
+      Languages:
+      - Damage to enemies below 50% health
+      - "\u0423\u0440\u043E\u043D \u0432\u0440\u0430\u0433\u0430\u043C \u0441 \u0443\u0440\u043E\u0432\u043D\u0435\u043C
+        \u0437\u0434\u043E\u0440\u043E\u0432\u044C\u044F \u043D\u0438\u0436\u0435
+        50%"
+      - "\u0636\u0631\u0631 \u0644\u0644\u0623\u0639\u062F\u0627\u0621 \u0623\u0642\u0644
+        \u0645\u0646 50\u066A \u0645\u0646 \u0627\u0644\u0635\u062D\u0629"
+      - "\u5BF9\u751F\u547D\u503C\u4F4E\u4E8E 50% \u7684\u654C\u4EBA\u9020\u6210\u4F24\u5BB3"
+      - "Da\xF1o a enemigos por debajo del 50% de salud"
+      - Danos a inimigos com menos de 50% de vida
+      - "D\xE9g\xE2ts aux ennemis en dessous de 50% de sant\xE9"
+      - Schade aan vijanden met minder dan 50% gezondheid
+      - Danni ai nemici con meno del 50% di salute
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: SKILL_WEAPON_DAMAGE_FOR_ENEMY_WITH_LOW_HP
+      TermType: 0
+      Description: 
+      Languages:
+      - Damage to enemies below 35% health
+      - "\u0423\u0440\u043E\u043D \u0432\u0440\u0430\u0433\u0430\u043C \u0441 \u0443\u0440\u043E\u0432\u043D\u0435\u043C
+        \u0437\u0434\u043E\u0440\u043E\u0432\u044C\u044F \u043D\u0438\u0436\u0435
+        35%"
+      - "\u0636\u0631\u0631 \u0644\u0644\u0623\u0639\u062F\u0627\u0621 \u0623\u0642\u0644
+        \u0645\u0646 35\u066A \u0645\u0646 \u0627\u0644\u0635\u062D\u0629"
+      - "\u5BF9\u751F\u547D\u503C\u4F4E\u4E8E 35% \u7684\u654C\u4EBA\u9020\u6210\u4F24\u5BB3"
+      - "Da\xF1o a enemigos por debajo del 35% de salud"
+      - Dano a inimigos com menos de 35% de vida
+      - "D\xE9g\xE2ts aux ennemis en dessous de 35% de sant\xE9"
+      - Schade aan vijanden met minder dan 35% gezondheid
+      - Danni ai nemici con meno del 35% di salute
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: SKILL_WEAPON_DAMAGE_FOR_LAST_BULLET
+      TermType: 0
+      Description: 
+      Languages:
+      - Last Bullet Explosion Damage
+      - "\u0423\u0440\u043E\u043D\u0430 \u043E\u0442 \u0432\u0437\u0440\u044B\u0432\u0430
+        \u043F\u043E\u0441\u043B\u0435\u0434\u043D\u0435\u0439 \u043F\u0443\u043B\u0438"
+      - "\u0622\u062E\u0631 \u0636\u0631\u0631 \u0627\u0646\u0641\u062C\u0627\u0631
+        \u0631\u0635\u0627\u0635\u0629"
+      - "\u6700\u540E\u4E00\u9897\u5B50\u5F39\u7206\u70B8\u4F24\u5BB3"
+      - "\xFAltimo Da\xF1o De Explosi\xF3n De Bala"
+      - "\xFAltimo Dano De Explos\xE3o De Bala"
+      - Dernier Dommage D'explosion De Balle
+      - Laatste Kogelexplosieschade
+      - Danno Da Esplosione Dell'ultimo Proiettile
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: SKILL_WEAPON_DISCARDING
+      TermType: 0
+      Description: 
+      Languages:
+      - Discarding
+      - "\u041E\u0442\u0431\u0440\u0430\u0441\u044B\u0432\u0430\u043D\u0438\u0435"
+      - "\u0646\u0628\u0630"
+      - "\u4E22\u5F03"
+      - Descartando
+      - Descartando
+      - Jeter
+      - Weggooien
+      - Scartare
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: SKILL_WEAPON_DOUBLE_SHOT
+      TermType: 0
+      Description: 
+      Languages:
+      - Chance To Double Shot
+      - "\u0428\u0430\u043D\u0441 \u0441\u0434\u0435\u043B\u0430\u0442\u044C \u0434\u0432\u043E\u0439\u043D\u043E\u0439
+        \u0432\u044B\u0441\u0442\u0440\u0435\u043B"
+      - "\u0641\u0631\u0635\u0629 \u0644\u0645\u0636\u0627\u0639\u0641\u0629 \u062A\u0633\u062F\u064A\u062F\u0629"
+      - "\u53CC\u67AA\u7684\u673A\u4F1A"
+      - Oportunidad De Doble Tiro
+      - Chance De Tiro Duplo
+      - Chance De Doubler Le Coup
+      - Kans Om Dubbel Te Schieten
+      - "Possibilit\xE0 Di Raddoppiare"
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: SKILL_WEAPON_EXPLOSION_ZONE
+      TermType: 0
+      Description: 
+      Languages:
+      - Explosion zone
+      - "\u0417\u043E\u043D\u0430 \u0432\u0437\u0440\u044B\u0432\u0430"
+      - "\u0645\u0646\u0637\u0642\u0629 \u0627\u0644\u0627\u0646\u0641\u062C\u0627\u0631"
+      - "\u7206\u70B8\u533A"
+      - "Zona de explosi\xF3n"
+      - "zona de explos\xE3o"
+      - Zone d'explosion
+      - Explosie zone
+      - Zona di esplosione
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: SKILL_WEAPON_INSTANT_ENEMY_KILLING
+      TermType: 0
+      Description: 
+      Languages:
+      - Chance To Instantly Kill
+      - "\u0428\u0430\u043D\u0441 \u043C\u0433\u043D\u043E\u0432\u0435\u043D\u043D\u043E
+        \u0443\u0431\u0438\u0442\u044C"
+      - "\u0641\u0631\u0635\u0629 \u0644\u0644\u0642\u062A\u0644 \u0639\u0644\u0649
+        \u0627\u0644\u0641\u0648\u0631"
+      - "\u6709\u673A\u4F1A\u7ACB\u5373\u6740\u6B7B"
+      - "Posibilidad De Matar Instant\xE1neamente"
+      - Chance De Matar Instantaneamente
+      - "Chance De Tuer Instantan\xE9ment"
+      - Kans Om Direct Te Doden
+      - "Possibilit\xE0 Di Uccidere All'istante"
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: SKILL_WEAPON_INSTANT_RELOADING
+      TermType: 0
+      Description: 
+      Languages:
+      - Instant Reload Chance
+      - "\u0428\u0430\u043D\u0441 \u043C\u0433\u043D\u043E\u0432\u0435\u043D\u043D\u043E\u0439
+        \u043F\u0435\u0440\u0435\u0437\u0430\u0440\u044F\u0434\u043A\u0438"
+      - "\u0641\u0631\u0635\u0629 \u0625\u0639\u0627\u062F\u0629 \u0627\u0644\u062A\u062D\u0645\u064A\u0644
+        \u0627\u0644\u0641\u0648\u0631\u064A"
+      - "\u5373\u65F6\u91CD\u65B0\u52A0\u8F7D\u673A\u4F1A"
+      - "Posibilidad De Recarga Instant\xE1nea"
+      - "Chance De Recarga Instant\xE2nea"
+      - "Chance De Rechargement Instantan\xE9"
+      - Onmiddellijke Herlaadkans
+      - "Possibilit\xE0 Di Ricarica Istantanea"
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: SKILL_WEAPON_MOVEMENT_SPEED_BY_KILLING
+      TermType: 0
+      Description: 
+      Languages:
+      - Movement Speed When Killing An Enemy
+      - "\u0421\u043A\u043E\u0440\u043E\u0441\u0442\u0438 \u043F\u0435\u0440\u0435\u0434\u0432\u0438\u0436\u0435\u043D\u0438\u044F
+        \u043F\u0440\u0438 \u0443\u0431\u0438\u0439\u0441\u0442\u0432\u0435 \u0432\u0440\u0430\u0433\u0430"
+      - "\u0633\u0631\u0639\u0629 \u0627\u0644\u062D\u0631\u0643\u0629 \u0639\u0646\u062F
+        \u0642\u062A\u0644 \u0627\u0644\u0639\u062F\u0648"
+      - "\u6740\u6B7B\u654C\u4EBA\u65F6\u7684\u79FB\u52A8\u901F\u5EA6"
+      - Velocidad De Movimiento Al Matar A Un Enemigo
+      - Velocidade De Movimento Ao Matar Um Inimigo
+      - "Vitesse De D\xE9placement En Tuant Un Ennemi"
+      - Bewegingssnelheid Bij Het Doden Van Een Vijand
+      - "Velocit\xE0 Di Movimento Quando Si Uccide Un Nemico"
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: SKILL_WEAPON_PIERCE_ENEMY
+      TermType: 0
+      Description: 
+      Languages:
+      - Chance To Pierce Enemies
+      - "\u0428\u0430\u043D\u0441 \u043F\u0440\u043E\u043D\u0437\u0438\u0442\u044C
+        \u0432\u0440\u0430\u0433\u043E\u0432"
+      - "\u0641\u0631\u0635\u0629 \u0644\u0627\u062E\u062A\u0631\u0627\u0642 \u0627\u0644\u0623\u0639\u062F\u0627\u0621"
+      - "\u6709\u673A\u4F1A\u7A7F\u900F\u654C\u4EBA"
+      - Posibilidad De Perforar A Los Enemigos
+      - Chance De Perfurar Os Inimigos
+      - Chance De Percer Les Ennemis
+      - Kans Om Vijanden Te Doorboren
+      - "Possibilit\xE0 Di Trafiggere I Nemici"
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: SKILL_WEAPON_RANGE
+      TermType: 0
+      Description: 
+      Languages:
+      - Attack range
+      - "\u0414\u0430\u043B\u044C\u043D\u043E\u0441\u0442\u044C \u0430\u0442\u0430\u043A\u0438"
+      - "\u0646\u0637\u0627\u0642 \u0627\u0644\u0647\u062C\u0648\u0645"
+      - "\u653B\u51FB\u8303\u56F4"
+      - Rango de ataque
+      - Raio de ataque
+      - "Port\xE9e d'attaque"
+      - Aanvalsbereik
+      - Raggio d'attacco
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: SKILL_WEAPON_RELOADING
+      TermType: 0
+      Description: 
+      Languages:
+      - Recharge
+      - "\u041F\u0435\u0440\u0435\u0437\u0430\u0440\u044F\u0434\u043A\u0430"
+      - "\u062A\u0639\u0628\u0626\u0629 \u0631\u0635\u064A\u062F"
+      - "\u5145\u503C"
+      - Recargar
+      - Recarrega
+      - Recharger
+      - Opladen
+      - Ricaricare
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: SKILL_WEAPON_RICOCHET
+      TermType: 0
+      Description: 
+      Languages:
+      - Chance To Ricochet
+      - "\u0428\u0430\u043D\u0441 \u0441\u0440\u0438\u043A\u043E\u0448\u0435\u0442\u0438\u0442\u044C"
+      - "\u0641\u0631\u0635\u0629 \u0644\u0644\u0627\u0631\u062A\u062F\u0627\u062F"
+      - "\u8DF3\u5F39\u7684\u673A\u4F1A"
+      - Oportunidad De Rebotar
+      - Chance De Ricochete
+      - Chance De Ricocher
+      - Kans Om Te Stuiteren
+      - "Possibilit\xE0 Di Rimbalzare"
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: SKILL_WEAPON_SHIELD_AFTER_DAMAGE
+      TermType: 0
+      Description: 
+      Languages:
+      - Shield When Hitting An Enemy For 2.5 Seconds"
+      - "\u0417\u0430\u0449\u0438\u0442\u044B \u043F\u0440\u0438 \u043F\u043E\u0440\u0430\u0436\u0435\u043D\u0438\u0438
+        \u0432\u0440\u0430\u0433\u0430 \u0432 \u0442\u0435\u0447\u0435\u043D\u0438\u0435
+        2,5 \u0441\u0435\u043A\u0443\u043D\u0434\""
+      - "\u062F\u0631\u0639 \u0639\u0646\u062F \u0625\u0635\u0627\u0628\u0629 \u0639\u062F\u0648
+        \u0644\u0645\u062F\u0629 2.5 \u062B\u0627\u0646\u064A\u0629 \""
+      - "\u51FB\u4E2D\u654C\u4EBA 2.5 \u79D2\u65F6\u62A4\u76FE\u201D"
+      - Escudo Al Golpear A Un Enemigo Durante 2,5 Segundos"
+      - Escudo Ao Atingir Um Inimigo Por 2,5 Segundos"
+      - Bouclier En Frappant Un Ennemi Pendant 2,5 Secondes"
+      - Schild Bij Het Raken Van Een Vijand Gedurende 2,5 Seconden"
+      - Scudo Quando Si Colpisce Un Nemico Per 2,5 Secondi"
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: SKILL_WEAPON_STUN_FOR_TREE_SECONDS
+      TermType: 0
+      Description: 
+      Languages:
+      - Chance To Stun For 3 Seconds On Hit
+      - "\u0428\u0430\u043D\u0441 \u043E\u0433\u043B\u0443\u0448\u0438\u0442\u044C
+        \u043D\u0430 3 \u0441\u0435\u043A\u0443\u043D\u0434\u044B \u043F\u0440\u0438
+        \u043F\u043E\u043F\u0430\u0434\u0430\u043D\u0438\u0438"
+      - "\u0641\u0631\u0635\u0629 \u0644\u0644\u0635\u0639\u0642 \u0644\u0645\u062F\u0629
+        3 \u062B\u0648\u0627\u0646 \u0639\u0646\u062F \u0627\u0644\u0636\u0631\u0628\u0629"
+      - "\u51FB\u4E2D\u65F6\u6709\u673A\u4F1A\u7729\u6655 3 \u79D2"
+      - Posibilidad De Aturdir Durante 3 Segundos Al Golpear
+      - Chance De Atordoar Por 3 Segundos Ao Acertar
+      - "Chance D'\xE9tourdir Pendant 3 Secondes En Cas De Coup"
+      - Kans Om 3 Seconden Te Verdoven Bij Een Treffer
+      - "Possibilit\xE0 Di Stordire Per 3 Secondi Al Colpo"
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: SPECIALPURPOSEDIALOG_BENEFIT_TEXT
+      TermType: 0
+      Description: 
+      Languages:
+      - Benefit
+      - "\u0412\u044B\u0433\u043E\u0434\u0430"
+      - "\u0641\u0627\u0626\u062F\u0629"
+      - "\u76CA\u5904"
+      - Beneficio
+      - Beneficiar
+      - Avantage
+      - Voordeel
+      - Beneficio
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: SPECIALPURPOSEDIALOG_START_SET_TEXT
+      TermType: 0
+      Description: 
+      Languages:
+      - Start set
+      - "\u0421\u0442\u0430\u0440\u0442\u043E\u0432\u044B\u0439 \u043D\u0430\u0431\u043E\u0440"
+      - "\u0645\u062C\u0645\u0648\u0639\u0629 \u0627\u0644\u0628\u062F\u0621"
+      - "\u5F00\u59CB\u8BBE\u7F6E"
+      - Conjunto de inicio
+      - Conjunto inicial
+      - "Ensemble de d\xE9part"
+      - Startset
+      - Inizia insieme
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: TAP_TO_CONTINUE
+      TermType: 0
+      Description: 
+      Languages:
+      - Click to continue
+      - "\u041D\u0430\u0436\u043C\u0438 \u0434\u043B\u044F \u043F\u0440\u043E\u0434\u043E\u043B\u0436\u0435\u043D\u0438\u044F"
+      - "\u0627\u0646\u0642\u0631 \u0644\u0644\u0645\u062A\u0627\u0628\u0639\u0629"
+      - "\u70B9\u51FB\u7EE7\u7EED"
+      - Haz click para continuar
+      - Clique para continuar
+      - Cliquez pour continuer
+      - Klik om verder te gaan
+      - Clicca per continuare
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: TAP_TO_SKIP
+      TermType: 0
+      Description: 
+      Languages:
+      - Tap tp skip...
+      - "\u041D\u0430\u0436\u043C\u0438\u0442\u0435, \u0447\u0442\u043E\u0431\u044B
+        \u043F\u0440\u043E\u043F\u0443\u0441\u0442\u0438\u0442\u044C..."
+      - "\u0627\u0636\u063A\u0637 \u0639\u0644\u0649 tp skip ..."
+      - "\u70B9\u51FB tp \u8DF3\u8FC7..."
+      - Toca para omitir...
+      - Toque em pular...
+      - Appuyez sur pour ignorer...
+      - Tik op overslaan...
+      - Tocca per saltare...
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: TOUCH_TO_CONTINUE
+      TermType: 0
+      Description: 
+      Languages:
+      - Touch to continue!
+      - "\u041A\u043E\u0441\u043D\u0438\u0441\u044C, \u0447\u0442\u043E\u0431\u044B
+        \u043F\u0440\u043E\u0434\u043E\u043B\u0436\u0438\u0442\u044C!"
+      - "\u0627\u0644\u0645\u0633 \u0644\u0644\u0645\u062A\u0627\u0628\u0639\u0629!"
+      - "\u89E6\u6478\u7EE7\u7EED\uFF01"
+      - "\xA1Toca para continuar!"
+      - Toque para continuar!
+      - "Touchez pour continuer\_!"
+      - Raak aan om door te gaan!
+      - Tocca per continuare!
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: TUTORIAL_DODGE_HELPER
+      TermType: 0
+      Description: 
+      Languages:
+      - Swipe to dodge
+      - "\u0421\u0432\u0430\u0439\u043F\u043D\u0438\u0442\u0435, \u0447\u0442\u043E\u0431\u044B
+        \u0443\u043A\u043B\u043E\u043D\u0438\u0442\u044C\u0441\u044F"
+      - "\u0627\u0646\u062A\u0642\u062F \u0644\u0644\u0645\u0631\u0627\u0648\u063A\u0629"
+      - "\u6ED1\u52A8\u8EB2\u95EA"
+      - Deslizar para esquivar
+      - Deslize para se esquivar
+      - Balayez pour esquiver
+      - Veeg om te ontwijken
+      - Scorri per schivare
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: TUTORIAL_RELOADING_HELPER
+      TermType: 0
+      Description: 
+      Languages:
+      - Hold the icon to recharge!
+      - "\u0417\u0430\u0436\u043C\u0438\u0442\u0435 \u0438\u043A\u043E\u043D\u043A\u0443,
+        \u0447\u0442\u043E\u0431\u044B \u043F\u0435\u0440\u0435\u0437\u0430\u0440\u044F\u0434\u0438\u0442\u044C\u0441\u044F!"
+      - "\u0627\u0636\u063A\u0637 \u0639\u0644\u0649 \u0627\u0644\u0623\u064A\u0642\u0648\u0646\u0629
+        \u0644\u0625\u0639\u0627\u062F\u0629 \u0627\u0644\u0634\u062D\u0646!"
+      - "\u957F\u6309\u56FE\u6807\u5373\u53EF\u5145\u503C\uFF01"
+      - "\xA1Mant\xE9n pulsado el icono para recargar!"
+      - "Segure o \xEDcone para recarregar!"
+      - "Maintenez l'ic\xF4ne pour recharger\_!"
+      - Houd het pictogram vast om op te laden!
+      - Tieni premuta l'icona per ricaricare!
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: TUTORIAL_SHOOTING_HELPER
+      TermType: 0
+      Description: 
+      Languages:
+      - Release joystick to shoot
+      - "\u041E\u0442\u043F\u0443\u0441\u0442\u0438\u0442\u0435 \u0434\u0436\u043E\u0439\u0441\u0442\u0438\u043A,
+        \u0447\u0442\u043E\u0431\u044B \u0441\u0442\u0440\u0435\u043B\u044F\u0442\u044C"
+      - "\u062D\u0631\u0631 \u0639\u0635\u0627 \u0627\u0644\u062A\u062D\u0643\u0645
+        \u0644\u0644\u062A\u0635\u0648\u064A\u0631"
+      - "\u677E\u5F00\u64CD\u7EB5\u6746\u8FDB\u884C\u5C04\u51FB"
+      - Suelte el joystick para disparar
+      - Solte o joystick para atirar
+      - "Rel\xE2chez le joystick pour tirer"
+      - Laat de joystick los om te schieten
+      - Rilascia il joystick per sparare
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: VIP_10_BLUEPRINTS_FOR_WEAPONS_EVERY_DAY_TEXT
+      TermType: 0
+      Description: 
+      Languages:
+      - 10 blueprints for weapons every day
+      - "10 \u0447\u0435\u0440\u0442\u0435\u0436\u0435\u0439 \u0434\u043B\u044F \u043E\u0440\u0443\u0436\u0438\u044F
+        \u043A\u0430\u0436\u0434\u044B\u0439 \u0434\u0435\u043D\u044C"
+      - "10 \u0645\u062E\u0637\u0637\u0627\u062A \u0644\u0644\u0623\u0633\u0644\u062D\u0629
+        \u0643\u0644 \u064A\u0648\u0645"
+      - "\u6BCF\u592910\u5F20\u6B66\u5668\u56FE\u7EB8"
+      - "10 Planos De Armas Todos Los D\xEDas"
+      - 10 Projetos De Armas Todos Os Dias
+      - 10 Plans D'armes Chaque Jour
+      - Elke Dag 10 Wapenblauwdrukken
+      - 10 Progetti Di Armi Ogni Giorno
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: VIP_10_FIRE_TOKENS_EVERY_DAY_TEXT
+      TermType: 0
+      Description: 
+      Languages:
+      - 10 fire tokens every day
+      - "10 \u043F\u043E\u0436\u0430\u0440\u043D\u044B\u0445 \u0436\u0435\u0442\u043E\u043D\u043E\u0432
+        \u043A\u0430\u0436\u0434\u044B\u0439 \u0434\u0435\u043D\u044C"
+      - "10 \u0631\u0645\u0648\u0632 \u0646\u0627\u0631 \u0643\u0644 \u064A\u0648\u0645"
+      - "\u6BCF\u5929 10 \u4E2A\u706B\u4EE3\u5E01"
+      - "10 Fichas De Fuego Todos Los D\xEDas"
+      - 10 Fichas De Fogo Todos Os Dias
+      - 10 Jetons De Feu Chaque Jour
+      - Elke Dag 10 Vuurtokens
+      - 10 Segnalini Fuoco Ogni Giorno
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: VIP_AUTOMATIC_QUEUE_FOR_OPENING_CHESTS_TEXT
+      TermType: 0
+      Description: 
+      Languages:
+      - Automatic queue for opening chests
+      - "\u0410\u0432\u0442\u043E\u043C\u0430\u0442\u0438\u0447\u0435\u0441\u043A\u0430\u044F
+        \u043E\u0447\u0435\u0440\u0435\u0434\u044C \u043E\u0442\u043A\u0440\u044B\u0442\u0438\u044F
+        \u0441\u0443\u043D\u0434\u0443\u043A\u043E\u0432"
+      - "\u0637\u0627\u0628\u0648\u0631 \u062A\u0644\u0642\u0627\u0626\u064A \u0644\u0641\u062A\u062D
+        \u0627\u0644\u0635\u0646\u0627\u062F\u064A\u0642"
+      - "\u6253\u5F00\u7BB1\u5B50\u7684\u81EA\u52A8\u961F\u5217"
+      - "Cola Autom\xE1tica Para Abrir Cofres"
+      - "Fila Autom\xE1tica Para Abrir Ba\xFAs"
+      - File D'attente Automatique Pour L'ouverture Des Coffres
+      - Automatische Wachtrij Voor Het Openen Van Kisten
+      - Coda Automatica Per L'apertura Delle Casse
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: VIP_DAYS_TEXT
+      TermType: 0
+      Description: 
+      Languages:
+      - days
+      - "\u0434\u043D\u0435\u0439"
+      - "\u064A\u0648\u0645\u0627"
+      - "\u5929"
+      - dias
+      - dias
+      - jours
+      - dagen
+      - giorni
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: VIP_EXPIRATION_DATE_TEXT
+      TermType: 0
+      Description: 
+      Languages:
+      - 'Expiration date:'
+      - "\u0421\u0440\u043E\u043A \u0434\u0435\u0439\u0441\u0442\u0432\u0438\u044F:"
+      - "\u062A\u0627\u0631\u064A\u062E \u0627\u0646\u062A\u0647\u0627\u0621 \u0627\u0644\u0635\u0644\u0627\u062D\u064A\u0629:"
+      - "\u622A\u6B62\u65E5\u671F\uFF1A"
+      - 'Fecha de caducidad:'
+      - 'Data de validade:'
+      - 'Date d''expiration:'
+      - 'Uiterste houdbaarheidsdatum:'
+      - 'Data di scadenza:'
+      Flags: 000000000000000000
+      Languages_Touch: []
+    - Term: VIP_SKIPS_ALL_ADVERTISMENT_TEXT
+      TermType: 0
+      Description: 
+      Languages:
+      - Skips all ads
+      - "\u043F\u0440\u043E\u043F\u0443\u0441\u043A\u0430\u0435\u0442 \u0432\u0441\u044E
+        \u0440\u0435\u043A\u043B\u0430\u043C\u0443"
+      - "\u064A\u062A\u062E\u0637\u0649 \u062C\u0645\u064A\u0639 \u0627\u0644\u0625\u0639\u0644\u0627\u0646\u0627\u062A"
+      - "\u8DF3\u8FC7\u6240\u6709\u5E7F\u544A"
+      - Salta Todos Los Anuncios
+      - "Pula Todos Os An\xFAncios"
+      - Ignore Toutes Les Annonces
+      - Slaat Alle Advertenties Over
+      - Salta Tutti Gli Annunci
+      Flags: 000000000000000000
+      Languages_Touch: []
+    CaseInsensitiveTerms: 0
+    OnMissingTranslation: 3
+    mTerm_AppName: 
+    mLanguages:
+    - Name: English
+      Code: en
+      Flags: 0
+    - Name: Russian
+      Code: ru
+      Flags: 0
+    - Name: Arabic
+      Code: ar
+      Flags: 0
+    - Name: Chinese
+      Code: zh
+      Flags: 0
+    - Name: Spanish
+      Code: es
+      Flags: 0
+    - Name: Portuguese
+      Code: pt
+      Flags: 0
+    - Name: French
+      Code: fr
+      Flags: 0
+    - Name: Dutch
+      Code: nl
+      Flags: 0
+    - Name: Italian
+      Code: it
+      Flags: 0
+    IgnoreDeviceLanguage: 0
+    _AllowUnloadingLanguages: 0
+    Google_WebServiceURL: https://script.google.com/macros/s/AKfycbx4EEDNmCns5MQFwdlWb2mgzIPSfCFV4H3Q3kOGeJtkHHQ7GnT_lDJBu0RDEd3fAw/exec
+    Google_SpreadsheetKey: 1QSM_dtUe473In6gngDFhXjWcdrLesGVPq4NL9yHjgUo
+    Google_SpreadsheetName: 'I2Loc Firefighter: pixel evil survive Localization'
+    Google_LastUpdatedVersion: 1688561390875
+    Google_Password: change_this
+    GoogleUpdateFrequency: 3
+    GoogleInEditorCheckFrequency: 2
+    GoogleUpdateSynchronization: 1
+    GoogleUpdateDelay: 0
+    Assets: []
+    Spreadsheet_LocalFileName: 
+    Spreadsheet_LocalCSVSeparator: ','
+    Spreadsheet_LocalCSVEncoding: utf-8
+    Spreadsheet_SpecializationAsRows: 1

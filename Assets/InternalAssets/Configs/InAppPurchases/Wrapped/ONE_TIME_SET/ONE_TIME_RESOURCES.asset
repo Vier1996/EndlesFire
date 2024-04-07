@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e4a1247413c4d6faba77800d61e99c2, type: 3}
+  m_Name: ONE_TIME_RESOURCES
+  m_EditorClassIdentifier: 
+  PurchaseItemType: 5
+  PurchaseType: 220
+  PaymentType: 2
+  CustomPaymentResource: 0
+  CustomPaymentIcon: {fileID: 0}
+  AndroidSKU: money_pack
+  IosSKU: money_pack
+  PaymentPrice: 0.99
+  PurchaseAmount: 1
+  SetIcon: {fileID: 21300000, guid: d5ccc9f6f3e871843b292897c74af4ae, type: 3}
+  OneTimeTitleKey: <color=#FBDC32>5000</color>+<color=#FD3478>250</color>
+  IsLocalizationTerm: 0

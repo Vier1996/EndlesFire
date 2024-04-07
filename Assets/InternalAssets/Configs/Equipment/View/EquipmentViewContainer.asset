@@ -1,0 +1,253 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc83d1ff678ce4a9fae0d227b7c9c5d7, type: 3}
+  m_Name: EquipmentViewContainer
+  m_EditorClassIdentifier: 
+  Weapons:
+  - Type: 2000
+    ViewPairs:
+    - RarityType: 1
+      Icon: {fileID: 21300000, guid: a0da3d5ab4989487291082bfe2c33079, type: 3}
+      GameView: {fileID: 21300000, guid: 123cc446d370d4e33b084d078972b0e7, type: 3}
+    - RarityType: 2
+      Icon: {fileID: 21300000, guid: 089619b6c815246649fa477c463b0bda, type: 3}
+      GameView: {fileID: 21300000, guid: fe5321b1c8bd94b2ebabc1b5995c9d57, type: 3}
+    - RarityType: 3
+      Icon: {fileID: 21300000, guid: 964785be98254194e9d65066e2eb303d, type: 3}
+      GameView: {fileID: 21300000, guid: ef4c10ab5d831864e8c119007d5b8ffd, type: 3}
+    - RarityType: 4
+      Icon: {fileID: 21300000, guid: f82a38cb230820848b667888569c9a9f, type: 3}
+      GameView: {fileID: 21300000, guid: d584bf3f37b75d94a8024805be3fe60d, type: 3}
+    - RarityType: 5
+      Icon: {fileID: 21300000, guid: 96c12466226811f4685149a254b56f10, type: 3}
+      GameView: {fileID: 21300000, guid: 681397fd5b049f24ca4347963e05797b, type: 3}
+  - Type: 2001
+    ViewPairs:
+    - RarityType: 1
+      Icon: {fileID: 21300000, guid: 4e258691d42a3426594d4b7105352945, type: 3}
+      GameView: {fileID: 21300000, guid: e6868bf37329c4f48872e742b458f5f2, type: 3}
+    - RarityType: 2
+      Icon: {fileID: 21300000, guid: 76fb060c3341a4864957609cb9ffaf7b, type: 3}
+      GameView: {fileID: 21300000, guid: 8dc081a4f69e74a7ebe11b9b947bc88e, type: 3}
+  - Type: 2002
+    ViewPairs:
+    - RarityType: 1
+      Icon: {fileID: 21300000, guid: fd08dd9a5b364402bbc753e46fc6b9a1, type: 3}
+      GameView: {fileID: 21300000, guid: 5e80cec57667d4f9899c851b315378db, type: 3}
+    - RarityType: 2
+      Icon: {fileID: 21300000, guid: 67e658642a2a94d9ca8ee2da0fed08ab, type: 3}
+      GameView: {fileID: 21300000, guid: 13fbe7813483441c28ba3790695c6c7e, type: 3}
+  - Type: 2500
+    ViewPairs:
+    - RarityType: 1
+      Icon: {fileID: 21300000, guid: d28729d7920fb4ab4985f61d16b07252, type: 3}
+      GameView: {fileID: 21300000, guid: 79ab2c23f88cd49bdb3d5b5ac0a4c995, type: 3}
+    - RarityType: 2
+      Icon: {fileID: 21300000, guid: 7b16cf113b67e4aeaadd8ec180d6ad34, type: 3}
+      GameView: {fileID: 21300000, guid: bd2b64a7c29b74866902437a3503665f, type: 3}
+    - RarityType: 3
+      Icon: {fileID: 21300000, guid: 274441e07e56f1d4bacc91474faeee89, type: 3}
+      GameView: {fileID: 21300000, guid: 52465c34cbcdae44e853a1f7372dca54, type: 3}
+    - RarityType: 4
+      Icon: {fileID: 21300000, guid: e8a17945b61e1c34583314c541c8dc67, type: 3}
+      GameView: {fileID: 21300000, guid: ee85b56f19c552e4aa1310bf1ef4abdd, type: 3}
+    - RarityType: 5
+      Icon: {fileID: 21300000, guid: e2d7e41a40cac344cad4c0ae58270720, type: 3}
+      GameView: {fileID: 21300000, guid: 0ba92fcecb680a74f91084aa6a0d35b6, type: 3}
+  - Type: 2501
+    ViewPairs:
+    - RarityType: 1
+      Icon: {fileID: 21300000, guid: b2bfaa9383c764e999b6b26c1af7d142, type: 3}
+      GameView: {fileID: 21300000, guid: c7f0e8b6c98db4543a931732e7aaf604, type: 3}
+    - RarityType: 2
+      Icon: {fileID: 21300000, guid: 5c38ddb9f29034e3892b192d8cb582ea, type: 3}
+      GameView: {fileID: 21300000, guid: b92d31a69f12c4f57b22eac1abf85562, type: 3}
+  - Type: 2502
+    ViewPairs:
+    - RarityType: 1
+      Icon: {fileID: 21300000, guid: 7967482097f04454c8d4d598c6b81105, type: 3}
+      GameView: {fileID: 21300000, guid: 90ccead215ce242488fa352447e36feb, type: 3}
+    - RarityType: 2
+      Icon: {fileID: 21300000, guid: dd39ee28e893a4e18a12200f2dd64989, type: 3}
+      GameView: {fileID: 21300000, guid: 4052121e7a95845b2a963ce8f0165494, type: 3}
+  - Type: 3000
+    ViewPairs:
+    - RarityType: 1
+      Icon: {fileID: 21300000, guid: 80f20137168bb4f0a8c0b579c15e06e3, type: 3}
+      GameView: {fileID: 21300000, guid: 79298f0cdc7f64df6ab62d63f66a1a8c, type: 3}
+    - RarityType: 2
+      Icon: {fileID: 21300000, guid: c13b3ed5181cb4f02ab1559e8c80d63f, type: 3}
+      GameView: {fileID: 21300000, guid: a01ca183cc0ef43f6a5f9b428cc24e04, type: 3}
+  - Type: 3001
+    ViewPairs:
+    - RarityType: 1
+      Icon: {fileID: 21300000, guid: 1c54b33b239af42af808eb9e61a61539, type: 3}
+      GameView: {fileID: 21300000, guid: 7e0bf366088304d5988dac1340cfc983, type: 3}
+    - RarityType: 2
+      Icon: {fileID: 21300000, guid: e3ccd8007df334533bdbe7534f4cd023, type: 3}
+      GameView: {fileID: 21300000, guid: 83850eb6306f348ea9e2261132bdfb70, type: 3}
+    - RarityType: 3
+      Icon: {fileID: 21300000, guid: b01a9eccee2ef5942a2df6796807050a, type: 3}
+      GameView: {fileID: 21300000, guid: 7bc0c94a5a93dd84c90c2bffe89cc9e8, type: 3}
+    - RarityType: 4
+      Icon: {fileID: 21300000, guid: e6478402b23b8a348944616abca9b598, type: 3}
+      GameView: {fileID: 21300000, guid: ae0f8cc3d1ac2884888b9ee5b063a978, type: 3}
+    - RarityType: 5
+      Icon: {fileID: 21300000, guid: 17b460283a1bb4e41b91c1f608cbaad6, type: 3}
+      GameView: {fileID: 21300000, guid: 8e6957297a1a5524fbf1f89fc18317a8, type: 3}
+  - Type: 3002
+    ViewPairs:
+    - RarityType: 1
+      Icon: {fileID: 21300000, guid: 2ffc425bf7d224bcc98a851f7dc16f1d, type: 3}
+      GameView: {fileID: 21300000, guid: d1c3cf650f9784efaae6718321d72a07, type: 3}
+    - RarityType: 2
+      Icon: {fileID: 21300000, guid: 12715021687f94316b1b8202b70c6075, type: 3}
+      GameView: {fileID: 21300000, guid: 8d40d09df8fdd46ef9871d29992aed66, type: 3}
+  - Type: 3003
+    ViewPairs:
+    - RarityType: 1
+      Icon: {fileID: 21300000, guid: 663bc0e027fa8425dab76295bbca8e47, type: 3}
+      GameView: {fileID: 21300000, guid: 86708c7e5432940799d4e6ec456d2181, type: 3}
+    - RarityType: 2
+      Icon: {fileID: 21300000, guid: 88c6087286d5e49779254edeaa8e44ec, type: 3}
+      GameView: {fileID: 21300000, guid: 8dd3fb86fb4734174b38c0b8becddc82, type: 3}
+  - Type: 3500
+    ViewPairs:
+    - RarityType: 1
+      Icon: {fileID: 21300000, guid: 520c1351cf4fb4e1a865d8b284c0d475, type: 3}
+      GameView: {fileID: 21300000, guid: 26506e3e622b640dc9325fe23e0996ec, type: 3}
+    - RarityType: 2
+      Icon: {fileID: 21300000, guid: 2c60a0961ae514cd3878cf67b57c7e81, type: 3}
+      GameView: {fileID: 21300000, guid: 1c139d7f468294d8e835b299f58569b5, type: 3}
+  - Type: 3501
+    ViewPairs:
+    - RarityType: 1
+      Icon: {fileID: 21300000, guid: 929edae8d92694266b6627ed483b458d, type: 3}
+      GameView: {fileID: 21300000, guid: b750ac9fb303a4fd482049f4891e2ca6, type: 3}
+    - RarityType: 2
+      Icon: {fileID: 21300000, guid: a98eaa8dfe2d6426a90bb0156ab6869e, type: 3}
+      GameView: {fileID: 21300000, guid: cc75d7ad375884a34887f0f94da30acc, type: 3}
+    - RarityType: 3
+      Icon: {fileID: 21300000, guid: d8239c725a8ac4c4da5e5848785250b3, type: 3}
+      GameView: {fileID: 21300000, guid: 4126e9c21bc36fc4fb89f771ef7e0c3c, type: 3}
+    - RarityType: 4
+      Icon: {fileID: 21300000, guid: be27108d990dee74c85d5edf976e10bf, type: 3}
+      GameView: {fileID: 21300000, guid: c7ea33efc6e88484099aefbe5c2fe53e, type: 3}
+    - RarityType: 5
+      Icon: {fileID: 21300000, guid: 006b4a65862e9b746906e5456721c389, type: 3}
+      GameView: {fileID: 21300000, guid: 5739c29bb9c0f2e4cb462b3678805258, type: 3}
+  - Type: 3502
+    ViewPairs:
+    - RarityType: 1
+      Icon: {fileID: 21300000, guid: 6cee3d2cad8994eb6a04feb80c0b1d41, type: 3}
+      GameView: {fileID: 21300000, guid: acad38af8b72d4188849bd98fc0b416c, type: 3}
+    - RarityType: 2
+      Icon: {fileID: 21300000, guid: 9c3344cfdedd5472f89e52eaa63b46a0, type: 3}
+      GameView: {fileID: 21300000, guid: caed583c8b1134a6e97ce2250682ea67, type: 3}
+  - Type: 4000
+    ViewPairs:
+    - RarityType: 1
+      Icon: {fileID: 21300000, guid: eea9e72738eac46ce80df54475da52a7, type: 3}
+      GameView: {fileID: 21300000, guid: ac5903ec4d30d4cafb86cd35be555bee, type: 3}
+    - RarityType: 2
+      Icon: {fileID: 21300000, guid: 60f5f039b5c5e4f50a6675e852ed530e, type: 3}
+      GameView: {fileID: 21300000, guid: 0d717170049484633aaac91d5dc86eda, type: 3}
+    - RarityType: 3
+      Icon: {fileID: 21300000, guid: d4d12e8fd76541341b970075898befbb, type: 3}
+      GameView: {fileID: 21300000, guid: 6344954b2720b5f498f881c9c5a3d0d4, type: 3}
+    - RarityType: 4
+      Icon: {fileID: 21300000, guid: f10d63b3d4942084f9006fe61a20fdb2, type: 3}
+      GameView: {fileID: 21300000, guid: 7652f1c86ccd7c24daa6098ba9b0fe4f, type: 3}
+    - RarityType: 5
+      Icon: {fileID: 21300000, guid: e87f1b38946acda4487febc09b6c2e3f, type: 3}
+      GameView: {fileID: 21300000, guid: b6bbf2b9b91d5d5419bdd4f45c92c04e, type: 3}
+  - Type: 4001
+    ViewPairs:
+    - RarityType: 1
+      Icon: {fileID: 21300000, guid: 6fd778a73abbf4fdca720f31ab78403a, type: 3}
+      GameView: {fileID: 21300000, guid: 91545db87c645473bae80d1656f15bb0, type: 3}
+    - RarityType: 2
+      Icon: {fileID: 21300000, guid: d48a72be33a524744b10bb1d1dd381b4, type: 3}
+      GameView: {fileID: 21300000, guid: b5866ebeb490840c4b7fd2e9e246158e, type: 3}
+  - Type: 4002
+    ViewPairs:
+    - RarityType: 1
+      Icon: {fileID: 21300000, guid: 6f749a46deec2427fa83b4a2d0c6ca38, type: 3}
+      GameView: {fileID: 21300000, guid: 19622cf3736f147088964064a9c22d06, type: 3}
+    - RarityType: 2
+      Icon: {fileID: 21300000, guid: b32da7c798a22403589b5893085208a5, type: 3}
+      GameView: {fileID: 21300000, guid: 17c04d0bbadd0413697729a7d6a0d7bb, type: 3}
+  Outfit:
+  - Type: 1
+    ViewPairs:
+    - RarityType: 1
+      Icon: {fileID: 21300000, guid: f6ef19eaa15d54f4186b27e3fef6a882, type: 3}
+      GameView: {fileID: 0}
+    - RarityType: 2
+      Icon: {fileID: 21300000, guid: 9a0ea77eccdf27b4ca83567678931309, type: 3}
+      GameView: {fileID: 0}
+  - Type: 2
+    ViewPairs:
+    - RarityType: 1
+      Icon: {fileID: 21300000, guid: 74436310525d49e4f9927cd124ffa044, type: 3}
+      GameView: {fileID: 0}
+    - RarityType: 2
+      Icon: {fileID: 21300000, guid: 80248c62515164e4baf7c1ed02bbe248, type: 3}
+      GameView: {fileID: 0}
+  - Type: 500
+    ViewPairs:
+    - RarityType: 1
+      Icon: {fileID: 21300000, guid: 43c58eda3f076df41aba18a09cadd798, type: 3}
+      GameView: {fileID: 0}
+    - RarityType: 2
+      Icon: {fileID: 21300000, guid: 61cad9cc0062f394c89a68836b1bd22d, type: 3}
+      GameView: {fileID: 0}
+  - Type: 501
+    ViewPairs:
+    - RarityType: 1
+      Icon: {fileID: 21300000, guid: 0cbebbb93fbe77b419efb8f24fb00b50, type: 3}
+      GameView: {fileID: 0}
+    - RarityType: 2
+      Icon: {fileID: 21300000, guid: 43c58eda3f076df41aba18a09cadd798, type: 3}
+      GameView: {fileID: 0}
+  - Type: 1000
+    ViewPairs:
+    - RarityType: 1
+      Icon: {fileID: 21300000, guid: 820a29d2c2f861449954314c67ce4e70, type: 3}
+      GameView: {fileID: 0}
+    - RarityType: 2
+      Icon: {fileID: 21300000, guid: 945c643b7de0eca4aa8dca82d03220b1, type: 3}
+      GameView: {fileID: 0}
+  - Type: 1001
+    ViewPairs:
+    - RarityType: 1
+      Icon: {fileID: 21300000, guid: c9a8f750fb5cf4a4e92608be3bb745aa, type: 3}
+      GameView: {fileID: 0}
+    - RarityType: 2
+      Icon: {fileID: 21300000, guid: 8e9631d9f96de344fa4b2b08ebb3e18e, type: 3}
+      GameView: {fileID: 0}
+  - Type: 1500
+    ViewPairs:
+    - RarityType: 1
+      Icon: {fileID: 21300000, guid: 9aaf983e02e11a04d8154c2ca9f8af11, type: 3}
+      GameView: {fileID: 0}
+    - RarityType: 2
+      Icon: {fileID: 21300000, guid: d2f9dc49a8e34a14b9e09def3e3e2575, type: 3}
+      GameView: {fileID: 0}
+  - Type: 1501
+    ViewPairs:
+    - RarityType: 1
+      Icon: {fileID: 21300000, guid: 7d1dc7a3479516e45834a9e45ec68a4d, type: 3}
+      GameView: {fileID: 0}
+    - RarityType: 2
+      Icon: {fileID: 21300000, guid: ad437bf03b4be964abb8a9c0310c6a85, type: 3}
+      GameView: {fileID: 0}

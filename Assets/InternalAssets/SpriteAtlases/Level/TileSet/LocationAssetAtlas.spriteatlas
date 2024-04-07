@@ -1,0 +1,110 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: LocationAssetAtlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 0
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: Android
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 47
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    - serializedVersion: 3
+      m_BuildTarget: iPhone
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 50
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: f9f81f30b7c4e4e8fb428e07e71e6b7d, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: e3d2fdb197cb74b939dd303018434cdc, type: 3}
+  - {fileID: 21300000, guid: 2961595455d9546afafee139cea86fc4, type: 3}
+  - {fileID: 21300000, guid: 48b25eb46253b4d24be64f20e2f1fb07, type: 3}
+  - {fileID: 21300000, guid: a20e99e463c02427594a80a49031119a, type: 3}
+  - {fileID: 21300000, guid: 638fee95e2a57414a89dc9df7de15f09, type: 3}
+  - {fileID: 21300000, guid: f0a97a47d880b4081aa5502cf8af634f, type: 3}
+  - {fileID: 21300000, guid: 1ae028c7859aa4eefb36739dabcd2323, type: 3}
+  - {fileID: 21300000, guid: d5cc85e83eb5a42729de1b0979c128b6, type: 3}
+  - {fileID: 21300000, guid: 1d46c53ac305541a7a626d46e79c829e, type: 3}
+  - {fileID: 21300000, guid: 6d2e107a49a3744d29bc5d0e82b5b39e, type: 3}
+  - {fileID: 21300000, guid: edce049abbbc44144b86ee082f6ebcac, type: 3}
+  - {fileID: 21300000, guid: ea2e56cab05cc4545b87172fbafa2d45, type: 3}
+  - {fileID: 21300000, guid: 49789fca8fbfb48679b8155abe3e084e, type: 3}
+  - {fileID: 21300000, guid: 494ef51cd97654277b8f2e9437082a65, type: 3}
+  - {fileID: 21300000, guid: dbb9886c0c68843ef9a3d9f402ba02c2, type: 3}
+  - {fileID: 21300000, guid: cd14ad9c354be43dd8f6a4f67c2b11ee, type: 3}
+  - {fileID: 21300000, guid: cf5b306de59db4d5facd625e87e671bd, type: 3}
+  - {fileID: 21300000, guid: 2cc4dafd80c8f4c73a3a4e157bdf71ad, type: 3}
+  - {fileID: 21300000, guid: 1f8d37be45e994cd3988884e2860e9dc, type: 3}
+  - {fileID: 21300000, guid: 53eeafee49ebf4938a42b79d4de53c33, type: 3}
+  - {fileID: 21300000, guid: d6e1f96f852a648c187ca98c2391ec39, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - chest4 top
+  - chest4 open
+  - chest2 open
+  - chest5 top
+  - chest1 open
+  - chest2 top
+  - chest3 light
+  - chest1 bottom
+  - chest2 light
+  - chest1 light
+  - chest2 shadow
+  - chest2 bottom
+  - chest5 bottom
+  - chest1 top
+  - chest5 open
+  - chest3 bottom
+  - chest3 open
+  - chest4 bottom
+  - chest5 light
+  - chest3 top
+  - chest4 light
+  m_RenderDataMap: {}
+  m_Tag: LocationAssetAtlas
+  m_IsVariant: 0

@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ef961aeaac4bb442bafb55c0181ad29, type: 3}
+  m_Name: PROTOTYPE_ENEMY_CONFIG_Melee
+  m_EditorClassIdentifier: 
+  NameKey: "\u041C\u0438\u043B\u0438\u0448\u043D\u0438\u043A"
+  EnemyType: 6
+  BaseHealth: 250
+  BaseDamage: 60
+  LootAmount:
+  - Amount: 1
+    Weight: 100
+  - Amount: 2
+    Weight: 50
+  - Amount: 3
+    Weight: 10
+  Ammo: 1
+  AmmoPerShoot: 1
+  SprayInterval: 0.2
+  Accuracy: 0
+  AimingTime: 1
+  ReloadTime: 3
+  MovementSpeed: 2
+  ShootingRange: 3
+  RechargingTime: 0.3
+  CriticalChance: 0
+  CriticalDamage: 0
+  DetectionRadius: 1
+  BullletMoveSpeed: 0.5
+  ExplosionRadius: 0
+  FollowSpeedMultiplier: 3.5
+  StopDistance: 0.5
+  SegmentShooting: 0
+  SegmantAngle: 60
+  TakeShield: 0
+  ShieldIgnoringEffect: 0
+  TakeGrenade: 0
+  CanSwapPositionAfterShooting: 0
+  SwapPositionChance: 0
+  PassiveSkills: 00000000

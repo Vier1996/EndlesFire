@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: ApartDialogAtlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 0
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: Android
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 47
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    - serializedVersion: 3
+      m_BuildTarget: iPhone
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 50
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: d82b888ebe4e66045a9457874ae59977, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 30e13ea1a7fec3b489cfacb9ac24d282, type: 3}
+  - {fileID: 21300000, guid: 8aa5c823416438a49b9eed5615de03b6, type: 3}
+  - {fileID: 21300000, guid: bf17d574df6fddf4fb19618d640d2dc8, type: 3}
+  - {fileID: 21300000, guid: 3fa4c01574a9ddf44a787d6e1a5cd3fc, type: 3}
+  - {fileID: 21300000, guid: 22894ea80ec01fe41ae344e04f80eb10, type: 3}
+  - {fileID: 21300000, guid: 22734d399d6942d488c0c17ae7f19737, type: 3}
+  - {fileID: 21300000, guid: 4546b12a445c93e4a9b0b21ad8d60ad7, type: 3}
+  - {fileID: 21300000, guid: acbaca4ac387841499b14591789a13ea, type: 3}
+  - {fileID: 21300000, guid: f040173e2748fde479b8676993c57877, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - blackout cell
+  - button blue square
+  - dialog back
+  - cell
+  - left arrow
+  - OK icon
+  - select cell
+  - button orenge big copy
+  - block icon
+  m_RenderDataMap: {}
+  m_Tag: ApartDialogAtlas
+  m_IsVariant: 0

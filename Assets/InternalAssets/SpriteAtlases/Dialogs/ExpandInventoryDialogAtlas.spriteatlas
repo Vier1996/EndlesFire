@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: ExpandInventoryDialogAtlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 0
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: Android
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 47
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    - serializedVersion: 3
+      m_BuildTarget: iPhone
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 50
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 265156364714d634c8a11e07364679a7, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 92ddcaa0d4f7b164bb817ba3e09be04f, type: 3}
+  - {fileID: 21300000, guid: bdc2b4a1962423e4b9aec73c9e7e8633, type: 3}
+  - {fileID: 21300000, guid: 83322ec119d47e04b84335aaf69e2fd5, type: 3}
+  - {fileID: 21300000, guid: ac4e7a438bf77434b93829a4bbeb88ad, type: 3}
+  - {fileID: 21300000, guid: fa5ed057ac0950b4f82a3e3ea03a70a9, type: 3}
+  - {fileID: 21300000, guid: a3c64f38281dbe446aefeb32e289bf60, type: 3}
+  - {fileID: 21300000, guid: c5e7add887ba0b642953ffd8ca91ec92, type: 3}
+  - {fileID: 21300000, guid: 9e201ef8446e4a449b81e0ef18ac6410, type: 3}
+  - {fileID: 21300000, guid: fa243b9a01794634cb0e7c76e9c31151, type: 3}
+  - {fileID: 21300000, guid: e853371d830b11c4d8b0eb374e03ef28, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - small dialog back
+  - button violet big
+  - close button
+  - minus
+  - sell square grey
+  - sell square violet
+  - plus
+  - diamond dialog icon
+  - equipment icon
+  - cell violet
+  m_RenderDataMap: {}
+  m_Tag: ExpandInventoryDialogAtlas
+  m_IsVariant: 0

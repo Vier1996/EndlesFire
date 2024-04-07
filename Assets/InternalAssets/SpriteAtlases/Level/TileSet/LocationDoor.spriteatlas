@@ -1,0 +1,98 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: LocationDoor
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 0
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: Android
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 47
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    - serializedVersion: 3
+      m_BuildTarget: iPhone
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 50
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 74998b8a9d8b9a1429d82748252c112e, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 35239060b4da5403d93299e63572b6b2, type: 3}
+  - {fileID: 21300000, guid: d883db01b19eb4e1b8728339ce68326b, type: 3}
+  - {fileID: 21300000, guid: 695b03436a08742288af91e9d55ad3f2, type: 3}
+  - {fileID: 21300000, guid: 2c3c97c582b86a7418bce156f22e8467, type: 3}
+  - {fileID: 21300000, guid: 0770dc06e83122940a3b3dd216ac3d9f, type: 3}
+  - {fileID: 21300000, guid: 4db36486ea09642aca0cce291055c117, type: 3}
+  - {fileID: 21300000, guid: 0fd9b6e61f0457240a3acbfd47117f4e, type: 3}
+  - {fileID: 21300000, guid: ed0f36b8267e5d045bc048ec14a0aabc, type: 3}
+  - {fileID: 21300000, guid: 41ac390b03602495982046846f4232d3, type: 3}
+  - {fileID: 21300000, guid: 710b782c09ab14b83a704ff1812a6522, type: 3}
+  - {fileID: 21300000, guid: e83a7b4cd676f4925bb6a18704686d63, type: 3}
+  - {fileID: 21300000, guid: 58d71fdc53c24c143bb762f9ae6d01d6, type: 3}
+  - {fileID: 21300000, guid: 63455a5d775c24825a9204f13d7d0833, type: 3}
+  - {fileID: 21300000, guid: 078207bd06fdf4da3858f54484311880, type: 3}
+  - {fileID: 21300000, guid: c9382f1f0208745229a1effd88dbbe31, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - open top
+  - door r open
+  - door r close
+  - contour left
+  - door2
+  - door l close
+  - door open right
+  - door open left
+  - open bottom
+  - close bottom
+  - door l open
+  - contour right
+  - shadow
+  - close top
+  - door shadow
+  m_RenderDataMap: {}
+  m_Tag: LocationDoor
+  m_IsVariant: 0

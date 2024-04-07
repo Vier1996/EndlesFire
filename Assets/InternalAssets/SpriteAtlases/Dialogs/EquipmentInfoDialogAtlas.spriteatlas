@@ -1,0 +1,116 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: EquipmentInfoDialogAtlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 0
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: Android
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 47
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    - serializedVersion: 3
+      m_BuildTarget: iPhone
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 50
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 484a46c5e828ab04ca44572b01a34311, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 0bce8d71488e397479d913f2a20cdc75, type: 3}
+  - {fileID: 21300000, guid: f3caa791f10136f4187c86df1a666651, type: 3}
+  - {fileID: 21300000, guid: 9156d14294a588b4da3edefa97cbfe2a, type: 3}
+  - {fileID: 21300000, guid: 1d8e2104619f152459511a1149a938d9, type: 3}
+  - {fileID: 21300000, guid: 5a026465f78da4c4da594592290009e7, type: 3}
+  - {fileID: 21300000, guid: c7e36736089c06d48b6ee93ce59501d8, type: 3}
+  - {fileID: 21300000, guid: c691fb4631acc874985b38485faeb5e7, type: 3}
+  - {fileID: 21300000, guid: 6d95ee7601f254c499fa556e084567a9, type: 3}
+  - {fileID: 21300000, guid: 1294cb075b797954ea0f25a469663d28, type: 3}
+  - {fileID: 21300000, guid: ed86aec799c2e3642b00baef9a8296de, type: 3}
+  - {fileID: 21300000, guid: 57a163d73d424644ba72d48f124de3c7, type: 3}
+  - {fileID: 21300000, guid: fe417328126ea47449a84dfce9222c04, type: 3}
+  - {fileID: 21300000, guid: 184d46e9c3f6fe34996a6da86a3c9a7c, type: 3}
+  - {fileID: 21300000, guid: 99507aca15d4ca74ebe0e38028443926, type: 3}
+  - {fileID: 21300000, guid: 51e47c4ba6c786a4bae6aa4910f158cf, type: 3}
+  - {fileID: 21300000, guid: c95ad37ba7066024689032dfd41efa1e, type: 3}
+  - {fileID: 21300000, guid: 9e2c0a3c0eaabed45bd75866686a9fdc, type: 3}
+  - {fileID: 21300000, guid: b6b194ac021a5b4469995cabf72b799e, type: 3}
+  - {fileID: 21300000, guid: e937976d67765d24b8db1757b8a329be, type: 3}
+  - {fileID: 21300000, guid: cb68990e96bb99f4a9f567622779789b, type: 3}
+  - {fileID: 21300000, guid: 800a0b2e0a469cd419e6b285153236ae, type: 3}
+  - {fileID: 21300000, guid: 9c6ffa4eb33b6114180a8fe91f6d7b85, type: 3}
+  - {fileID: 21300000, guid: 2a3c687e2a12b7e40a1c9cbec7824d51, type: 3}
+  - {fileID: 21300000, guid: ddbe695fac032f847a0b39c970e87ccb, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - bullet shotgun
+  - star progress copy 2
+  - button up
+  - cell4 1
+  - bullet rifle
+  - cell3
+  - progress
+  - bullet gun
+  - cell5
+  - dialog
+  - icon back
+  - bullet  grenade
+  - dialog top
+  - button blocked
+  - bullet automatic
+  - cell2 1
+  - button up 1
+  - cell5
+  - cell1
+  - arrow
+  - progress back 1
+  - dialog bottom
+  - close button 1
+  - coin icon copy
+  m_RenderDataMap: {}
+  m_Tag: EquipmentInfoDialogAtlas
+  m_IsVariant: 0

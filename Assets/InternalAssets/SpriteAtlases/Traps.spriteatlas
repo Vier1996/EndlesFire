@@ -1,0 +1,142 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Traps
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 0
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: Android
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 47
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 31c891b0df413814ca7439f50cbfad06, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: -6979271434310824605, guid: 2432329078b163c40af73f2e4391af63, type: 3}
+  - {fileID: -422438165435499561, guid: 2432329078b163c40af73f2e4391af63, type: 3}
+  - {fileID: 21300000, guid: fbc45a71c084cc04fa6a5fd7b9b67210, type: 3}
+  - {fileID: 21300000, guid: f0429532a27d88d42af41e63b09b686e, type: 3}
+  - {fileID: 21300000, guid: 29e630d211e44694680ae9e2bd3e5b61, type: 3}
+  - {fileID: 63439735765670304, guid: e87205b322156d944b63eca22647a04a, type: 3}
+  - {fileID: -361055377474261852, guid: e87205b322156d944b63eca22647a04a, type: 3}
+  - {fileID: -282803389941045344, guid: e87205b322156d944b63eca22647a04a, type: 3}
+  - {fileID: 21300000, guid: bf6107a4a330d704a9089c343c9bb51f, type: 3}
+  - {fileID: 21300000, guid: 5757d1e59725d9d4b924db68dd104d35, type: 3}
+  - {fileID: 6356981664430260845, guid: b780104607446ab4db2ee810936582e3, type: 3}
+  - {fileID: 9164291076301362474, guid: b780104607446ab4db2ee810936582e3, type: 3}
+  - {fileID: 4663675721840687938, guid: b780104607446ab4db2ee810936582e3, type: 3}
+  - {fileID: -8244874253553174491, guid: b780104607446ab4db2ee810936582e3, type: 3}
+  - {fileID: -323476846965962865, guid: b780104607446ab4db2ee810936582e3, type: 3}
+  - {fileID: -107608571951755137, guid: b780104607446ab4db2ee810936582e3, type: 3}
+  - {fileID: 21300000, guid: e1e22067764b99f40aefa7b9bf17ba1c, type: 3}
+  - {fileID: 21300000, guid: d12d620915339d74a8c8465b7e0c1c16, type: 3}
+  - {fileID: 8978192554943414181, guid: cdb0b7f9990177248bbd98a6212cf075, type: 3}
+  - {fileID: 6934291387725159603, guid: cdb0b7f9990177248bbd98a6212cf075, type: 3}
+  - {fileID: 8394727988928741904, guid: cdb0b7f9990177248bbd98a6212cf075, type: 3}
+  - {fileID: 4423033732411298031, guid: cdb0b7f9990177248bbd98a6212cf075, type: 3}
+  - {fileID: -6840358378346563655, guid: cdb0b7f9990177248bbd98a6212cf075, type: 3}
+  - {fileID: 7305944516919707926, guid: cdb0b7f9990177248bbd98a6212cf075, type: 3}
+  - {fileID: 21300000, guid: 1c8df41af38b3934d8bbc18da2fe6ee6, type: 3}
+  - {fileID: 21300000, guid: 4894ceaa135ede846bb897552a35129b, type: 3}
+  - {fileID: -6185348170897431058, guid: 2fddcdda5968ced43ab4a752428bd3e1, type: 3}
+  - {fileID: -4833484910694358753, guid: 2fddcdda5968ced43ab4a752428bd3e1, type: 3}
+  - {fileID: -6745706774822536446, guid: 2fddcdda5968ced43ab4a752428bd3e1, type: 3}
+  - {fileID: -8942573571238152497, guid: 2fddcdda5968ced43ab4a752428bd3e1, type: 3}
+  - {fileID: -213940913995726447, guid: 2fddcdda5968ced43ab4a752428bd3e1, type: 3}
+  - {fileID: 4427378744508581201, guid: 2fddcdda5968ced43ab4a752428bd3e1, type: 3}
+  - {fileID: 21300000, guid: c902f67cec3df514b959767e77f38a77, type: 3}
+  - {fileID: 21300000, guid: e14ed9bc281c8bb4ea94a0a959d99f92, type: 3}
+  - {fileID: 21300000, guid: a50cb0fc2de46e0428224d900df25fc0, type: 3}
+  - {fileID: 21300000, guid: c02cb0ade363f1641b9289ef040e0dc3, type: 3}
+  - {fileID: 21300000, guid: 633c7d0e011a3f843938cbca09800db0, type: 3}
+  - {fileID: 21300000, guid: 8f40ca1e7daeac3419dbd0ee45043cb8, type: 3}
+  - {fileID: 21300000, guid: 02b1493ea1057bf43b29bf4907479094, type: 3}
+  - {fileID: 21300000, guid: a14d336e30701d449b9540d16e19770f, type: 3}
+  - {fileID: 21300000, guid: 4960294f2f8756746aac55bfac94b20f, type: 3}
+  - {fileID: 21300000, guid: 096b3bdfac11c4d41b9bd459b2f0e675, type: 3}
+  - {fileID: 21300000, guid: 6d006eff235bb0e4eb4dc8bdb8683c3d, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - knives_0
+  - knives_1
+  - trap elemept6
+  - trap elemept9
+  - trap elemept8
+  - saw_2
+  - saw_1
+  - saw_0
+  - trap elemept11
+  - trap element
+  - spike trap instant_2
+  - spike trap instant_3
+  - spike trap instant_0
+  - spike trap instant_1
+  - spike trap instant_4
+  - spike trap instant_5
+  - trap elemept4
+  - trap elemept2
+  - spike trap dynamic_2
+  - spike trap dynamic_3
+  - spike trap dynamic_0
+  - spike trap dynamic_1
+  - spike trap dynamic_4
+  - spike trap dynamic_5
+  - trap elemept1
+  - trap elemept5
+  - spike trap_5
+  - spike trap_4
+  - spike trap_1
+  - spike trap_0
+  - spike trap_3
+  - spike trap_2
+  - Layer 712 copy
+  - statue trap light
+  - statue trap (1)
+  - trap elemept10
+  - trap elemept3
+  - lava water wave
+  - coloring
+  - Layer 708
+  - trap elemept7
+  - Group 26 copy 3
+  - Layer 711
+  m_RenderDataMap: {}
+  m_Tag: Traps
+  m_IsVariant: 0

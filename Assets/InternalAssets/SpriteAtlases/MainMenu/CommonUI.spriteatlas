@@ -1,0 +1,120 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: CommonUI
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 0
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: Android
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 47
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    - serializedVersion: 3
+      m_BuildTarget: iPhone
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 50
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: c78757ca645c12941a042ea584b2422d, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 1a75ad2069722a94bbce705bee7f8cb0, type: 3}
+  - {fileID: 21300000, guid: bf1063c03b6673949a153e851d6d610f, type: 3}
+  - {fileID: 21300000, guid: 6c29cd418951a2a4480140c374d2fba0, type: 3}
+  - {fileID: 21300000, guid: 222334813c459db4593110036c02d71d, type: 3}
+  - {fileID: 21300000, guid: 46e211b1b33bcb24a941089ea868a9b6, type: 3}
+  - {fileID: 21300000, guid: dbc52793a0943a14b93eabf1281ded53, type: 3}
+  - {fileID: 21300000, guid: eaf8b7c33c5a4f245a52044242a27167, type: 3}
+  - {fileID: 21300000, guid: 2a86ec0517841f2409c3c63b2e9166c5, type: 3}
+  - {fileID: 21300000, guid: 306a14068d3a29d48b175ae1c735f45e, type: 3}
+  - {fileID: 21300000, guid: 927004d6dfc3bb14291a84dac9ba60b8, type: 3}
+  - {fileID: 21300000, guid: 45c940878658b5c4b9fb221883f502eb, type: 3}
+  - {fileID: 21300000, guid: 9f0dede8215a24843977bba26da9885d, type: 3}
+  - {fileID: 21300000, guid: b42cb3f86c5b9944080e2a310cab67f9, type: 3}
+  - {fileID: 21300000, guid: 29b12519f5879f74c95c12ccecd8b5b3, type: 3}
+  - {fileID: 21300000, guid: 87a4a9c9672976e4ca4173b9a274a34e, type: 3}
+  - {fileID: 21300000, guid: 8bdf73e9f14c0e8418580b17e0a78ebe, type: 3}
+  - {fileID: 21300000, guid: d526e62b5405fd44d8754de39a9969a5, type: 3}
+  - {fileID: 21300000, guid: e5b0273bbd5b4234e9a2b61282200eb6, type: 3}
+  - {fileID: 21300000, guid: fdb14c3c09c5a1f4097ebeebb406b7a9, type: 3}
+  - {fileID: 21300000, guid: 8630266ccb7646247ae6d74fce2c00c3, type: 3}
+  - {fileID: 21300000, guid: 7e70bd0d06ade244b8fea86f76ef8280, type: 3}
+  - {fileID: 21300000, guid: 938c728d43c51f44eb7039d415b29657, type: 3}
+  - {fileID: 21300000, guid: 812bcd3e6d975214391540d8d035370e, type: 3}
+  - {fileID: 21300000, guid: 5c7bc8cea699f5a47b04905ced80fe1c, type: 3}
+  - {fileID: 21300000, guid: 218a185f10e9af740884dece75c606bd, type: 3}
+  - {fileID: 21300000, guid: b80c208f143741f43abae712dbaba43c, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - small counter
+  - diamond icon
+  - star progress
+  - button menu small (5)
+  - equipment icon2
+  - coin icon shadow
+  - setting button
+  - small counter 1
+  - star icon shadow 1
+  - map icon2
+  - diamond icon shadow
+  - button menu small (2)
+  - shop icon2
+  - star probress back (1)
+  - equipment icon
+  - fight icon2
+  - coin icon shadow 1
+  - map icon
+  - shop icon (2)
+  - star progress (2)
+  - star icon shadow
+  - fight icon
+  - diamond icon shadow 1
+  - star icon
+  - star probress back
+  - coin icon
+  m_RenderDataMap: {}
+  m_Tag: CommonUI
+  m_IsVariant: 0

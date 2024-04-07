@@ -1,0 +1,120 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: IconAtlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 0
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: Android
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 47
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    - serializedVersion: 3
+      m_BuildTarget: iPhone
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 50
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 3d2d59864d22300478ad2054f2f96fbe, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: a0534e20242f7724ab2a2d53cab10936, type: 3}
+  - {fileID: 21300000, guid: b20a4ec09ee6bfa47bf6a2257b47727c, type: 3}
+  - {fileID: 21300000, guid: 2f485fd0607e6c44eb22dc8beaed7c26, type: 3}
+  - {fileID: 21300000, guid: 27e88cc2ad683664c8dd1b5f248d1787, type: 3}
+  - {fileID: 21300000, guid: 41732113ca0b3c449b0bbc7b2d365d71, type: 3}
+  - {fileID: 21300000, guid: d80372537b318af4095c3f86d2906aed, type: 3}
+  - {fileID: 21300000, guid: d3e03fa3d4e4090488d33028209fe6f6, type: 3}
+  - {fileID: 21300000, guid: 5498a825c81d590468bd3a9e264dee4f, type: 3}
+  - {fileID: 21300000, guid: 976769362005c79448b62cb7e863ef07, type: 3}
+  - {fileID: 21300000, guid: 47304717d8b6398408df53ef3614a326, type: 3}
+  - {fileID: 21300000, guid: e57b628737270da45b5a9dcf7f4c05b5, type: 3}
+  - {fileID: 21300000, guid: ff030d68dedc1ae40b437d689c364e79, type: 3}
+  - {fileID: 21300000, guid: 3d784e098b3dee8408dc46a2d617dfb7, type: 3}
+  - {fileID: 21300000, guid: 978427b95dae5b5448885ce6a0b194dd, type: 3}
+  - {fileID: 21300000, guid: 5e0346da26246f245b3cad56cba2cbb4, type: 3}
+  - {fileID: 21300000, guid: 7a8b620b83963f846bfa7e432027a0d3, type: 3}
+  - {fileID: 21300000, guid: fc060f7b36e42f642ad041f91fa62139, type: 3}
+  - {fileID: 21300000, guid: c73303ab001324d4eb4ba6f28914c28e, type: 3}
+  - {fileID: 21300000, guid: d6a0c10d470577c418725afa17041787, type: 3}
+  - {fileID: 21300000, guid: 75032a1d31cd4e14096f7ac4d252f7e1, type: 3}
+  - {fileID: 21300000, guid: b00c914da6fd8d444833600762bc40c2, type: 3}
+  - {fileID: 21300000, guid: fb38664dd3bd9c844afec84797db0179, type: 3}
+  - {fileID: 21300000, guid: 1dc7651e49e09984089cd7f120b66de5, type: 3}
+  - {fileID: 21300000, guid: ef3c784e0252e3e418150596e8349393, type: 3}
+  - {fileID: 21300000, guid: 93d5d7dec076a584e95b3f800cac5019, type: 3}
+  - {fileID: 21300000, guid: 5f5bce9f5b6f3c346a3c46f0e47d9318, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - icon_square_48
+  - icon_square_72
+  - icon_108
+  - icon_81
+  - icon_162_back
+  - icon_162
+  - icon_512
+  - icon_216
+  - icon_round_192
+  - icon_square_36
+  - icon_round_72
+  - icon_324
+  - icon_round_36
+  - icon_round_48
+  - AP_logo
+  - icon_square_96
+  - icon_square_144
+  - icon_81_back
+  - icon_432_back
+  - icon_324_back
+  - icon_square_192
+  - icon_round_144
+  - icon_432
+  - icon_108_back
+  - icon_round_96
+  - icon_216_back
+  m_RenderDataMap: {}
+  m_Tag: IconAtlas
+  m_IsVariant: 0

@@ -1,0 +1,104 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: TutorialAtlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 0
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: Android
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 47
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    - serializedVersion: 3
+      m_BuildTarget: iPhone
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 50
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 18395e9b7a301b149bbb717c5bdf0ff4, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 8e7ba4c0672534e40bf6ac93778170f3, type: 3}
+  - {fileID: 21300000, guid: f3fc7581a717a3d41aa8399726bbe361, type: 3}
+  - {fileID: 21300000, guid: 52628eb1b925de64b89aacfdc489539a, type: 3}
+  - {fileID: 2515085738340607614, guid: 038ed79565c282c41a233e4e6b204c15, type: 3}
+  - {fileID: -2894814692586649365, guid: 038ed79565c282c41a233e4e6b204c15, type: 3}
+  - {fileID: -5596246417389633967, guid: 038ed79565c282c41a233e4e6b204c15, type: 3}
+  - {fileID: 5607714388943270001, guid: 038ed79565c282c41a233e4e6b204c15, type: 3}
+  - {fileID: -2088332975731913622, guid: 038ed79565c282c41a233e4e6b204c15, type: 3}
+  - {fileID: 889067310191849728, guid: 038ed79565c282c41a233e4e6b204c15, type: 3}
+  - {fileID: 8043057068524334583, guid: 038ed79565c282c41a233e4e6b204c15, type: 3}
+  - {fileID: 21300000, guid: a589880803788074abe53f27fe397073, type: 3}
+  - {fileID: 21300000, guid: fb71bf49121c31b41bd8606b18617414, type: 3}
+  - {fileID: 21300000, guid: 4ce37f59f0594a24cb536b59dbfd7d2d, type: 3}
+  - {fileID: 21300000, guid: 0ca018eae740f744f9f0268acb69a39c, type: 3}
+  - {fileID: 21300000, guid: 89e2fd0b808be1948a0a78daf91258fb, type: 3}
+  - {fileID: 21300000, guid: ae8cb4edcd8420144b1a3d716c4f3891, type: 3}
+  - {fileID: 21300000, guid: 2225fdbe671810942b2542c2cc7d37fa, type: 3}
+  - {fileID: 21300000, guid: 51c7da6ff0f412040a0c1baf09acb12e, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - tutor bullet
+  - tutor gun
+  - line
+  - fireman animation_2
+  - fireman animation_3
+  - fireman animation_0
+  - fireman animation_1
+  - fireman animation_6
+  - fireman animation_4
+  - fireman animation_5
+  - tutor back
+  - arm2
+  - tutor circle copy
+  - arm1
+  - arrow
+  - tutor 8
+  - arrow copy (2)
+  - totor aim
+  m_RenderDataMap: {}
+  m_Tag: TutorialAtlas
+  m_IsVariant: 0

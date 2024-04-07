@@ -1,0 +1,229 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 478491580be22484295706a4c82d48eb, type: 3}
+  m_Name: ResourcesConfig
+  m_EditorClassIdentifier: 
+  _resourceIconsSetups:
+  - ResourceType: 1
+    ResourceNameKey: CHESTREWARD_MONEY
+    GraphicsData:
+      MiniIconSprite: {fileID: 0}
+      BasicSprite: {fileID: 0}
+      SquareSprite: {fileID: 21300000, guid: 00cf2463ad7654f4dab1546b3b9461b0, type: 3}
+      AnimatedSprites:
+      - {fileID: -1809714246667012964, guid: 30356ee6fb2523e4687fe8e85afad6c5, type: 3}
+      - {fileID: -5776188146366855896, guid: 30356ee6fb2523e4687fe8e85afad6c5, type: 3}
+      - {fileID: 6067001656914521649, guid: 30356ee6fb2523e4687fe8e85afad6c5, type: 3}
+      - {fileID: -3309739778435945332, guid: 30356ee6fb2523e4687fe8e85afad6c5, type: 3}
+      - {fileID: 2666144678154328830, guid: 30356ee6fb2523e4687fe8e85afad6c5, type: 3}
+      - {fileID: -8046228452055906733, guid: 30356ee6fb2523e4687fe8e85afad6c5, type: 3}
+      - {fileID: -2416115289903805534, guid: 30356ee6fb2523e4687fe8e85afad6c5, type: 3}
+  - ResourceType: 2
+    ResourceNameKey: CHESTREWARD_CRYSTALS
+    GraphicsData:
+      MiniIconSprite: {fileID: 0}
+      BasicSprite: {fileID: 0}
+      SquareSprite: {fileID: 21300000, guid: f322e958a09aa442ea674ce3d677f81f, type: 3}
+      AnimatedSprites:
+      - {fileID: 6586461156150141773, guid: ef04c67cd2b01e14db3579dd1319d586, type: 3}
+      - {fileID: 4861735530759549060, guid: ef04c67cd2b01e14db3579dd1319d586, type: 3}
+      - {fileID: -3478307910641300536, guid: ef04c67cd2b01e14db3579dd1319d586, type: 3}
+      - {fileID: -2559489968368152086, guid: ef04c67cd2b01e14db3579dd1319d586, type: 3}
+  - ResourceType: 3
+    ResourceNameKey: CHESTREWARD_BLUEPRINTS
+    GraphicsData:
+      MiniIconSprite: {fileID: 21300000, guid: e41648de892e2d445b62f449d11537f4, type: 3}
+      BasicSprite: {fileID: 0}
+      SquareSprite: {fileID: 21300000, guid: 56b083f6947360240adf20202a18657d, type: 3}
+      AnimatedSprites:
+      - {fileID: 4340143670946724112, guid: c4801b1fbf65f054a93e5f970fec7329, type: 3}
+      - {fileID: 4328636767626924949, guid: c4801b1fbf65f054a93e5f970fec7329, type: 3}
+      - {fileID: -2255604999534685298, guid: c4801b1fbf65f054a93e5f970fec7329, type: 3}
+      - {fileID: 5503229195394962602, guid: c4801b1fbf65f054a93e5f970fec7329, type: 3}
+      - {fileID: -24771875590022726, guid: c4801b1fbf65f054a93e5f970fec7329, type: 3}
+      - {fileID: 5108524678226685445, guid: c4801b1fbf65f054a93e5f970fec7329, type: 3}
+      - {fileID: 3847186059812853487, guid: c4801b1fbf65f054a93e5f970fec7329, type: 3}
+  - ResourceType: 4
+    ResourceNameKey: CHESTREWARD_BLUEPRINTS
+    GraphicsData:
+      MiniIconSprite: {fileID: 21300000, guid: e0f27e4ceaa179c4e8ddb99d1d152179, type: 3}
+      BasicSprite: {fileID: 0}
+      SquareSprite: {fileID: 21300000, guid: 38255676a1ead79448c4912cb3bb24e7, type: 3}
+      AnimatedSprites:
+      - {fileID: 4340143670946724112, guid: c4801b1fbf65f054a93e5f970fec7329, type: 3}
+      - {fileID: 4328636767626924949, guid: c4801b1fbf65f054a93e5f970fec7329, type: 3}
+      - {fileID: -2255604999534685298, guid: c4801b1fbf65f054a93e5f970fec7329, type: 3}
+      - {fileID: 5503229195394962602, guid: c4801b1fbf65f054a93e5f970fec7329, type: 3}
+      - {fileID: -24771875590022726, guid: c4801b1fbf65f054a93e5f970fec7329, type: 3}
+      - {fileID: 5108524678226685445, guid: c4801b1fbf65f054a93e5f970fec7329, type: 3}
+      - {fileID: 3847186059812853487, guid: c4801b1fbf65f054a93e5f970fec7329, type: 3}
+  - ResourceType: 5
+    ResourceNameKey: CHESTREWARD_BLUEPRINTS
+    GraphicsData:
+      MiniIconSprite: {fileID: 21300000, guid: a470bcd5b938a444d919adbe8a48747c, type: 3}
+      BasicSprite: {fileID: 0}
+      SquareSprite: {fileID: 21300000, guid: cbd435371fb9cf9449d759ca7e2bb659, type: 3}
+      AnimatedSprites:
+      - {fileID: 4340143670946724112, guid: c4801b1fbf65f054a93e5f970fec7329, type: 3}
+      - {fileID: 4328636767626924949, guid: c4801b1fbf65f054a93e5f970fec7329, type: 3}
+      - {fileID: -2255604999534685298, guid: c4801b1fbf65f054a93e5f970fec7329, type: 3}
+      - {fileID: 5503229195394962602, guid: c4801b1fbf65f054a93e5f970fec7329, type: 3}
+      - {fileID: -24771875590022726, guid: c4801b1fbf65f054a93e5f970fec7329, type: 3}
+      - {fileID: 5108524678226685445, guid: c4801b1fbf65f054a93e5f970fec7329, type: 3}
+      - {fileID: 3847186059812853487, guid: c4801b1fbf65f054a93e5f970fec7329, type: 3}
+  - ResourceType: 6
+    ResourceNameKey: CHESTREWARD_BLUEPRINTS
+    GraphicsData:
+      MiniIconSprite: {fileID: 21300000, guid: 0dff1e7f098ec5248a1eb30bcba234bf, type: 3}
+      BasicSprite: {fileID: 0}
+      SquareSprite: {fileID: 21300000, guid: eb8446281c483f540aa054ac24265b4b, type: 3}
+      AnimatedSprites:
+      - {fileID: 4340143670946724112, guid: c4801b1fbf65f054a93e5f970fec7329, type: 3}
+      - {fileID: 4328636767626924949, guid: c4801b1fbf65f054a93e5f970fec7329, type: 3}
+      - {fileID: -2255604999534685298, guid: c4801b1fbf65f054a93e5f970fec7329, type: 3}
+      - {fileID: 5503229195394962602, guid: c4801b1fbf65f054a93e5f970fec7329, type: 3}
+      - {fileID: -24771875590022726, guid: c4801b1fbf65f054a93e5f970fec7329, type: 3}
+      - {fileID: 5108524678226685445, guid: c4801b1fbf65f054a93e5f970fec7329, type: 3}
+      - {fileID: 3847186059812853487, guid: c4801b1fbf65f054a93e5f970fec7329, type: 3}
+  - ResourceType: 7
+    ResourceNameKey: CHESTREWARD_BLUEPRINTS
+    GraphicsData:
+      MiniIconSprite: {fileID: 21300000, guid: 623864cad35514f41a8a53233707c12c, type: 3}
+      BasicSprite: {fileID: 0}
+      SquareSprite: {fileID: 21300000, guid: 06c15171bfb6209449fcfe491f629780, type: 3}
+      AnimatedSprites:
+      - {fileID: 4340143670946724112, guid: c4801b1fbf65f054a93e5f970fec7329, type: 3}
+      - {fileID: 4328636767626924949, guid: c4801b1fbf65f054a93e5f970fec7329, type: 3}
+      - {fileID: -2255604999534685298, guid: c4801b1fbf65f054a93e5f970fec7329, type: 3}
+      - {fileID: 5503229195394962602, guid: c4801b1fbf65f054a93e5f970fec7329, type: 3}
+      - {fileID: -24771875590022726, guid: c4801b1fbf65f054a93e5f970fec7329, type: 3}
+      - {fileID: 5108524678226685445, guid: c4801b1fbf65f054a93e5f970fec7329, type: 3}
+      - {fileID: 3847186059812853487, guid: c4801b1fbf65f054a93e5f970fec7329, type: 3}
+  - ResourceType: 8
+    ResourceNameKey: CHESTREWARD_TOKENS
+    GraphicsData:
+      MiniIconSprite: {fileID: 0}
+      BasicSprite: {fileID: 0}
+      SquareSprite: {fileID: 21300000, guid: da8e1f31e3348a54fa16a6c158061a5f, type: 3}
+      AnimatedSprites:
+      - {fileID: 546123822483701620, guid: b89fc712fc4b6a741912d2a71e93bfb5, type: 3}
+      - {fileID: 7056579375465399823, guid: b89fc712fc4b6a741912d2a71e93bfb5, type: 3}
+      - {fileID: -8714950554161818951, guid: b89fc712fc4b6a741912d2a71e93bfb5, type: 3}
+      - {fileID: -968504275206828757, guid: b89fc712fc4b6a741912d2a71e93bfb5, type: 3}
+      - {fileID: 7930422151291566827, guid: b89fc712fc4b6a741912d2a71e93bfb5, type: 3}
+      - {fileID: -4915243632608635023, guid: b89fc712fc4b6a741912d2a71e93bfb5, type: 3}
+      - {fileID: 2534266384107029446, guid: b89fc712fc4b6a741912d2a71e93bfb5, type: 3}
+  - ResourceType: 9
+    ResourceNameKey: CHESTREWARD_BLUEPRINTS
+    GraphicsData:
+      MiniIconSprite: {fileID: 21300000, guid: 4b5246acd673cc345b78d218a3e42ea7, type: 3}
+      BasicSprite: {fileID: 0}
+      SquareSprite: {fileID: 21300000, guid: f0d68f02b1ac1b44a8e5e6b1a589e00c, type: 3}
+      AnimatedSprites:
+      - {fileID: -9148079100729670451, guid: b278ad9a6376f9d4fb84e48568f8a858, type: 3}
+      - {fileID: -524559491155028263, guid: b278ad9a6376f9d4fb84e48568f8a858, type: 3}
+      - {fileID: 1099214308575235992, guid: b278ad9a6376f9d4fb84e48568f8a858, type: 3}
+      - {fileID: 3984886594058757710, guid: b278ad9a6376f9d4fb84e48568f8a858, type: 3}
+      - {fileID: -285153602240742394, guid: b278ad9a6376f9d4fb84e48568f8a858, type: 3}
+      - {fileID: 3211536786329046727, guid: b278ad9a6376f9d4fb84e48568f8a858, type: 3}
+      - {fileID: 6236348200385152805, guid: b278ad9a6376f9d4fb84e48568f8a858, type: 3}
+  - ResourceType: 10
+    ResourceNameKey: CHESTREWARD_BLUEPRINTS
+    GraphicsData:
+      MiniIconSprite: {fileID: 21300000, guid: 216fd765a073b7543b873d151eca5e29, type: 3}
+      BasicSprite: {fileID: 0}
+      SquareSprite: {fileID: 21300000, guid: f61db6d7c114850438bcaf20bd39bbf1, type: 3}
+      AnimatedSprites:
+      - {fileID: -9148079100729670451, guid: b278ad9a6376f9d4fb84e48568f8a858, type: 3}
+      - {fileID: -524559491155028263, guid: b278ad9a6376f9d4fb84e48568f8a858, type: 3}
+      - {fileID: 1099214308575235992, guid: b278ad9a6376f9d4fb84e48568f8a858, type: 3}
+      - {fileID: 3984886594058757710, guid: b278ad9a6376f9d4fb84e48568f8a858, type: 3}
+      - {fileID: -285153602240742394, guid: b278ad9a6376f9d4fb84e48568f8a858, type: 3}
+      - {fileID: 3211536786329046727, guid: b278ad9a6376f9d4fb84e48568f8a858, type: 3}
+      - {fileID: 6236348200385152805, guid: b278ad9a6376f9d4fb84e48568f8a858, type: 3}
+  - ResourceType: 11
+    ResourceNameKey: CHESTREWARD_BLUEPRINTS
+    GraphicsData:
+      MiniIconSprite: {fileID: 21300000, guid: a6dd85f9dbbb1a14bba7e444e8e8c54a, type: 3}
+      BasicSprite: {fileID: 0}
+      SquareSprite: {fileID: 21300000, guid: 33f9c8fd4f3ef5c47aeeafbc51727914, type: 3}
+      AnimatedSprites:
+      - {fileID: -9148079100729670451, guid: b278ad9a6376f9d4fb84e48568f8a858, type: 3}
+      - {fileID: -524559491155028263, guid: b278ad9a6376f9d4fb84e48568f8a858, type: 3}
+      - {fileID: 1099214308575235992, guid: b278ad9a6376f9d4fb84e48568f8a858, type: 3}
+      - {fileID: 3984886594058757710, guid: b278ad9a6376f9d4fb84e48568f8a858, type: 3}
+      - {fileID: -285153602240742394, guid: b278ad9a6376f9d4fb84e48568f8a858, type: 3}
+      - {fileID: 3211536786329046727, guid: b278ad9a6376f9d4fb84e48568f8a858, type: 3}
+      - {fileID: 6236348200385152805, guid: b278ad9a6376f9d4fb84e48568f8a858, type: 3}
+  - ResourceType: 12
+    ResourceNameKey: CHESTREWARD_BLUEPRINTS
+    GraphicsData:
+      MiniIconSprite: {fileID: 21300000, guid: 3d7bf90fe7430a14587329ca41568404, type: 3}
+      BasicSprite: {fileID: 0}
+      SquareSprite: {fileID: 21300000, guid: b480599f89425784ea2afb7bc2b133a3, type: 3}
+      AnimatedSprites:
+      - {fileID: -9148079100729670451, guid: b278ad9a6376f9d4fb84e48568f8a858, type: 3}
+      - {fileID: -524559491155028263, guid: b278ad9a6376f9d4fb84e48568f8a858, type: 3}
+      - {fileID: 1099214308575235992, guid: b278ad9a6376f9d4fb84e48568f8a858, type: 3}
+      - {fileID: 3984886594058757710, guid: b278ad9a6376f9d4fb84e48568f8a858, type: 3}
+      - {fileID: -285153602240742394, guid: b278ad9a6376f9d4fb84e48568f8a858, type: 3}
+      - {fileID: 3211536786329046727, guid: b278ad9a6376f9d4fb84e48568f8a858, type: 3}
+      - {fileID: 6236348200385152805, guid: b278ad9a6376f9d4fb84e48568f8a858, type: 3}
+  - ResourceType: 13
+    ResourceNameKey: CHESTREWARD_WEAPONS
+    GraphicsData:
+      MiniIconSprite: {fileID: 0}
+      BasicSprite: {fileID: 0}
+      SquareSprite: {fileID: 21300000, guid: ef79407bab1ff34448d1cee3da6828e9, type: 3}
+      AnimatedSprites: []
+  - ResourceType: 14
+    ResourceNameKey: CHESTREWARD_WEAPONS
+    GraphicsData:
+      MiniIconSprite: {fileID: 0}
+      BasicSprite: {fileID: 0}
+      SquareSprite: {fileID: 21300000, guid: f7e10a433370c7f4ca8938a554b5bf19, type: 3}
+      AnimatedSprites: []
+  - ResourceType: 15
+    ResourceNameKey: CHESTREWARD_WEAPONS
+    GraphicsData:
+      MiniIconSprite: {fileID: 0}
+      BasicSprite: {fileID: 0}
+      SquareSprite: {fileID: 0}
+      AnimatedSprites: []
+  - ResourceType: 16
+    ResourceNameKey: CHESTREWARD_WEAPONS
+    GraphicsData:
+      MiniIconSprite: {fileID: 0}
+      BasicSprite: {fileID: 0}
+      SquareSprite: {fileID: 0}
+      AnimatedSprites: []
+  - ResourceType: 17
+    ResourceNameKey: CHESTREWARD_WEAPONS
+    GraphicsData:
+      MiniIconSprite: {fileID: 0}
+      BasicSprite: {fileID: 0}
+      SquareSprite: {fileID: 0}
+      AnimatedSprites: []
+  - ResourceType: 18
+    ResourceNameKey: CHESTREWARD_BLUEPRINTS
+    GraphicsData:
+      MiniIconSprite: {fileID: 0}
+      BasicSprite: {fileID: 0}
+      SquareSprite: {fileID: 21300000, guid: 2f2721c502a51af4c8eed137c6d7ab86, type: 3}
+      AnimatedSprites: []
+  - ResourceType: 20
+    ResourceNameKey: PLAYER_EXP
+    GraphicsData:
+      MiniIconSprite: {fileID: 0}
+      BasicSprite: {fileID: 0}
+      SquareSprite: {fileID: 21300000, guid: d4b64554012ca4d76ac5cab4548c9e63, type: 3}
+      AnimatedSprites: []

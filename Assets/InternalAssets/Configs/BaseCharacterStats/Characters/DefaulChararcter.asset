@@ -1,0 +1,511 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cf24f49e78725843b619555a8ba584f, type: 3}
+  m_Name: DefaulChararcter
+  m_EditorClassIdentifier: 
+  _characterStats:
+    HealthStat:
+      StatType: 1
+      isPercentValue: 0
+      Value: 800
+      Percent: 0
+    DamageStat:
+      StatType: 2
+      isPercentValue: 1
+      Value: 0
+      Percent: 5
+    MovementSpeedStat:
+      StatType: 3
+      isPercentValue: 0
+      Value: 3
+      Percent: 0
+    CriticalRateStat:
+      StatType: 5
+      isPercentValue: 1
+      Value: 0
+      Percent: 20
+    CriticalDamageStat:
+      StatType: 4
+      isPercentValue: 1
+      Value: 0
+      Percent: 70
+    AttackRangeStat:
+      StatType: 6
+      isPercentValue: 0
+      Value: 0
+      Percent: 0
+    AttackSpeedStat:
+      StatType: 7
+      isPercentValue: 1
+      Value: 0
+      Percent: 0
+    ResistanceOfMeleeAttacks:
+      StatType: 9
+      isPercentValue: 1
+      Value: 0
+      Percent: 0
+    ResistanceOfRangedAttacks:
+      StatType: 8
+      isPercentValue: 1
+      Value: 0
+      Percent: 0
+    ResistanceOfExplosionAttacks:
+      StatType: 10
+      isPercentValue: 1
+      Value: 0
+      Percent: 0
+    ResistanceOfAllAttacks:
+      StatType: 11
+      isPercentValue: 1
+      Value: 0
+      Percent: 25
+  _upgrades:
+  - Level: 2
+    MoneyCount: 1000
+    TokensCount: 100
+    Upgrades:
+    - StatType: 1
+      Value: 100
+      IsPercent: 0
+    - StatType: 2
+      Value: 0.5
+      IsPercent: 1
+  - Level: 3
+    MoneyCount: 1000
+    TokensCount: 100
+    Upgrades:
+    - StatType: 1
+      Value: 100
+      IsPercent: 0
+    - StatType: 2
+      Value: 0.5
+      IsPercent: 1
+  - Level: 4
+    MoneyCount: 1000
+    TokensCount: 100
+    Upgrades:
+    - StatType: 1
+      Value: 100
+      IsPercent: 0
+    - StatType: 2
+      Value: 0.5
+      IsPercent: 1
+  - Level: 5
+    MoneyCount: 1000
+    TokensCount: 100
+    Upgrades:
+    - StatType: 1
+      Value: 100
+      IsPercent: 0
+    - StatType: 2
+      Value: 0.5
+      IsPercent: 1
+  - Level: 6
+    MoneyCount: 1000
+    TokensCount: 100
+    Upgrades:
+    - StatType: 1
+      Value: 100
+      IsPercent: 0
+    - StatType: 2
+      Value: 0.5
+      IsPercent: 1
+  - Level: 7
+    MoneyCount: 1000
+    TokensCount: 100
+    Upgrades:
+    - StatType: 1
+      Value: 100
+      IsPercent: 0
+    - StatType: 2
+      Value: 0.5
+      IsPercent: 1
+  - Level: 8
+    MoneyCount: 1000
+    TokensCount: 100
+    Upgrades:
+    - StatType: 1
+      Value: 100
+      IsPercent: 0
+    - StatType: 2
+      Value: 0.5
+      IsPercent: 1
+  - Level: 9
+    MoneyCount: 1000
+    TokensCount: 100
+    Upgrades:
+    - StatType: 1
+      Value: 100
+      IsPercent: 0
+    - StatType: 2
+      Value: 0.5
+      IsPercent: 1
+  - Level: 10
+    MoneyCount: 1000
+    TokensCount: 100
+    Upgrades:
+    - StatType: 1
+      Value: 100
+      IsPercent: 0
+    - StatType: 2
+      Value: 0.5
+      IsPercent: 1
+  - Level: 11
+    MoneyCount: 1000
+    TokensCount: 100
+    Upgrades:
+    - StatType: 1
+      Value: 100
+      IsPercent: 0
+    - StatType: 2
+      Value: 0.5
+      IsPercent: 1
+  - Level: 12
+    MoneyCount: 1000
+    TokensCount: 100
+    Upgrades:
+    - StatType: 1
+      Value: 100
+      IsPercent: 0
+    - StatType: 2
+      Value: 0.5
+      IsPercent: 1
+  - Level: 13
+    MoneyCount: 1000
+    TokensCount: 100
+    Upgrades:
+    - StatType: 1
+      Value: 100
+      IsPercent: 0
+    - StatType: 2
+      Value: 0.5
+      IsPercent: 1
+  - Level: 14
+    MoneyCount: 1000
+    TokensCount: 100
+    Upgrades:
+    - StatType: 1
+      Value: 100
+      IsPercent: 0
+    - StatType: 2
+      Value: 0.5
+      IsPercent: 1
+  - Level: 15
+    MoneyCount: 1000
+    TokensCount: 100
+    Upgrades:
+    - StatType: 1
+      Value: 100
+      IsPercent: 0
+    - StatType: 2
+      Value: 0.5
+      IsPercent: 1
+  - Level: 16
+    MoneyCount: 2500
+    TokensCount: 200
+    Upgrades:
+    - StatType: 1
+      Value: 100
+      IsPercent: 0
+    - StatType: 2
+      Value: 0.5
+      IsPercent: 1
+  - Level: 17
+    MoneyCount: 2500
+    TokensCount: 200
+    Upgrades:
+    - StatType: 1
+      Value: 100
+      IsPercent: 0
+    - StatType: 2
+      Value: 0.5
+      IsPercent: 1
+  - Level: 18
+    MoneyCount: 2500
+    TokensCount: 200
+    Upgrades:
+    - StatType: 1
+      Value: 100
+      IsPercent: 0
+    - StatType: 2
+      Value: 0.5
+      IsPercent: 1
+  - Level: 19
+    MoneyCount: 2500
+    TokensCount: 200
+    Upgrades:
+    - StatType: 1
+      Value: 100
+      IsPercent: 0
+    - StatType: 2
+      Value: 0.5
+      IsPercent: 1
+  - Level: 20
+    MoneyCount: 2500
+    TokensCount: 200
+    Upgrades:
+    - StatType: 1
+      Value: 100
+      IsPercent: 0
+    - StatType: 2
+      Value: 0.5
+      IsPercent: 1
+  - Level: 21
+    MoneyCount: 2500
+    TokensCount: 200
+    Upgrades:
+    - StatType: 1
+      Value: 100
+      IsPercent: 0
+    - StatType: 2
+      Value: 0.5
+      IsPercent: 1
+  - Level: 22
+    MoneyCount: 2500
+    TokensCount: 200
+    Upgrades:
+    - StatType: 1
+      Value: 100
+      IsPercent: 0
+    - StatType: 2
+      Value: 0.5
+      IsPercent: 1
+  - Level: 23
+    MoneyCount: 2500
+    TokensCount: 200
+    Upgrades:
+    - StatType: 1
+      Value: 100
+      IsPercent: 0
+    - StatType: 2
+      Value: 0.5
+      IsPercent: 1
+  - Level: 24
+    MoneyCount: 2500
+    TokensCount: 200
+    Upgrades:
+    - StatType: 1
+      Value: 100
+      IsPercent: 0
+    - StatType: 2
+      Value: 0.5
+      IsPercent: 1
+  - Level: 25
+    MoneyCount: 2500
+    TokensCount: 200
+    Upgrades:
+    - StatType: 1
+      Value: 100
+      IsPercent: 0
+    - StatType: 2
+      Value: 0.5
+      IsPercent: 1
+  - Level: 26
+    MoneyCount: 5000
+    TokensCount: 400
+    Upgrades:
+    - StatType: 1
+      Value: 100
+      IsPercent: 0
+    - StatType: 2
+      Value: 0.5
+      IsPercent: 1
+  - Level: 27
+    MoneyCount: 5000
+    TokensCount: 400
+    Upgrades:
+    - StatType: 1
+      Value: 100
+      IsPercent: 0
+    - StatType: 2
+      Value: 0.5
+      IsPercent: 1
+  - Level: 28
+    MoneyCount: 5000
+    TokensCount: 400
+    Upgrades:
+    - StatType: 1
+      Value: 100
+      IsPercent: 0
+    - StatType: 2
+      Value: 0.5
+      IsPercent: 1
+  - Level: 29
+    MoneyCount: 5000
+    TokensCount: 400
+    Upgrades:
+    - StatType: 1
+      Value: 100
+      IsPercent: 0
+    - StatType: 2
+      Value: 0.5
+      IsPercent: 1
+  - Level: 30
+    MoneyCount: 5000
+    TokensCount: 400
+    Upgrades:
+    - StatType: 1
+      Value: 100
+      IsPercent: 0
+    - StatType: 2
+      Value: 0.5
+      IsPercent: 1
+  - Level: 31
+    MoneyCount: 5000
+    TokensCount: 400
+    Upgrades:
+    - StatType: 1
+      Value: 100
+      IsPercent: 0
+    - StatType: 2
+      Value: 0.5
+      IsPercent: 1
+  - Level: 32
+    MoneyCount: 5000
+    TokensCount: 400
+    Upgrades:
+    - StatType: 1
+      Value: 100
+      IsPercent: 0
+    - StatType: 2
+      Value: 0.5
+      IsPercent: 1
+  - Level: 33
+    MoneyCount: 5000
+    TokensCount: 400
+    Upgrades:
+    - StatType: 1
+      Value: 100
+      IsPercent: 0
+    - StatType: 2
+      Value: 0.5
+      IsPercent: 1
+  - Level: 34
+    MoneyCount: 5000
+    TokensCount: 400
+    Upgrades:
+    - StatType: 1
+      Value: 100
+      IsPercent: 0
+    - StatType: 2
+      Value: 0.5
+      IsPercent: 1
+  - Level: 35
+    MoneyCount: 5000
+    TokensCount: 400
+    Upgrades:
+    - StatType: 1
+      Value: 100
+      IsPercent: 0
+    - StatType: 2
+      Value: 0.5
+      IsPercent: 1
+  - Level: 36
+    MoneyCount: 10000
+    TokensCount: 800
+    Upgrades:
+    - StatType: 1
+      Value: 100
+      IsPercent: 0
+    - StatType: 2
+      Value: 0.5
+      IsPercent: 1
+  - Level: 37
+    MoneyCount: 10000
+    TokensCount: 800
+    Upgrades:
+    - StatType: 1
+      Value: 100
+      IsPercent: 0
+    - StatType: 2
+      Value: 0.5
+      IsPercent: 1
+  - Level: 38
+    MoneyCount: 10000
+    TokensCount: 800
+    Upgrades:
+    - StatType: 1
+      Value: 100
+      IsPercent: 0
+    - StatType: 2
+      Value: 0.5
+      IsPercent: 1
+  - Level: 39
+    MoneyCount: 10000
+    TokensCount: 800
+    Upgrades:
+    - StatType: 1
+      Value: 100
+      IsPercent: 0
+    - StatType: 2
+      Value: 0.5
+      IsPercent: 1
+  - Level: 40
+    MoneyCount: 10000
+    TokensCount: 800
+    Upgrades:
+    - StatType: 1
+      Value: 100
+      IsPercent: 0
+    - StatType: 2
+      Value: 0.5
+      IsPercent: 1
+  - Level: 41
+    MoneyCount: 10000
+    TokensCount: 800
+    Upgrades:
+    - StatType: 1
+      Value: 100
+      IsPercent: 0
+    - StatType: 2
+      Value: 0.5
+      IsPercent: 1
+  - Level: 42
+    MoneyCount: 10000
+    TokensCount: 800
+    Upgrades:
+    - StatType: 1
+      Value: 100
+      IsPercent: 0
+    - StatType: 2
+      Value: 0.5
+      IsPercent: 1
+  - Level: 43
+    MoneyCount: 10000
+    TokensCount: 800
+    Upgrades:
+    - StatType: 1
+      Value: 100
+      IsPercent: 0
+    - StatType: 2
+      Value: 0.5
+      IsPercent: 1
+  - Level: 44
+    MoneyCount: 10000
+    TokensCount: 800
+    Upgrades:
+    - StatType: 1
+      Value: 100
+      IsPercent: 0
+    - StatType: 2
+      Value: 0.5
+      IsPercent: 1
+  - Level: 45
+    MoneyCount: 10000
+    TokensCount: 800
+    Upgrades:
+    - StatType: 1
+      Value: 100
+      IsPercent: 0
+    - StatType: 2
+      Value: 0.5
+      IsPercent: 1

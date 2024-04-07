@@ -1,0 +1,3078 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9a0cc16caac4791b609eb96b764ad7b, type: 3}
+  m_Name: SkillsConfig
+  m_EditorClassIdentifier: 
+  _weaponSkills:
+  - SkillType: 1
+    SkillName: SKILL_WEAPON_DAMAGE
+    SkillIcon: {fileID: 21300000, guid: d59fd790cada7e34cb1151be9d68dddf, type: 3}
+    ItemTypes:
+    - ItemType: 5
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 10
+        SkillMaximumExtraValue: 20
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 20
+        SkillMaximumExtraValue: 30
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 30
+        SkillMaximumExtraValue: 40
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 40
+        SkillMaximumExtraValue: 50
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 50
+        SkillMaximumExtraValue: 60
+    - ItemType: 6
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 10
+        SkillMaximumExtraValue: 20
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 20
+        SkillMaximumExtraValue: 30
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 30
+        SkillMaximumExtraValue: 40
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 40
+        SkillMaximumExtraValue: 50
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 50
+        SkillMaximumExtraValue: 60
+    - ItemType: 7
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 10
+        SkillMaximumExtraValue: 20
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 20
+        SkillMaximumExtraValue: 30
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 30
+        SkillMaximumExtraValue: 40
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 40
+        SkillMaximumExtraValue: 50
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 50
+        SkillMaximumExtraValue: 60
+    - ItemType: 8
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 10
+        SkillMaximumExtraValue: 20
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 20
+        SkillMaximumExtraValue: 30
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 30
+        SkillMaximumExtraValue: 40
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 40
+        SkillMaximumExtraValue: 50
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 50
+        SkillMaximumExtraValue: 60
+    - ItemType: 9
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 10
+        SkillMaximumExtraValue: 20
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 20
+        SkillMaximumExtraValue: 30
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 30
+        SkillMaximumExtraValue: 40
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 40
+        SkillMaximumExtraValue: 50
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 50
+        SkillMaximumExtraValue: 60
+  - SkillType: 2
+    SkillName: SKILL_WEAPON_CRITICAL_CHANCE
+    SkillIcon: {fileID: 21300000, guid: abb2990e02d440a438ec476e63ee1be7, type: 3}
+    ItemTypes:
+    - ItemType: 5
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 3
+        SkillMaximumExtraValue: 6
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 6
+        SkillMaximumExtraValue: 9
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 9
+        SkillMaximumExtraValue: 12
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 12
+        SkillMaximumExtraValue: 15
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 15
+        SkillMaximumExtraValue: 18
+    - ItemType: 6
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 3
+        SkillMaximumExtraValue: 6
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 6
+        SkillMaximumExtraValue: 9
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 9
+        SkillMaximumExtraValue: 12
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 12
+        SkillMaximumExtraValue: 15
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 15
+        SkillMaximumExtraValue: 18
+    - ItemType: 7
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 3
+        SkillMaximumExtraValue: 6
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 6
+        SkillMaximumExtraValue: 9
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 9
+        SkillMaximumExtraValue: 12
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 12
+        SkillMaximumExtraValue: 15
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 15
+        SkillMaximumExtraValue: 18
+    - ItemType: 8
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 3
+        SkillMaximumExtraValue: 6
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 6
+        SkillMaximumExtraValue: 9
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 9
+        SkillMaximumExtraValue: 12
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 12
+        SkillMaximumExtraValue: 15
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 15
+        SkillMaximumExtraValue: 18
+    - ItemType: 9
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 3
+        SkillMaximumExtraValue: 6
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 6
+        SkillMaximumExtraValue: 9
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 9
+        SkillMaximumExtraValue: 12
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 12
+        SkillMaximumExtraValue: 15
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 15
+        SkillMaximumExtraValue: 18
+  - SkillType: 3
+    SkillName: SKILL_WEAPON_CRITICAL_DAMAGE
+    SkillIcon: {fileID: 21300000, guid: 1382bfff90617d94cac4d14a0dff5014, type: 3}
+    ItemTypes:
+    - ItemType: 5
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 10
+        SkillMaximumExtraValue: 15
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 15
+        SkillMaximumExtraValue: 20
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 20
+        SkillMaximumExtraValue: 25
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 25
+        SkillMaximumExtraValue: 30
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 30
+        SkillMaximumExtraValue: 35
+    - ItemType: 6
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 10
+        SkillMaximumExtraValue: 15
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 15
+        SkillMaximumExtraValue: 20
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 20
+        SkillMaximumExtraValue: 25
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 25
+        SkillMaximumExtraValue: 30
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 30
+        SkillMaximumExtraValue: 35
+    - ItemType: 7
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 10
+        SkillMaximumExtraValue: 15
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 15
+        SkillMaximumExtraValue: 20
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 20
+        SkillMaximumExtraValue: 25
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 25
+        SkillMaximumExtraValue: 30
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 30
+        SkillMaximumExtraValue: 35
+    - ItemType: 8
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 10
+        SkillMaximumExtraValue: 15
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 15
+        SkillMaximumExtraValue: 20
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 20
+        SkillMaximumExtraValue: 25
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 25
+        SkillMaximumExtraValue: 30
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 30
+        SkillMaximumExtraValue: 35
+    - ItemType: 9
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 10
+        SkillMaximumExtraValue: 15
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 15
+        SkillMaximumExtraValue: 20
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 20
+        SkillMaximumExtraValue: 25
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 25
+        SkillMaximumExtraValue: 30
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 30
+        SkillMaximumExtraValue: 35
+  - SkillType: 4
+    SkillName: SKILL_WEAPON_RANGE
+    SkillIcon: {fileID: 21300000, guid: ecca569ead1587e4195de55a8d575112, type: 3}
+    ItemTypes:
+    - ItemType: 5
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 10
+        SkillMaximumExtraValue: 15
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 15
+        SkillMaximumExtraValue: 20
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 20
+        SkillMaximumExtraValue: 25
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 25
+        SkillMaximumExtraValue: 30
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 30
+        SkillMaximumExtraValue: 35
+    - ItemType: 6
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 10
+        SkillMaximumExtraValue: 15
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 15
+        SkillMaximumExtraValue: 20
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 20
+        SkillMaximumExtraValue: 25
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 25
+        SkillMaximumExtraValue: 30
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 30
+        SkillMaximumExtraValue: 35
+    - ItemType: 7
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 10
+        SkillMaximumExtraValue: 15
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 15
+        SkillMaximumExtraValue: 20
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 20
+        SkillMaximumExtraValue: 25
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 25
+        SkillMaximumExtraValue: 30
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 30
+        SkillMaximumExtraValue: 35
+    - ItemType: 8
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 10
+        SkillMaximumExtraValue: 15
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 15
+        SkillMaximumExtraValue: 20
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 20
+        SkillMaximumExtraValue: 25
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 25
+        SkillMaximumExtraValue: 30
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 30
+        SkillMaximumExtraValue: 35
+    - ItemType: 9
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 10
+        SkillMaximumExtraValue: 15
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 15
+        SkillMaximumExtraValue: 20
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 20
+        SkillMaximumExtraValue: 25
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 25
+        SkillMaximumExtraValue: 30
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 30
+        SkillMaximumExtraValue: 35
+  - SkillType: 5
+    SkillName: SKILL_WEAPON_DAMAGE_FOR_ELIT_ENEMIES
+    SkillIcon: {fileID: 21300000, guid: d045203716011804d8eaa02243d57852, type: 3}
+    ItemTypes:
+    - ItemType: 5
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 15
+        SkillMaximumExtraValue: 20
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 20
+        SkillMaximumExtraValue: 25
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 25
+        SkillMaximumExtraValue: 30
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 30
+        SkillMaximumExtraValue: 35
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 35
+        SkillMaximumExtraValue: 40
+    - ItemType: 6
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 15
+        SkillMaximumExtraValue: 20
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 20
+        SkillMaximumExtraValue: 25
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 25
+        SkillMaximumExtraValue: 30
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 30
+        SkillMaximumExtraValue: 35
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 35
+        SkillMaximumExtraValue: 40
+    - ItemType: 7
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 15
+        SkillMaximumExtraValue: 20
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 20
+        SkillMaximumExtraValue: 25
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 25
+        SkillMaximumExtraValue: 30
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 30
+        SkillMaximumExtraValue: 35
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 35
+        SkillMaximumExtraValue: 40
+    - ItemType: 8
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 15
+        SkillMaximumExtraValue: 20
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 20
+        SkillMaximumExtraValue: 25
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 25
+        SkillMaximumExtraValue: 30
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 30
+        SkillMaximumExtraValue: 35
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 35
+        SkillMaximumExtraValue: 40
+    - ItemType: 9
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 15
+        SkillMaximumExtraValue: 20
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 20
+        SkillMaximumExtraValue: 25
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 25
+        SkillMaximumExtraValue: 30
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 30
+        SkillMaximumExtraValue: 35
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 35
+        SkillMaximumExtraValue: 40
+  - SkillType: 6
+    SkillName: SKILL_WEAPON_DAMAGE_AFTER_KILL_FOR_TREE_SECONDS
+    SkillIcon: {fileID: 21300000, guid: febeed7eb8a67e2409235d93f5cc8a58, type: 3}
+    ItemTypes:
+    - ItemType: 5
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 10
+        SkillMaximumExtraValue: 15
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 15
+        SkillMaximumExtraValue: 20
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 20
+        SkillMaximumExtraValue: 25
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 25
+        SkillMaximumExtraValue: 30
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 30
+        SkillMaximumExtraValue: 35
+    - ItemType: 6
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 10
+        SkillMaximumExtraValue: 15
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 15
+        SkillMaximumExtraValue: 20
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 20
+        SkillMaximumExtraValue: 25
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 25
+        SkillMaximumExtraValue: 30
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 30
+        SkillMaximumExtraValue: 35
+    - ItemType: 7
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 10
+        SkillMaximumExtraValue: 15
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 15
+        SkillMaximumExtraValue: 20
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 20
+        SkillMaximumExtraValue: 25
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 25
+        SkillMaximumExtraValue: 30
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 30
+        SkillMaximumExtraValue: 35
+    - ItemType: 8
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 10
+        SkillMaximumExtraValue: 15
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 15
+        SkillMaximumExtraValue: 20
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 20
+        SkillMaximumExtraValue: 25
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 25
+        SkillMaximumExtraValue: 30
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 30
+        SkillMaximumExtraValue: 35
+    - ItemType: 9
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 10
+        SkillMaximumExtraValue: 15
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 15
+        SkillMaximumExtraValue: 20
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 20
+        SkillMaximumExtraValue: 25
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 25
+        SkillMaximumExtraValue: 30
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 30
+        SkillMaximumExtraValue: 35
+  - SkillType: 7
+    SkillName: SKILL_WEAPON_DAMAGE_FOR_BOSS_ENEMIES
+    SkillIcon: {fileID: 21300000, guid: dc51f21a0b380ef4b9a220ee9d43a45d, type: 3}
+    ItemTypes:
+    - ItemType: 5
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 5
+        SkillMaximumExtraValue: 10
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 10
+        SkillMaximumExtraValue: 15
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 15
+        SkillMaximumExtraValue: 20
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 20
+        SkillMaximumExtraValue: 25
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 25
+        SkillMaximumExtraValue: 30
+    - ItemType: 6
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 5
+        SkillMaximumExtraValue: 10
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 10
+        SkillMaximumExtraValue: 15
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 15
+        SkillMaximumExtraValue: 20
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 20
+        SkillMaximumExtraValue: 25
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 25
+        SkillMaximumExtraValue: 30
+    - ItemType: 7
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 5
+        SkillMaximumExtraValue: 10
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 10
+        SkillMaximumExtraValue: 15
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 15
+        SkillMaximumExtraValue: 20
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 20
+        SkillMaximumExtraValue: 25
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 25
+        SkillMaximumExtraValue: 30
+    - ItemType: 8
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 5
+        SkillMaximumExtraValue: 10
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 10
+        SkillMaximumExtraValue: 15
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 15
+        SkillMaximumExtraValue: 20
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 20
+        SkillMaximumExtraValue: 25
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 25
+        SkillMaximumExtraValue: 30
+    - ItemType: 9
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 5
+        SkillMaximumExtraValue: 10
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 10
+        SkillMaximumExtraValue: 15
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 15
+        SkillMaximumExtraValue: 20
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 20
+        SkillMaximumExtraValue: 25
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 25
+        SkillMaximumExtraValue: 30
+  - SkillType: 8
+    SkillName: SKILL_WEAPON_RELOADING
+    SkillIcon: {fileID: 21300000, guid: 0b872647ffad171409ef5489171cb01e, type: 3}
+    ItemTypes:
+    - ItemType: 7
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 5
+        SkillMaximumExtraValue: 10
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 10
+        SkillMaximumExtraValue: 15
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 15
+        SkillMaximumExtraValue: 20
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 20
+        SkillMaximumExtraValue: 25
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 25
+        SkillMaximumExtraValue: 30
+    - ItemType: 8
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 5
+        SkillMaximumExtraValue: 10
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 10
+        SkillMaximumExtraValue: 15
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 15
+        SkillMaximumExtraValue: 20
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 20
+        SkillMaximumExtraValue: 25
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 25
+        SkillMaximumExtraValue: 30
+    - ItemType: 9
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 5
+        SkillMaximumExtraValue: 10
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 10
+        SkillMaximumExtraValue: 15
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 15
+        SkillMaximumExtraValue: 20
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 20
+        SkillMaximumExtraValue: 25
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 25
+        SkillMaximumExtraValue: 30
+  - SkillType: 9
+    SkillName: SKILL_WEAPON_BLEED
+    SkillIcon: {fileID: 21300000, guid: 0389353b45d88d14e86f3cbde4aabd14, type: 3}
+    ItemTypes:
+    - ItemType: 5
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 3
+        SkillMaximumExtraValue: 6
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 6
+        SkillMaximumExtraValue: 9
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 9
+        SkillMaximumExtraValue: 12
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 12
+        SkillMaximumExtraValue: 15
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 15
+        SkillMaximumExtraValue: 18
+    - ItemType: 6
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 3
+        SkillMaximumExtraValue: 6
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 6
+        SkillMaximumExtraValue: 9
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 9
+        SkillMaximumExtraValue: 12
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 12
+        SkillMaximumExtraValue: 15
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 15
+        SkillMaximumExtraValue: 18
+    - ItemType: 7
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 3
+        SkillMaximumExtraValue: 6
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 6
+        SkillMaximumExtraValue: 9
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 9
+        SkillMaximumExtraValue: 12
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 12
+        SkillMaximumExtraValue: 15
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 15
+        SkillMaximumExtraValue: 18
+    - ItemType: 8
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 3
+        SkillMaximumExtraValue: 6
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 6
+        SkillMaximumExtraValue: 9
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 9
+        SkillMaximumExtraValue: 12
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 12
+        SkillMaximumExtraValue: 15
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 15
+        SkillMaximumExtraValue: 18
+    - ItemType: 9
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 3
+        SkillMaximumExtraValue: 6
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 6
+        SkillMaximumExtraValue: 9
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 9
+        SkillMaximumExtraValue: 12
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 12
+        SkillMaximumExtraValue: 15
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 15
+        SkillMaximumExtraValue: 18
+  - SkillType: 10
+    SkillName: SKILL_WEAPON_DOUBLE_SHOT
+    SkillIcon: {fileID: 21300000, guid: aa46053c0e9df6b49829455835dde5c7, type: 3}
+    ItemTypes:
+    - ItemType: 5
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 15
+        SkillMaximumExtraValue: 20
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 20
+        SkillMaximumExtraValue: 25
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 25
+        SkillMaximumExtraValue: 30
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 30
+        SkillMaximumExtraValue: 35
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 35
+        SkillMaximumExtraValue: 40
+    - ItemType: 6
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 15
+        SkillMaximumExtraValue: 20
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 20
+        SkillMaximumExtraValue: 25
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 25
+        SkillMaximumExtraValue: 30
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 30
+        SkillMaximumExtraValue: 35
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 35
+        SkillMaximumExtraValue: 40
+  - SkillType: 11
+    SkillName: SKILL_WEAPON_AMMUNITION
+    SkillIcon: {fileID: 21300000, guid: 2289f568f57e774448170f5169ada6c2, type: 3}
+    ItemTypes:
+    - ItemType: 5
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 20
+        SkillMaximumExtraValue: 40
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 40
+        SkillMaximumExtraValue: 60
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 60
+        SkillMaximumExtraValue: 80
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 80
+        SkillMaximumExtraValue: 100
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 100
+        SkillMaximumExtraValue: 120
+    - ItemType: 6
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 20
+        SkillMaximumExtraValue: 40
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 40
+        SkillMaximumExtraValue: 60
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 60
+        SkillMaximumExtraValue: 80
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 80
+        SkillMaximumExtraValue: 100
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 100
+        SkillMaximumExtraValue: 120
+  - SkillType: 12
+    SkillName: SKILL_WEAPON_EXPLOSION_ZONE
+    SkillIcon: {fileID: 21300000, guid: 7b7828d445321954fa0ed48a0cc911e2, type: 3}
+    ItemTypes:
+    - ItemType: 9
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 10
+        SkillMaximumExtraValue: 20
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 20
+        SkillMaximumExtraValue: 30
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 30
+        SkillMaximumExtraValue: 40
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 40
+        SkillMaximumExtraValue: 50
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 50
+        SkillMaximumExtraValue: 60
+  - SkillType: 13
+    SkillName: SKILL_WEAPON_RICOCHET
+    SkillIcon: {fileID: 21300000, guid: 709ae6d87fd24c14794cb638c020f621, type: 3}
+    ItemTypes:
+    - ItemType: 5
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 15
+        SkillMaximumExtraValue: 20
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 20
+        SkillMaximumExtraValue: 25
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 25
+        SkillMaximumExtraValue: 30
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 30
+        SkillMaximumExtraValue: 35
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 35
+        SkillMaximumExtraValue: 40
+  - SkillType: 14
+    SkillName: SKILL_WEAPON_INSTANT_RELOADING
+    SkillIcon: {fileID: 21300000, guid: 0926580b49cae174c990fabf5245f1a3, type: 3}
+    ItemTypes:
+    - ItemType: 6
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 5
+        SkillMaximumExtraValue: 10
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 10
+        SkillMaximumExtraValue: 15
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 15
+        SkillMaximumExtraValue: 20
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 20
+        SkillMaximumExtraValue: 25
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 25
+        SkillMaximumExtraValue: 30
+  - SkillType: 15
+    SkillName: SKILL_WEAPON_BULLET_SPEED
+    SkillIcon: {fileID: 21300000, guid: 18b5d8d81d1604c4487f04f802f47b15, type: 3}
+    ItemTypes:
+    - ItemType: 7
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 5
+        SkillMaximumExtraValue: 10
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 10
+        SkillMaximumExtraValue: 15
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 15
+        SkillMaximumExtraValue: 20
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 20
+        SkillMaximumExtraValue: 25
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 25
+        SkillMaximumExtraValue: 30
+  - SkillType: 16
+    SkillName: SKILL_WEAPON_STUN_FOR_TREE_SECONDS
+    SkillIcon: {fileID: 21300000, guid: 2fb48ffc4309f914481a7f4b792ad185, type: 3}
+    ItemTypes:
+    - ItemType: 9
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 10
+        SkillMaximumExtraValue: 15
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 15
+        SkillMaximumExtraValue: 20
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 20
+        SkillMaximumExtraValue: 30
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 30
+        SkillMaximumExtraValue: 40
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 40
+        SkillMaximumExtraValue: 45
+  - SkillType: 17
+    SkillName: SKILL_WEAPON_DAMAGE_AFTER_HIT_FOR_TREE_SECONDS
+    SkillIcon: {fileID: 21300000, guid: faef3874386977348bcf176bc5e3ef82, type: 3}
+    ItemTypes:
+    - ItemType: 9
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 10
+        SkillMaximumExtraValue: 20
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 20
+        SkillMaximumExtraValue: 30
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 30
+        SkillMaximumExtraValue: 40
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 40
+        SkillMaximumExtraValue: 50
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 50
+        SkillMaximumExtraValue: 60
+  - SkillType: 18
+    SkillName: SKILL_WEAPON_PIERCE_ENEMY
+    SkillIcon: {fileID: 21300000, guid: 48be955398b8bff45be2cc5d6c558327, type: 3}
+    ItemTypes:
+    - ItemType: 7
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 15
+        SkillMaximumExtraValue: 20
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 20
+        SkillMaximumExtraValue: 25
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 25
+        SkillMaximumExtraValue: 30
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 30
+        SkillMaximumExtraValue: 35
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 35
+        SkillMaximumExtraValue: 40
+    - ItemType: 8
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 15
+        SkillMaximumExtraValue: 20
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 20
+        SkillMaximumExtraValue: 25
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 25
+        SkillMaximumExtraValue: 30
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 30
+        SkillMaximumExtraValue: 35
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 35
+        SkillMaximumExtraValue: 40
+  - SkillType: 19
+    SkillName: SKILL_WEAPON_DAMAGE_FOR_LAST_BULLET
+    SkillIcon: {fileID: 21300000, guid: 48be955398b8bff45be2cc5d6c558327, type: 3}
+    ItemTypes:
+    - ItemType: 5
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 100
+        SkillMaximumExtraValue: 150
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 150
+        SkillMaximumExtraValue: 200
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 200
+        SkillMaximumExtraValue: 250
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 250
+        SkillMaximumExtraValue: 300
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 300
+        SkillMaximumExtraValue: 350
+  - SkillType: 20
+    SkillName: SKILL_WEAPON_DAMAGE_FOR_ENEMY_WITH_LOW_HP
+    SkillIcon: {fileID: 21300000, guid: 0f009c047bb288e4793848da9674d4ad, type: 3}
+    ItemTypes:
+    - ItemType: 8
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 10
+        SkillMaximumExtraValue: 20
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 20
+        SkillMaximumExtraValue: 30
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 30
+        SkillMaximumExtraValue: 40
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 40
+        SkillMaximumExtraValue: 50
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 50
+        SkillMaximumExtraValue: 60
+  - SkillType: 21
+    SkillName: SKILL_WEAPON_MOVEMENT_SPEED_BY_KILLING
+    SkillIcon: {fileID: 21300000, guid: f64551c9d4474c84db4d79e0ef807a17, type: 3}
+    ItemTypes:
+    - ItemType: 6
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 10
+        SkillMaximumExtraValue: 15
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 15
+        SkillMaximumExtraValue: 20
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 20
+        SkillMaximumExtraValue: 25
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 25
+        SkillMaximumExtraValue: 30
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 30
+        SkillMaximumExtraValue: 35
+  - SkillType: 22
+    SkillName: SKILL_WEAPON_INSTANT_ENEMY_KILLING
+    SkillIcon: {fileID: 21300000, guid: 2406d6e2c7ea9694ea16d171474e6c7f, type: 3}
+    ItemTypes:
+    - ItemType: 7
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 0
+        SkillMaximumExtraValue: 0
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 0
+        SkillMaximumExtraValue: 0
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 2
+        SkillMaximumExtraValue: 4
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 4
+        SkillMaximumExtraValue: 6
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 6
+        SkillMaximumExtraValue: 8
+  - SkillType: 23
+    SkillName: SKILL_WEAPON_DAMAGE_FOR_ENEMY_WITH_HALF_HP
+    SkillIcon: {fileID: 21300000, guid: 1a32f5338ef460043954e14a8a8ca5b1, type: 3}
+    ItemTypes:
+    - ItemType: 5
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 10
+        SkillMaximumExtraValue: 20
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 20
+        SkillMaximumExtraValue: 30
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 30
+        SkillMaximumExtraValue: 40
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 40
+        SkillMaximumExtraValue: 50
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 50
+        SkillMaximumExtraValue: 60
+  - SkillType: 24
+    SkillName: SKILL_WEAPON_DISCARDING
+    SkillIcon: {fileID: 21300000, guid: 79a97ae6f6c05be4d9b5ee3c890826aa, type: 3}
+    ItemTypes:
+    - ItemType: 8
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 10
+        SkillMaximumExtraValue: 15
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 15
+        SkillMaximumExtraValue: 20
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 20
+        SkillMaximumExtraValue: 25
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 25
+        SkillMaximumExtraValue: 30
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 30
+        SkillMaximumExtraValue: 35
+  - SkillType: 25
+    SkillName: SKILL_WEAPON_SHIELD_AFTER_DAMAGE
+    SkillIcon: {fileID: 21300000, guid: cac65a2ad5d43a84bacc5254bd6a7937, type: 3}
+    ItemTypes:
+    - ItemType: 6
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 10
+        SkillMaximumExtraValue: 15
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 15
+        SkillMaximumExtraValue: 20
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 20
+        SkillMaximumExtraValue: 25
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 25
+        SkillMaximumExtraValue: 30
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 30
+        SkillMaximumExtraValue: 35
+  - SkillType: 26
+    SkillName: SKILL_WEAPON_DAMAGE_BY_DISTANCE
+    SkillIcon: {fileID: 21300000, guid: 939bc8f6617376348ab7955815b5a997, type: 3}
+    ItemTypes:
+    - ItemType: 7
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 15
+        SkillMaximumExtraValue: 20
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 20
+        SkillMaximumExtraValue: 30
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 30
+        SkillMaximumExtraValue: 40
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 40
+        SkillMaximumExtraValue: 50
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 50
+        SkillMaximumExtraValue: 60
+  - SkillType: 27
+    SkillName: SKILL_WEAPON_CALL_LIGHTING_STRIKE
+    SkillIcon: {fileID: 21300000, guid: 86d18dc1604c8c7448ce609f17618202, type: 3}
+    ItemTypes:
+    - ItemType: 5
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 15
+        SkillMaximumExtraValue: 20
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 20
+        SkillMaximumExtraValue: 30
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 30
+        SkillMaximumExtraValue: 40
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 40
+        SkillMaximumExtraValue: 50
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 50
+        SkillMaximumExtraValue: 60
+    - ItemType: 7
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 15
+        SkillMaximumExtraValue: 20
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 20
+        SkillMaximumExtraValue: 30
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 30
+        SkillMaximumExtraValue: 40
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 40
+        SkillMaximumExtraValue: 50
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 50
+        SkillMaximumExtraValue: 60
+  - SkillType: 28
+    SkillName: SKILL_WEAPON_ACCURACY
+    SkillIcon: {fileID: 21300000, guid: 7adb75dd9ffc4c14f9addd1174087ed1, type: 3}
+    ItemTypes:
+    - ItemType: 8
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 10
+        SkillMaximumExtraValue: 15
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 15
+        SkillMaximumExtraValue: 20
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 20
+        SkillMaximumExtraValue: 25
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 25
+        SkillMaximumExtraValue: 30
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 30
+        SkillMaximumExtraValue: 35
+  - SkillType: 29
+    SkillName: SKILL_WEAPON_DAMAGE_BY_EMPTY_BULLET
+    SkillIcon: {fileID: 21300000, guid: 1a6c70ab0eef1ab45b32d6a15224543d, type: 3}
+    ItemTypes:
+    - ItemType: 7
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 10
+        SkillMaximumExtraValue: 15
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 15
+        SkillMaximumExtraValue: 20
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 20
+        SkillMaximumExtraValue: 25
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 25
+        SkillMaximumExtraValue: 30
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 30
+        SkillMaximumExtraValue: 35
+  _outfitSkills:
+  - SkillType: 1000
+    SkillName: SKILL_OUTFIT_GUNSLINGER
+    SkillIcon: {fileID: 21300000, guid: dea994eee497c2b43ab7a23d1bf56015, type: 3}
+    ItemTypes:
+    - ItemType: 1
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+    - ItemType: 2
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+    - ItemType: 3
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+    - ItemType: 4
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+  - SkillType: 1001
+    SkillName: SKILL_OUTFIT_MARAUDER
+    SkillIcon: {fileID: 21300000, guid: aa1861c3400a8f94784b78f4f675e00f, type: 3}
+    ItemTypes:
+    - ItemType: 1
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+    - ItemType: 2
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+    - ItemType: 3
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+    - ItemType: 4
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+  - SkillType: 1002
+    SkillName: SKILL_OUTFIT_DEADEYE
+    SkillIcon: {fileID: 21300000, guid: fe60cfec298c1954b96446b0c6da8c1d, type: 3}
+    ItemTypes:
+    - ItemType: 1
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+    - ItemType: 2
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+    - ItemType: 3
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+    - ItemType: 4
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+  - SkillType: 1003
+    SkillName: SKILL_OUTFIT_BOMBARDIER
+    SkillIcon: {fileID: 21300000, guid: 5c0e697bd7aa5244fb799114ef5a1801, type: 3}
+    ItemTypes:
+    - ItemType: 1
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+    - ItemType: 2
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+    - ItemType: 3
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+    - ItemType: 4
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+  - SkillType: 1004
+    SkillName: SKILL_OUTFIT_ENFORCER
+    SkillIcon: {fileID: 21300000, guid: 516f4cb649d3771408709d7422d1cc9f, type: 3}
+    ItemTypes:
+    - ItemType: 1
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+    - ItemType: 2
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+    - ItemType: 3
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+    - ItemType: 4
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+  - SkillType: 1005
+    SkillName: SKILL_OUTFIT_AMBUSH
+    SkillIcon: {fileID: 21300000, guid: 613d15eff16b99c4abfed28c53869109, type: 3}
+    ItemTypes:
+    - ItemType: 1
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+    - ItemType: 2
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+    - ItemType: 3
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+    - ItemType: 4
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+  - SkillType: 1006
+    SkillName: SKILL_OUTFIT_SHIELDING
+    SkillIcon: {fileID: 21300000, guid: 9360a8e3648f80d438c5d1879fd7e1d9, type: 3}
+    ItemTypes:
+    - ItemType: 1
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+    - ItemType: 2
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+    - ItemType: 3
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+    - ItemType: 4
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+  - SkillType: 1007
+    SkillName: SKILL_OUTFIT_EVASIVE
+    SkillIcon: {fileID: 21300000, guid: aff1af19562bb7a4da34f8640e16b85d, type: 3}
+    ItemTypes:
+    - ItemType: 1
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+    - ItemType: 2
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+    - ItemType: 3
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+    - ItemType: 4
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+  - SkillType: 1008
+    SkillName: SKILL_OUTFIT_ARMADILLO
+    SkillIcon: {fileID: 21300000, guid: 868e9241ae163c946a9e68297e6c56fd, type: 3}
+    ItemTypes:
+    - ItemType: 1
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+    - ItemType: 2
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+    - ItemType: 3
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+    - ItemType: 4
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+  - SkillType: 1009
+    SkillName: SKILL_OUTFIT_ADRENALIZED
+    SkillIcon: {fileID: 21300000, guid: 784cc450f3253c54f9f7e7ee4024dd8e, type: 3}
+    ItemTypes:
+    - ItemType: 1
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+    - ItemType: 2
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+    - ItemType: 3
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+    - ItemType: 4
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+  - SkillType: 1010
+    SkillName: SKILL_OUTFIT_PROTECTIVE
+    SkillIcon: {fileID: 21300000, guid: 0a5e5bd2a5364734da5c186162d823ac, type: 3}
+    ItemTypes:
+    - ItemType: 1
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+    - ItemType: 2
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+    - ItemType: 3
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+    - ItemType: 4
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+  - SkillType: 1011
+    SkillName: SKILL_OUTFIT_AMPLIFYING
+    SkillIcon: {fileID: 21300000, guid: e48faf35dd23a794f8211f8df7abdc63, type: 3}
+    ItemTypes:
+    - ItemType: 1
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+    - ItemType: 2
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+    - ItemType: 3
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+    - ItemType: 4
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+  - SkillType: 1012
+    SkillName: SKILL_OUTFIT_VAMPIRIC
+    SkillIcon: {fileID: 21300000, guid: 3244116b4a746af4a916d852ea6eb22d, type: 3}
+    ItemTypes:
+    - ItemType: 1
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+    - ItemType: 2
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+    - ItemType: 3
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+    - ItemType: 4
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+  - SkillType: 1013
+    SkillName: SKILL_OUTFIT_SHARPSHOOTER
+    SkillIcon: {fileID: 21300000, guid: 31d62736ebd7e2e42953d34c0856e6b2, type: 3}
+    ItemTypes:
+    - ItemType: 1
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+    - ItemType: 2
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+    - ItemType: 3
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+    - ItemType: 4
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+  - SkillType: 1014
+    SkillName: SKILL_OUTFIT_SLAYER
+    SkillIcon: {fileID: 21300000, guid: c785aea3846f36a4fbc3ab0875dcea54, type: 3}
+    ItemTypes:
+    - ItemType: 1
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+    - ItemType: 2
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+    - ItemType: 3
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+    - ItemType: 4
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+  - SkillType: 1015
+    SkillName: SKILL_OUTFIT_PRECISE
+    SkillIcon: {fileID: 21300000, guid: 7adb75dd9ffc4c14f9addd1174087ed1, type: 3}
+    ItemTypes:
+    - ItemType: 1
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+    - ItemType: 2
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+    - ItemType: 3
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+    - ItemType: 4
+      RarityTypes:
+      - RarityType: 1
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 2
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 3
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 4
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
+      - RarityType: 5
+        SkillValueType: 2
+        SkillMinimalExtraValue: 1
+        SkillMaximumExtraValue: 3
