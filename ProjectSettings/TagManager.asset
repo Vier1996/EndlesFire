@@ -19,21 +19,21 @@ TagManager:
   - LocationStaff
   - Water
   - UI
-  - Player
-  - PlayerFounder
-  - Enemy
-  - EnemyFounder
-  - Projectile
-  - EnemyProjectile
-  - Loot
-  - StageTrigger
-  - LocationEdge
-  - SortingColliders
-  - MovementColliders
-  - BulletInteractionCollider
-  - Trap
-  - FVX
-  - Navigation
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
   - 
   - 
   - 

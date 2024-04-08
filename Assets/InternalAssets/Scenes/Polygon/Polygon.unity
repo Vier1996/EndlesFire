@@ -460,6 +460,17 @@ Camera:
   m_CorrespondingSourceObject: {fileID: 1844212589887205987, guid: cf1deb773e132b446973dc3f20c508fb, type: 3}
   m_PrefabInstance: {fileID: 173885523}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &173885526 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2144117671586351569, guid: cf1deb773e132b446973dc3f20c508fb, type: 3}
+  m_PrefabInstance: {fileID: 173885523}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b59646d26fd6be74e9a52235da52735c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &183335020
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -785,8 +796,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9809c3eaef04586429189efb859ba47f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _resourceType: 1
-  _longFormat: 0
 --- !u!114 &411443352
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -799,8 +808,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c157fd9b6904413428051f472dcd5f58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _duration: 1
-  _minChangeSpeed: 20
 --- !u!114 &411443353
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1004,9 +1011,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcc2c980d505e45cfa6afdf24468673d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _buttonsContainerParent: {fileID: 1376125122}
-  _buttonViewPrefab: {fileID: 7794939048193348889, guid: 482a2d9199d529c47a8fc129815ff2d4, type: 3}
-  _raycastBlocker: {fileID: 0}
 --- !u!224 &429668351
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1277,21 +1281,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d041001e6536d6d4ab6a62d8eebb09d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _customLootBindingsConfig: 0
-  _lootBindingsConfig: {fileID: 0}
-  _spawnerSizeCollider: {fileID: 494449578}
-  _stageParameters:
-    EnemiesLevel: 0
-    WaveParameters:
-    - SpawnPrice: 10
-      MaxCountAtOneTime: 1
-      DelayBetweenSpawning: 1
-      DelayBetweenNextSpawn: 0.3
-      Enemies:
-      - BaseEnemy: {fileID: 453586564843345929, guid: 5fc713ff53d614666969bd22f4d14d12, type: 3}
-        MinCount: 1
-        HasLimit: 0
-        MaxCount: 1
 --- !u!61 &494449578
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1355,6 +1344,96 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &545590749
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 545590750}
+  - component: {fileID: 545590752}
+  - component: {fileID: 545590751}
+  m_Layer: 0
+  m_Name: '[SCENE_BOOSTRAPPER]'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &545590750
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 545590749}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.4875968, y: -0.5216955, z: 0.039618295}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &545590751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 545590749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adb6d12ade3cea74999eae3ff36670dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _player: {fileID: 1271120168}
+  _cameraCenterer: {fileID: 173885526}
+--- !u!114 &545590752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 545590749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d64e69b4b413bbf4fb3ae9ca8c2dcc9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &548863929
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 548863930}
+  m_Layer: 0
+  m_Name: "\u041C\u0438\u0448\u0435\u043D\u044C"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &548863930
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 548863929}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.63, y: 2.12, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1807489304}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &616267468
 GameObject:
   m_ObjectHideFlags: 0
@@ -1730,6 +1809,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 18.09708, y: 11.329719}
   m_EdgeRadius: 0
+--- !u!114 &1271120168 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1572813125162196179, guid: 5f1f9e30508fcb147b1b019dcffea868, type: 3}
+  m_PrefabInstance: {fileID: 183335020}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85974c3df9099e1469225b5cd540e9e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1368407482
 GameObject:
   m_ObjectHideFlags: 0
@@ -1988,18 +2078,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23d63551046085047b8864bfce3c8c6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TopPanelLeftPart: {fileID: 123978534}
-  TopPanelMiddlePart: {fileID: 353975888}
-  TopPanelRightPart: {fileID: 4295113}
-  MiddlePanelLeftPart: {fileID: 0}
-  MiddlePanelMiddlePart: {fileID: 0}
-  MiddlePanelRightPart: {fileID: 0}
-  BottomPanelLeftPart: {fileID: 0}
-  BottomPanelMiddlePart: {fileID: 0}
-  BottomPanelRightPart: {fileID: 0}
-  _settingsButton: {fileID: 0}
-  _pauseButton: {fileID: 375350217}
-  _ignoreHiding: 1
 --- !u!114 &1519633746
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2484,6 +2562,7 @@ Transform:
   m_Children:
   - {fileID: 1141356392}
   - {fileID: 183335021}
+  - {fileID: 548863930}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2539,8 +2618,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9809c3eaef04586429189efb859ba47f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _resourceType: 2
-  _longFormat: 0
 --- !u!114 &1844710485
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2553,8 +2630,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c157fd9b6904413428051f472dcd5f58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _duration: 1
-  _minChangeSpeed: 20
 --- !u!114 &1844710486
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2959,10 +3034,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 585de72a595545768409412ae796a3bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _navigationItemType: 2
-  _destroyedByReach: 1
-  _trigger: {fileID: 4916989890649985913}
-  enabled: 0
 --- !u!61 &309126001895251069
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3494,18 +3565,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c59f9450cbf74eaaa4e0521e8b53f9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _canOpen: 1
-  _isOpenOnBegin: 0
-  _elevator: 0
-  _obstacle: {fileID: 7793658030404130017}
-  _leftLockDoor: {fileID: 7726497393190551093}
-  _rightLockDoor: {fileID: 4965973868131042457}
-  _leftElevatorDoor: {fileID: 0}
-  _rightElevatorDoor: {fileID: 0}
-  _leftOpenDoor: {fileID: 602651357264929699}
-  _rightOpenDoor: {fileID: 7355255377181851028}
-  _doorShadow: {fileID: 0}
-  _elevatorLight: {fileID: 0}
 --- !u!1 &3543095341584945436
 GameObject:
   m_ObjectHideFlags: 0
@@ -3875,11 +3934,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4411013944414197951, guid: 7ba3333ef42bf9544b2ebf4611be2094, type: 3}
       propertyPath: m_Name
-      value: '[GLOBAL_SERVICE_LOCATOR]'
+      value: '[GLOBAL_BOOTSTRAPPER]'
       objectReference: {fileID: 0}
     - target: {fileID: 4892202001815749428, guid: 7ba3333ef42bf9544b2ebf4611be2094, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4892202001815749428, guid: 7ba3333ef42bf9544b2ebf4611be2094, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4203,18 +4262,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c59f9450cbf74eaaa4e0521e8b53f9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _canOpen: 1
-  _isOpenOnBegin: 0
-  _elevator: 0
-  _obstacle: {fileID: 8056036036211134296}
-  _leftLockDoor: {fileID: 3196160442027904850}
-  _rightLockDoor: {fileID: 6860712861766198419}
-  _leftElevatorDoor: {fileID: 0}
-  _rightElevatorDoor: {fileID: 0}
-  _leftOpenDoor: {fileID: 4829562297948660455}
-  _rightOpenDoor: {fileID: 4807312354090148270}
-  _doorShadow: {fileID: 8523525424329869604}
-  _elevatorLight: {fileID: 0}
 --- !u!212 &7655577227952587475
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4445,10 +4492,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 585de72a595545768409412ae796a3bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _navigationItemType: 2
-  _destroyedByReach: 1
-  _trigger: {fileID: 2670634744082139803}
-  enabled: 0
 --- !u!212 &8267713489600013738
 SpriteRenderer:
   m_ObjectHideFlags: 0

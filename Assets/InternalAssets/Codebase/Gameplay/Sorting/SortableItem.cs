@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using ACS.Core.ServicesContainer;
 using UnityEngine;
 
@@ -6,7 +7,7 @@ namespace Codebase.Gameplay.Sorting
     public class SortableItem : MonoBehaviour, ISortableItem
     {
         [SerializeField] private Transform _anchor;
-        [SerializeField] private Renderer[] _customRenderers;
+        [SerializeField] private List<Renderer> _customRenderers;
         
         public int LastOrder => _order;
         
@@ -27,6 +28,25 @@ namespace Codebase.Gameplay.Sorting
                 
                 NormalizeSortingLayer();
             }
+        }
+        
+        public void AddRenderers(List<Renderer> renderers)
+        {
+            for (int i = 0; i < renderers.Count; i++) 
+                _customRenderers.Add(renderers[i]);
+
+            NormalizeSortingLayer();
+        }
+        
+        public void RemoveRenderers(List<Renderer> renderers)
+        {
+            for (int i = 0; i < renderers.Count; i++)
+            {
+                if (_customRenderers.Contains(renderers[i]))
+                    _customRenderers.Remove(renderers[i]);
+            }
+
+            NormalizeSortingLayer();
         }
         
         public bool IsAnchorValid() => _anchor != null;
@@ -53,7 +73,7 @@ namespace Codebase.Gameplay.Sorting
         
         private void SetupOrder(int order)
         {
-            for (int i = 0; i < _customRenderers.Length; i++)
+            for (int i = 0; i < _customRenderers.Count; i++)
             {
                 if (_customRenderers[i] != null) 
                     _customRenderers[i].sortingOrder = order;
@@ -62,7 +82,7 @@ namespace Codebase.Gameplay.Sorting
 
         private void NormalizeSortingLayer()
         {
-            for (int i = 0; i < _customRenderers.Length; i++)
+            for (int i = 0; i < _customRenderers.Count; i++)
             {
                 if (_customRenderers[i] != null) 
                     _customRenderers[i].sortingLayerID = 0;

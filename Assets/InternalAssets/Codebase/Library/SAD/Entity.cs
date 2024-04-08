@@ -17,13 +17,12 @@ namespace Codebase.Library.SAD
         
         public virtual Entity Bootstrapp()
         {
-            ServiceContainer.For(this).Get(out _entityWorld);
+            if(ServiceContainer.For(this).TryGetService(out _entityWorld))
+                _entityWorld.AddEntity(this);
             
             Transform = transform;
             GameObject = gameObject;
             
-            _entityWorld.AddEntity(this);
-
             return this;
         }
 

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6205978184242180095}
   - component: {fileID: 9209711935155119795}
-  - component: {fileID: 8843924269702106380}
+  - component: {fileID: 5820151347341641743}
   m_Layer: 0
   m_Name: ShootingSpark
   m_TagString: Untagged
@@ -28,6 +28,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.163, y: -0.023, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -43,6 +44,7 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -83,7 +85,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 1
   m_SpriteSortPoint: 0
---- !u!114 &8843924269702106380
+--- !u!114 &5820151347341641743
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -92,11 +94,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 3905844667495186006}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8fba39e8c69d554d98045335721f134, type: 3}
+  m_Script: {fileID: 11500000, guid: 32cb571f6ba94caa8ce8dbd30cc6b23c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _renderer: {fileID: 9209711935155119795}
   _sprites:
-  - {fileID: 21300000, guid: dab9a158bafce8e47a593e544efe6c13, type: 3}
-  - {fileID: 21300000, guid: 3c4f1582ecbb3a84eb56a30ca53dec70, type: 3}
+  - {fileID: 21300000, guid: a47780fff847a9444830a07bf1637cd0, type: 3}
   _emptyColor: {r: 1, g: 1, b: 1, a: 0}

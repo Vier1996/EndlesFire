@@ -4,6 +4,9 @@ using Codebase.Library.SAD;
 using InternalAssets.Codebase.Gameplay.Behavior.Player;
 using InternalAssets.Codebase.Gameplay.Dodge;
 using InternalAssets.Codebase.Gameplay.Movement;
+using InternalAssets.Codebase.Gameplay.Weapons;
+using InternalAssets.Codebase.Gameplay.Weapons.Presenter;
+using InternalAssets.Codebase.Services._2dModels;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
@@ -15,6 +18,8 @@ namespace InternalAssets.Codebase.Gameplay.Entities.PlayerFolder
         [BoxGroup("General"), SerializeField] private PlayerMovementComponent _playerMovementComponent;
         [BoxGroup("General"), SerializeField] private PlayerAnimator _playerAnimator;
         [BoxGroup("General"), SerializeField] private DodgeComponent _dodgeComponent;
+        [BoxGroup("General"), SerializeField] private WeaponPresenter _weaponPresenter;
+        [BoxGroup("General"), SerializeField] private SpriteModelPresenter _spriteModelPresenter;
         [BoxGroup("General"), SerializeField] private SortableItem _sortableItem;
         
         [BoxGroup("Physic"), SerializeField] private Rigidbody2D _rigidbody2D;
@@ -26,6 +31,8 @@ namespace InternalAssets.Codebase.Gameplay.Entities.PlayerFolder
             Add(_sortableItem);
             Add(typeof(PlayerBehaviorMachine), new PlayerBehaviorMachine());
             Add(_playerMovementComponent);
+            Add(_spriteModelPresenter);
+            Add(_weaponPresenter);
             Add(_playerAnimator);
             Add(_dodgeComponent);
             

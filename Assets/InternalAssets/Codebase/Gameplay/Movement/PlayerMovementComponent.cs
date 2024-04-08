@@ -32,7 +32,9 @@ namespace InternalAssets.Codebase.Gameplay.Movement
 
         public bool IsInitialized { get; private set; } = false;
         public Vector3 Direction => _lastDirection;
-        
+        public Vector2 CurrentSpeed { get; private set; }
+        public Vector3 CurrentSpeedV3 => CurrentSpeed;
+
         private PlayerBehaviorMachine _playerBehaviorMachine;
         private Rigidbody2D _movableRigidbody;
         private IInputService _inputService;
@@ -47,7 +49,6 @@ namespace InternalAssets.Codebase.Gameplay.Movement
         private TimeSpan _tickOnUp = TimeSpan.Zero;
         private TimeSpan _tickOnDown = TimeSpan.Zero;
         private Vector2 _lastDirection = Vector2.zero;
-        private Vector2 _speed = Vector2.zero;
         private Vector3 _lastPosition = Vector3.zero;
         
         private bool _isCanMove = true;
@@ -92,7 +93,7 @@ namespace InternalAssets.Codebase.Gameplay.Movement
             
             Vector2 axis = _inputService.Axis.normalized;
             
-            _speed = axis * _speedProperty;
+            CurrentSpeed = axis * _speedProperty;
             
             if (axis != Vector2.zero)
             {
@@ -110,7 +111,7 @@ namespace InternalAssets.Codebase.Gameplay.Movement
                 return;
             }
 
-            if (_speed != Vector2.zero) UpdatePositionTick();
+            if (CurrentSpeed != Vector2.zero) UpdatePositionTick();
             else TickWithoutUpdate();
         }
 
@@ -184,7 +185,7 @@ namespace InternalAssets.Codebase.Gameplay.Movement
         private void UpdatePositionTick()
         {
             _movableRigidbody.velocity = Vector2.zero;
-            _movableRigidbody.MovePosition(_movableRigidbody.position + _speed * Time.fixedDeltaTime);
+            _movableRigidbody.MovePosition(_movableRigidbody.position + CurrentSpeed * Time.fixedDeltaTime);
 
             _playerBehaviorMachine.Machine.SwitchBehavior<MovementPlayerBehavior>();
 
