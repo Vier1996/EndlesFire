@@ -14,8 +14,9 @@ namespace InternalAssets.Codebase.Gameplay.Weapons
 
         [field: SerializeField, ReadOnly] public bool InShootingStatus { get; private set; } = false;
         [field: SerializeField, ReadOnly] public bool InRechargingStatus { get; private set; } = false;
+
+        public WeaponConfig WeaponConfig { get; private set; }
         
-        protected WeaponConfig WeaponConfig;
         protected Transform SelfTransform;
         protected Vector3 DefaultWeaponLocalPosition;
 

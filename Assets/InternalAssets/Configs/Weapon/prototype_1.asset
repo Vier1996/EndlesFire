@@ -15,7 +15,7 @@ MonoBehaviour:
   <WeaponType>k__BackingField: 1
   <ViewPrefab>k__BackingField: {fileID: 3717457324671071473, guid: 4050e73e61601c447b25143f2e91c443, type: 3}
   <WeaponStats>k__BackingField:
-    <BaseRange>k__BackingField: 5
+    <BaseRange>k__BackingField: 3
     <BaseRecharging>k__BackingField: 1
     <WaterConsumptionValue>k__BackingField: 1
     <FireDisperse>k__BackingField: 1
