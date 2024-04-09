@@ -19,9 +19,9 @@ TagManager:
   - LocationStaff
   - Water
   - UI
-  - 
-  - 
-  - 
+  - Player
+  - Enemy
+  - Bullet
   - 
   - 
   - 

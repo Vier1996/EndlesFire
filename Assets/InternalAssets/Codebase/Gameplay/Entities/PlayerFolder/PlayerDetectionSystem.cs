@@ -1,6 +1,6 @@
 ﻿using System;
 using Codebase.Library.SAD;
-using InternalAssets.Codebase.Gameplay.Enemies;
+using InternalAssets.Codebase.Gameplay.Entities.EnemiesFolder;
 using InternalAssets.Codebase.Gameplay.Scanning;
 using InternalAssets.Codebase.Gameplay.Weapons.Configs;
 using InternalAssets.Codebase.Gameplay.Weapons.Presenter;
@@ -9,7 +9,7 @@ using UnityEngine;
 
 namespace InternalAssets.Codebase.Gameplay.Entities.PlayerFolder
 {
-    public class PlayerDetectionSystem : MonoBehaviour, IDerivedEntityComponent
+    public class PlayerDetectionSystem : MonoBehaviour, IDetectionSystem, IDerivedEntityComponent
     {
         public event Action<ITargetable> OnTargetDetected;
         

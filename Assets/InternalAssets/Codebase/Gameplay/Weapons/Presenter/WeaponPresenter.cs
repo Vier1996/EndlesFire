@@ -25,8 +25,9 @@ namespace InternalAssets.Codebase.Gameplay.Weapons.Presenter
         private PlayerMovementComponent _playerMovementComponent;
         private SpriteModelPresenter _spriteModelPresenter;
         private SortableItem _sortableItemOfOwner;
-        private PlayerDetectionSystem _playerDetectionSystem;
+        private IDetectionSystem _detectionSystem;
         private Transform _selfTransform;
+        private Entity _entity;
 
         private WeaponLookingType _lookingType = WeaponLookingType.none;
         private Vector3 _direction;
@@ -39,21 +40,22 @@ namespace InternalAssets.Codebase.Gameplay.Weapons.Presenter
         
         public void Bootstrapp(Entity entity)
         {
+            _entity = entity;
             _selfTransform = transform;
 
-            _playerMovementComponent = entity.GetAbstractComponent<PlayerMovementComponent>();
-            _spriteModelPresenter = entity.GetAbstractComponent<SpriteModelPresenter>();
-            _sortableItemOfOwner = entity.GetAbstractComponent<SortableItem>();
-            _playerDetectionSystem = entity.GetAbstractComponent<PlayerDetectionSystem>();
+            _playerMovementComponent = _entity.GetAbstractComponent<PlayerMovementComponent>();
+            _spriteModelPresenter = _entity.GetAbstractComponent<SpriteModelPresenter>();
+            _sortableItemOfOwner = _entity.GetAbstractComponent<SortableItem>();
+            _detectionSystem = _entity.GetAbstractComponent<IDetectionSystem>();
             
             SetJoystickListening();
             
-            _playerDetectionSystem.OnTargetDetected += SetTargetListening;
+            _detectionSystem.OnTargetDetected += SetTargetListening;
         }
 
         public void Dispose()
         {
-            _playerDetectionSystem.OnTargetDetected -= SetTargetListening;
+            _detectionSystem.OnTargetDetected -= SetTargetListening;
         }
 
         [Button]
@@ -69,7 +71,7 @@ namespace InternalAssets.Codebase.Gameplay.Weapons.Presenter
             WeaponConfig config = container.GetConfig(weaponType);
 
             CurrentView = Instantiate(config.ViewPrefab, _selfTransform);
-            CurrentView.Bootstrapp(config);
+            CurrentView.Bootstrapp(config, _entity);
 
             _sortableItemOfOwner.AddRenderers(CurrentView.GetWeaponRenderers());
             

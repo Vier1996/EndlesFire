@@ -29,8 +29,8 @@ namespace InternalAssets.Codebase.Services.Camera
         
         private IDisposable _initializeDisposable;
         private ITargetable _currentTarget;
+        private IDetectionSystem _detectionSystem;
         private Entity _targetEntity;
-        private PlayerDetectionSystem _playerDetectionSystem;
         private CinemachineFramingTransposer _cinemachineTransposer;
         
         private bool _initialized;
@@ -39,7 +39,7 @@ namespace InternalAssets.Codebase.Services.Camera
         public void Initialize(Entity entity)
         {
             _targetEntity = entity;
-            _playerDetectionSystem = _targetEntity.GetAbstractComponent<PlayerDetectionSystem>();
+            _detectionSystem = _targetEntity.GetAbstractComponent<IDetectionSystem>();
             _cinemachineTransposer = virtualCamera.GetCinemachineComponent<CinemachineFramingTransposer>();
             
             SetDeadZoneValues(0, 0);
@@ -52,7 +52,7 @@ namespace InternalAssets.Codebase.Services.Camera
             _initializeDisposable?.Dispose();
             
             _initialized = false;
-            _playerDetectionSystem.OnTargetDetected -= UpdateTarget;
+            _detectionSystem.OnTargetDetected -= UpdateTarget;
         }
 
         private void Setup()
@@ -61,7 +61,7 @@ namespace InternalAssets.Codebase.Services.Camera
             _lastAnchorPosition = _lastPosition;
             targetAnchor.position = _lastPosition;
             
-            _playerDetectionSystem.OnTargetDetected += UpdateTarget;
+            _detectionSystem.OnTargetDetected += UpdateTarget;
             _smoothProgress = 0;
             
             SetDeadZoneValues(DeadZoneWidth, DeadZoneHeight);
