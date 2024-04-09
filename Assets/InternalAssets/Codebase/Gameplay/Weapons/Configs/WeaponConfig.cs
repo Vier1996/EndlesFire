@@ -14,6 +14,7 @@ namespace InternalAssets.Codebase.Gameplay.Weapons.Configs
         [field: SerializeField, BoxGroup("Weapon")] public WeaponStats WeaponStats { get; private set; } = new();
         [field: SerializeField, BoxGroup("Weapon store")] public WeaponStoreStats WeaponStoreStats { get; private set; } = new();
         [field: SerializeField, BoxGroup("Ammo")] public WeaponAmmoStats WeaponAmmoStats { get; private set; } = new();
+        [field: SerializeField, BoxGroup("Animation")] public WeaponAnimationStats WeaponAnimationStats { get; private set; } = new();
         
 #if UNITY_EDITOR
         private void OnValidate()
@@ -55,9 +56,16 @@ namespace InternalAssets.Codebase.Gameplay.Weapons.Configs
     public class WeaponStoreStats
     {
         [field: SerializeField, BoxGroup("Queue")] public int BulletsByQueue { get; private set; } = 1;
-        [field: SerializeField, BoxGroup("Queue")] public float DelayBetweenBullets { get; private set; } = 0f;
+        [field: SerializeField, BoxGroup("Queue"), ShowIf("@BulletsByQueue > 1"), Min(0.05f)] public float DelayBetweenBullets { get; private set; } = 0f;
         [field: SerializeField, BoxGroup("Queue")] public bool QueueAsOneBullets { get; private set; } = false;
         [field: SerializeField, BoxGroup("Queue")] public bool AnimateEveryShoot { get; private set; } = false;
-        [field: SerializeField, BoxGroup("Segment")] public float ShootingSegmentAngle { get; private set; } = 0f;
+    }
+    
+    [Serializable]
+    public class WeaponAnimationStats
+    {
+        [field: SerializeField] public float AnimationOffset { get; private set; } = -0.05f;
+        [field: SerializeField] public float AnimationDuration { get; private set; } = 0.3f;
+        [field: SerializeField] public float AnimationBalance { get; private set; } = 0.315f;
     }
 }

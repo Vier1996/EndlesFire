@@ -16,15 +16,20 @@ namespace InternalAssets.Codebase.Gameplay.Weapons
         [field: SerializeField, ReadOnly] public bool InRechargingStatus { get; private set; } = false;
         
         protected WeaponConfig WeaponConfig;
-        
+        protected Transform SelfTransform;
+        protected Vector3 DefaultWeaponLocalPosition;
+
         public virtual void Bootstrapp(WeaponConfig weaponConfig)
         {
             WeaponConfig = weaponConfig;
+            SelfTransform = transform;
+            DefaultWeaponLocalPosition = SelfTransform.localPosition;
         }
         
         public virtual void Dispose() { }
         
-        public virtual void Fire(Vector3 targetPosition) { }
+        public virtual void StartFire(ITargetable target) { }
+        public virtual void StopFire() { }
 
         public List<Renderer> GetWeaponRenderers() => _renderers;
     }

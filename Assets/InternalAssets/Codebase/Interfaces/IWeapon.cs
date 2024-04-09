@@ -1,9 +1,8 @@
-﻿using UnityEngine;
-
-namespace InternalAssets.Codebase.Interfaces
+﻿namespace InternalAssets.Codebase.Interfaces
 {
     public interface IWeapon
     {
-        public void Fire(Vector3 targetPosition);
+        public void StartFire(ITargetable target);
+        public void StopFire();
     }
 }
