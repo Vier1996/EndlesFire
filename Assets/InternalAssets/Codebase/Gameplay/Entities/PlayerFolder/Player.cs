@@ -9,6 +9,9 @@ namespace InternalAssets.Codebase.Gameplay.Entities.PlayerFolder
         [SerializeField] private PlayerComponents _playerComponents;
 
         [Button]
-        public override Entity Bootstrapp() => base.Bootstrapp().BindComponents(_playerComponents);
+        public override Entity Bootstrapp()
+        {
+            return base.Bootstrapp().BindComponents(_playerComponents);
+        }
     }
 }

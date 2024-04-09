@@ -6,7 +6,7 @@ using UnityEngine;
 
 namespace Codebase.Library.SAD
 {
-    public abstract class Entity : MonoBehaviour, IInitializable<Entity>, IComponentReferenceInstance
+    public abstract class Entity : MonoBehaviour, IEntity, IInitializable<Entity>, IComponentReferenceInstance
     {
         public GameObject GameObject { get; private set; }
         public Transform Transform { get; private set; }
