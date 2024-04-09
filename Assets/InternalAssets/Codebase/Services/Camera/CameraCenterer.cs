@@ -2,6 +2,8 @@ using System;
 using Cinemachine;
 using Codebase.Library.Extension.Rx;
 using Codebase.Library.SAD;
+using InternalAssets.Codebase.Gameplay.Entities.PlayerFolder;
+using InternalAssets.Codebase.Interfaces;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
@@ -26,7 +28,9 @@ namespace InternalAssets.Codebase.Services.Camera
         private Vector3 _lastAnchorPosition;
         
         private IDisposable _initializeDisposable;
+        private ITargetable _currentTarget;
         private Entity _targetEntity;
+        private PlayerDetectionSystem _playerDetectionSystem;
         private CinemachineFramingTransposer _cinemachineTransposer;
         
         private bool _initialized;
@@ -35,6 +39,7 @@ namespace InternalAssets.Codebase.Services.Camera
         public void Initialize(Entity entity)
         {
             _targetEntity = entity;
+            _playerDetectionSystem = _targetEntity.GetAbstractComponent<PlayerDetectionSystem>();
             _cinemachineTransposer = virtualCamera.GetCinemachineComponent<CinemachineFramingTransposer>();
             
             SetDeadZoneValues(0, 0);
@@ -47,7 +52,7 @@ namespace InternalAssets.Codebase.Services.Camera
             _initializeDisposable?.Dispose();
             
             _initialized = false;
-            //_targetPlayer.DetectionComponent.OnTargetUpdated -= UpdateTarget;
+            _playerDetectionSystem.OnTargetDetected -= UpdateTarget;
         }
 
         private void Setup()
@@ -56,7 +61,7 @@ namespace InternalAssets.Codebase.Services.Camera
             _lastAnchorPosition = _lastPosition;
             targetAnchor.position = _lastPosition;
             
-            //_targetPlayer.DetectionComponent.OnTargetUpdated += UpdateTarget;
+            _playerDetectionSystem.OnTargetDetected += UpdateTarget;
             _smoothProgress = 0;
             
             SetDeadZoneValues(DeadZoneWidth, DeadZoneHeight);
@@ -64,20 +69,17 @@ namespace InternalAssets.Codebase.Services.Camera
             _initialized = true;
         }
         
-        /*private void UpdateTarget(ITargetable newTarget)
+        private void UpdateTarget(ITargetable newTarget)
         {
-            if (newTarget != _currentTarget)
-            {
-                _elapsedTime = 0f;
-            }
+            if (newTarget != _currentTarget) _elapsedTime = 0f;
             
             _currentTarget = newTarget;
             _lastAnchorPosition = targetAnchor.position;
-        }*/
+        }
 
         private void LateUpdate()
         {
-            if (_targetEntity != null)
+            if (_currentTarget != null)
             {
                 if (_smoothProgress < smoothTime)
                     _smoothProgress += Time.fixedDeltaTime;
@@ -100,8 +102,8 @@ namespace InternalAssets.Codebase.Services.Camera
         {
             _offsetProgress = GetOffsetValue();
 
-            //if (_targetEntity != null) 
-            //    _lastPosition = _currentTarget.GetPosition();
+            if (_currentTarget != null) 
+                _lastPosition = _currentTarget.GetTargetTransform().position;
 
             _center = Vector3.Lerp(_lastPosition, _targetEntity.Transform.position, _offsetProgress);
             _offsetProgress = Mathf.Clamp01(_elapsedTime / smoothTime);

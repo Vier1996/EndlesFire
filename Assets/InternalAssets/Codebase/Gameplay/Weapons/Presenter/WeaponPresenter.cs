@@ -4,6 +4,7 @@ using Codebase.Library.Extension.Dotween;
 using Codebase.Library.Extension.Rx;
 using Codebase.Library.SAD;
 using DG.Tweening;
+using InternalAssets.Codebase.Gameplay.Entities.PlayerFolder;
 using InternalAssets.Codebase.Gameplay.Enums;
 using InternalAssets.Codebase.Gameplay.Movement;
 using InternalAssets.Codebase.Gameplay.Weapons.Configs;
@@ -16,14 +17,17 @@ namespace InternalAssets.Codebase.Gameplay.Weapons.Presenter
 {
     public class WeaponPresenter : MonoBehaviour, IDerivedEntityComponent
     {
-        private IDisposable _switchDisposable;
+        public event Action<WeaponConfig> WeaponUpdated;
+        
+        public WeaponView CurrentView { get; private set; } = null;
+        
         private ITargetable _target;
         private PlayerMovementComponent _playerMovementComponent;
         private SpriteModelPresenter _spriteModelPresenter;
         private SortableItem _sortableItemOfOwner;
+        private PlayerDetectionSystem _playerDetectionSystem;
         private Transform _selfTransform;
-        private WeaponView _currentView;
-        
+
         private WeaponLookingType _lookingType = WeaponLookingType.none;
         private Vector3 _direction;
         
@@ -40,36 +44,40 @@ namespace InternalAssets.Codebase.Gameplay.Weapons.Presenter
             _playerMovementComponent = entity.GetAbstractComponent<PlayerMovementComponent>();
             _spriteModelPresenter = entity.GetAbstractComponent<SpriteModelPresenter>();
             _sortableItemOfOwner = entity.GetAbstractComponent<SortableItem>();
+            _playerDetectionSystem = entity.GetAbstractComponent<PlayerDetectionSystem>();
             
             SetJoystickListening();
+            
+            _playerDetectionSystem.OnTargetDetected += SetTargetListening;
         }
 
-        public void Dispose() { }
+        public void Dispose()
+        {
+            _playerDetectionSystem.OnTargetDetected -= SetTargetListening;
+        }
 
         [Button]
         public void PresentWeapon(WeaponType weaponType)
         {
-            if (_currentView != null)
+            if (CurrentView != null)
             {
-                _sortableItemOfOwner.RemoveRenderers(_currentView.GetWeaponRenderers());
-                _currentView.Dispose();
+                _sortableItemOfOwner.RemoveRenderers(CurrentView.GetWeaponRenderers());
+                CurrentView.Dispose();
             }
             
             WeaponConfigsContainer container = WeaponConfigsContainer.GetInstance();
             WeaponConfig config = container.GetConfig(weaponType);
 
-            _currentView = Instantiate(config.ViewPrefab, _selfTransform);
-            _currentView.Bootstrapp(config);
+            CurrentView = Instantiate(config.ViewPrefab, _selfTransform);
+            CurrentView.Bootstrapp(config);
 
-            _sortableItemOfOwner.AddRenderers(_currentView.GetWeaponRenderers());
+            _sortableItemOfOwner.AddRenderers(CurrentView.GetWeaponRenderers());
+            
+            WeaponUpdated?.Invoke(config);
+            
+            container.Release();
         }
-
-        public void SetTargetListening(ITargetable target)
-        {
-            _target = target;
-            _lookingType = WeaponLookingType.marked_target;
-        }
-
+        
         public void Break(DirectionType directionType)
         {
             switch (directionType)
@@ -84,6 +92,12 @@ namespace InternalAssets.Codebase.Gameplay.Weapons.Presenter
                     _selfTransform.localScale = _flippedDirection;
                     break;
             }
+        }
+
+        private void SetTargetListening(ITargetable target)
+        {
+            _target = target;
+            _lookingType = WeaponLookingType.marked_target;
         }
 
         private void LateUpdate()
@@ -103,11 +117,9 @@ namespace InternalAssets.Codebase.Gameplay.Weapons.Presenter
                     break;
                 
                 case WeaponLookingType.marked_target:
-
-                    _switchDisposable?.Dispose();
                     
                     if (_target == null || _target.GetTargetTransform() == null) 
-                        _switchDisposable = RX.Delay(0.5f, SetJoystickListening);
+                        SetJoystickListening();
 
                     if(_target != null && _target.GetTargetTransform() != null)
                         _direction = _target.GetTargetTransform().position - _selfTransform.position;

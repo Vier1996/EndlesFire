@@ -30,7 +30,7 @@ namespace InternalAssets.Codebase.Library.Vectors
             float y = vY2 - vY1;
             float z = vZ2 - vZ1;
 
-            return x * x + y * y + z * z;
+            return Mathf.Sqrt(x * x + y * y + z * z);
         }
     }
 }

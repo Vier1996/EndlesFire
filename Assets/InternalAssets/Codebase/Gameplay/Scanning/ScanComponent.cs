@@ -8,9 +8,9 @@ using Sirenix.OdinInspector;
 using Sirenix.Serialization;
 using UnityEngine;
 
-namespace InternalAssets.Codebase.Gameplay.Detection
+namespace InternalAssets.Codebase.Gameplay.Scanning
 {
-    public class DetectionComponent : SerializedMonoBehaviour, IInitializable<DetectionComponent>
+    public class ScanComponent : SerializedMonoBehaviour, IInitializable<ScanComponent>
     {
         public event Action<Entity> DetectedEnemyUpdated;
         
@@ -20,8 +20,11 @@ namespace InternalAssets.Codebase.Gameplay.Detection
         private EntityWorld _entityWorld;
         private Transform _selfTransform;
         private Entity _cachedEntity;
+
+        private float _scanningDistance = 0;
+        private bool _inScanningStatus = false;
         
-        public DetectionComponent Bootstrapp()
+        public ScanComponent Bootstrapp()
         {
             ServiceContainer.ForCurrentScene().Get(out _entityWorld);
 
@@ -32,19 +35,40 @@ namespace InternalAssets.Codebase.Gameplay.Detection
 
         public void Dispose() => _scanDisposable?.Dispose();
 
-        public void LaunchScanning()
+        public void UpdateScanningDistance(float scanningDistance)
         {
-            _scanDisposable?.Dispose();
-            _scanDisposable = RX.LoopedTimer(1f, 1f, Scan);
+            _scanningDistance = scanningDistance;
         }
 
-        public void StopScanning() => _scanDisposable?.Dispose();
+        public void LaunchScanning()
+        {
+            if(_inScanningStatus)
+                return;
+
+            _inScanningStatus = true;
+            
+            _scanDisposable?.Dispose();
+            _scanDisposable = RX.LoopedTimer(1f, 0.5f, Scan);
+        }
+
+        public void StopScanning()
+        {
+            if(_inScanningStatus == false)
+                return;
+
+            _inScanningStatus = false;
+            
+            _scanDisposable?.Dispose();
+        }
 
         private void Scan()
         {
-            Entity entity = _entityWorld.GetClosestEntity(_listeningEntities, _selfTransform.position , 2f);
+            if(_scanningDistance <= 0)
+                return;
+            
+            Entity entity = _entityWorld.GetClosestEntity(_listeningEntities, _selfTransform.position, _scanningDistance);
 
-            if (entity == null || _cachedEntity == entity)
+            if (_cachedEntity == entity)
                 return;
 
             DetectedEnemyUpdated?.Invoke(_cachedEntity = entity);

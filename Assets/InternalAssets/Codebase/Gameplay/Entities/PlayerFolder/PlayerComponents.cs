@@ -2,7 +2,6 @@
 using Codebase.Gameplay.Sorting;
 using Codebase.Library.SAD;
 using InternalAssets.Codebase.Gameplay.Behavior.Player;
-using InternalAssets.Codebase.Gameplay.Detection;
 using InternalAssets.Codebase.Gameplay.Dodge;
 using InternalAssets.Codebase.Gameplay.Movement;
 using InternalAssets.Codebase.Gameplay.Weapons.Presenter;
@@ -21,7 +20,7 @@ namespace InternalAssets.Codebase.Gameplay.Entities.PlayerFolder
         [BoxGroup("General"), SerializeField] private WeaponPresenter _weaponPresenter;
         [BoxGroup("General"), SerializeField] private SpriteModelPresenter _spriteModelPresenter;
         [BoxGroup("General"), SerializeField] private SortableItem _sortableItem;
-        [BoxGroup("General"), SerializeField] private DetectionComponent _detectionComponent;
+        [BoxGroup("General"), SerializeField] private PlayerDetectionSystem _playerDetectionSystem;
         
         [BoxGroup("Physic"), SerializeField] private Rigidbody2D _rigidbody2D;
         
@@ -36,7 +35,7 @@ namespace InternalAssets.Codebase.Gameplay.Entities.PlayerFolder
             Add(_weaponPresenter);
             Add(_playerAnimator);
             Add(_dodgeComponent);
-            Add(_detectionComponent);
+            Add(_playerDetectionSystem);
             
             return this;
         }
