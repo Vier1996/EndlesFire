@@ -5,6 +5,6 @@ namespace Codebase.Library.SAD
 {
     public interface IDerivedEntityComponent : IDisposable
     {
-        public virtual void Bootstrapp(Entity entity) { }
+        public void Bootstrapp(Entity entity) { }
     }
 }

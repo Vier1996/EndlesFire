@@ -2,16 +2,12 @@
 using Codebase.Library.SAD;
 using InternalAssets.Codebase.Gameplay.Entities.PlayerFolder;
 using InternalAssets.Codebase.Library.Behavior;
-using UnityEngine;
 
 namespace InternalAssets.Codebase.Gameplay.Behavior.Enemy.States
 {
-    public class EnemyPursuitBehavior : EnemyBehaviorState
+    public class EnemyDeathBehavior : EnemyBehaviorState
     {
-        [SerializeField] private float _minSpeed;
-        [SerializeField] private float _maxSpeed;
-        
-        public EnemyPursuitBehavior(EnemyPursuitBehavior other) => IsDefaultBehavior = other.IsDefaultBehavior;
+        public EnemyDeathBehavior(EnemyDeathBehavior other) => IsDefaultBehavior = other.IsDefaultBehavior;
 
         public override void Construct(EntityComponents components)
         {

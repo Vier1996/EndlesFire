@@ -1,0 +1,74 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddb5e52c6a5a40399f6f6b673fa2f6ea, type: 3}
+  m_Name: SimpleEnemyConfig
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Behavior
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[InternalAssets.Codebase.Gameplay.Behavior.Enemy.IEnemyBehavior,
+        Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 3
+    - Name: 
+      Entry: 7
+      Data: 1|InternalAssets.Codebase.Gameplay.Behavior.Enemy.States.EnemyInitialBehavior,
+        Assembly-CSharp
+    - Name: <IsDefaultBehavior>k__BackingField
+      Entry: 5
+      Data: true
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 2|InternalAssets.Codebase.Gameplay.Behavior.Enemy.States.EnemyPursuitBehavior,
+        Assembly-CSharp
+    - Name: <IsDefaultBehavior>k__BackingField
+      Entry: 5
+      Data: false
+    - Name: _minSpeed
+      Entry: 4
+      Data: 0
+    - Name: _maxSpeed
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 3|InternalAssets.Codebase.Gameplay.Behavior.Enemy.States.EnemyDeathBehavior,
+        Assembly-CSharp
+    - Name: <IsDefaultBehavior>k__BackingField
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  <SimpleAttackDamage>k__BackingField: 1
+  <SimpleDelay>k__BackingField: 2

@@ -18,7 +18,7 @@ namespace InternalAssets.Codebase.Gameplay.Entities.PlayerFolder
 
         public void ReceiveDamage(DamageArgs damageArgs)
         {
-            
+            UnityEngine.Debug.Log($"Получил пизды на {damageArgs.Damage} урона");
         }
     }
 }
