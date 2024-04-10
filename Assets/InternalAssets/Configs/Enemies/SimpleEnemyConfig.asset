@@ -27,7 +27,7 @@ MonoBehaviour:
         Assembly-CSharp]], mscorlib
     - Name: 
       Entry: 12
-      Data: 3
+      Data: 4
     - Name: 
       Entry: 7
       Data: 1|InternalAssets.Codebase.Gameplay.Behavior.Enemy.States.EnemyInitialBehavior,
@@ -47,10 +47,10 @@ MonoBehaviour:
       Data: false
     - Name: _minSpeed
       Entry: 4
-      Data: 0
+      Data: 1
     - Name: _maxSpeed
       Entry: 4
-      Data: 0
+      Data: 2
     - Name: 
       Entry: 8
       Data: 
@@ -65,10 +65,21 @@ MonoBehaviour:
       Entry: 8
       Data: 
     - Name: 
+      Entry: 7
+      Data: 4|InternalAssets.Codebase.Gameplay.Behavior.Enemy.States.EnemySpearedAttackBehavior,
+        Assembly-CSharp
+    - Name: <IsDefaultBehavior>k__BackingField
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
       Entry: 13
       Data: 
     - Name: 
       Entry: 8
       Data: 
+  <Type>k__BackingField: 1
   <SimpleAttackDamage>k__BackingField: 1
   <SimpleDelay>k__BackingField: 2

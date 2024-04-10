@@ -1,4 +1,5 @@
 using Codebase.Library.SAD;
+using InternalAssets.Codebase.Gameplay.Entities.EnemiesFolder;
 using InternalAssets.Codebase.Gameplay.Entities.PlayerFolder;
 using InternalAssets.Codebase.Library.Behavior;
 using UnityEngine;
@@ -9,7 +10,7 @@ namespace InternalAssets.Codebase.Gameplay.Behavior.Enemy
     {
         [field: SerializeField] public bool IsDefaultBehavior { get; set; }
         
-        protected PlayerComponents PlayerComponents;
+        protected EnemyComponents EntityComponents;
 
         public abstract void Construct(EntityComponents components);
 

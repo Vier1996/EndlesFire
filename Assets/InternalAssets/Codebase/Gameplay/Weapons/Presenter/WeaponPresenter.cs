@@ -1,10 +1,8 @@
 using System;
 using Codebase.Gameplay.Sorting;
 using Codebase.Library.Extension.Dotween;
-using Codebase.Library.Extension.Rx;
 using Codebase.Library.SAD;
 using DG.Tweening;
-using InternalAssets.Codebase.Gameplay.Entities.PlayerFolder;
 using InternalAssets.Codebase.Gameplay.Enums;
 using InternalAssets.Codebase.Gameplay.Movement;
 using InternalAssets.Codebase.Gameplay.Weapons.Configs;

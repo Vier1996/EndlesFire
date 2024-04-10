@@ -1,5 +1,6 @@
 ﻿using System;
 using Codebase.Library.SAD;
+using InternalAssets.Codebase.Gameplay.Entities.EnemiesFolder;
 using InternalAssets.Codebase.Gameplay.Entities.PlayerFolder;
 using InternalAssets.Codebase.Library.Behavior;
 
@@ -11,9 +12,9 @@ namespace InternalAssets.Codebase.Gameplay.Behavior.Enemy.States
 
         public override void Construct(EntityComponents components)
         {
-            PlayerComponents = components as PlayerComponents;
+            EntityComponents = components as EnemyComponents;
 
-            if (PlayerComponents == null)
+            if (EntityComponents == null)
                 throw new ArgumentException("Components are null or can not convert to [EnemyComponents]");
         }
         

@@ -46,6 +46,7 @@ namespace InternalAssets.Codebase.Services.Animation
             _enabled = false;
         }
 
+        [Button]
         public void SetAnimation(CommonAnimationType animationType)
         {
             if (_currentAnimationSetup != null && _currentAnimationSetup.AnimationType == animationType)
@@ -59,6 +60,7 @@ namespace InternalAssets.Codebase.Services.Animation
             _enabled = true;
         }
         
+        [Button]
         public void PlayAnimationOnce(CommonAnimationType animationType)
         {
             _currentAnimationSetup = _animationSetups.FirstOrDefault(stp => stp.AnimationType == animationType);
