@@ -44,7 +44,7 @@ namespace InternalAssets.Codebase.Gameplay.Entities.EnemiesFolder
             BehaviorMachine.Machine.SwitchBehavior<EnemySpearedAttackBehavior>();
         }
         
-        private void DisableSpearedLogic()
+        private void DisableSpearedLogic() 
         {
             
         }
