@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using Codebase.Library.SAD;
 using InternalAssets.Codebase.Gameplay.Weapons.Configs;
 using InternalAssets.Codebase.Interfaces;
 using Sirenix.OdinInspector;
@@ -14,14 +15,18 @@ namespace InternalAssets.Codebase.Gameplay.Weapons
 
         [field: SerializeField, ReadOnly] public bool InShootingStatus { get; private set; } = false;
         [field: SerializeField, ReadOnly] public bool InRechargingStatus { get; private set; } = false;
+
+        public WeaponConfig WeaponConfig { get; private set; }
         
-        protected WeaponConfig WeaponConfig;
+        protected Entity OwnerEntity;
         protected Transform SelfTransform;
         protected Vector3 DefaultWeaponLocalPosition;
 
-        public virtual void Bootstrapp(WeaponConfig weaponConfig)
+        public virtual void Bootstrapp(WeaponConfig weaponConfig, Entity ownerEntity)
         {
             WeaponConfig = weaponConfig;
+            OwnerEntity = ownerEntity;
+            
             SelfTransform = transform;
             DefaultWeaponLocalPosition = SelfTransform.localPosition;
         }

@@ -1,6 +1,7 @@
 using System;
 using Codebase.Library.Extension.Dotween;
 using Codebase.Library.Extension.Rx;
+using Codebase.Library.SAD;
 using DG.Tweening;
 using InternalAssets.Codebase.Gameplay.Bullets;
 using InternalAssets.Codebase.Gameplay.Weapons.Configs;
@@ -20,22 +21,27 @@ namespace InternalAssets.Codebase.Gameplay.Weapons
         private IDisposable _shootingQueueDisposable;
         private IDisposable _fireDispatchDisposable;
         private ITargetable _currentTarget;
+        private IDetectionSystem _detectionSystem;
         
         private bool _shootingInProcess;
         private bool _busyByShooting;
         private float _currentAimingTime;
         private float _currentRechargingTime;
 
-        public override void Bootstrapp(WeaponConfig weaponConfig)
+        public override void Bootstrapp(WeaponConfig weaponConfig, Entity ownerEntity)
         {
-            base.Bootstrapp(weaponConfig);
+            base.Bootstrapp(weaponConfig, ownerEntity);
 
+            _detectionSystem = ownerEntity.GetAbstractComponent<IDetectionSystem>();
+            
             _shootingInProcess = false;
             _busyByShooting = false;
             _currentAimingTime = weaponConfig.WeaponStats.BaseRecharging;
             _currentRechargingTime = 0f;
 
             _fireDispatchDisposable = Observable.EveryUpdate().Subscribe(_ => DispatchCalculations());
+           
+            _detectionSystem.OnTargetDetected += StartFire;
         }
         
         public override void Dispose()
@@ -46,6 +52,8 @@ namespace InternalAssets.Codebase.Gameplay.Weapons
             WeaponSpark.Dispose();
             
             StopFire();
+            
+            _detectionSystem.OnTargetDetected -= StartFire;
             
             Destroy(gameObject);
         }

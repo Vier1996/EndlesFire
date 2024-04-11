@@ -4688,7 +4688,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 356b9d0e2cad849c3b53c7e9e1680cb7, type: 2}
+  - {fileID: 2100000, guid: e653836c30661fe419b8992e230ca189, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4767,6 +4767,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6b0617cebdd488c8d97b8b31af5aeca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _bulletInteractionEffect: {fileID: 5201573596340624832, guid: 705c1fb94544c324abd77f177ce1fd7e, type: 3}
 --- !u!1 &768611274304090930
 GameObject:
   m_ObjectHideFlags: 0

@@ -15,14 +15,14 @@ MonoBehaviour:
   <WeaponType>k__BackingField: 1
   <ViewPrefab>k__BackingField: {fileID: 3717457324671071473, guid: 4050e73e61601c447b25143f2e91c443, type: 3}
   <WeaponStats>k__BackingField:
-    <BaseRange>k__BackingField: 5
+    <BaseRange>k__BackingField: 3
     <BaseRecharging>k__BackingField: 1
     <WaterConsumptionValue>k__BackingField: 1
-    <FireDisperse>k__BackingField: 1
+    <FireDisperse>k__BackingField: 90
     <AimingTime>k__BackingField: 0.25
     <IgnoreWallsRaycast>k__BackingField: 0
   <WeaponStoreStats>k__BackingField:
-    <BulletsByQueue>k__BackingField: 1
+    <BulletsByQueue>k__BackingField: 7
     <DelayBetweenBullets>k__BackingField: 0.05
     <QueueAsOneBullets>k__BackingField: 0
     <AnimateEveryShoot>k__BackingField: 0
@@ -30,12 +30,12 @@ MonoBehaviour:
     <Damage>k__BackingField: 3
     <CriticalChance>k__BackingField: 0
     <CriticalDamageMultiplier>k__BackingField: 0
-    <BulletMovementSpeed>k__BackingField: 25
+    <BulletMovementSpeed>k__BackingField: 7
     <PushMultiplier>k__BackingField: 1
     <HaveRadiusDamage>k__BackingField: 0
     <Radius>k__BackingField: 0
     <DestructByLifeTime>k__BackingField: 1
-    <LifeTime>k__BackingField: 3
+    <LifeTime>k__BackingField: 0.5
   <WeaponAnimationStats>k__BackingField:
     <AnimationOffset>k__BackingField: -0.05
     <AnimationDuration>k__BackingField: 0.3

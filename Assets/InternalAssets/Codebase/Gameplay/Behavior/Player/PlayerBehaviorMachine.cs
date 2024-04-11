@@ -22,10 +22,10 @@ namespace InternalAssets.Codebase.Gameplay.Behavior.Player
                 if (Activator.CreateInstance(targetBehaviorType, args: enemyBehavior) is not IBehavior behavior)
                     throw new ArgumentException("Разраб где-то обосрался...");
 
-                Machine
-                    .AppendBehavior(targetBehaviorType, behavior, entity.Components)
-                    .SwitchToDefaultBehavior();
+                Machine.AppendBehavior(targetBehaviorType, behavior, entity.Components);
             }
+            
+            Machine.SwitchToDefaultBehavior();
         }
 
         public void Dispose()
