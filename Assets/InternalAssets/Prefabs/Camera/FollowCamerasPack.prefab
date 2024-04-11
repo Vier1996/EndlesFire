@@ -93,6 +93,10 @@ PrefabInstance:
       propertyPath: m_Follow
       value: 
       objectReference: {fileID: 8573569845120716214}
+    - target: {fileID: 1630158175423388027, guid: 9dd66b6835ef0b5449b301d3faaa16de, type: 3}
+      propertyPath: m_LookAt
+      value: 
+      objectReference: {fileID: 8573569845120716214}
     - target: {fileID: 2650579103566562854, guid: 9dd66b6835ef0b5449b301d3faaa16de, type: 3}
       propertyPath: m_RootOrder
       value: 2

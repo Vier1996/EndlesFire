@@ -1,10 +1,11 @@
 ﻿using System;
 using Codebase.Library.Extension.Rx;
 using InternalAssets.Codebase.Gameplay.Damage;
-using InternalAssets.Codebase.Gameplay.Weapons;
+using InternalAssets.Codebase.Gameplay.Sorting;
 using InternalAssets.Codebase.Gameplay.Weapons.Configs;
 using InternalAssets.Codebase.Interfaces;
 using Lean.Pool;
+using Sirenix.OdinInspector;
 using UniRx;
 using UnityEngine;
 
@@ -12,6 +13,8 @@ namespace InternalAssets.Codebase.Gameplay.Bullets
 {
     public class BulletView : MonoBehaviour, IDisposable
     {
+        [BoxGroup("Effects"), SerializeField] private SortableParticle _bulletInteractionEffect;
+        
         private IDisposable _movementDisposable;
         private IDisposable _autoDespawnDisposable;
      
@@ -90,9 +93,21 @@ namespace InternalAssets.Codebase.Gameplay.Bullets
                         
                     receiver.ReceiveDamage(_args);
 
+                    CreateSplittingEffect();
                     Despawn();
                 }
             }
+        }
+        
+        protected void CreateSplittingEffect(Action onComplete = null)
+        {
+            SortableParticle sortableParticle = LeanPool.Spawn(_bulletInteractionEffect);
+            Transform effectTransform = sortableParticle.transform;
+            
+            effectTransform.position = _selfTransform.position;
+            sortableParticle.Play();
+            
+            onComplete?.Invoke();
         }
 
         private void Despawn()

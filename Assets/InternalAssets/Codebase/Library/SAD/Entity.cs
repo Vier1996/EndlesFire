@@ -2,21 +2,35 @@ using System;
 using ACS.Core.ServicesContainer;
 using Codebase.Library.Addressable;
 using InternalAssets.Codebase.Interfaces;
+using Sirenix.OdinInspector;
 using UnityEngine;
 
 namespace Codebase.Library.SAD
 {
     public abstract class Entity : MonoBehaviour, IEntity, IInitializable<Entity>, IComponentReferenceInstance
     {
+        [BoxGroup("Entity"), SerializeField] private bool _selfActivated = false;
+        
         public GameObject GameObject { get; private set; }
         public Transform Transform { get; private set; }
         public EntityComponents Components => _components;
         
         private EntityComponents _components = new DefaultEntityComponents();
         private EntityWorld _entityWorld;
-        
+        private bool _bootstrapped = false;
+
+        private void Start()
+        {
+            if (_selfActivated)
+                Bootstrapp();
+        }
+
         public virtual Entity Bootstrapp()
         {
+            if (_bootstrapped) return this;
+
+            _bootstrapped = true;
+            
             if(ServiceContainer.For(this).TryGetService(out _entityWorld))
                 _entityWorld.AddEntity(this);
             
@@ -26,8 +40,18 @@ namespace Codebase.Library.SAD
             return this;
         }
 
+        [Button("Kill entity")]
+        private void OnDestroy() => Dispose();
+
         public void Dispose()
         {
+            _entityWorld?.RemoveEntity(this);
+
+            foreach (var innerComponent in _components.GetAllComponents())
+            {
+                if(innerComponent.Value is IDerivedEntityComponent derivedEntityComponent) 
+                    derivedEntityComponent.Dispose();
+            }
         }
         
         public Entity BindComponents(EntityComponents components = null)
@@ -66,6 +90,6 @@ namespace Codebase.Library.SAD
             throw new ArgumentException($"Can not get component with Name:[{typeof(T).Name}]");
         }
 
-        public GameObject GetObject() => gameObject;
+        public GameObject GetObject() => GameObject;
     }
 }
