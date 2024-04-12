@@ -2,5 +2,5 @@
 
 namespace InternalAssets.Codebase.Interfaces
 {
-    public interface IInitializable<T> : IBootstrappable<T>, IDisposable { }
+    public interface IInitializable<out T> : IBootstrappable<T>, IDisposable { }
 }
