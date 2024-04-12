@@ -13,7 +13,7 @@ using UnityEngine;
 
 namespace InternalAssets.Codebase.Gameplay.Weapons.Presenter
 {
-    public class WeaponPresenter : MonoBehaviour, IDerivedEntityComponent
+    public class WeaponPresenter : MonoBehaviour, IWeaponPresenter, IDerivedEntityComponent
     {
         public event Action<WeaponConfig> WeaponUpdated;
         
@@ -51,10 +51,7 @@ namespace InternalAssets.Codebase.Gameplay.Weapons.Presenter
             _detectionSystem.OnTargetDetected += SetTargetListening;
         }
 
-        public void Dispose()
-        {
-            _detectionSystem.OnTargetDetected -= SetTargetListening;
-        }
+        public void Dispose() => _detectionSystem.OnTargetDetected -= SetTargetListening;
 
         [Button]
         public void PresentWeapon(WeaponType weaponType)

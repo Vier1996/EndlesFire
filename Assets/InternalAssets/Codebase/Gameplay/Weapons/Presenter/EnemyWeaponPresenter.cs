@@ -5,22 +5,24 @@ using Codebase.Library.SAD;
 using DG.Tweening;
 using InternalAssets.Codebase.Gameplay.Entities.EnemiesFolder;
 using InternalAssets.Codebase.Gameplay.Enums;
-using InternalAssets.Codebase.Gameplay.Movement;
 using InternalAssets.Codebase.Gameplay.Weapons.Configs;
-using InternalAssets.Codebase.Gameplay.Weapons.EnemyWeapons;
 using InternalAssets.Codebase.Interfaces;
 using InternalAssets.Codebase.Services._2dModels;
-using Sirenix.OdinInspector;
 using UnityEngine;
 
 namespace InternalAssets.Codebase.Gameplay.Weapons.Presenter
 {
-    public class EnemyWeaponPresenter : MonoBehaviour, IDerivedEntityComponent
+    public class EnemyWeaponPresenter : MonoBehaviour, IDerivedEntityComponent, IWeaponPresenter
     {
-        [field: SerializeField] public EnemyWeaponView CurrentView { get; private set; } = null;
+        public event Action<WeaponConfig> WeaponUpdated;
+
+        [field: SerializeField] public WeaponView CurrentView { get; private set; } = null;
         
         private Transform _selfTransform;
         private Enemy _enemy;
+        private SortableItem _sortableItemOfOwner;
+        private IDetectionSystem _detectionSystem;
+        private SpriteModelPresenter _spriteModelPresenter;
 
         private WeaponLookingType _lookingType = WeaponLookingType.none;
         private Vector3 _direction;
@@ -36,10 +38,38 @@ namespace InternalAssets.Codebase.Gameplay.Weapons.Presenter
             _selfTransform = transform;
             
             _lookingType = WeaponLookingType.marked_target;
+            
+            _sortableItemOfOwner = entity.GetAbstractComponent<SortableItem>();
+            _detectionSystem = entity.GetAbstractComponent<IDetectionSystem>();
+            _spriteModelPresenter = entity.GetAbstractComponent<SpriteModelPresenter>();
+            
+            //_detectionSystem.OnTargetDetected += SetTargetListening;
         }
 
         public void Dispose()
         {
+            //_detectionSystem.OnTargetDetected -= SetTargetListening;
+        }
+
+        public void PresentWeapon(WeaponType weaponType)
+        {
+            if (CurrentView != null)
+            {
+                _sortableItemOfOwner.RemoveRenderers(CurrentView.GetWeaponRenderers());
+                CurrentView.Dispose();
+            }
+            
+            WeaponConfigsContainer container = WeaponConfigsContainer.GetInstance();
+            WeaponConfig config = container.GetConfig(weaponType);
+
+            CurrentView = Instantiate(config.ViewPrefab, _selfTransform);
+            CurrentView.Bootstrapp(config, _enemy);
+
+            _sortableItemOfOwner.AddRenderers(CurrentView.GetWeaponRenderers());
+            
+            WeaponUpdated?.Invoke(config);
+            
+            container.Release();
         }
         
         public void Break(DirectionType directionType)

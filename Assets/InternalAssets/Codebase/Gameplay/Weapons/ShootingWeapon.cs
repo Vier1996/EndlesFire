@@ -36,7 +36,7 @@ namespace InternalAssets.Codebase.Gameplay.Weapons
             
             _shootingInProcess = false;
             _busyByShooting = false;
-            _currentAimingTime = weaponConfig.WeaponStats.BaseRecharging;
+            _currentAimingTime = weaponConfig.WeaponStats.AimingTime;
             _currentRechargingTime = 0f;
 
             _fireDispatchDisposable = Observable.EveryUpdate().Subscribe(_ => DispatchCalculations());
@@ -91,7 +91,7 @@ namespace InternalAssets.Codebase.Gameplay.Weapons
                     Vector3 dispersedDirection = WeaponDispersion.Disperse(direction, WeaponConfig.WeaponStats.FireDisperse);
 
                     if (WeaponConfig.WeaponStoreStats.AnimateEveryShoot)
-                        ShowWeaponAnimation();
+                        AnimateWeaponFire();
                     
                     SpawnBullet(dispersedDirection);
                 }, () =>
@@ -99,7 +99,7 @@ namespace InternalAssets.Codebase.Gameplay.Weapons
                     _busyByShooting = false;
                 });
             
-            ShowWeaponAnimation();
+            AnimateWeaponFire();
             
             return true;
         }
@@ -131,7 +131,7 @@ namespace InternalAssets.Codebase.Gameplay.Weapons
         }
         
         [Button]
-        private void ShowWeaponAnimation()
+        protected override void AnimateWeaponFire()
         {
             float backTime = WeaponConfig.WeaponAnimationStats.AnimationDuration * WeaponConfig.WeaponAnimationStats.AnimationBalance;
             float forwardTime = WeaponConfig.WeaponAnimationStats.AnimationDuration - backTime;

@@ -7,5 +7,7 @@ namespace InternalAssets.Codebase.Gameplay.Weapons.EnemyWeapons
     {
         public virtual void StartFire(ITargetable target) { }
         public virtual void StopFire() { }
+
+        public abstract void AnimateWeaponFire();
     }
 }

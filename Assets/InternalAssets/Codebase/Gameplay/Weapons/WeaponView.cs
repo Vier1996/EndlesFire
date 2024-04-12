@@ -8,7 +8,7 @@ using UnityEngine;
 
 namespace InternalAssets.Codebase.Gameplay.Weapons
 {
-    public class WeaponView : MonoBehaviour, IWeapon, IDisposable
+    public abstract class WeaponView : MonoBehaviour, IWeapon, IDisposable
     {
         [SerializeField] private List<Renderer> _renderers = new();
         [SerializeField] protected WeaponSpark WeaponSpark;
@@ -35,7 +35,8 @@ namespace InternalAssets.Codebase.Gameplay.Weapons
         
         public virtual void StartFire(ITargetable target) { }
         public virtual void StopFire() { }
-
         public List<Renderer> GetWeaponRenderers() => _renderers;
+
+        protected abstract void AnimateWeaponFire();
     }
 }
