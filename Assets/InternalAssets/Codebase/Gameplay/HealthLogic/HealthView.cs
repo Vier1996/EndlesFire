@@ -1,97 +1,65 @@
-﻿using System;
+﻿using System.Collections.Generic;
 using Codebase.Library.Extension.Dotween;
-using Codebase.Library.Extension.Rx;
-using DG.Tweening;
-using Sirenix.OdinInspector;
+using Codebase.Library.Extension.MonoBehavior;
 using UniRx;
 using UnityEngine;
-using UnityEngine.UI;
 
 namespace InternalAssets.Codebase.Gameplay.HealthLogic
 {
     public class HealthView : MonoBehaviour
     {
-        [BoxGroup("CanvasGroup"), SerializeField] private CanvasGroup _selfGroup;
-        
-        [BoxGroup("Hit"), SerializeField] private Material _hitMaterial;
-        [BoxGroup("Hit"), SerializeField] private float _hitTime = 0.075f;
-        
-        [BoxGroup("Health"), SerializeField] private SpriteRenderer _healthIcon;
-        [BoxGroup("Health"), SerializeField] private Transform _healthClosingIconTransform;
-        [BoxGroup("Health"), SerializeField] private float _defaultPositionX;
-        [BoxGroup("Health"), SerializeField] private float _healthClosingClamp;
-        
-        private Color _baseHealthColor;
-        private bool _inRemovingStatus = false;
-        
-        private IDisposable _changeHealthMaterialDisposable;
+        [SerializeField] private List<HealthSlider> _sliders = new();
 
-        public void Initialize(float healthRatio)
+        private Transform _selfTransform;
+        private bool _isDisplayed = true;
+        
+        public HealthView Initialize(ReactiveProperty<float> reactiveHealthRatio)
         {
-            _inRemovingStatus = false;
-            _baseHealthColor = _healthIcon.color;
-
-            InitializeViews(healthRatio);
-        }
-        
-        private void OnDisable()
-        {
-            _changeHealthMaterialDisposable?.Dispose();
-        }
-
-        public void ChangeColor(Color color) => _baseHealthColor = _healthIcon.color = color;
-
-        private void InitializeViews(float healthRatio)
-        {
-            float healthPercent = 1f - healthRatio;
-
-            //_healthIcon.fillAmount = healthPercent;
-            _healthClosingIconTransform.DOLocalMoveX(_defaultPositionX + _healthClosingClamp * healthPercent, 0);
-        }
-
-        public void ChangeHealthProgress(float ratio)
-        {
-            if(_inRemovingStatus) 
-                return;
+            _selfTransform ??= transform;
             
-            float percent = 1f - ratio;
+            _sliders.ForEach(sl => sl.UpdateRatio(reactiveHealthRatio.Value));
             
-            _healthIcon.KillTween();
-            _healthClosingIconTransform.KillTween();
-            
-            //_healthIcon.DOFillAmount(percent, _hitTime);
-            _healthClosingIconTransform.DOLocalMoveX(_defaultPositionX + _healthClosingClamp * percent, _hitTime);
+            reactiveHealthRatio.Subscribe(OnRatioChanged);
+
+            return this;
         }
 
-        public void PlayHealthHitAnimation()
+        public HealthView SetActiveStatus(bool status)
         {
-            _healthIcon.color = Color.white;
-            _healthIcon.material = _hitMaterial;
+            gameObject.SetActive(status);
 
-            _changeHealthMaterialDisposable?.Dispose();
-            _changeHealthMaterialDisposable = RX.Delay(_hitTime, ReturnMaterial);
+            return this;
+        }
+
+        public HealthView Show()
+        {
+            if(_isDisplayed) return this;
+            
+            _isDisplayed = true;
+            
+            _selfTransform.KillTween();
+            _selfTransform.DisplayBubbled(1.2f, 0.5f, defaultScale: 1f);
+            
+            return this;
+        }
+
+        public HealthView Hide()
+        {
+            if(_isDisplayed == false) return this;
+            
+            _isDisplayed = false;
+            
+            _selfTransform.KillTween();
+            _selfTransform.DisplayBubbled(1.1f, 0.5f, defaultScale: 0f);
+            
+            return this;
         }
         
-        public void Display() => _selfGroup.alpha = 1;
-        
-        public void Hide() => _selfGroup.alpha = 0;
-
-        public void Remove()
-        {
-            _inRemovingStatus = true;
-            
-            _changeHealthMaterialDisposable?.Dispose();
-
-            _healthIcon.KillTween();
-            _healthClosingIconTransform.KillTween();
-
-            _healthIcon.color = _baseHealthColor;
-        }
-
-        private void ReturnMaterial()
-        {
-            _healthIcon.color = _baseHealthColor;
-            _healthIcon.material = default;
-        }
+        private void OnRatioChanged(float ratio) => 
+            _sliders
+                .ForEach(sl => 
+                    sl
+                        .EnableHitAnimation()
+                        .UpdateRatio(ratio));
     }
 }

@@ -5,6 +5,7 @@ using Codebase.Library.SAD;
 using DG.Tweening;
 using InternalAssets.Codebase.Gameplay.Damage;
 using InternalAssets.Codebase.Gameplay.Entities.PlayerFolder;
+using InternalAssets.Codebase.Gameplay.Enums;
 using InternalAssets.Codebase.Gameplay.Weapons.Configs;
 using InternalAssets.Codebase.Interfaces;
 using Sirenix.OdinInspector;
@@ -94,7 +95,8 @@ namespace InternalAssets.Codebase.Gameplay.Weapons.EnemyWeapons
             _args = new DamageArgs()
             {
                 Damage = WeaponConfig.WeaponAmmoStats.Damage,
-                IsCritical = false
+                IsCritical = false,
+                Type = DamageType.damage
             };
         }
         

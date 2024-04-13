@@ -2,8 +2,10 @@
 using ACS.Core.ServicesContainer;
 using Codebase.Library.SAD;
 using InternalAssets.Codebase.Gameplay.Configs.Enemy;
+using InternalAssets.Codebase.Gameplay.Damage;
 using InternalAssets.Codebase.Gameplay.Entities.PlayerFolder;
 using InternalAssets.Codebase.Gameplay.Enums;
+using InternalAssets.Codebase.Gameplay.HealthLogic;
 using InternalAssets.Codebase.Gameplay.Weapons.Presenter;
 using InternalAssets.Codebase.Interfaces;
 using Sirenix.OdinInspector;
@@ -32,15 +34,19 @@ namespace InternalAssets.Codebase.Gameplay.Entities.EnemiesFolder
             ServiceContainer.ForCurrentScene().Get(out Player target);
             
             EnemyWeaponPresenter weaponPresenter = (EnemyWeaponPresenter)GetAbstractComponent<IWeaponPresenter>();
+            IDetectionSystem detectionSystem = GetAbstractComponent<IDetectionSystem>();
+            HealthComponent healthComponent = GetAbstractComponent<HealthComponent>();
 
             weaponPresenter.Enable();
             weaponPresenter.SetPresentersTarget(target);
             
-            GetAbstractComponent<IDetectionSystem>()
+            detectionSystem
                 .Enable()
                 .SetDetectionRadius(1f);
 
-            StartPursuit(target);
+            healthComponent.Initialize(20);
+
+            //StartPursuit(target);
             
             return this;
         }
@@ -51,6 +57,24 @@ namespace InternalAssets.Codebase.Gameplay.Entities.EnemiesFolder
             GetAbstractComponent<IWeaponPresenter>().Disable();
             GetAbstractComponent<EnemyDetectionSystem>().Disable();
         }
+
+#if UNITY_EDITOR
+        [Button]
+        private void DebugHit(int damage)
+        {
+            if (TryGetAbstractComponent(out HealthComponent healthComponent) == false) return;
+            
+            DamageArgs args = new DamageArgs()
+            {
+                Damage = damage,
+                IsCritical = false,
+                Type = DamageType.damage
+            };
+            
+            healthComponent.Operate(args);
+            
+        }
+#endif
     }
     
     [Serializable]

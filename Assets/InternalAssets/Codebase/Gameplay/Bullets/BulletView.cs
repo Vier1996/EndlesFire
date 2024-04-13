@@ -2,6 +2,7 @@
 using Codebase.Library.Extension.Rx;
 using Codebase.Library.SAD;
 using InternalAssets.Codebase.Gameplay.Damage;
+using InternalAssets.Codebase.Gameplay.Enums;
 using InternalAssets.Codebase.Gameplay.Sorting;
 using InternalAssets.Codebase.Gameplay.Weapons.Configs;
 using InternalAssets.Codebase.Interfaces;
@@ -58,7 +59,8 @@ namespace InternalAssets.Codebase.Gameplay.Bullets
             _args = new DamageArgs()
             {
                 Damage = _ammoStat.Damage,
-                IsCritical = false
+                IsCritical = false,
+                Type = DamageType.damage
             };
         }
 

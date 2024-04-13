@@ -1,67 +1,87 @@
 ﻿using System;
+using Codebase.Library.SAD;
+using InternalAssets.Codebase.Gameplay.Damage;
+using InternalAssets.Codebase.Gameplay.Enums;
+using InternalAssets.Codebase.Interfaces;
 using UnityEngine;
 
 namespace InternalAssets.Codebase.Gameplay.HealthLogic
 {
-    public class HealthComponent : MonoBehaviour
+    public class HealthComponent : MonoBehaviour, IDerivedEntityComponent, IRecycledClass<HealthComponent>
     {
         public event Action HealthEmpty;
-        public event Action<float> HealthChanged;
+        public event Action HealthChanged;
 
         [SerializeField] private HealthView _currentView;
+        [SerializeField] private bool _showFromStart = true;
 
-        public Health Health { get; private set; }
+        private Health _health;
+        private bool _isInitialized = false;
 
-        public void SetupHealth(float health)
+        public void Bootstrapp(Entity playerEntity)
         {
-            InstallHealth(health, 1);
-
-            _currentView.Initialize(Health.HealthRatio);
-            _currentView.Display();
-
-            Health.HealthEmpty -= OnHealthEmpty;
-            Health.HealthEmpty += OnHealthEmpty;
+            _health = new Health();
         }
 
-        private void InstallHealth(float health, float actualPercent) => Health = new Health(health, actualPercent);
-
-        public void SetHealthBarActive(bool value) => _currentView.gameObject.SetActive(value);
-        
-        public void Operate(float value)
+        public void Dispose()
         {
-            value = -(long)(value * 1f);
+            
+        }
+        
+        public HealthComponent Initialize(float health)
+        {
+            _health.Initialize(health);
+            
+            _currentView.Initialize(_health.ReactiveHealthRatio);
+            
+            if(_showFromStart) _currentView.Show();
+            else _currentView.Hide();
 
-            Health.ApplyHealth(value);
+            return this;
+        }
+        
+        public HealthComponent Enable()
+        {
+            if (_isInitialized) return this;
 
-            if (Health.CurrentHealth <= 0)
+            _isInitialized = true;
+            
+            _health.HealthEmpty += HealthEmpty;
+            _health.HealthChanged += HealthChanged;
+            
+            return this;
+        }
+
+        public HealthComponent Disable()
+        {
+            if (_isInitialized == false) return this;
+
+            _isInitialized = false;
+            
+            _health.HealthEmpty -= HealthEmpty;
+            _health.HealthChanged -= HealthChanged;
+
+            return this;
+        }
+        
+        public void Operate(DamageArgs damage)
+        {
+            float operateValue = damage.Damage * (damage.Type == DamageType.heal ? 1f : -1f);
+
+            _health.ApplyHealth(operateValue);
+
+            if (_health.CurrentHealth <= 0)
             {
-                SetHealthBarActive(false);
+                _currentView
+                    .SetActiveStatus(false)
+                    .Hide();
+                
                 return;
             }
-
-            SetHealthBarActive(true);
-            _currentView.ChangeHealthProgress(Health.HealthRatio);
-            _currentView.Display();
-
-            _currentView.PlayHealthHitAnimation();
-
-            HealthChanged?.Invoke(value);
-        }
-        
-        
-        private void OnHealthEmpty()
-        {
-            Health.HealthEmpty -= OnHealthEmpty;
-
-            HealthEmpty?.Invoke();
-        }
-
-        private void OnDisable()
-        {
-            if (_currentView == null)
-                return;
-
-            _currentView.Remove();
+            
+            _currentView.SetActiveStatus(true).Show();
+            
+            HealthChanged?.Invoke();
         }
     }
 }

@@ -4,6 +4,7 @@ using Codebase.Library.SAD;
 using InternalAssets.Codebase.Gameplay.Configs.Enemy;
 using InternalAssets.Codebase.Gameplay.Damage;
 using InternalAssets.Codebase.Gameplay.Enums;
+using InternalAssets.Codebase.Gameplay.HealthLogic;
 using InternalAssets.Codebase.Gameplay.ModelsView;
 using InternalAssets.Codebase.Interfaces;
 using Sirenix.OdinInspector;
@@ -36,11 +37,13 @@ namespace InternalAssets.Codebase.Gameplay.Entities.EnemiesFolder
     public class EnemyComponents : EntityComponents
     {
         [BoxGroup("Enemy components"), SerializeField] private ModelViewProvider _modelViewProvider;
+        [BoxGroup("Enemy components"), SerializeField] private HealthComponent _healthComponent;
         [BoxGroup("Enemy components"), SerializeField] private SortableItem _sortableItem;
 
         public override EntityComponents Declare(Entity abstractEntity)
         {
             Add(typeof(Entity), abstractEntity);
+            Add(_healthComponent);
             Add(_modelViewProvider);
             Add(_sortableItem);
             
