@@ -5,24 +5,25 @@ using Codebase.Library.SAD;
 using DG.Tweening;
 using InternalAssets.Codebase.Gameplay.Entities.EnemiesFolder;
 using InternalAssets.Codebase.Gameplay.Enums;
+using InternalAssets.Codebase.Gameplay.ModelsView;
 using InternalAssets.Codebase.Gameplay.Weapons.Configs;
 using InternalAssets.Codebase.Interfaces;
-using InternalAssets.Codebase.Services._2dModels;
+using Sirenix.OdinInspector;
+using UniRx;
 using UnityEngine;
 
 namespace InternalAssets.Codebase.Gameplay.Weapons.Presenter
 {
-    public class EnemyWeaponPresenter : MonoBehaviour, IDerivedEntityComponent, IWeaponPresenter
+    public class EnemyWeaponPresenter : AbstractWeaponPresenter, IDerivedEntityComponent, IWeaponPresenter
     {
-        public event Action<WeaponConfig> WeaponUpdated;
-
         [field: SerializeField] public WeaponView CurrentView { get; private set; } = null;
-        
+
+        private IDisposable _lateUpdateDisposable;
         private Transform _selfTransform;
         private Enemy _enemy;
         private SortableItem _sortableItemOfOwner;
-        private IDetectionSystem _detectionSystem;
-        private SpriteModelPresenter _spriteModelPresenter;
+        private ModelViewProvider _modelViewProvider;
+        private ITargetable _currentTarget;
 
         private WeaponLookingType _lookingType = WeaponLookingType.none;
         private Vector3 _direction;
@@ -31,6 +32,7 @@ namespace InternalAssets.Codebase.Gameplay.Weapons.Presenter
         private readonly Vector3 _flippedDirection = new Vector3(1f, -1f, 1f);
         
         private float _lastAngle = 0;
+        private bool _isEnabled = false;
         
         public void Bootstrapp(Entity entity)
         {
@@ -40,18 +42,45 @@ namespace InternalAssets.Codebase.Gameplay.Weapons.Presenter
             _lookingType = WeaponLookingType.marked_target;
             
             _sortableItemOfOwner = entity.GetAbstractComponent<SortableItem>();
-            _detectionSystem = entity.GetAbstractComponent<IDetectionSystem>();
-            _spriteModelPresenter = entity.GetAbstractComponent<SpriteModelPresenter>();
-            
-            //_detectionSystem.OnTargetDetected += SetTargetListening;
+            _modelViewProvider = entity.GetAbstractComponent<ModelViewProvider>();
         }
 
-        public void Dispose()
+        public override void Dispose()
         {
-            //_detectionSystem.OnTargetDetected -= SetTargetListening;
+            _lateUpdateDisposable?.Dispose();
+            
+            _isEnabled = false;
+
+            _selfTransform.KillTween();
         }
 
-        public void PresentWeapon(WeaponType weaponType)
+        public override IWeaponPresenter Enable()
+        {
+            if(_isEnabled) return this;
+
+            _isEnabled = true;
+            
+            _lateUpdateDisposable?.Dispose();
+            _lateUpdateDisposable = Observable.EveryLateUpdate().Subscribe(_ => OnLateUpdate());
+            
+            return this;
+        }
+
+        public override IWeaponPresenter Disable()
+        {
+            if(_isEnabled == false) return this;
+
+            _isEnabled = false;
+            
+            _lateUpdateDisposable?.Dispose();
+            
+            return this;
+        }
+
+        public void SetPresentersTarget(ITargetable targetable) => _currentTarget = targetable;
+
+        [Button]
+        public override void PresentWeapon(WeaponType weaponType)
         {
             if (CurrentView != null)
             {
@@ -67,7 +96,7 @@ namespace InternalAssets.Codebase.Gameplay.Weapons.Presenter
 
             _sortableItemOfOwner.AddRenderers(CurrentView.GetWeaponRenderers());
             
-            WeaponUpdated?.Invoke(config);
+            DispatchWeaponUpdatedEvent(config);
             
             container.Release();
         }
@@ -87,22 +116,21 @@ namespace InternalAssets.Codebase.Gameplay.Weapons.Presenter
                     break;
             }
         }
-
-        private void LateUpdate()
+        
+        private void OnLateUpdate()
         {
             if(_lookingType == WeaponLookingType.none && _selfTransform == null) return;
 
-            ITargetable target = _enemy.CurrentTarget;
             float angle = 0; 
             
             switch (_lookingType)
             {
                 case WeaponLookingType.marked_target:
                     
-                    if (target == null || target.GetTargetTransform() == null) 
+                    if (_currentTarget == null || _currentTarget.GetTargetTransform() == null) 
                         return;
 
-                    _direction = target.GetTargetTransform().position - _selfTransform.position;
+                    _direction = _currentTarget.GetTargetTransform().position - _selfTransform.position;
                     
                     break;
             }
@@ -118,12 +146,12 @@ namespace InternalAssets.Codebase.Gameplay.Weapons.Presenter
                 if (angle > 90 || angle < -90)
                 {
                     _selfTransform.localScale = _flippedDirection;
-                    //_spriteModelPresenter.SetLookingToLeft();
+                    _modelViewProvider.ModelView.SpriteModelPresenter.SetLookingToLeft();
                 }
                 else
                 {
                     _selfTransform.localScale = _defaultDirection;
-                    //_spriteModelPresenter.SetLookingToRight();
+                    _modelViewProvider.ModelView.SpriteModelPresenter.SetLookingToRight();
                 }
             }
 
@@ -132,7 +160,5 @@ namespace InternalAssets.Codebase.Gameplay.Weapons.Presenter
         }
 
         private float GetAngleByDirection() => Mathf.Atan2(_direction.y, _direction.x) * Mathf.Rad2Deg;
-
-        private void OnDestroy() => _selfTransform.KillTween();
     }
 }

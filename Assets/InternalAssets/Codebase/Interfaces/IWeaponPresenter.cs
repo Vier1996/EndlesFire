@@ -4,7 +4,7 @@ using InternalAssets.Codebase.Gameplay.Weapons.Configs;
 
 namespace InternalAssets.Codebase.Interfaces
 {
-    public interface IWeaponPresenter
+    public interface IWeaponPresenter : IRecycledClass<IWeaponPresenter>
     {
         public event Action<WeaponConfig> WeaponUpdated;
 

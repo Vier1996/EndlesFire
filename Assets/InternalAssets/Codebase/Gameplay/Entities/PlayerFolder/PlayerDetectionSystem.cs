@@ -16,34 +16,58 @@ namespace InternalAssets.Codebase.Gameplay.Entities.PlayerFolder
         [field: SerializeField] public ScanComponent ScanComponent { get; private set; } = null;
         [field: SerializeField] public ScanCircleView CircleView { get; private set; } = null;
 
-        private WeaponPresenter _weaponPresenter;
+        private IWeaponPresenter _weaponPresenter;
+        private bool _isEnabled = false;
         
         public virtual void Bootstrapp(Entity entity)
         {
             ScanComponent.Bootstrapp();
             CircleView.Bootstrapp();
 
-            _weaponPresenter = entity.GetAbstractComponent<WeaponPresenter>();
-
-            EnableDetection();
-            OnWeaponUpdated(_weaponPresenter.CurrentView?.WeaponConfig);
-            
-            _weaponPresenter.WeaponUpdated += OnWeaponUpdated;
+            _weaponPresenter = entity.GetAbstractComponent<IWeaponPresenter>();
         }
 
         public void Dispose()
         {
-            _weaponPresenter.WeaponUpdated -= OnWeaponUpdated;
-
-            DisableDetection();
+            Disable();
             
             ScanComponent.Dispose();
             CircleView.Dispose();
         }
+        
+        public IDetectionSystem Enable()
+        {
+            if (_isEnabled) return this;
 
-        private void EnableDetection() => ScanComponent.DetectedEnemyUpdated += OnEntityUpdated;
+            _isEnabled = true;
+            
+            _weaponPresenter.WeaponUpdated += OnWeaponUpdated;
+            ScanComponent.DetectedEnemyUpdated += OnEntityUpdated;
+            
+            return this;
+        }
 
-        private void DisableDetection() => ScanComponent.DetectedEnemyUpdated -= OnEntityUpdated;
+        public IDetectionSystem Disable()
+        {
+            if (_isEnabled == false) return this;
+
+            _isEnabled = false;
+            
+            _weaponPresenter.WeaponUpdated -= OnWeaponUpdated;
+            ScanComponent.DetectedEnemyUpdated -= OnEntityUpdated;
+            
+            return this;
+        }
+        
+        public ITargetable GetCurrentTarget() => ScanComponent.CachedEntity as ITargetable;
+        
+        public void SetDetectionRadius(float radius)
+        {
+            CircleView.Show(radius);
+            
+            ScanComponent.UpdateScanningDistance(radius);
+            ScanComponent.LaunchScanning();
+        }
 
         private void OnEntityUpdated(Entity entity) => OnTargetDetected?.Invoke(entity as Enemy);
 
@@ -55,12 +79,7 @@ namespace InternalAssets.Codebase.Gameplay.Entities.PlayerFolder
                 return;
             }
             
-            float newRadius = weaponConfig.WeaponStats.BaseRange;
-            
-            CircleView.Show(newRadius);
-            
-            ScanComponent.UpdateScanningDistance(newRadius);
-            ScanComponent.LaunchScanning();
+            SetDetectionRadius(weaponConfig.WeaponStats.BaseRange);
         }
     }
 }

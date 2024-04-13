@@ -22,5 +22,6 @@ MonoBehaviour:
     PrefabModifications: []
     SerializationNodes: []
   _weaponConfigs:
+  - {fileID: 11400000, guid: c7b80fe1c7ff52c4ebf82db7d92e7286, type: 2}
   - {fileID: 11400000, guid: e78dbc7a99b2e9943b24e37818adeaa1, type: 2}
   - {fileID: 11400000, guid: 342d9ab071cc1fb4a95155dbe4e3ed07, type: 2}

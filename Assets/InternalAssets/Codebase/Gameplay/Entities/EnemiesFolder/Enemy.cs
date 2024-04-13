@@ -1,12 +1,11 @@
 ﻿using System;
+using Codebase.Gameplay.Sorting;
 using Codebase.Library.SAD;
-using Cysharp.Threading.Tasks;
-using InternalAssets.Codebase.Gameplay.Behavior.Enemy;
 using InternalAssets.Codebase.Gameplay.Configs.Enemy;
 using InternalAssets.Codebase.Gameplay.Damage;
 using InternalAssets.Codebase.Gameplay.Enums;
+using InternalAssets.Codebase.Gameplay.ModelsView;
 using InternalAssets.Codebase.Interfaces;
-using InternalAssets.Codebase.Services.Animation;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
@@ -15,24 +14,18 @@ namespace InternalAssets.Codebase.Gameplay.Entities.EnemiesFolder
     public abstract class Enemy : Entity, IEnemy, ITargetable, IDamageReceiver
     {
         public EnemyConfig EnemyConfig { get; protected set; }
-        public ITargetable CurrentTarget { get; protected set; }
         
-        public virtual async UniTask<Enemy> Initialize(EnemyType enemyType)
+        public virtual Enemy Initialize(EnemyType enemyType)
         {
-            EnemyConfigsContainer configsContainer = await EnemyConfigsContainer.GetInstanceAsync();
+            EnemyConfigsContainer configsContainer = EnemyConfigsContainer.GetInstance();
 
             EnemyConfig = configsContainer.Get(enemyType);
             
             configsContainer.Release();
             
-            if(TryGetAbstractComponent(out EnemyBehaviorMachine machine))
-                machine.Initialize(EnemyConfig);
-            
             return this;
         }
 
-        [Button]
-        public virtual void SetTarget(ITargetable targetable) => CurrentTarget = targetable;
         public virtual Transform GetTargetTransform() => transform;
         public virtual void EnableMarker() { }
         public virtual void DisableMarker() { }
@@ -42,13 +35,14 @@ namespace InternalAssets.Codebase.Gameplay.Entities.EnemiesFolder
     [Serializable]
     public class EnemyComponents : EntityComponents
     {
-        [BoxGroup("Enemy components"), SerializeField] private SpriteSheetAnimator _spriteSheetAnimator;
+        [BoxGroup("Enemy components"), SerializeField] private ModelViewProvider _modelViewProvider;
+        [BoxGroup("Enemy components"), SerializeField] private SortableItem _sortableItem;
 
         public override EntityComponents Declare(Entity abstractEntity)
         {
             Add(typeof(Entity), abstractEntity);
-            Add(typeof(EnemyBehaviorMachine), new EnemyBehaviorMachine());
-            Add(_spriteSheetAnimator);
+            Add(_modelViewProvider);
+            Add(_sortableItem);
             
             return this;
         }

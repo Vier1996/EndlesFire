@@ -6,5 +6,7 @@
            
         prototype_1 = 1,
         prototype_2 = 2,
+        
+        melee_spear = 200,
     }
 }

@@ -6,14 +6,46 @@ using UnityEngine;
 
 namespace InternalAssets.Codebase.Gameplay.Entities.PlayerFolder
 {
-    public class Player : Entity, IDamageReceiver, ITargetable
+    public class Player : Entity, IDamageReceiver, ITargetable, IRecycledClass<Player>
     {
         [SerializeField] private PlayerComponents _playerComponents;
 
+        private bool _isEnabled = false;
+        
         [Button]
-        public override Entity Bootstrapp()
+        public override Entity Bootstrapp() => 
+            base.Bootstrapp().BindComponents(_playerComponents);
+        
+        [Button]
+        public Player Initialize()
         {
-            return base.Bootstrapp().BindComponents(_playerComponents);
+            Enable();
+            
+            return this;
+        }
+
+        public Player Enable()
+        {
+            if (_isEnabled) return this;
+
+            _isEnabled = true;
+
+            GetAbstractComponent<IDetectionSystem>().Enable();
+            GetAbstractComponent<IWeaponPresenter>().Enable();
+
+            return this;
+        }
+
+        public Player Disable()
+        {
+            if (_isEnabled == false) return this;
+
+            _isEnabled = false;
+
+            GetAbstractComponent<IDetectionSystem>().Disable();
+            GetAbstractComponent<IWeaponPresenter>().Disable();
+            
+            return this;
         }
 
         public void ReceiveDamage(DamageArgs damageArgs)

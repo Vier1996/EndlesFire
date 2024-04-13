@@ -11,10 +11,10 @@ namespace InternalAssets.Codebase.Gameplay.Weapons
     public abstract class WeaponView : MonoBehaviour, IWeapon, IDisposable
     {
         [SerializeField] private List<Renderer> _renderers = new();
-        [SerializeField] protected WeaponSpark WeaponSpark;
 
-        [field: SerializeField, ReadOnly] public bool InShootingStatus { get; private set; } = false;
-        [field: SerializeField, ReadOnly] public bool InRechargingStatus { get; private set; } = false;
+        [field: SerializeField, ReadOnly] public bool InShootingStatus { get; protected set; } = false;
+        [field: SerializeField, ReadOnly] public bool InShootingProcess { get; protected set; } = false;
+        [field: SerializeField, ReadOnly] public bool InRechargingStatus { get; protected set; } = false;
 
         public WeaponConfig WeaponConfig { get; private set; }
         

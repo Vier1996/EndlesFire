@@ -1,5 +1,6 @@
 ﻿using System;
 using Codebase.Library.Extension.Rx;
+using Codebase.Library.SAD;
 using InternalAssets.Codebase.Gameplay.Damage;
 using InternalAssets.Codebase.Gameplay.Sorting;
 using InternalAssets.Codebase.Gameplay.Weapons.Configs;
@@ -20,17 +21,19 @@ namespace InternalAssets.Codebase.Gameplay.Bullets
      
         private WeaponAmmoStats _ammoStat;
         private Transform _selfTransform;
+        private IDamageReceiver _owner;
         
         private Vector3 _direction;
         private Vector3 _bulletSpeed;
         private DamageArgs _args;
         private bool _isInteracted = false;
         
-        public void Bootstrapp(WeaponAmmoStats ammoStat, Vector3 direction)
+        public void Bootstrapp(IDamageReceiver owner, WeaponAmmoStats ammoStat, Vector3 direction)
         {
             _autoDespawnDisposable?.Dispose();
 
             _selfTransform = transform;
+            _owner = owner;
             _ammoStat = ammoStat;
             _direction = direction;
             _isInteracted = false;
@@ -82,23 +85,24 @@ namespace InternalAssets.Codebase.Gameplay.Bullets
         }
         
         private void StopMovement() => _movementDisposable?.Dispose();
-        
+
         protected void OnTriggerEnter2D(Collider2D other)
         {
-            if (_isInteracted == false)
-            {
-                if (other.TryGetComponent(out IDamageReceiver receiver))
-                {
-                    _isInteracted = true;
-                        
-                    receiver.ReceiveDamage(_args);
+            if (_isInteracted) return;
 
-                    CreateSplittingEffect();
-                    Despawn();
-                }
+            if (other.TryGetComponent(out IDamageReceiver receiver))
+            {
+                if (_owner == receiver) return;
+                
+                _isInteracted = true;
+
+                receiver.ReceiveDamage(_args);
+
+                CreateSplittingEffect();
+                Despawn();
             }
         }
-        
+
         protected void CreateSplittingEffect(Action onComplete = null)
         {
             SortableParticle sortableParticle = LeanPool.Spawn(_bulletInteractionEffect);

@@ -70,7 +70,7 @@ namespace InternalAssets.Codebase.Gameplay.Entities.EnemiesFolder
             RecalculatePath();
 
             _translationDisposable = Observable.EveryFixedUpdate().Subscribe(_ => TranslateFrame());
-            _updatePathDisposable = RX.LoopedTimer(1f, 0.5f, RecalculatePath);
+            _updatePathDisposable = RX.LoopedTimer(0f, 1f, RecalculatePath);
         }
 
         private void TranslateFrame()
@@ -124,7 +124,7 @@ namespace InternalAssets.Codebase.Gameplay.Entities.EnemiesFolder
                 .CalculatePath(
                     _enemyTransform.position,
                     GetRandomPointInCircle(_targetTransform.GetTargetTransform().position,
-                        0.05f),
+                        0.01f),
                     NavMesh.AllAreas, 
                     _path);
         }

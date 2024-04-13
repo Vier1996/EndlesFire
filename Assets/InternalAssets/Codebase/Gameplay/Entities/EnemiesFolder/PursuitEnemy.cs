@@ -1,9 +1,8 @@
 ﻿using System;
 using Codebase.Library.SAD;
-using Cysharp.Threading.Tasks;
-using InternalAssets.Codebase.Gameplay.Behavior.Enemy;
-using InternalAssets.Codebase.Gameplay.Behavior.Enemy.States;
 using InternalAssets.Codebase.Gameplay.Enums;
+using InternalAssets.Codebase.Gameplay.ModelsView;
+using InternalAssets.Codebase.Interfaces;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
@@ -11,28 +10,30 @@ namespace InternalAssets.Codebase.Gameplay.Entities.EnemiesFolder
 {
     public abstract class PursuitEnemy : Enemy
     {
-        protected EnemyBehaviorMachine BehaviorMachine;
-
-        public override async UniTask<Enemy> Initialize(EnemyType enemyType)
+        private EnemyTranslationComponent _enemyTranslationComponent;
+        private ModelViewProvider _modelViewProvider;
+        
+        public override Enemy Initialize(EnemyType enemyType)
         {
-            await base.Initialize(enemyType);
+            base.Initialize(enemyType);
 
-            TryGetAbstractComponent(out BehaviorMachine);
+            TryGetAbstractComponent(out _enemyTranslationComponent);
+            TryGetAbstractComponent(out _modelViewProvider);
 
             return this;
         }
 
-        public void StartPursuit(Action onReceiveTarget = null)
+        public void StartPursuit(ITargetable targetable, Action onReceiveTarget = null)
         {
-            BehaviorMachine.Machine.SwitchBehavior<EnemyPursuitBehavior>(new EnemyPursuitBehaviorComponents()
-            {
-                PursuitCompletedCallback = onReceiveTarget
-            });
+            _modelViewProvider.ModelView.SpriteSheetAnimator.SetAnimation(CommonAnimationType.walk);
+            
+            _enemyTranslationComponent
+                .WithParams(1f, 0.9f)
+                .TransferTo(targetable, onReceiveTarget);
         }
 
         public void StopPursuit()
         {
-            BehaviorMachine.Machine.SwitchBehavior<EnemyInitialBehavior>();
         }
     }
 

@@ -8,5 +8,6 @@
         walk = 2,
         attack = 3,
         death = 4,
+        doodge = 5,
     }
 }

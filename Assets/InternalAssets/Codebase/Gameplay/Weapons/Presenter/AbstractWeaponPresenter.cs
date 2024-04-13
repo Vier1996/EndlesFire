@@ -10,14 +10,14 @@ namespace InternalAssets.Codebase.Gameplay.Weapons.Presenter
     public abstract class AbstractWeaponPresenter : MonoBehaviour, IWeaponPresenter, IDerivedEntityComponent
     {
         public event Action<WeaponConfig> WeaponUpdated;
-        public void PresentWeapon(WeaponType weaponType)
-        {
-            throw new NotImplementedException();
-        }
+        
+        public virtual void Dispose() { }
+        
+        public virtual IWeaponPresenter Enable() => this;
+        public virtual IWeaponPresenter Disable() => this;
+        public virtual void PresentWeapon(WeaponType weaponType) { }
 
-        public void Dispose()
-        {
-            throw new NotImplementedException();
-        }
+        protected void DispatchWeaponUpdatedEvent(WeaponConfig weaponConfig) => 
+            WeaponUpdated?.Invoke(weaponConfig);
     }
 }

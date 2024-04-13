@@ -2,7 +2,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using Codebase.Library.Extension.Dotween;
-using Codebase.Library.SAD;
 using DG.Tweening;
 using InternalAssets.Codebase.Gameplay.Enums;
 using Sirenix.OdinInspector;
@@ -11,24 +10,28 @@ using UnityEngine;
 
 namespace InternalAssets.Codebase.Services.Animation
 {
-    public class SpriteSheetAnimator : MonoBehaviour, IDerivedEntityComponent
+    public class SpriteSheetAnimator : MonoBehaviour
     {
         public event Action AnimationFinished;
         
         [BoxGroup("Default"), SerializeField] private bool _startFromDefaultAnimation = false;
         [BoxGroup("Renderer"), SerializeField] private SpriteRenderer _targetRenderer;
-        [BoxGroup("Animation"), SerializeField] private List<SpriteSheetAnimationSetup> _animationSetups;
+        [BoxGroup("Animation"), SerializeField] private List<SpriteSheetAnimationSetup> _animationSetups = new();
 
         private IDisposable _updateAnimationDisposable;
         private Sprite _defaultSprite;
         private SpriteSheetAnimationSetup _currentAnimationSetup = null;
 
+        private CommonAnimationType _currentAnimation = CommonAnimationType.none;
+        private AwaitAnimationArgs _awaitAnimationArgs;
+        
         private float _updateNextSpriteTimer = 0f;
         private bool _enabled = false;
         private bool _once = false;
+        private bool _await = false;
         private int _spriteIndex = 0;
         
-        public void Bootstrapp(Entity entity)
+        public void Bootstrapp()
         {
             _updateAnimationDisposable = Observable.EveryFixedUpdate().Subscribe(_ => UpdateAnimation());
             
@@ -39,37 +42,46 @@ namespace InternalAssets.Codebase.Services.Animation
             
             SetAnimation(setup.AnimationType);
         }
-        
+
         public void Dispose()
         {
             _updateAnimationDisposable?.Dispose();
             _enabled = false;
+            
+            AnimationFinished -= OnAnimationFinished;
         }
 
         [Button]
-        public void SetAnimation(CommonAnimationType animationType)
+        public void SetAnimation(CommonAnimationType animationType, bool once = false, bool force = false, bool await = false)
         {
-            if (_currentAnimationSetup != null && _currentAnimationSetup.AnimationType == animationType)
+            if (animationType == CommonAnimationType.none || (force == false && _currentAnimation == animationType))
                 return;
 
-            _currentAnimationSetup = _animationSetups.FirstOrDefault(stp => stp.AnimationType == animationType);
+            if (_await)
+            {
+                _awaitAnimationArgs = new AwaitAnimationArgs()
+                {
+                    AnimationType = animationType,
+                    Once = once,
+                    Force = force,
+                    Await = @await
+                };
+                
+                return;
+            }
 
+            _await = await;
+            _currentAnimationSetup = _animationSetups.FirstOrDefault(stp => stp.AnimationType == animationType);
+            
             if (_currentAnimationSetup == default)
                 throw new ArgumentException($"Trying to call non present animation with type:{animationType}");
 
+            _currentAnimation = _currentAnimationSetup.AnimationType;
             _enabled = true;
-        }
-        
-        [Button]
-        public void PlayAnimationOnce(CommonAnimationType animationType)
-        {
-            _currentAnimationSetup = _animationSetups.FirstOrDefault(stp => stp.AnimationType == animationType);
-
-            if (_currentAnimationSetup == default)
-                throw new ArgumentException($"Trying to call non present animation with type:{animationType}");
-
-            _once = true;
-            _enabled = true;
+            _once = once;
+            _spriteIndex = 0;
+            
+            if (_await) AnimationFinished += OnAnimationFinished;
         }
 
         public float AnimationLength(CommonAnimationType animationType)
@@ -109,7 +121,6 @@ namespace InternalAssets.Codebase.Services.Animation
                 AnimationFinished?.Invoke();
                 _enabled = false;
                 return;
-              
             }
             
             _updateNextSpriteTimer = _currentAnimationSetup.UpdateTimer;
@@ -138,6 +149,18 @@ namespace InternalAssets.Codebase.Services.Animation
             
             return _spriteIndex;
         }
+        
+        private void OnAnimationFinished()
+        {
+            AnimationFinished -= OnAnimationFinished;
+
+            if (_await && _awaitAnimationArgs.Equals(default) == false)
+            {
+                _await = false;
+                
+                SetAnimation(_awaitAnimationArgs.AnimationType, _awaitAnimationArgs.Once, _awaitAnimationArgs.Force, _awaitAnimationArgs.Await);
+            }
+        }
     }
     
     [Serializable]
@@ -146,5 +169,13 @@ namespace InternalAssets.Codebase.Services.Animation
         [field: SerializeField] public CommonAnimationType AnimationType { get; private set; } = CommonAnimationType.none;
         [field: SerializeField] public float UpdateTimer { get; private set; } = 0.1f;
         [field: SerializeField] public Sprite[] AnimationSprites { get; private set; } = {};
+    }
+
+    public struct AwaitAnimationArgs
+    {
+        public CommonAnimationType AnimationType;
+        public bool Once;
+        public bool Force;
+        public bool Await;
     }
 }

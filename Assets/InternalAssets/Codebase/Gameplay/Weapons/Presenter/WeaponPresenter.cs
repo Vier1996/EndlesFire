@@ -4,24 +4,25 @@ using Codebase.Library.Extension.Dotween;
 using Codebase.Library.SAD;
 using DG.Tweening;
 using InternalAssets.Codebase.Gameplay.Enums;
+using InternalAssets.Codebase.Gameplay.ModelsView;
 using InternalAssets.Codebase.Gameplay.Movement;
 using InternalAssets.Codebase.Gameplay.Weapons.Configs;
 using InternalAssets.Codebase.Interfaces;
 using InternalAssets.Codebase.Services._2dModels;
 using Sirenix.OdinInspector;
+using UniRx;
 using UnityEngine;
 
 namespace InternalAssets.Codebase.Gameplay.Weapons.Presenter
 {
-    public class WeaponPresenter : MonoBehaviour, IWeaponPresenter, IDerivedEntityComponent
+    public class WeaponPresenter : AbstractWeaponPresenter, IDerivedEntityComponent
     {
-        public event Action<WeaponConfig> WeaponUpdated;
-        
         public WeaponView CurrentView { get; private set; } = null;
         
+        private IDisposable _lateUpdateDisposable;
         private ITargetable _target;
         private PlayerMovementComponent _playerMovementComponent;
-        private SpriteModelPresenter _spriteModelPresenter;
+        private ModelViewProvider _modelViewProvider;
         private SortableItem _sortableItemOfOwner;
         private IDetectionSystem _detectionSystem;
         private Transform _selfTransform;
@@ -35,26 +36,49 @@ namespace InternalAssets.Codebase.Gameplay.Weapons.Presenter
         
         private float _lastAngle = 0;
         private float _lerpSpeed = 0.25f;
-        
+        private bool _isEnabled = false;
+
         public void Bootstrapp(Entity entity)
         {
             _entity = entity;
             _selfTransform = transform;
 
             _playerMovementComponent = _entity.GetAbstractComponent<PlayerMovementComponent>();
-            _spriteModelPresenter = _entity.GetAbstractComponent<SpriteModelPresenter>();
+            _modelViewProvider = _entity.GetAbstractComponent<ModelViewProvider>();
             _sortableItemOfOwner = _entity.GetAbstractComponent<SortableItem>();
             _detectionSystem = _entity.GetAbstractComponent<IDetectionSystem>();
             
             SetJoystickListening();
-            
-            _detectionSystem.OnTargetDetected += SetTargetListening;
         }
 
-        public void Dispose() => _detectionSystem.OnTargetDetected -= SetTargetListening;
+        public override void Dispose() => Disable();
+
+        public override IWeaponPresenter Enable()
+        {
+            if(_isEnabled) return this;
+
+            _isEnabled = true;
+            
+            _lateUpdateDisposable?.Dispose();
+            _lateUpdateDisposable = Observable.EveryLateUpdate().Subscribe(_ => OnLateUpdate());
+            
+            _detectionSystem.OnTargetDetected += SetTargetListening;
+            
+            return this;
+        }
+        public override IWeaponPresenter Disable()
+        {
+            if(_isEnabled == false) return this;
+
+            _isEnabled = false;
+            
+            _detectionSystem.OnTargetDetected -= SetTargetListening;
+            
+            return this;
+        }
 
         [Button]
-        public void PresentWeapon(WeaponType weaponType)
+        public override void PresentWeapon(WeaponType weaponType)
         {
             if (CurrentView != null)
             {
@@ -70,7 +94,7 @@ namespace InternalAssets.Codebase.Gameplay.Weapons.Presenter
 
             _sortableItemOfOwner.AddRenderers(CurrentView.GetWeaponRenderers());
             
-            WeaponUpdated?.Invoke(config);
+            DispatchWeaponUpdatedEvent(config);
             
             container.Release();
         }
@@ -97,7 +121,7 @@ namespace InternalAssets.Codebase.Gameplay.Weapons.Presenter
             _lookingType = WeaponLookingType.marked_target;
         }
 
-        private void LateUpdate()
+        private void OnLateUpdate()
         {
             if(_lookingType == WeaponLookingType.none && _selfTransform == null) return;
             
@@ -135,12 +159,12 @@ namespace InternalAssets.Codebase.Gameplay.Weapons.Presenter
                 if (angle > 90 || angle < -90)
                 {
                     _selfTransform.localScale = _flippedDirection;
-                    _spriteModelPresenter.SetLookingToLeft();
+                    _modelViewProvider.ModelView.SpriteModelPresenter.SetLookingToLeft();
                 }
                 else
                 {
                     _selfTransform.localScale = _defaultDirection;
-                    _spriteModelPresenter.SetLookingToRight();
+                    _modelViewProvider.ModelView.SpriteModelPresenter.SetLookingToRight();
                 }
             }
 

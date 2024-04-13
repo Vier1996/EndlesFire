@@ -87,7 +87,9 @@ namespace Codebase.Library.SAD
             if (_components.TryGetAbstractComponent(out T receivedComponent))
                 return receivedComponent;
 
-            throw new ArgumentException($"Can not get component with Name:[{typeof(T).Name}]");
+            Debug.LogError($"Can not get component with Name:[{typeof(T).Name}]");
+            //throw new ArgumentException($"Can not get component with Name:[{typeof(T).Name}]");
+            return null;
         }
 
         public GameObject GetObject() => GameObject;

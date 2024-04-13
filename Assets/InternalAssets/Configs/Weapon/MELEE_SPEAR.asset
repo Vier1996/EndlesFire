@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7978ff230f144e909bfb5134557dbb82, type: 3}
+  m_Name: MELEE_SPEAR
+  m_EditorClassIdentifier: 
+  <WeaponType>k__BackingField: 200
+  <ViewPrefab>k__BackingField: {fileID: 4741040699785277253, guid: ef2d421f6512e234aab407ef29882a8c, type: 3}
+  <WeaponStats>k__BackingField:
+    <BaseRange>k__BackingField: 1.5
+    <BaseRecharging>k__BackingField: 1
+    <WaterConsumptionValue>k__BackingField: 1
+    <FireDisperse>k__BackingField: 15
+    <AimingTime>k__BackingField: 0.1
+    <IgnoreWallsRaycast>k__BackingField: 0
+  <WeaponStoreStats>k__BackingField:
+    <BulletsByQueue>k__BackingField: 1
+    <DelayBetweenBullets>k__BackingField: 0
+    <QueueAsOneBullets>k__BackingField: 0
+    <AnimateEveryShoot>k__BackingField: 0
+  <WeaponAmmoStats>k__BackingField:
+    <Damage>k__BackingField: 3
+    <CriticalChance>k__BackingField: 0
+    <CriticalDamageMultiplier>k__BackingField: 0
+    <BulletMovementSpeed>k__BackingField: 10
+    <PushMultiplier>k__BackingField: 1
+    <HaveRadiusDamage>k__BackingField: 0
+    <Radius>k__BackingField: 0
+    <DestructByLifeTime>k__BackingField: 1
+    <LifeTime>k__BackingField: 5
+  <WeaponAnimationStats>k__BackingField:
+    <AnimationOffset>k__BackingField: -0.1
+    <AnimationDuration>k__BackingField: 0.3
+    <AnimationBalance>k__BackingField: 0.315

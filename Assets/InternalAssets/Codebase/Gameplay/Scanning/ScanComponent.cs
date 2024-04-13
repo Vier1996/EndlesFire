@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using ACS.Core.ServicesContainer;
 using Codebase.Library.Extension.Rx;
 using Codebase.Library.SAD;
+using InternalAssets.Codebase.Gameplay.Entities.EnemiesFolder;
 using InternalAssets.Codebase.Interfaces;
 using Sirenix.OdinInspector;
 using Sirenix.Serialization;
@@ -15,11 +16,12 @@ namespace InternalAssets.Codebase.Gameplay.Scanning
         public event Action<Entity> DetectedEnemyUpdated;
         
         [OdinSerialize] private List<Type> _listeningEntities = new();
-            
+
+        public Entity CachedEntity { get; private set; }
+
         private IDisposable _scanDisposable;
         private EntityWorld _entityWorld;
         private Transform _selfTransform;
-        private Entity _cachedEntity;
 
         private float _scanningDistance = 0;
         private bool _inScanningStatus = false;
@@ -68,10 +70,10 @@ namespace InternalAssets.Codebase.Gameplay.Scanning
             
             Entity entity = _entityWorld.GetClosestEntity(_listeningEntities, _selfTransform.position, _scanningDistance);
 
-            if (_cachedEntity == entity)
+            if (CachedEntity == entity)
                 return;
 
-            DetectedEnemyUpdated?.Invoke(_cachedEntity = entity);
+            DetectedEnemyUpdated?.Invoke(CachedEntity = entity);
         }
     }
 }

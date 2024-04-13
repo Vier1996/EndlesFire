@@ -15,6 +15,7 @@ namespace InternalAssets.Codebase.Gameplay.Weapons
 {
     public class ShootingWeapon : WeaponView
     {
+        [SerializeField] private WeaponSpark WeaponSpark;
         [SerializeField] private Transform _bulletSpawnTransform;
         [SerializeField] private BulletView _bulletPrefab;
 
@@ -123,8 +124,7 @@ namespace InternalAssets.Codebase.Gameplay.Weapons
             BulletView spawnedBullet = LeanPool.Spawn(_bulletPrefab);
 
             spawnedBullet.transform.position = new Vector3(spawnPosition.x, spawnPosition.y, 0f);
-            
-            spawnedBullet.Bootstrapp(WeaponConfig.WeaponAmmoStats, direction);
+            spawnedBullet.Bootstrapp(OwnerEntity as IDamageReceiver, WeaponConfig.WeaponAmmoStats, direction);
 
             if (WeaponSpark != null)
                 WeaponSpark.ShowSpark();

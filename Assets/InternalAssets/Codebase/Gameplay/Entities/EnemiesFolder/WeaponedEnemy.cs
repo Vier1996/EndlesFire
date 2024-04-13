@@ -1,16 +1,17 @@
 ﻿using System;
+using ACS.Core.ServicesContainer;
 using Codebase.Library.SAD;
-using Cysharp.Threading.Tasks;
-using InternalAssets.Codebase.Gameplay.Behavior.Enemy.States;
 using InternalAssets.Codebase.Gameplay.Configs.Enemy;
+using InternalAssets.Codebase.Gameplay.Entities.PlayerFolder;
 using InternalAssets.Codebase.Gameplay.Enums;
 using InternalAssets.Codebase.Gameplay.Weapons.Presenter;
+using InternalAssets.Codebase.Interfaces;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
 namespace InternalAssets.Codebase.Gameplay.Entities.EnemiesFolder
 {
-    public class SpearedEnemy : PursuitEnemy
+    public class WeaponedEnemy : PursuitEnemy
     {
         [SerializeField] private SpearedEnemyComponents _components;
         
@@ -22,31 +23,33 @@ namespace InternalAssets.Codebase.Gameplay.Entities.EnemiesFolder
         }
         
         [Button]
-        public override async UniTask<Enemy> Initialize(EnemyType enemyType)
+        public override Enemy Initialize(EnemyType enemyType)
         {
             EnemyConfig = EnemyConfig as SimpleEnemyConfig;
             
-            await base.Initialize(enemyType);
+            base.Initialize(enemyType);
             
-            //EnableSpearedLogic();
+            ServiceContainer.ForCurrentScene().Get(out Player target);
+            
+            EnemyWeaponPresenter weaponPresenter = (EnemyWeaponPresenter)GetAbstractComponent<IWeaponPresenter>();
+
+            weaponPresenter.Enable();
+            weaponPresenter.SetPresentersTarget(target);
+            
+            GetAbstractComponent<IDetectionSystem>()
+                .Enable()
+                .SetDetectionRadius(1f);
+
+            StartPursuit(target);
             
             return this;
         }
-
-        [Button]
-        private void EnableSpearedLogic()
-        {
-            StartPursuit(AttackPlayer);
-        }
-
-        private void AttackPlayer()
-        {
-            BehaviorMachine.Machine.SwitchBehavior<EnemySpearedAttackBehavior>();
-        }
+        
         
         private void DisableSpearedLogic() 
         {
-            
+            GetAbstractComponent<IWeaponPresenter>().Disable();
+            GetAbstractComponent<EnemyDetectionSystem>().Disable();
         }
     }
     
@@ -54,12 +57,14 @@ namespace InternalAssets.Codebase.Gameplay.Entities.EnemiesFolder
     public class SpearedEnemyComponents : PursuitEnemyComponents
     {
         [BoxGroup("Speared enemy components"), SerializeField] private EnemyWeaponPresenter _weaponPresenter;
+        [BoxGroup("Speared enemy components"), SerializeField] private EnemyDetectionSystem _detectionSystem;
 
         public override EntityComponents Declare(Entity abstractEntity)
         {
             base.Declare(abstractEntity);
 
-            Add(_weaponPresenter);
+            Add(typeof(IDetectionSystem), _detectionSystem);
+            Add(typeof(IWeaponPresenter), _weaponPresenter);
             
             return this;
         }
