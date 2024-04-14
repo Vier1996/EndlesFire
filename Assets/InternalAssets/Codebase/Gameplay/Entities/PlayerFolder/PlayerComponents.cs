@@ -3,6 +3,7 @@ using Codebase.Gameplay.Sorting;
 using Codebase.Library.SAD;
 using InternalAssets.Codebase.Gameplay.Behavior.Player;
 using InternalAssets.Codebase.Gameplay.Dodge;
+using InternalAssets.Codebase.Gameplay.HealthLogic;
 using InternalAssets.Codebase.Gameplay.ModelsView;
 using InternalAssets.Codebase.Gameplay.Movement;
 using InternalAssets.Codebase.Gameplay.Weapons.Presenter;
@@ -21,12 +22,14 @@ namespace InternalAssets.Codebase.Gameplay.Entities.PlayerFolder
         [BoxGroup("General"), SerializeField] private WeaponPresenter _weaponPresenter;
         [BoxGroup("General"), SerializeField] private SortableItem _sortableItem;
         [BoxGroup("General"), SerializeField] private PlayerDetectionSystem _playerDetectionSystem;
+        [BoxGroup("General"), SerializeField] private HealthComponent _healthComponent;
         
         [BoxGroup("Physic"), SerializeField] private Rigidbody2D _rigidbody2D;
         
         public override EntityComponents Declare(Entity abstractEntity)
         {
             Add(abstractEntity);
+            Add(_healthComponent);
             Add(_rigidbody2D);
             Add(_sortableItem);
             Add(_modelViewProvider);
@@ -34,7 +37,7 @@ namespace InternalAssets.Codebase.Gameplay.Entities.PlayerFolder
             Add(_playerMovementComponent);
             Add(typeof(IWeaponPresenter), _weaponPresenter);
             Add(_dodgeComponent);
-            Add(type: typeof(IDetectionSystem), _playerDetectionSystem);
+            Add(typeof(IDetectionSystem), _playerDetectionSystem);
             
             return this;
         }

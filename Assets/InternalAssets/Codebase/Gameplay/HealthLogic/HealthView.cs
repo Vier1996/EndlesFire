@@ -19,7 +19,7 @@ namespace InternalAssets.Codebase.Gameplay.HealthLogic
             
             _sliders.ForEach(sl => sl.UpdateRatio(reactiveHealthRatio.Value));
             
-            reactiveHealthRatio.Subscribe(OnRatioChanged);
+            reactiveHealthRatio.Skip(1).Subscribe(OnRatioChanged);
 
             return this;
         }
@@ -31,25 +31,41 @@ namespace InternalAssets.Codebase.Gameplay.HealthLogic
             return this;
         }
 
-        public HealthView Show()
+        public HealthView Show(bool instant = false)
         {
             if(_isDisplayed) return this;
             
             _isDisplayed = true;
             
             _selfTransform.KillTween();
+
+            if (instant)
+            {
+                _selfTransform.localScale = Vector3.one;
+                
+                return this;
+            }
+            
             _selfTransform.DisplayBubbled(1.2f, 0.5f, defaultScale: 1f);
             
             return this;
         }
 
-        public HealthView Hide()
+        public HealthView Hide(bool instant = false)
         {
             if(_isDisplayed == false) return this;
             
             _isDisplayed = false;
             
             _selfTransform.KillTween();
+            
+            if (instant)
+            {
+                _selfTransform.localScale = Vector3.zero;
+                
+                return this;
+            }
+            
             _selfTransform.DisplayBubbled(1.1f, 0.5f, defaultScale: 0f);
             
             return this;

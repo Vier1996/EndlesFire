@@ -19,10 +19,15 @@ namespace InternalAssets.Codebase.Gameplay.Entities.EnemiesFolder
         public virtual Enemy Initialize(EnemyType enemyType)
         {
             EnemyConfigsContainer configsContainer = EnemyConfigsContainer.GetInstance();
+            HealthComponent healthComponent = GetAbstractComponent<HealthComponent>();
 
             EnemyConfig = configsContainer.Get(enemyType);
             
+            healthComponent.Initialize(20).Enable();
+            
             configsContainer.Release();
+
+            healthComponent.HealthEmpty += OnKilled;
             
             return this;
         }
@@ -31,6 +36,15 @@ namespace InternalAssets.Codebase.Gameplay.Entities.EnemiesFolder
         public virtual void EnableMarker() { }
         public virtual void DisableMarker() { }
         public virtual void ReceiveDamage(DamageArgs damageArgs) { }
+
+        protected virtual void OnKilled()
+        {
+            HealthComponent healthComponent = GetAbstractComponent<HealthComponent>();
+
+            healthComponent.HealthEmpty -= OnKilled;
+            
+            healthComponent.Disable();
+        }
     }
     
     [Serializable]

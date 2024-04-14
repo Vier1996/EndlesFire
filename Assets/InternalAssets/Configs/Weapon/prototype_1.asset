@@ -22,8 +22,8 @@ MonoBehaviour:
     <AimingTime>k__BackingField: 0.25
     <IgnoreWallsRaycast>k__BackingField: 0
   <WeaponStoreStats>k__BackingField:
-    <BulletsByQueue>k__BackingField: 1
-    <DelayBetweenBullets>k__BackingField: 0.05
+    <BulletsByQueue>k__BackingField: 3
+    <DelayBetweenBullets>k__BackingField: 0.1
     <QueueAsOneBullets>k__BackingField: 0
     <AnimateEveryShoot>k__BackingField: 0
   <WeaponAmmoStats>k__BackingField:

@@ -62,14 +62,7 @@ namespace Lean.Pool
 		/// <summary>If the pool reaches capacity, should new spawns force older ones to despawn?</summary>
 		public bool Recycle { set { recycle = value; } get { return recycle; } } [SerializeField] private bool recycle;
 
-		/// <summary>Should this pool be marked as DontDestroyOnLoad?</summary>
-		public bool Persist
-		{
-			set { persist = value; }
-			get { return persist; }
-		} 
-		[SerializeField] private bool persist = true;
-
+		
 		/// <summary>Should the spawned clones have their clone index appended to their name?</summary>
 		public bool Stamp { set { stamp = value; } get { return stamp; } } [SerializeField] private bool stamp;
 
@@ -557,11 +550,6 @@ namespace Lean.Pool
 			if (Application.isPlaying == true)
 			{
 				PreloadAll();
-
-				if (persist == true)
-				{
-					DontDestroyOnLoad(this);
-				}
 			}
 		}
 

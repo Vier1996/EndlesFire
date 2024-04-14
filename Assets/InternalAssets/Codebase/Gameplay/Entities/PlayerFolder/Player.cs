@@ -1,6 +1,9 @@
 using Codebase.Library.SAD;
 using InternalAssets.Codebase.Gameplay.Damage;
+using InternalAssets.Codebase.Gameplay.Enums;
+using InternalAssets.Codebase.Gameplay.HealthLogic;
 using InternalAssets.Codebase.Interfaces;
+using Lean.Pool;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
@@ -16,10 +19,12 @@ namespace InternalAssets.Codebase.Gameplay.Entities.PlayerFolder
         public override Entity Bootstrapp() => 
             base.Bootstrapp().BindComponents(_playerComponents);
         
-        [Button]
         public Player Initialize()
         {
             Enable();
+            
+            HealthComponent healthComponent = GetAbstractComponent<HealthComponent>();
+            healthComponent.Initialize(20);
             
             return this;
         }
@@ -31,7 +36,12 @@ namespace InternalAssets.Codebase.Gameplay.Entities.PlayerFolder
             _isEnabled = true;
 
             GetAbstractComponent<IDetectionSystem>().Enable();
-            GetAbstractComponent<IWeaponPresenter>().Enable();
+            GetAbstractComponent<IWeaponPresenter>().Enable().PresentWeapon(WeaponType.prototype_1);
+            HealthComponent healthComponent = GetAbstractComponent<HealthComponent>();
+
+            healthComponent.Enable();
+
+            healthComponent.HealthEmpty += OnKilled;
 
             return this;
         }
@@ -50,7 +60,9 @@ namespace InternalAssets.Codebase.Gameplay.Entities.PlayerFolder
 
         public void ReceiveDamage(DamageArgs damageArgs)
         {
-            UnityEngine.Debug.Log($"Получил пизды на {damageArgs.Damage} урона");
+            if (TryGetAbstractComponent(out HealthComponent healthComponent) == false) return;
+            
+            healthComponent.Operate(damageArgs);
         }
 
         public Transform GetTargetTransform() => Transform;
@@ -61,6 +73,18 @@ namespace InternalAssets.Codebase.Gameplay.Entities.PlayerFolder
 
         public void DisableMarker()
         {
+        }
+        
+        protected virtual void OnKilled()
+        {
+            HealthComponent healthComponent = GetAbstractComponent<HealthComponent>();
+
+            healthComponent.HealthEmpty -= OnKilled;
+            healthComponent.Disable();
+
+            Disable();
+            
+            GameObject.SetActive(false);
         }
     }
 }

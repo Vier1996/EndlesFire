@@ -75,7 +75,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3edf0ed3cd44964aee0912d0f251b5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _selfActivated: 1
+  _selfActivated: 0
   _components:
     _modelViewProvider: {fileID: 3817004230435726863}
     _healthComponent: {fileID: 5262388120006613707}
@@ -255,7 +255,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _currentView: {fileID: 3206197210206161049}
-  _showFromStart: 1
+  _showFromStart: 0
 --- !u!1 &8709033638988604599
 GameObject:
   m_ObjectHideFlags: 0

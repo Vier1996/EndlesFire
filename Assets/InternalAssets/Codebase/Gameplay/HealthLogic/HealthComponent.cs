@@ -45,9 +45,13 @@ namespace InternalAssets.Codebase.Gameplay.HealthLogic
             if (_isInitialized) return this;
 
             _isInitialized = true;
-            
-            _health.HealthEmpty += HealthEmpty;
-            _health.HealthChanged += HealthChanged;
+
+            _currentView.SetActiveStatus(true);
+
+            if (_showFromStart)
+                _currentView.Show();
+            else
+                _currentView.Hide();
             
             return this;
         }
@@ -57,9 +61,6 @@ namespace InternalAssets.Codebase.Gameplay.HealthLogic
             if (_isInitialized == false) return this;
 
             _isInitialized = false;
-            
-            _health.HealthEmpty -= HealthEmpty;
-            _health.HealthChanged -= HealthChanged;
 
             return this;
         }
@@ -76,10 +77,12 @@ namespace InternalAssets.Codebase.Gameplay.HealthLogic
                     .SetActiveStatus(false)
                     .Hide();
                 
+                HealthEmpty?.Invoke();
+                
                 return;
             }
             
-            _currentView.SetActiveStatus(true).Show();
+            _currentView.Show();
             
             HealthChanged?.Invoke();
         }

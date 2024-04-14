@@ -8,6 +8,7 @@ using InternalAssets.Codebase.Gameplay.Enums;
 using InternalAssets.Codebase.Gameplay.HealthLogic;
 using InternalAssets.Codebase.Gameplay.Weapons.Presenter;
 using InternalAssets.Codebase.Interfaces;
+using Lean.Pool;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
@@ -24,7 +25,6 @@ namespace InternalAssets.Codebase.Gameplay.Entities.EnemiesFolder
             return this;
         }
         
-        [Button]
         public override Enemy Initialize(EnemyType enemyType)
         {
             EnemyConfig = EnemyConfig as SimpleEnemyConfig;
@@ -35,27 +35,36 @@ namespace InternalAssets.Codebase.Gameplay.Entities.EnemiesFolder
             
             EnemyWeaponPresenter weaponPresenter = (EnemyWeaponPresenter)GetAbstractComponent<IWeaponPresenter>();
             IDetectionSystem detectionSystem = GetAbstractComponent<IDetectionSystem>();
-            HealthComponent healthComponent = GetAbstractComponent<HealthComponent>();
 
-            weaponPresenter.Enable();
+            weaponPresenter.Enable().PresentWeapon(WeaponType.melee_spear);
             weaponPresenter.SetPresentersTarget(target);
             
             detectionSystem
                 .Enable()
                 .SetDetectionRadius(1f);
-
-            healthComponent.Initialize(20);
-
-            //StartPursuit(target);
+            
+            StartPursuit(target);
             
             return this;
         }
         
-        
-        private void DisableSpearedLogic() 
+        public override void ReceiveDamage(DamageArgs damageArgs)
         {
+            if (TryGetAbstractComponent(out HealthComponent healthComponent) == false) return;
+            
+            healthComponent.Operate(damageArgs);
+        }
+        
+        protected override void OnKilled()
+        {
+            base.OnKilled();
+            
             GetAbstractComponent<IWeaponPresenter>().Disable();
-            GetAbstractComponent<EnemyDetectionSystem>().Disable();
+            GetAbstractComponent<IDetectionSystem>().Disable();
+            
+            StopPursuit();
+            
+            LeanPool.Despawn(GameObject);
         }
 
 #if UNITY_EDITOR
@@ -73,6 +82,12 @@ namespace InternalAssets.Codebase.Gameplay.Entities.EnemiesFolder
             
             healthComponent.Operate(args);
             
+        }
+
+        [Button]
+        private void DebugKill(int damage)
+        {
+            OnKilled();
         }
 #endif
     }

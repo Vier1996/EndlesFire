@@ -23,7 +23,7 @@ namespace InternalAssets.Codebase.Gameplay.Entities.EnemiesFolder
             return this;
         }
 
-        public void StartPursuit(ITargetable targetable, Action onReceiveTarget = null)
+        protected void StartPursuit(ITargetable targetable, Action onReceiveTarget = null)
         {
             _modelViewProvider.ModelView.SpriteSheetAnimator.SetAnimation(CommonAnimationType.walk);
             
@@ -32,8 +32,11 @@ namespace InternalAssets.Codebase.Gameplay.Entities.EnemiesFolder
                 .TransferTo(targetable, onReceiveTarget);
         }
 
-        public void StopPursuit()
+        protected void StopPursuit()
         {
+            _modelViewProvider.ModelView.SpriteSheetAnimator.Dispose();
+            
+            _enemyTranslationComponent.Dispose();
         }
     }
 

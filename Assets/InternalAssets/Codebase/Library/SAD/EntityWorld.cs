@@ -58,7 +58,7 @@ namespace Codebase.Library.SAD
             {
                 Entity entity = m_AliveEntities[i];
                 
-                if(entityTypes.Contains(entity.GetType()) == false)
+                if(entity.gameObject.activeSelf == false || entityTypes.Contains(entity.GetType()) == false)
                     continue;
                 
                 if (entity == null)

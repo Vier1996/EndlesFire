@@ -27,7 +27,7 @@ MonoBehaviour:
     <QueueAsOneBullets>k__BackingField: 0
     <AnimateEveryShoot>k__BackingField: 0
   <WeaponAmmoStats>k__BackingField:
-    <Damage>k__BackingField: 3
+    <Damage>k__BackingField: 10
     <CriticalChance>k__BackingField: 0
     <CriticalDamageMultiplier>k__BackingField: 0
     <BulletMovementSpeed>k__BackingField: 10

@@ -2,6 +2,7 @@ using ACS.Core.ServicesContainer;
 using Codebase.Library.SAD;
 using InternalAssets.Codebase.Gameplay.Entities.PlayerFolder;
 using InternalAssets.Codebase.Services.Camera;
+using Lean.Pool;
 using UnityEngine;
 
 namespace InternalAssets.Codebase.ServiceLocators
@@ -9,12 +10,13 @@ namespace InternalAssets.Codebase.ServiceLocators
     public class PolygonSceneBootstrapper : ServiceContainerLocal
     {
         [SerializeField] private Player _player;
+        [SerializeField] private Transform _playerParent;
+        
         [SerializeField] private CameraCenterer _cameraCenterer;
         
         protected override void Bootstrap()
         {
             Container
-                .Register(_player)
                 .Register(new EntityWorld())
                 .AsScene();
 
@@ -23,8 +25,21 @@ namespace InternalAssets.Codebase.ServiceLocators
 
         private void BootstrappScene()
         {
-            _player.Bootstrapp();
-            _cameraCenterer.Initialize(_player);
+            Player player = BootstrapPlayer();
+
+            Container.Register(player);
+            
+            _cameraCenterer.Initialize(player);
+        }
+
+        private Player BootstrapPlayer()
+        {
+            Player player = LeanPool.Spawn(_player, _playerParent);
+
+            player.Bootstrapp();
+            player.Initialize();
+
+            return player;
         }
     }
 }
