@@ -9,5 +9,8 @@ namespace InternalAssets.Codebase.Interfaces
         public event Action<WeaponConfig> WeaponUpdated;
 
         public void PresentWeapon(WeaponType weaponType);
+        
+        public void ShowPresenter();
+        public void HidePresenter();
     }
 }

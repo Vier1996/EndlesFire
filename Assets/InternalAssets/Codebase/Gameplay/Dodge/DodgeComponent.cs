@@ -1,8 +1,8 @@
 using System;
 using Codebase.Gameplay.Sorting;
 using Codebase.Library.SAD;
-using InternalAssets.Codebase.Gameplay.Entities.PlayerFolder;
 using InternalAssets.Codebase.Gameplay.Movement;
+using InternalAssets.Codebase.Interfaces;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
@@ -20,6 +20,7 @@ namespace InternalAssets.Codebase.Gameplay.Dodge
         private Entity _caster;
         private SortableItem _playerSortableComponent;
         private PlayerMovementComponent _playerMovement;
+        private IWeaponPresenter _weaponPresenter;
         
         public void Bootstrapp(Entity entity)
         {
@@ -27,13 +28,18 @@ namespace InternalAssets.Codebase.Gameplay.Dodge
             
             entity.TryGetAbstractComponent(out _playerMovement);
             entity.TryGetAbstractComponent(out _playerSortableComponent);
+            entity.TryGetAbstractComponent(out _weaponPresenter);
             
             _playerMovement.OnDodgeStart += OnDodgeStart;
+            _playerMovement.OnDodgeStart += DisableWeaponPresenter;
+            _playerMovement.OnDodgeEnd += EnableWeaponPresenter;
         }
 
         public void Dispose()
         {
             _playerMovement.OnDodgeStart -= OnDodgeStart;
+            _playerMovement.OnDodgeStart -= DisableWeaponPresenter;
+            _playerMovement.OnDodgeEnd -= EnableWeaponPresenter;
         }
 
         private void OnDodgeStart()
@@ -65,6 +71,10 @@ namespace InternalAssets.Codebase.Gameplay.Dodge
             if(effect != null)
                 effect.Play();
         }
+
+        private void EnableWeaponPresenter() => _weaponPresenter.ShowPresenter();
+        
+        private void DisableWeaponPresenter() => _weaponPresenter.HidePresenter();
 
         private ParticleSystem CreateDodgeEffect(Transform targetTransform, ParticleSystem prefab)
         {

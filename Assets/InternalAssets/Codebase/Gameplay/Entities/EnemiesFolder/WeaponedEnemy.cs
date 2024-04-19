@@ -5,7 +5,8 @@ using InternalAssets.Codebase.Gameplay.Configs.Enemy;
 using InternalAssets.Codebase.Gameplay.Damage;
 using InternalAssets.Codebase.Gameplay.Entities.PlayerFolder;
 using InternalAssets.Codebase.Gameplay.Enums;
-using InternalAssets.Codebase.Gameplay.HealthLogic;
+using InternalAssets.Codebase.Gameplay.Factory.Vfx;
+using InternalAssets.Codebase.Gameplay.Sorting;
 using InternalAssets.Codebase.Gameplay.Weapons.Presenter;
 using InternalAssets.Codebase.Interfaces;
 using Lean.Pool;
@@ -18,9 +19,24 @@ namespace InternalAssets.Codebase.Gameplay.Entities.EnemiesFolder
     {
         [SerializeField] private SpearedEnemyComponents _components;
         
+        private EnemyWeaponPresenter _weaponPresenter;
+        private IDetectionSystem _detectionSystem;
+        private VfxFactoryProvider _vfxFactoryProvider;
+        
         public override Entity Bootstrapp()
         {
+            if (IsBootstapped) return this;
+            
             base.Bootstrapp().BindComponents(_components);
+
+            ServiceContainer.Global.Get(out _vfxFactoryProvider);
+            
+            _weaponPresenter = (EnemyWeaponPresenter)GetAbstractComponent<IWeaponPresenter>();
+            
+            TryGetAbstractComponent(out _detectionSystem);
+            TryGetAbstractComponent(out EnemyTranslationComponent);
+            TryGetAbstractComponent(out ModelViewProvider);
+            TryGetAbstractComponent(out HealthComponent);
             
             return this;
         }
@@ -33,15 +49,12 @@ namespace InternalAssets.Codebase.Gameplay.Entities.EnemiesFolder
             
             ServiceContainer.ForCurrentScene().Get(out Player target);
             
-            EnemyWeaponPresenter weaponPresenter = (EnemyWeaponPresenter)GetAbstractComponent<IWeaponPresenter>();
-            IDetectionSystem detectionSystem = GetAbstractComponent<IDetectionSystem>();
-
-            weaponPresenter.Enable().PresentWeapon(WeaponType.melee_spear);
-            weaponPresenter.SetPresentersTarget(target);
+            ModelViewProvider.ModelView.SpriteSheetAnimator.Activate();
             
-            detectionSystem
-                .Enable()
-                .SetDetectionRadius(1f);
+            _weaponPresenter.Enable().PresentWeapon(WeaponType.melee_spear);
+            _weaponPresenter.SetPresentersTarget(target);
+            
+            _detectionSystem.Enable().SetDetectionRadius(1f);
             
             StartPursuit(target);
             
@@ -50,46 +63,31 @@ namespace InternalAssets.Codebase.Gameplay.Entities.EnemiesFolder
         
         public override void ReceiveDamage(DamageArgs damageArgs)
         {
-            if (TryGetAbstractComponent(out HealthComponent healthComponent) == false) return;
-            
-            healthComponent.Operate(damageArgs);
+            HealthComponent.Operate(damageArgs);
         }
         
         protected override void OnKilled()
         {
             base.OnKilled();
             
-            GetAbstractComponent<IWeaponPresenter>().Disable();
-            GetAbstractComponent<IDetectionSystem>().Disable();
+            _weaponPresenter.Disable();
+            _detectionSystem.Disable();
             
             StopPursuit();
+            SpawnDeathEffect();
             
             LeanPool.Despawn(GameObject);
         }
 
-#if UNITY_EDITOR
-        [Button]
-        private void DebugHit(int damage)
+        private async void SpawnDeathEffect()
         {
-            if (TryGetAbstractComponent(out HealthComponent healthComponent) == false) return;
+            SortableParticle deathParticle = await _vfxFactoryProvider
+                .SpawnFactoryItemAsync(
+                    VfxType.enemy_death_base_variation,
+                    Transform.position);
             
-            DamageArgs args = new DamageArgs()
-            {
-                Damage = damage,
-                IsCritical = false,
-                Type = DamageType.damage
-            };
-            
-            healthComponent.Operate(args);
-            
+            deathParticle.Play();
         }
-
-        [Button]
-        private void DebugKill(int damage)
-        {
-            OnKilled();
-        }
-#endif
     }
     
     [Serializable]

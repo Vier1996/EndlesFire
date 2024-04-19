@@ -3,7 +3,6 @@ using InternalAssets.Codebase.Gameplay.Damage;
 using InternalAssets.Codebase.Gameplay.Enums;
 using InternalAssets.Codebase.Gameplay.HealthLogic;
 using InternalAssets.Codebase.Interfaces;
-using Lean.Pool;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
@@ -16,8 +15,7 @@ namespace InternalAssets.Codebase.Gameplay.Entities.PlayerFolder
         private bool _isEnabled = false;
         
         [Button]
-        public override Entity Bootstrapp() => 
-            base.Bootstrapp().BindComponents(_playerComponents);
+        public override Entity Bootstrapp() => base.Bootstrapp().BindComponents(_playerComponents);
         
         public Player Initialize()
         {

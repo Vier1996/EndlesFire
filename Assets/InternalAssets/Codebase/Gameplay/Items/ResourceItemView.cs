@@ -13,14 +13,15 @@ namespace InternalAssets.Codebase.Gameplay.Items
         
         public override ItemView Enable()
         {
-            _modelRenderer.Bootstrapp();
+            _modelRenderer.Activate();
             
             return base.Enable();
         }
         
         public override ItemView Disable()
         {
-            _modelRenderer.Dispose();
+            _modelRenderer.Deactivate();
+            
             _trailParticle.Stop();
             _idleParticle.Stop();
             

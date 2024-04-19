@@ -9,7 +9,7 @@ namespace InternalAssets.Codebase.Gameplay.ModelsView
         private void Start()
         {
             if(ModelView != null)
-                ModelView.SpriteSheetAnimator.Bootstrapp();
+                ModelView.SpriteSheetAnimator.Activate();
         }
 
         public void ReplaceView(ModelView modelView)
@@ -18,13 +18,13 @@ namespace InternalAssets.Codebase.Gameplay.ModelsView
                 Destroy(ModelView.gameObject);
 
             ModelView = Instantiate(modelView, transform);
-            ModelView.SpriteSheetAnimator.Bootstrapp();
+            ModelView.SpriteSheetAnimator.Activate();
         }
 
         private void OnDestroy()
         {
             if(ModelView != null)
-                ModelView.SpriteSheetAnimator.Dispose();
+                ModelView.SpriteSheetAnimator.Deactivate();
         }
     }
 }

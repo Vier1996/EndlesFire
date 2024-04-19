@@ -14,10 +14,10 @@ namespace Codebase.Library.SAD
         public GameObject GameObject { get; private set; }
         public Transform Transform { get; private set; }
         public EntityComponents Components => _components;
-        
+        public bool IsBootstapped { get; private set; }
+
         private EntityComponents _components = new DefaultEntityComponents();
         private EntityWorld _entityWorld;
-        private bool _bootstrapped = false;
 
         private void Start()
         {
@@ -27,9 +27,9 @@ namespace Codebase.Library.SAD
 
         public virtual Entity Bootstrapp()
         {
-            if (_bootstrapped) return this;
+            if (IsBootstapped) return this;
 
-            _bootstrapped = true;
+            IsBootstapped = true;
             
             if(ServiceContainer.For(this).TryGetService(out _entityWorld))
                 _entityWorld.AddEntity(this);
@@ -88,7 +88,6 @@ namespace Codebase.Library.SAD
                 return receivedComponent;
 
             Debug.LogError($"Can not get component with Name:[{typeof(T).Name}]");
-            //throw new ArgumentException($"Can not get component with Name:[{typeof(T).Name}]");
             return null;
         }
 

@@ -25,11 +25,11 @@ namespace InternalAssets.Codebase.Services.Animation
         private CommonAnimationType _currentAnimation = CommonAnimationType.none;
         private AwaitAnimationArgs _awaitAnimationArgs;
         
-        private float _updateNextSpriteTimer = 0f;
-        private bool _enabled = false;
-        private bool _once = false;
-        private bool _await = false;
-        private int _spriteIndex = 0;
+        [SerializeField, ReadOnly] private float _updateNextSpriteTimer = 0f;
+        [SerializeField, ReadOnly] private bool _enabled = false;
+        [SerializeField, ReadOnly] private bool _once = false;
+        [SerializeField, ReadOnly] private bool _await = false;
+        [SerializeField, ReadOnly] private int _spriteIndex = 0;
 
         private void ResetComponent()
         {
@@ -39,7 +39,7 @@ namespace InternalAssets.Codebase.Services.Animation
             _updateAnimationDisposable?.Dispose();
         }
 
-        public SpriteSheetAnimator Bootstrapp()
+        public SpriteSheetAnimator Activate()
         {
             ResetComponent();
             
@@ -53,7 +53,7 @@ namespace InternalAssets.Codebase.Services.Animation
             return this;
         }
 
-        public void Dispose()
+        public void Deactivate()
         {
             _updateAnimationDisposable?.Dispose();
             _enabled = false;

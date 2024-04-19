@@ -27,7 +27,7 @@ MonoBehaviour:
     <QueueAsOneBullets>k__BackingField: 0
     <AnimateEveryShoot>k__BackingField: 0
   <WeaponAmmoStats>k__BackingField:
-    <Damage>k__BackingField: 3
+    <Damage>k__BackingField: 5
     <CriticalChance>k__BackingField: 0
     <CriticalDamageMultiplier>k__BackingField: 0
     <BulletMovementSpeed>k__BackingField: 15
@@ -35,7 +35,7 @@ MonoBehaviour:
     <HaveRadiusDamage>k__BackingField: 0
     <Radius>k__BackingField: 0
     <DestructByLifeTime>k__BackingField: 1
-    <LifeTime>k__BackingField: 0.5
+    <LifeTime>k__BackingField: 2
   <WeaponAnimationStats>k__BackingField:
     <AnimationOffset>k__BackingField: -0.05
     <AnimationDuration>k__BackingField: 0.3

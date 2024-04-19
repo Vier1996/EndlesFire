@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1834252418152675438}
   - component: {fileID: 7753303819892990193}
   m_Layer: 0
-  m_Name: WeaponedEnemy
+  m_Name: DetonatedEnemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

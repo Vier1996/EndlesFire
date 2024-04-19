@@ -15,19 +15,18 @@ namespace InternalAssets.Codebase.Gameplay.Entities.EnemiesFolder
     public abstract class Enemy : Entity, IEnemy, ITargetable, IDamageReceiver
     {
         public EnemyConfig EnemyConfig { get; protected set; }
+        protected HealthComponent HealthComponent;
         
         public virtual Enemy Initialize(EnemyType enemyType)
         {
             EnemyConfigsContainer configsContainer = EnemyConfigsContainer.GetInstance();
-            HealthComponent healthComponent = GetAbstractComponent<HealthComponent>();
 
             EnemyConfig = configsContainer.Get(enemyType);
             
-            healthComponent.Initialize(20).Enable();
+            HealthComponent.Initialize(20).Enable();
+            HealthComponent.HealthEmpty += OnKilled;
             
             configsContainer.Release();
-
-            healthComponent.HealthEmpty += OnKilled;
             
             return this;
         }
@@ -39,12 +38,32 @@ namespace InternalAssets.Codebase.Gameplay.Entities.EnemiesFolder
 
         protected virtual void OnKilled()
         {
-            HealthComponent healthComponent = GetAbstractComponent<HealthComponent>();
-
-            healthComponent.HealthEmpty -= OnKilled;
+            HealthComponent.HealthEmpty -= OnKilled;
             
-            healthComponent.Disable();
+            HealthComponent.Disable();
         }
+        
+#if UNITY_EDITOR
+        [Button]
+        private void DebugHit(int damage)
+        {
+            DamageArgs args = new DamageArgs()
+            {
+                Damage = damage,
+                IsCritical = false,
+                Type = DamageType.damage
+            };
+            
+            HealthComponent.Operate(args);
+            
+        }
+
+        [Button]
+        private void DebugKill(int damage)
+        {
+            OnKilled();
+        }
+#endif
     }
     
     [Serializable]

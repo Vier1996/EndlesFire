@@ -114,7 +114,7 @@ namespace InternalAssets.Codebase.Gameplay.Weapons.Presenter
                     break;
             }
         }
-
+        
         private void SetTargetListening(ITargetable target)
         {
             _target = target;

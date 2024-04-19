@@ -10,33 +10,23 @@ namespace InternalAssets.Codebase.Gameplay.Entities.EnemiesFolder
 {
     public abstract class PursuitEnemy : Enemy
     {
-        private EnemyTranslationComponent _enemyTranslationComponent;
-        private ModelViewProvider _modelViewProvider;
+        protected EnemyTranslationComponent EnemyTranslationComponent;
+        protected ModelViewProvider ModelViewProvider;
         
-        public override Enemy Initialize(EnemyType enemyType)
-        {
-            base.Initialize(enemyType);
-
-            TryGetAbstractComponent(out _enemyTranslationComponent);
-            TryGetAbstractComponent(out _modelViewProvider);
-
-            return this;
-        }
-
         protected void StartPursuit(ITargetable targetable, Action onReceiveTarget = null)
         {
-            _modelViewProvider.ModelView.SpriteSheetAnimator.SetAnimation(CommonAnimationType.walk);
+            ModelViewProvider.ModelView.SpriteSheetAnimator.SetAnimation(CommonAnimationType.walk);
             
-            _enemyTranslationComponent
+            EnemyTranslationComponent
                 .WithParams(1f, 0.9f)
                 .TransferTo(targetable, onReceiveTarget);
         }
 
         protected void StopPursuit()
         {
-            _modelViewProvider.ModelView.SpriteSheetAnimator.Dispose();
+            ModelViewProvider.ModelView.SpriteSheetAnimator.Deactivate();
             
-            _enemyTranslationComponent.Dispose();
+            EnemyTranslationComponent.Dispose();
         }
     }
 
