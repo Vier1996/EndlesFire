@@ -1,4 +1,3 @@
-using System;
 using InternalAssets.Codebase.Interfaces;
 using InternalAssets.Codebase.Services.Animation;
 using Sirenix.OdinInspector;
@@ -12,34 +11,35 @@ namespace InternalAssets.Codebase.Gameplay.Items
         [BoxGroup("Effects"), SerializeField] private ParticleSystem _trailParticle;
         [BoxGroup("Effects"), SerializeField] private ParticleSystem _idleParticle;
         
-        public override ItemView Bootstrapp()
+        public override ItemView Enable()
         {
             _modelRenderer.Bootstrapp();
             
-            return base.Bootstrapp();
+            return base.Enable();
         }
         
-        public override void Dispose()
+        public override ItemView Disable()
         {
             _modelRenderer.Dispose();
-            
             _trailParticle.Stop();
             _idleParticle.Stop();
             
-            base.Dispose();
+            return base.Disable();
         }
 
-        public override void Setup(ItemData data, Vector3 spawnPosition, bool withSpawnAnimation = true)
+        public override ItemView Setup(ItemData data, Vector3 spawnPosition, bool withSpawnAnimation = true)
         {
             base.Setup(data, spawnPosition, withSpawnAnimation);
             
             if (withSpawnAnimation)
             {
                 AnimatedSpawning();
-                return;
+                return this;
             }
             
             Initialize();
+            
+            return this;
         }
         
         protected override void Initialize()

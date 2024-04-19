@@ -14466,7 +14466,7 @@ GameObject:
   - component: {fileID: 5892813278346171410}
   - component: {fileID: 5834909455108799560}
   m_Layer: 10
-  m_Name: MoneyItemView
+  m_Name: GemItemView
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

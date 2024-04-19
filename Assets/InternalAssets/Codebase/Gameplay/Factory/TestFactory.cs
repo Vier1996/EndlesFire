@@ -19,8 +19,8 @@ namespace InternalAssets.Codebase.Gameplay.Factory
             ItemView item = LeanPool.Spawn(_targetItem);
 
             item
-                .Bootstrapp()
-                .Setup(_data, _spawnPoint.position);
+                .Setup(_data, _spawnPoint.position)
+                .Enable();
         }
     }
 }

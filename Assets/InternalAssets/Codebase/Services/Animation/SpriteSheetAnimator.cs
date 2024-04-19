@@ -30,17 +30,27 @@ namespace InternalAssets.Codebase.Services.Animation
         private bool _once = false;
         private bool _await = false;
         private int _spriteIndex = 0;
-        
-        public void Bootstrapp()
+
+        private void ResetComponent()
         {
+            _currentAnimation = CommonAnimationType.none;
+            _spriteIndex = 0;
+            
+            _updateAnimationDisposable?.Dispose();
+        }
+
+        public SpriteSheetAnimator Bootstrapp()
+        {
+            ResetComponent();
+            
             _updateAnimationDisposable = Observable.EveryFixedUpdate().Subscribe(_ => UpdateAnimation());
             
             if(_startFromDefaultAnimation == false)
-                return;
+                return this;
             
-            SpriteSheetAnimationSetup setup = _animationSetups.First();
-            
-            SetAnimation(setup.AnimationType);
+            SetAnimation(_animationSetups.First().AnimationType);
+
+            return this;
         }
 
         public void Dispose()

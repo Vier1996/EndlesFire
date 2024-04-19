@@ -13,7 +13,7 @@ using Random = UnityEngine.Random;
 
 namespace InternalAssets.Codebase.Gameplay.Items
 {
-    public abstract class ItemView : SerializedMonoBehaviour, IBootstrappable<ItemView>, ICollectable, IDisposable
+    public abstract class ItemView : SerializedMonoBehaviour, IRecycledClass<ItemView>, ICollectable
     {
         [BoxGroup("General"), SerializeField] protected LayerMask WorkingLayer;
         
@@ -29,39 +29,39 @@ namespace InternalAssets.Codebase.Gameplay.Items
         
         private IDisposable _jumpToEntityDisposable;
         private Transform _selfTransform;
-        private bool _isBootstrapped = false;
 
-        private void Start() => Bootstrapp();
+        private void Awake() => _selfTransform = transform;
 
-        public virtual ItemView Bootstrapp()
+        private void Start()
         {
-            if (_isBootstrapped) return this;
-            
-            _isBootstrapped = true;
-            
-            _selfTransform = transform;
-            
+            if(IsSelfActivated)
+                Enable();
+        }
+        
+        public virtual ItemView Enable()
+        {
             if(IsSelfActivated)
                 Setup(InnerItemData, _selfTransform.position, false);
             
             return this;
         }
-        
-        public virtual void Dispose()
+
+        public virtual ItemView Disable()
         {
             _jumpToEntityDisposable?.Dispose();
             _selfTransform.KillTween();
             
-            LeanPool.Despawn(gameObject);
+            return this;
         }
-        
+
         public ItemData GetCollectableData() => ItemData;
 
-        public virtual void Setup(ItemData data, Vector3 spawnPosition, bool withSpawnAnimation = true)
+        public virtual ItemView Setup(ItemData data, Vector3 spawnPosition, bool withSpawnAnimation = true)
         {
             ItemData = data;
-            
             _selfTransform.position = spawnPosition;
+
+            return this;
         }
 
         protected virtual void Initialize()
@@ -134,11 +134,16 @@ namespace InternalAssets.Codebase.Gameplay.Items
                 {
                     OnJumpToCollectorComplete();
                     DispatchCollecting(collector);
-                    Dispose();
-                    
-                    _jumpToEntityDisposable?.Dispose();
+                    Despawn();
                 }
             }
+        }
+
+        private void Despawn()
+        {
+            Disable();
+            
+            LeanPool.Despawn(gameObject);
         }
     }
 }
