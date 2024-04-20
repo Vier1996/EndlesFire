@@ -1468,7 +1468,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _player: {fileID: 1572813125162196179, guid: 5f1f9e30508fcb147b1b019dcffea868, type: 3}
-  _playerParent: {fileID: 0}
+  _playerParent: {fileID: 1807489304}
   _cameraCenterer: {fileID: 173885526}
 --- !u!114 &545590752
 MonoBehaviour:
