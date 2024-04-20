@@ -5,6 +5,7 @@ using Codebase.Library.Random;
 using Codebase.Library.SAD;
 using Sirenix.OdinInspector;
 using UniRx;
+using UnityEditor;
 using UnityEngine;
 
 namespace InternalAssets.Codebase.Gameplay.Map.Floor
@@ -98,7 +99,7 @@ namespace InternalAssets.Codebase.Gameplay.Map.Floor
             }
         }
 
-        private void ShiftLeft()
+        private void  ShiftLeft()
         {
             _horizontalOffset += _installParams.Offset;
             
@@ -208,7 +209,7 @@ namespace InternalAssets.Codebase.Gameplay.Map.Floor
                 
                 for (int j = 0; j < _installParams.Width; j++)
                 {
-                    RecycledFloorElement element = Instantiate(_installParams.FloorElementPrefab, transform);
+                    RecycledFloorElement element = PrefabUtility.InstantiatePrefab(_installParams.FloorElementPrefab, transform) as RecycledFloorElement;
                     
                     element.GameObject.name = "FloorElement";
                     element.Transform.position = new Vector3(currentPosX, currentPosY, 0);

@@ -24,7 +24,7 @@ TagManager:
   - Bullet
   - Obstacle
   - Item
-  - 
+  - Trigger
   - 
   - 
   - 
@@ -48,6 +48,9 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Weapon
+    uniqueID: 2858928341
     locked: 0
   - name: VFX
     uniqueID: 2834951765

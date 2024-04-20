@@ -1,11 +1,13 @@
 using System;
 using System.Collections;
+using ACS.Core.ServicesContainer;
 using Codebase.Gameplay.Sorting;
 using Codebase.Library.SAD;
 using Cysharp.Threading.Tasks;
 using DG.Tweening;
 using InternalAssets.Codebase.Gameplay.Behavior.Player;
 using InternalAssets.Codebase.Gameplay.Behavior.Player.States;
+using InternalAssets.Codebase.Gameplay.Parents;
 using InternalAssets.Codebase.Gameplay.Sorting;
 using InternalAssets.Codebase.Services.Input;
 using Lean.Pool;
@@ -28,7 +30,6 @@ namespace InternalAssets.Codebase.Gameplay.Movement
         [BoxGroup("DodgeParams"), SerializeField] private float dodgeDist = 2f;
         [BoxGroup("DodgeParams"), SerializeField, Range(0f, 5f)] private float _dodgeJoystickDeviation;
         [BoxGroup("Physic"), SerializeField] private CircleCollider2D _movementCollider;
-        [BoxGroup("Sorting"), SerializeField] private SortableItem _playerSortableComponent;
 
         public bool IsInitialized { get; private set; } = false;
         public Vector3 Direction => _lastDirection;
@@ -40,6 +41,7 @@ namespace InternalAssets.Codebase.Gameplay.Movement
         private IInputService _inputService;
         private WaitForSeconds _dodgeDelay = new(0.5f);
         private Sequence _dodgeIndicatorSequence;
+        private SceneAssetParentsContainer _sceneAssetParentsContainer;
         
         private readonly float _distMultiplierPerFixedUpdate = 2.5f;
         private float _speedProperty;
@@ -57,6 +59,8 @@ namespace InternalAssets.Codebase.Gameplay.Movement
         {
             _inputService = new MobilePlayerInputService();
 
+            ServiceContainer.ForCurrentScene().Get(out _sceneAssetParentsContainer);
+            
             _speedProperty = 2f;//speedStat.Value;
             
             _playerBehaviorMachine = playerEntity.GetAbstractComponent<PlayerBehaviorMachine>();
@@ -206,8 +210,7 @@ namespace InternalAssets.Codebase.Gameplay.Movement
         {
             _currentFootstepDistance = _footstepTriggerDistance;
 
-            SortableParticle sortableParticle = LeanPool.Spawn(_footstepEffect, _footstepSpawnPosition.position, Quaternion.identity, null);
-            sortableParticle.ChangeSortingOrder(_playerSortableComponent.LastOrder - 15);
+            SortableParticle sortableParticle = LeanPool.Spawn(_footstepEffect, _footstepSpawnPosition.position, Quaternion.identity, _sceneAssetParentsContainer.VfxParent);
             sortableParticle.Play();
         }
 

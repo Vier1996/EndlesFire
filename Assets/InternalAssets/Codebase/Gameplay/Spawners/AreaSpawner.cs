@@ -1,4 +1,5 @@
-﻿using InternalAssets.Codebase.Gameplay.Entities.EnemiesFolder;
+﻿using Codebase.Library.SAD;
+using InternalAssets.Codebase.Gameplay.Entities.EnemiesFolder;
 using InternalAssets.Codebase.Gameplay.Enums;
 using Lean.Pool;
 using Sirenix.OdinInspector;
@@ -6,16 +7,21 @@ using UnityEngine;
 
 namespace InternalAssets.Codebase.Gameplay.Spawners
 {
-    public class AreaSpawner : MonoBehaviour, IEnemiesSpawner
+    public class AreaSpawner : AbstractSpawner
     {
         [SerializeField] private Enemy _enemyPrefab;
         [SerializeField] private Transform _spawnParent;
         [SerializeField] private SpawnAreaCombiner _spawnAreaCombiner;
         
         private Vector3 _size = Vector3.one;
-        
+
+        public override void Initialize(Entity listeningEntity)
+        {
+            
+        }
+
         [Button]
-        public void Spawn()
+        public override void Spawn()
         {
             if (_spawnAreaCombiner.TryGetAvailablePoint(_size, false, out Vector3 position))
             {

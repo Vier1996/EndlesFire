@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using Codebase.Library.Extension.Native.Types;
+using InternalAssets.Codebase.Gameplay.Triggers;
 using InternalAssets.Codebase.Interfaces;
 using UnityEngine;
 
@@ -8,7 +9,7 @@ namespace InternalAssets.Codebase.Gameplay.Damage
 {
     public class DamagableTrigger : MonoBehaviour
     {
-        public event Action<IDamageReceiver> ReceiverFound;
+        public event Action<DamageReceiveTrigger> ReceiverFound;
 
         private Type _receiverType;
         private List<Type> _listeningTypes = new();
@@ -21,10 +22,10 @@ namespace InternalAssets.Codebase.Gameplay.Damage
         
         protected void OnTriggerEnter2D(Collider2D other)
         {
-            if (other.TryGetComponent(out IDamageReceiver receiver))
+            if (other.TryGetComponent(out ITrigger iTrigger) && iTrigger is DamageReceiveTrigger damageReceiveTrigger)
             {
                 if(IsValid())
-                    ReceiverFound?.Invoke(receiver);
+                    ReceiverFound?.Invoke(damageReceiveTrigger);
             }
         }
 

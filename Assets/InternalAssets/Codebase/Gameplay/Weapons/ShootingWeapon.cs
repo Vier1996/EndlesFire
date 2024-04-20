@@ -22,6 +22,7 @@ namespace InternalAssets.Codebase.Gameplay.Weapons
         private IDisposable _shootingQueueDisposable;
         private IDisposable _fireDispatchDisposable;
         private ITargetable _currentTarget;
+        private ITargetable _lastTarget;
         private IDetectionSystem _detectionSystem;
         
         private bool _shootingInProcess;
@@ -61,8 +62,12 @@ namespace InternalAssets.Codebase.Gameplay.Weapons
 
         public override void StartFire(ITargetable target)
         {
-            _currentTarget = target;
+            _lastTarget?.DisableMarker();
+
             _shootingInProcess = true;
+
+            _currentTarget = target;
+            _currentTarget?.EnableMarker();
         }
 
         public override void StopFire()
@@ -77,6 +82,7 @@ namespace InternalAssets.Codebase.Gameplay.Weapons
             if (_currentTarget == null || _currentTarget.GetTargetTransform() == null)
                 return false;
 
+            _lastTarget = _currentTarget;
             _busyByShooting = true;
             _currentRechargingTime = 0f;
 

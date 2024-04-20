@@ -23,7 +23,6 @@ namespace InternalAssets.Codebase.Gameplay.Weapons.Presenter
         private ITargetable _target;
         private PlayerMovementComponent _playerMovementComponent;
         private ModelViewProvider _modelViewProvider;
-        private SortableItem _sortableItemOfOwner;
         private IDetectionSystem _detectionSystem;
         private Transform _selfTransform;
         private Entity _entity;
@@ -45,7 +44,6 @@ namespace InternalAssets.Codebase.Gameplay.Weapons.Presenter
 
             _playerMovementComponent = _entity.GetAbstractComponent<PlayerMovementComponent>();
             _modelViewProvider = _entity.GetAbstractComponent<ModelViewProvider>();
-            _sortableItemOfOwner = _entity.GetAbstractComponent<SortableItem>();
             _detectionSystem = _entity.GetAbstractComponent<IDetectionSystem>();
             
             SetJoystickListening();
@@ -72,6 +70,8 @@ namespace InternalAssets.Codebase.Gameplay.Weapons.Presenter
 
             _isEnabled = false;
             
+            CurrentView.StopFire();
+            
             _detectionSystem.OnTargetDetected -= SetTargetListening;
             
             return this;
@@ -80,19 +80,13 @@ namespace InternalAssets.Codebase.Gameplay.Weapons.Presenter
         [Button]
         public override void PresentWeapon(WeaponType weaponType)
         {
-            if (CurrentView != null)
-            {
-                _sortableItemOfOwner.RemoveRenderers(CurrentView.GetWeaponRenderers());
-                CurrentView.Dispose();
-            }
-            
+            if (CurrentView != null) CurrentView.Dispose();
+
             WeaponConfigsContainer container = WeaponConfigsContainer.GetInstance();
             WeaponConfig config = container.GetConfig(weaponType);
 
             CurrentView = Instantiate(config.ViewPrefab, _selfTransform);
             CurrentView.Bootstrapp(config, _entity);
-
-            _sortableItemOfOwner.AddRenderers(CurrentView.GetWeaponRenderers());
             
             DispatchWeaponUpdatedEvent(config);
             

@@ -2,10 +2,12 @@
 using Codebase.Gameplay.Sorting;
 using Codebase.Library.SAD;
 using InternalAssets.Codebase.Gameplay.Configs.Enemy;
+using InternalAssets.Codebase.Gameplay.CustomComponents;
 using InternalAssets.Codebase.Gameplay.Damage;
 using InternalAssets.Codebase.Gameplay.Enums;
 using InternalAssets.Codebase.Gameplay.HealthLogic;
 using InternalAssets.Codebase.Gameplay.ModelsView;
+using InternalAssets.Codebase.Gameplay.Targets;
 using InternalAssets.Codebase.Interfaces;
 using Sirenix.OdinInspector;
 using UnityEngine;
@@ -14,11 +16,16 @@ namespace InternalAssets.Codebase.Gameplay.Entities.EnemiesFolder
 {
     public abstract class Enemy : Entity, IEnemy, ITargetable, IDamageReceiver
     {
-        public EnemyConfig EnemyConfig { get; protected set; }
+        protected EnemyConfig EnemyConfig;
         protected HealthComponent HealthComponent;
         
+        private EnemyComponents _enemyComponents;
+        private TargetView _targetView;
+
         public virtual Enemy Initialize(EnemyType enemyType)
         {
+            TryGetAbstractComponent(out _targetView);
+            
             EnemyConfigsContainer configsContainer = EnemyConfigsContainer.GetInstance();
 
             EnemyConfig = configsContainer.Get(enemyType);
@@ -31,14 +38,27 @@ namespace InternalAssets.Codebase.Gameplay.Entities.EnemiesFolder
             return this;
         }
 
-        public virtual Transform GetTargetTransform() => transform;
-        public virtual void EnableMarker() { }
-        public virtual void DisableMarker() { }
-        public virtual void ReceiveDamage(DamageArgs damageArgs) { }
+        public virtual Transform GetTargetTransform()
+        {
+            _enemyComponents ??= Components as EnemyComponents;
 
+            if(_enemyComponents == null)
+                throw new ArgumentException($"Can not cast AbstractComponents to {nameof(EnemyComponents)}");
+            
+            return _enemyComponents.TargetTransform;
+        }
+
+        public virtual void EnableMarker() => _targetView.EnableView();
+        
+        public virtual void DisableMarker() => _targetView.DisableView();
+        
+        public virtual void ReceiveDamage(DamageArgs damageArgs) { }
+        
         protected virtual void OnKilled()
         {
             HealthComponent.HealthEmpty -= OnKilled;
+
+            DisableMarker();
             
             HealthComponent.Disable();
         }
@@ -69,16 +89,20 @@ namespace InternalAssets.Codebase.Gameplay.Entities.EnemiesFolder
     [Serializable]
     public class EnemyComponents : EntityComponents
     {
+        [field: SerializeField, BoxGroup("Enemy components/Target components")] public Transform TargetTransform { get; private set; }
+
+        [BoxGroup("Enemy components"), SerializeField] private PhysicPairComponent _physicPairComponent;
         [BoxGroup("Enemy components"), SerializeField] private ModelViewProvider _modelViewProvider;
+        [BoxGroup("Enemy components"), SerializeField] private TargetView _targetView;
         [BoxGroup("Enemy components"), SerializeField] private HealthComponent _healthComponent;
-        [BoxGroup("Enemy components"), SerializeField] private SortableItem _sortableItem;
 
         public override EntityComponents Declare(Entity abstractEntity)
         {
             Add(typeof(Entity), abstractEntity);
+            Add(_physicPairComponent);
+            Add(_targetView);
             Add(_healthComponent);
             Add(_modelViewProvider);
-            Add(_sortableItem);
             
             return this;
         }

@@ -4,6 +4,7 @@ using Codebase.Library.SAD;
 using InternalAssets.Codebase.Gameplay.Damage;
 using InternalAssets.Codebase.Gameplay.Enums;
 using InternalAssets.Codebase.Gameplay.Sorting;
+using InternalAssets.Codebase.Gameplay.Triggers;
 using InternalAssets.Codebase.Gameplay.Weapons.Configs;
 using InternalAssets.Codebase.Interfaces;
 using Lean.Pool;
@@ -92,13 +93,13 @@ namespace InternalAssets.Codebase.Gameplay.Bullets
         {
             if (_isInteracted) return;
 
-            if (other.TryGetComponent(out IDamageReceiver receiver))
+            if (other.TryGetComponent(out ITrigger iTrigger) && iTrigger is DamageReceiveTrigger damageReceiveTrigger)
             {
-                if (_owner == receiver) return;
+                if (_owner == damageReceiveTrigger.DamageReceiver) return;
                 
                 _isInteracted = true;
 
-                receiver.ReceiveDamage(_args);
+                damageReceiveTrigger.DamageReceiver.ReceiveDamage(_args);
 
                 CreateSplittingEffect();
                 Despawn();

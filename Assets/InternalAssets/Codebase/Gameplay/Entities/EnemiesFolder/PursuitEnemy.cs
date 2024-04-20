@@ -18,7 +18,7 @@ namespace InternalAssets.Codebase.Gameplay.Entities.EnemiesFolder
             ModelViewProvider.ModelView.SpriteSheetAnimator.SetAnimation(CommonAnimationType.walk);
             
             EnemyTranslationComponent
-                .WithParams(1f, 0.9f)
+                .WithParams(1f, 0.6f)
                 .TransferTo(targetable, onReceiveTarget);
         }
 

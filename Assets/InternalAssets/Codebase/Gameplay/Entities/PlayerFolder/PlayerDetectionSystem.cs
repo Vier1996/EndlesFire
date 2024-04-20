@@ -3,7 +3,6 @@ using Codebase.Library.SAD;
 using InternalAssets.Codebase.Gameplay.Entities.EnemiesFolder;
 using InternalAssets.Codebase.Gameplay.Scanning;
 using InternalAssets.Codebase.Gameplay.Weapons.Configs;
-using InternalAssets.Codebase.Gameplay.Weapons.Presenter;
 using InternalAssets.Codebase.Interfaces;
 using UnityEngine;
 

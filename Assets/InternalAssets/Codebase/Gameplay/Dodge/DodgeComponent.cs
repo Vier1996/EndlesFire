@@ -1,8 +1,14 @@
 using System;
+using ACS.Core.ServicesContainer;
 using Codebase.Gameplay.Sorting;
 using Codebase.Library.SAD;
+using InternalAssets.Codebase.Gameplay.Enums;
+using InternalAssets.Codebase.Gameplay.Factory.Vfx;
 using InternalAssets.Codebase.Gameplay.Movement;
+using InternalAssets.Codebase.Gameplay.Parents;
+using InternalAssets.Codebase.Gameplay.Sorting;
 using InternalAssets.Codebase.Interfaces;
+using Lean.Pool;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
@@ -10,24 +16,22 @@ namespace InternalAssets.Codebase.Gameplay.Dodge
 {
     public class DodgeComponent : MonoBehaviour, IDerivedEntityComponent
     {
-        [BoxGroup("Effect"), SerializeField] private ParticleSystem _horizontalDodge;
-        [BoxGroup("Effect"), SerializeField] private ParticleSystem _verticalDodge;
         [BoxGroup("EffectPosition"), SerializeField] private Transform _upPosition;
         [BoxGroup("EffectPosition"), SerializeField] private Transform _rightPosition;
         [BoxGroup("EffectPosition"), SerializeField] private Transform _downPosition;
         [BoxGroup("EffectPosition"), SerializeField] private Transform _leftPosition;
         
-        private Entity _caster;
-        private SortableItem _playerSortableComponent;
-        private PlayerMovementComponent _playerMovement;
         private IWeaponPresenter _weaponPresenter;
+        private PlayerMovementComponent _playerMovement;
+        private SceneAssetParentsContainer _sceneAssetParentsContainer;
+        private VfxFactoryProvider _vfxFactoryProvider;
         
         public void Bootstrapp(Entity entity)
         {
-            _caster = entity;
+            ServiceContainer.Global.Get(out _vfxFactoryProvider);
+            ServiceContainer.ForCurrentScene().Get(out _sceneAssetParentsContainer);
             
             entity.TryGetAbstractComponent(out _playerMovement);
-            entity.TryGetAbstractComponent(out _playerSortableComponent);
             entity.TryGetAbstractComponent(out _weaponPresenter);
             
             _playerMovement.OnDodgeStart += OnDodgeStart;
@@ -45,25 +49,25 @@ namespace InternalAssets.Codebase.Gameplay.Dodge
         private void OnDodgeStart()
         {
             Vector3 speed = _playerMovement.Direction;
-            ParticleSystem effect = null;
+            SortableParticle effect = null;
             
             if (Math.Abs(speed.x) > Math.Abs(speed.y))
             {
                 if (speed.x > 0)
-                    effect = CreateDodgeEffect(_leftPosition, _horizontalDodge);
+                    effect = CreateDodgeEffect(VfxType.horizontal_dodge, _leftPosition);
                 else
                 {
-                    effect = CreateDodgeEffect(_rightPosition, _horizontalDodge);
+                    effect = CreateDodgeEffect(VfxType.horizontal_dodge, _rightPosition);
                     effect.transform.localScale = new Vector3(-1, 1, 1);
                 }
             }
             else
             {
                 if (speed.y > 0)
-                    effect = CreateDodgeEffect(_downPosition, _verticalDodge);
+                    effect = CreateDodgeEffect(VfxType.vertical_dodge, _downPosition);
                 else
                 {
-                    effect = CreateDodgeEffect(_upPosition, _verticalDodge);
+                    effect = CreateDodgeEffect(VfxType.vertical_dodge, _upPosition);
                     effect.transform.localScale = new Vector3(1, -1, 1);
                 }
             }
@@ -76,14 +80,16 @@ namespace InternalAssets.Codebase.Gameplay.Dodge
         
         private void DisableWeaponPresenter() => _weaponPresenter.HidePresenter();
 
-        private ParticleSystem CreateDodgeEffect(Transform targetTransform, ParticleSystem prefab)
+        private SortableParticle CreateDodgeEffect(VfxType vfxType, Transform targetTransform)
         {
-            ParticleSystem effect = Instantiate(prefab, _caster.Transform);
-            Renderer particleRendererModule = effect.GetComponent<Renderer>();
-
-            particleRendererModule.sortingOrder = _playerSortableComponent.LastOrder - 15;
-            effect.transform.position = targetTransform.position;
-
+            SortableParticle effect = _vfxFactoryProvider.SpawnFactoryItem(
+                    vfxType, 
+                    targetTransform.position, 
+                    Quaternion.identity,
+                    _sceneAssetParentsContainer.VfxParent);
+            
+            effect.Play();
+            
             return effect;
         }
     }

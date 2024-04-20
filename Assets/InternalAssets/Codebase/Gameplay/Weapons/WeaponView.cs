@@ -10,8 +10,6 @@ namespace InternalAssets.Codebase.Gameplay.Weapons
 {
     public abstract class WeaponView : MonoBehaviour, IWeapon, IDisposable
     {
-        [SerializeField] private List<Renderer> _renderers = new();
-
         [field: SerializeField, ReadOnly] public bool InShootingStatus { get; protected set; } = false;
         [field: SerializeField, ReadOnly] public bool InShootingProcess { get; protected set; } = false;
         [field: SerializeField, ReadOnly] public bool InRechargingStatus { get; protected set; } = false;
@@ -35,8 +33,7 @@ namespace InternalAssets.Codebase.Gameplay.Weapons
         
         public virtual void StartFire(ITargetable target) { }
         public virtual void StopFire() { }
-        public List<Renderer> GetWeaponRenderers() => _renderers;
-
+        
         protected abstract void AnimateWeaponFire();
     }
 }

@@ -63,7 +63,7 @@ namespace InternalAssets.Codebase.Gameplay.Entities.PlayerFolder
             healthComponent.Operate(damageArgs);
         }
 
-        public Transform GetTargetTransform() => Transform;
+        public Transform GetTargetTransform() => _playerComponents.TargetTransform;
 
         public void EnableMarker()
         {

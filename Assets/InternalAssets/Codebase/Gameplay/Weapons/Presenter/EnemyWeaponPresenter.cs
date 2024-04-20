@@ -21,7 +21,6 @@ namespace InternalAssets.Codebase.Gameplay.Weapons.Presenter
         private IDisposable _lateUpdateDisposable;
         private Transform _selfTransform;
         private Enemy _enemy;
-        private SortableItem _sortableItemOfOwner;
         private ModelViewProvider _modelViewProvider;
         private ITargetable _currentTarget;
 
@@ -41,7 +40,6 @@ namespace InternalAssets.Codebase.Gameplay.Weapons.Presenter
             
             _lookingType = WeaponLookingType.marked_target;
             
-            _sortableItemOfOwner = entity.GetAbstractComponent<SortableItem>();
             _modelViewProvider = entity.GetAbstractComponent<ModelViewProvider>();
         }
 
@@ -82,19 +80,14 @@ namespace InternalAssets.Codebase.Gameplay.Weapons.Presenter
         [Button]
         public override void PresentWeapon(WeaponType weaponType)
         {
-            if (CurrentView != null)
-            {
-                _sortableItemOfOwner.RemoveRenderers(CurrentView.GetWeaponRenderers());
+            if (CurrentView != null) 
                 CurrentView.Dispose();
-            }
-            
+
             WeaponConfigsContainer container = WeaponConfigsContainer.GetInstance();
             WeaponConfig config = container.GetConfig(weaponType);
 
             CurrentView = Instantiate(config.ViewPrefab, _selfTransform);
             CurrentView.Bootstrapp(config, _enemy);
-
-            _sortableItemOfOwner.AddRenderers(CurrentView.GetWeaponRenderers());
             
             DispatchWeaponUpdatedEvent(config);
             

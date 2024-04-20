@@ -6,6 +6,7 @@ using DG.Tweening;
 using InternalAssets.Codebase.Gameplay.Damage;
 using InternalAssets.Codebase.Gameplay.Entities.PlayerFolder;
 using InternalAssets.Codebase.Gameplay.Enums;
+using InternalAssets.Codebase.Gameplay.Triggers;
 using InternalAssets.Codebase.Gameplay.Weapons.Configs;
 using InternalAssets.Codebase.Interfaces;
 using Sirenix.OdinInspector;
@@ -170,12 +171,12 @@ namespace InternalAssets.Codebase.Gameplay.Weapons.EnemyWeapons
                 });
         }
         
-        private void OnReceiverFound(IDamageReceiver receiver)
+        private void OnReceiverFound(DamageReceiveTrigger receiver)
         {
             DeactivateDamageTrigger();
             GenerateArgs();
             
-            receiver.ReceiveDamage(_args);
+            receiver.DamageReceiver.ReceiveDamage(_args);
         }
     }
 }

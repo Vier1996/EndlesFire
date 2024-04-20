@@ -58,7 +58,7 @@ Transform:
   m_GameObject: {fileID: 7592466511490184981}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.23, y: 0.003, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7592466512150814859}
@@ -102,9 +102,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 152
+  m_SortingLayerID: -1436038955
+  m_SortingLayer: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 123cc446d370d4e33b084d078972b0e7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -162,12 +162,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74f36ed9fa244f6188487af858aad4d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _renderers:
-  - {fileID: 7592466511490184983}
-  - {fileID: 7780259603859174284}
-  WeaponSpark: {fileID: 4968354425254911280}
   <InShootingStatus>k__BackingField: 0
+  <InShootingProcess>k__BackingField: 0
   <InRechargingStatus>k__BackingField: 0
+  WeaponSpark: {fileID: 4968354425254911280}
   _bulletSpawnTransform: {fileID: 8289414978474502991}
   _bulletPrefab: {fileID: 432683496797349227, guid: 8909f307961d0064dbcb7eb03c00b1ad, type: 3}
 --- !u!1001 &1456475597797610815
@@ -237,6 +235,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: a47780fff847a9444830a07bf1637cd0, type: 3}
+    - target: {fileID: 9209711935155119795, guid: ce97153c6a7b9664296fde8fe3f00fba, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8843924269702106380, guid: ce97153c6a7b9664296fde8fe3f00fba, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ce97153c6a7b9664296fde8fe3f00fba, type: 3}
@@ -256,8 +258,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32cb571f6ba94caa8ce8dbd30cc6b23c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!212 &7780259603859174284 stripped
-SpriteRenderer:
-  m_CorrespondingSourceObject: {fileID: 9209711935155119795, guid: ce97153c6a7b9664296fde8fe3f00fba, type: 3}
-  m_PrefabInstance: {fileID: 1456475597797610815}
-  m_PrefabAsset: {fileID: 0}

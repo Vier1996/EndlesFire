@@ -104,8 +104,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1436038955
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 87722cd79936b7e4ea45254ae9b03b47, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -168,6 +168,7 @@ MonoBehaviour:
   _renderers:
   - {fileID: 1216912006753891018}
   <InShootingStatus>k__BackingField: 0
+  <InShootingProcess>k__BackingField: 0
   <InRechargingStatus>k__BackingField: 0
   _damagableTrigger: {fileID: 5840040878462466241}
   _chargeOffset: -0.3
@@ -236,11 +237,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2977841906808538510, guid: 03e3d34181163214fb633c0daee11486, type: 3}
       propertyPath: m_SortingLayer
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2977841906808538510, guid: 03e3d34181163214fb633c0daee11486, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -1460015531
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3913915295446656478, guid: 03e3d34181163214fb633c0daee11486, type: 3}
       propertyPath: m_RootOrder

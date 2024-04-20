@@ -16,11 +16,12 @@ namespace InternalAssets.Codebase.Gameplay.Entities.PlayerFolder
     [Serializable]
     public class PlayerComponents : EntityComponents
     {
+        [field: SerializeField, BoxGroup("General")] public Transform TargetTransform { get; private set; }
+
         [BoxGroup("General"), SerializeField] private PlayerMovementComponent _playerMovementComponent;
         [BoxGroup("General"), SerializeField] private ModelViewProvider _modelViewProvider;
         [BoxGroup("General"), SerializeField] private DodgeComponent _dodgeComponent;
         [BoxGroup("General"), SerializeField] private WeaponPresenter _weaponPresenter;
-        [BoxGroup("General"), SerializeField] private SortableItem _sortableItem;
         [BoxGroup("General"), SerializeField] private PlayerDetectionSystem _playerDetectionSystem;
         [BoxGroup("General"), SerializeField] private HealthComponent _healthComponent;
         
@@ -31,7 +32,6 @@ namespace InternalAssets.Codebase.Gameplay.Entities.PlayerFolder
             Add(abstractEntity);
             Add(_healthComponent);
             Add(_rigidbody2D);
-            Add(_sortableItem);
             Add(_modelViewProvider);
             Add(typeof(PlayerBehaviorMachine), new PlayerBehaviorMachine());
             Add(_playerMovementComponent);
