@@ -87,7 +87,8 @@ namespace InternalAssets.Codebase.Gameplay.HealthLogic
                 
                 return;
             }
-            
+
+            _currentView.SetActiveStatus(true);
             _currentView.Show();
             
             HealthChanged?.Invoke();

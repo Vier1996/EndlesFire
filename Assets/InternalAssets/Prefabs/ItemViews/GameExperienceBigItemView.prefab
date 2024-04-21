@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5892813278346171410}
   - component: {fileID: 2098544325420252132}
   m_Layer: 10
-  m_Name: GameExperienceItemView
+  m_Name: GameExperienceBigItemView
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -218,6 +218,10 @@ PrefabInstance:
     - target: {fileID: 445508, guid: 11d1d43da6ba38c41b5c72adf1edcd6a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 19880836, guid: 11d1d43da6ba38c41b5c72adf1edcd6a, type: 3}
+      propertyPath: simulationSpeed
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 19958844, guid: 11d1d43da6ba38c41b5c72adf1edcd6a, type: 3}
       propertyPath: m_Materials.Array.size

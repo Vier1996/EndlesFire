@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 9016221476963021461}
   - component: {fileID: 6452381947020136216}
   - component: {fileID: 433037933419443865}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: DamagaleTrigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}

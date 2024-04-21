@@ -15156,7 +15156,6 @@ MonoBehaviour:
   dodgeDist: 3
   _dodgeJoystickDeviation: 2.3
   _movementCollider: {fileID: 8413805570059752982}
-  _playerSortableComponent: {fileID: 0}
 --- !u!1 &6623249282254038238
 GameObject:
   m_ObjectHideFlags: 0

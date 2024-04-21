@@ -165,8 +165,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c96bc7db671740a081554e235896d184, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _renderers:
-  - {fileID: 1216912006753891018}
   <InShootingStatus>k__BackingField: 0
   <InShootingProcess>k__BackingField: 0
   <InRechargingStatus>k__BackingField: 0

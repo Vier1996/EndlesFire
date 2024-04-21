@@ -198,6 +198,8 @@ namespace InternalAssets.Codebase.Gameplay.Map.Floor
                 if(obj == transform)
                     continue;
                 
+                PrefabUtility.UnpackPrefabInstance(obj.gameObject, PrefabUnpackMode.Completely, InteractionMode.AutomatedAction);
+                
                 DestroyImmediate(obj.gameObject);
             }
             
@@ -210,7 +212,7 @@ namespace InternalAssets.Codebase.Gameplay.Map.Floor
                 for (int j = 0; j < _installParams.Width; j++)
                 {
                     RecycledFloorElement element = PrefabUtility.InstantiatePrefab(_installParams.FloorElementPrefab, transform) as RecycledFloorElement;
-                    
+
                     element.GameObject.name = "FloorElement";
                     element.Transform.position = new Vector3(currentPosX, currentPosY, 0);
 

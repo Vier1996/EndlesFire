@@ -27,38 +27,130 @@ MonoBehaviour:
         Assembly-CSharp]], mscorlib
     - Name: 
       Entry: 12
-      Data: 1
+      Data: 3
     - Name: 
       Entry: 7
       Data: 1|InternalAssets.Codebase.Gameplay.Directors.GameExperienceDirectorConfiguration+ChancedGameExperience,
         Assembly-CSharp
     - Name: _weight
       Entry: 3
-      Data: 100
+      Data: 10
     - Name: <ItemData>k__BackingField
       Entry: 7
       Data: 2|InternalAssets.Codebase.Gameplay.Items.ItemData, Assembly-CSharp
     - Name: <ItemType>k__BackingField
       Entry: 3
-      Data: 3
+      Data: 5
     - Name: <Value>k__BackingField
       Entry: 7
       Data: 3|InternalAssets.Codebase.Gameplay.Values.ValueConfig, Assembly-CSharp
     - Name: _isConstant
       Entry: 5
-      Data: true
+      Data: false
     - Name: _minCount
       Entry: 3
-      Data: 0
+      Data: 25
     - Name: _maxCount
       Entry: 3
-      Data: 0
+      Data: 50
     - Name: _constantCount
       Entry: 3
       Data: 5
     - Name: 
       Entry: 8
       Data: 
+    - Name: <CanBePlacedToInventory>k__BackingField
+      Entry: 5
+      Data: false
+    - Name: <CanBeSignaled>k__BackingField
+      Entry: 5
+      Data: true
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 4|InternalAssets.Codebase.Gameplay.Directors.GameExperienceDirectorConfiguration+ChancedGameExperience,
+        Assembly-CSharp
+    - Name: _weight
+      Entry: 3
+      Data: 25
+    - Name: <ItemData>k__BackingField
+      Entry: 7
+      Data: 5|InternalAssets.Codebase.Gameplay.Items.ItemData, Assembly-CSharp
+    - Name: <ItemType>k__BackingField
+      Entry: 3
+      Data: 4
+    - Name: <Value>k__BackingField
+      Entry: 7
+      Data: 6|InternalAssets.Codebase.Gameplay.Values.ValueConfig, Assembly-CSharp
+    - Name: _isConstant
+      Entry: 5
+      Data: false
+    - Name: _minCount
+      Entry: 3
+      Data: 10
+    - Name: _maxCount
+      Entry: 3
+      Data: 20
+    - Name: _constantCount
+      Entry: 3
+      Data: 5
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: <CanBePlacedToInventory>k__BackingField
+      Entry: 5
+      Data: false
+    - Name: <CanBeSignaled>k__BackingField
+      Entry: 5
+      Data: true
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 7|InternalAssets.Codebase.Gameplay.Directors.GameExperienceDirectorConfiguration+ChancedGameExperience,
+        Assembly-CSharp
+    - Name: _weight
+      Entry: 3
+      Data: 75
+    - Name: <ItemData>k__BackingField
+      Entry: 7
+      Data: 8|InternalAssets.Codebase.Gameplay.Items.ItemData, Assembly-CSharp
+    - Name: <ItemType>k__BackingField
+      Entry: 3
+      Data: 3
+    - Name: <Value>k__BackingField
+      Entry: 7
+      Data: 9|InternalAssets.Codebase.Gameplay.Values.ValueConfig, Assembly-CSharp
+    - Name: _isConstant
+      Entry: 5
+      Data: false
+    - Name: _minCount
+      Entry: 3
+      Data: 2
+    - Name: _maxCount
+      Entry: 3
+      Data: 8
+    - Name: _constantCount
+      Entry: 3
+      Data: 5
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: <CanBePlacedToInventory>k__BackingField
+      Entry: 5
+      Data: false
+    - Name: <CanBeSignaled>k__BackingField
+      Entry: 5
+      Data: true
     - Name: 
       Entry: 8
       Data: 
@@ -71,6 +163,11 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-  <MinimalDistanceFromPlayer>k__BackingField: 5
-  <MaximalDistanceFromPlayer>k__BackingField: 15
-  <MaxItemsCount>k__BackingField: 5
+  <MinimalDistanceFromPlayer>k__BackingField: 10
+  <MaximalDistanceFromPlayer>k__BackingField: 25
+  <SpawnDelay>k__BackingField: 1
+  <MaxItemsCount>k__BackingField: 10
+  <InitialMinItemsCount>k__BackingField: 1
+  <InitialMaxItemsCount>k__BackingField: 5
+  <RefreshTime>k__BackingField: 2
+  <ClearDistance>k__BackingField: 35
