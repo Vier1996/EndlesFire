@@ -33,9 +33,17 @@ namespace InternalAssets.Codebase.Gameplay.HealthLogic
             _health.Initialize(health);
             
             _currentView.Initialize(_health.ReactiveHealthRatio);
-            
-            if(_showFromStart) _currentView.Show(true);
-            else _currentView.Hide(true);
+
+            if (_showFromStart)
+            {
+                _currentView.SetActiveStatus(true);
+                _currentView.Show(true);
+            }
+            else
+            {
+                _currentView.Hide(true);
+                _currentView.SetActiveStatus(false);
+            }
 
             return this;
         }
@@ -45,9 +53,7 @@ namespace InternalAssets.Codebase.Gameplay.HealthLogic
             if (_isInitialized) return this;
 
             _isInitialized = true;
-
-            _currentView.SetActiveStatus(true);
-
+            
             if (_showFromStart)
                 _currentView.Show();
             else

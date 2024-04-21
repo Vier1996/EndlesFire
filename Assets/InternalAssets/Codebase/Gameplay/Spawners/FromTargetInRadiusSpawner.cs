@@ -33,7 +33,6 @@ namespace InternalAssets.Codebase.Gameplay.Spawners
             
             Vector3 entityPosition = _listeningEntity.Transform.position;
             float randomAngle = Random.Range(0f, 360f);
-            
             float x = entityPosition.x + _spawningRadius * Mathf.Cos(randomAngle * Mathf.Deg2Rad);
             float y = entityPosition.y + _spawningRadius * Mathf.Sin(randomAngle * Mathf.Deg2Rad);
             

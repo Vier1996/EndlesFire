@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07717617cfb94889952da5efe3a4ca47, type: 3}
+  m_Name: GameExperienceDirectorConfiguration
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: <GameExperienceChanced>k__BackingField
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[InternalAssets.Codebase.Gameplay.Directors.GameExperienceDirectorConfiguration+ChancedGameExperience,
+        Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 1|InternalAssets.Codebase.Gameplay.Directors.GameExperienceDirectorConfiguration+ChancedGameExperience,
+        Assembly-CSharp
+    - Name: _weight
+      Entry: 3
+      Data: 100
+    - Name: <ItemData>k__BackingField
+      Entry: 7
+      Data: 2|InternalAssets.Codebase.Gameplay.Items.ItemData, Assembly-CSharp
+    - Name: <ItemType>k__BackingField
+      Entry: 3
+      Data: 3
+    - Name: <Value>k__BackingField
+      Entry: 7
+      Data: 3|InternalAssets.Codebase.Gameplay.Values.ValueConfig, Assembly-CSharp
+    - Name: _isConstant
+      Entry: 5
+      Data: true
+    - Name: _minCount
+      Entry: 3
+      Data: 0
+    - Name: _maxCount
+      Entry: 3
+      Data: 0
+    - Name: _constantCount
+      Entry: 3
+      Data: 5
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  <MinimalDistanceFromPlayer>k__BackingField: 5
+  <MaximalDistanceFromPlayer>k__BackingField: 15
+  <MaxItemsCount>k__BackingField: 5

@@ -1,5 +1,6 @@
 ﻿using ACS.Core.ServicesContainer;
 using Codebase.Library.SAD;
+using InternalAssets.Codebase.Gameplay.Directors;
 using InternalAssets.Codebase.Gameplay.Entities.PlayerFolder;
 using InternalAssets.Codebase.Gameplay.Map.Floor;
 using InternalAssets.Codebase.Gameplay.Parents;
@@ -16,6 +17,7 @@ namespace InternalAssets.Codebase.ServiceLocators
         [BoxGroup("Components"), SerializeField] private SceneAssetParentsContainer _sceneAssetParentsContainer;
         [BoxGroup("Components"), SerializeField] private RecycledFloor _recycledFloor;
         [BoxGroup("Components"), SerializeField] private AbstractSpawner _enemiesSpawner;
+        [BoxGroup("Components"), SerializeField] private GameplayDirectorsBootstrapper _gameplayDirectorsBootstrapper;
         
         [BoxGroup("Player"), SerializeField] private Player _playerPrefab;
         
@@ -35,6 +37,7 @@ namespace InternalAssets.Codebase.ServiceLocators
             SetupCamera(player);
             SetupRecycledFloor(player);
             SetupEnemiesSpawner(player);
+            SetupGameplayDirector(player);
         }
         
         private Player BootstrapPlayer()
@@ -52,5 +55,6 @@ namespace InternalAssets.Codebase.ServiceLocators
         private void SetupRecycledFloor(Entity listeningEntity) => _recycledFloor.Initialize(listeningEntity);
         
         private void SetupEnemiesSpawner(Entity listeningEntity) => _enemiesSpawner.Initialize(listeningEntity);
+        private void SetupGameplayDirector(Entity listeningEntity) => _gameplayDirectorsBootstrapper.Initialize(listeningEntity);
     }
 }

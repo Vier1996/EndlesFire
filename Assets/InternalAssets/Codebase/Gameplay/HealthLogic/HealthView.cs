@@ -42,7 +42,6 @@ namespace InternalAssets.Codebase.Gameplay.HealthLogic
             if (instant)
             {
                 _selfTransform.localScale = Vector3.one;
-                
                 return this;
             }
             
@@ -62,7 +61,6 @@ namespace InternalAssets.Codebase.Gameplay.HealthLogic
             if (instant)
             {
                 _selfTransform.localScale = Vector3.zero;
-                
                 return this;
             }
             
