@@ -99,7 +99,7 @@ namespace InternalAssets.Codebase.Gameplay.Map.Floor
             }
         }
 
-        private void  ShiftLeft()
+        private void ShiftLeft()
         {
             _horizontalOffset += _installParams.Offset;
             

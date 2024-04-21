@@ -24,7 +24,7 @@
         "com.alexplay.core": "2.0.0",
         "com.unity.addressables": "1.21.20"
       },
-      "hash": "bb6c29a71906f8077c05cb2f447cf9bda1d28e57"
+      "hash": "5c20926b5d17f26f7704caaaa992712a5c882342"
     },
     "com.alexplay.signal_bus": {
       "version": "https://github.com/Vier1996/CoreServices.git?path=Packages/com.alexplay.signal-bus",
