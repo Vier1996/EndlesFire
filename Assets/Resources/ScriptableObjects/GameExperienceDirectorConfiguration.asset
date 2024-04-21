@@ -34,7 +34,7 @@ MonoBehaviour:
         Assembly-CSharp
     - Name: _weight
       Entry: 3
-      Data: 10
+      Data: 3
     - Name: <ItemData>k__BackingField
       Entry: 7
       Data: 2|InternalAssets.Codebase.Gameplay.Items.ItemData, Assembly-CSharp
@@ -77,7 +77,7 @@ MonoBehaviour:
         Assembly-CSharp
     - Name: _weight
       Entry: 3
-      Data: 25
+      Data: 10
     - Name: <ItemData>k__BackingField
       Entry: 7
       Data: 5|InternalAssets.Codebase.Gameplay.Items.ItemData, Assembly-CSharp
