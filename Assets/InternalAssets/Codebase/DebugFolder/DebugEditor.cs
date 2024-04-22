@@ -2,7 +2,7 @@ using System;
 using ACS.Core.ServicesContainer;
 using ACS.Dialog.Dialogs;
 using ACS.Dialog.Dialogs.Arguments;
-using ACS.Dialog.Dialogs.View;
+using InternalAssets.Codebase.Dialogs.IncreaseLevelDialog;
 using Sirenix.OdinInspector;
 
 namespace InternalAssets.Codebase.DebugFolder
@@ -21,5 +21,8 @@ namespace InternalAssets.Codebase.DebugFolder
         {
             _dialogService.CallDialog(dialogType);
         }
+        
+        [Button]
+        private void CallIncreaseLevelDialog() => _dialogService.CallDialog(typeof(IncreaseLevelDialog));
     }
 }

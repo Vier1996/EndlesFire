@@ -1,5 +1,7 @@
 ﻿using System;
 using DG.Tweening;
+using DG.Tweening.Core;
+using DG.Tweening.Plugins.Options;
 using UnityEngine;
 
 namespace Codebase.Library.Extension.MonoBehavior
@@ -16,10 +18,10 @@ namespace Codebase.Library.Extension.MonoBehavior
                 .SetEase(Ease.InOutSine);
         }
 
-        public static void DisplayBubbled(this RectTransform self, float targetScale, float duration, float delay = 0f, float defaultScale = 1f, Action onComplete = null) => 
+        public static TweenerCore<Vector3, Vector3, VectorOptions> DisplayBubbled(this RectTransform self, float targetScale, float duration, float delay = 0f, float defaultScale = 1f, Action onComplete = null) => 
             DisplayBubbled(self.transform, targetScale, duration, delay, defaultScale, onComplete);
         
-        public static void DisplayBubbled(this Transform self, float targetScale, float duration, float delay = 0f, float defaultScale = 1f, Action onComplete = null) =>
+        public static TweenerCore<Vector3, Vector3, VectorOptions> DisplayBubbled(this Transform self, float targetScale, float duration, float delay = 0f, float defaultScale = 1f, Action onComplete = null) =>
             self
                 .DOScale(targetScale, duration * 0.5f)
                 .SetDelay(delay)

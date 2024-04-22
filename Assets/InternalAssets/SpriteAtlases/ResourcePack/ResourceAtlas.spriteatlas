@@ -120,7 +120,6 @@ SpriteAtlas:
   - {fileID: 5108524678226685445, guid: c4801b1fbf65f054a93e5f970fec7329, type: 3}
   - {fileID: 21300000, guid: 0dff1e7f098ec5248a1eb30bcba234bf, type: 3}
   - {fileID: 21300000, guid: b480599f89425784ea2afb7bc2b133a3, type: 3}
-  - {fileID: 21300000, guid: 05a364afeae69c849bba9336b331401e, type: 3}
   m_PackedSpriteNamesToIndex:
   - badge big 2
   - bullet granade big
@@ -180,7 +179,6 @@ SpriteAtlas:
   - box1_5
   - bullet automatic big copy 4
   - boots big
-  - coins big 1
   m_RenderDataMap: {}
   m_Tag: ResourceAtlas
   m_IsVariant: 0

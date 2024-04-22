@@ -20,49 +20,8 @@ MonoBehaviour:
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
-    SerializationNodes:
-    - Name: _talentSetups
-      Entry: 7
-      Data: 0|System.Collections.Generic.List`1[[InternalAssets.Codebase.Gameplay.Talents.ITalentSetup,
-        Assembly-CSharp]], mscorlib
-    - Name: 
-      Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 7
-      Data: 1|InternalAssets.Codebase.Gameplay.Talents.MovementIncreasingTalent,
-        Assembly-CSharp
-    - Name: <TalentType>k__BackingField
-      Entry: 3
-      Data: 0
-    - Name: <ContainGrades>k__BackingField
-      Entry: 5
-      Data: true
-    - Name: <Grades>k__BackingField
-      Entry: 7
-      Data: 2|System.Collections.Generic.List`1[[InternalAssets.Codebase.Gameplay.Talents.TalentGrade,
-        Assembly-CSharp]], mscorlib
-    - Name: 
-      Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 7
-      Data: 3|InternalAssets.Codebase.Gameplay.Talents.TalentGrade, Assembly-CSharp
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
+    SerializationNodes: []
+  _talentSetups:
+  - {fileID: 11400000, guid: 75f919b7efb445f4494c35f9ff1d25cc, type: 2}
+  - {fileID: 11400000, guid: 5df5741f8b1bb71478a5c9492ed59585, type: 2}
+  - {fileID: 11400000, guid: 31e905ed245498e4082ecd17a666a244, type: 2}

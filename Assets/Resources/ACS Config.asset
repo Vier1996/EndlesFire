@@ -22,30 +22,38 @@ MonoBehaviour:
     PrefabModifications: []
     SerializationNodes: []
   _bootstrapOptions:
-    _isEnabled: 0
-    FrameRateType: 0
-    TargetRate: 60
+    _isEnabled: 1
+    FrameRateType: 1
+    TargetRate: 165
     TweenersCapacity: 500
     SequencesCapacity: 125
     IgnoreScreenOrientation: 0
     ScreenOrientation: 1
   _dataSettings:
-    _isEnabled: 0
+    _isEnabled: 1
     PackageURL: https://github.com/Vier1996/CoreServices.git?path=Packages/com.alexplay.data
     EnableAutoSave: 0
     AutoSaveDelay: 60
     ActiveModels: []
   _signalBusSettings:
-    _isEnabled: 0
+    _isEnabled: 1
     PackageURL: https://github.com/Vier1996/CoreServices.git?path=Packages/com.alexplay.signal-bus
   _dialogsSettings:
-    _isEnabled: 0
+    _isEnabled: 1
     PackageURL: https://github.com/Vier1996/CoreServices.git?path=Packages/com.alexplay.dialog
     RenderMode: 1
-    DialogSortingOrder: 0
+    DialogSortingOrder: 100
     ResizeOnSceneChanged: 1
     ReferenceResolutionX: 720
     ReferenceResolutionY: 1280
     BaseScreenRatio: 1.7777778
     DefaultResources: Dialogs/
-    ActiveDialogs: []
+    ActiveDialogs:
+    - Name: IncreaseLevelDialog
+      TypeFullName: InternalAssets.Codebase.Dialogs.IncreaseLevelDialog.IncreaseLevelDialog
+      AssemblyName: Assembly-CSharp
+      AddressableReference:
+        m_AssetGUID: dadf1da3f58c02846b9f30801db554c5
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0

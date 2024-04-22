@@ -339,7 +339,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: 9e2c0a3c0eaabed45bd75866686a9fdc, type: 3}
-  m_Type: 0
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -745,8 +745,8 @@ GameObject:
   - component: {fileID: 2112963041178899369}
   - component: {fileID: 55440966125654959}
   - component: {fileID: 6958264789826325567}
-  - component: {fileID: 8067650393853620672}
   - component: {fileID: 529549044567365659}
+  - component: {fileID: 8067650393853620672}
   m_Layer: 5
   m_Name: SkillsCell
   m_TagString: Untagged
@@ -815,19 +815,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &8067650393853620672
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4344849370587587228}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b16d4634e141cc4ca57730427e82098, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _gateImageTransform: {fileID: 3413118413097195497}
 --- !u!114 &529549044567365659
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -843,6 +830,25 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.2509804}
   m_EffectDistance: {x: -10.78, y: -16.37}
   m_UseGraphicAlpha: 1
+--- !u!114 &8067650393853620672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4344849370587587228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b16d4634e141cc4ca57730427e82098, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gateImageTransform: {fileID: 3413118413097195497}
+  _titleName: {fileID: 616216830172397011}
+  _description: {fileID: 615697399325831762}
+  _icon: {fileID: 1579313340115009684}
+  _pickButton: {fileID: 1190247663699952324}
+  _gateAnimationDuration: 0.35
+  _displayButtonDuration: 0.25
 --- !u!1 &6004247895131605152
 GameObject:
   m_ObjectHideFlags: 0

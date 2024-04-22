@@ -1,4 +1,3 @@
-using InternalAssets.Codebase.Gameplay.Talents.TalentsSetups;
 using UnityEngine;
 
 namespace InternalAssets.Codebase.Gameplay.Talents
