@@ -1803,6 +1803,7 @@ MonoBehaviour:
     <StartPositionY>k__BackingField: 10.8
     <Offset>k__BackingField: 1.2
   _styleParams:
+  - <RoomType>k__BackingField: 1
     <StyleSprites>k__BackingField:
     - {fileID: 21300000, guid: d5d48cf4c9eb64ed0a296d6bd14ab1bf, type: 3}
     - {fileID: 21300000, guid: 149dc618d68ad4944b1252a46cd19398, type: 3}
@@ -1813,6 +1814,17 @@ MonoBehaviour:
     - {fileID: 21300000, guid: 5a6d800a99fc34adbb875d2b648402f4, type: 3}
     - {fileID: 21300000, guid: 3d8734ffbe5114c2989c94c3936153b2, type: 3}
     - {fileID: 21300000, guid: 0c9bf101deb254a3283d00dcd852d001, type: 3}
+  - <RoomType>k__BackingField: 2
+    <StyleSprites>k__BackingField:
+    - {fileID: 21300000, guid: feae5ccbe21ec435699516ce1ddbbfad, type: 3}
+    - {fileID: 21300000, guid: ecd401e88ad8b4322ba753fe3b7aacbc, type: 3}
+    - {fileID: 21300000, guid: a76b2c6182ec2415ab4f3dd1388b22ae, type: 3}
+    - {fileID: 21300000, guid: 23a305dd443a942fc8ed0e7f0f54d5d8, type: 3}
+    - {fileID: 21300000, guid: 2a63c0030cbb645beab6932d75dab17f, type: 3}
+    - {fileID: 21300000, guid: 3c78c7449b8834586942820ef4405920, type: 3}
+    - {fileID: 21300000, guid: 37eecfa31a4ad4c5092b510c348ab030, type: 3}
+    - {fileID: 21300000, guid: 1a8061e188934484cbf0c13de37342eb, type: 3}
+    - {fileID: 21300000, guid: 90a5c58c784b84f8ca8eb310dcbfe83d, type: 3}
   _siblings:
   - {fileID: 1983169238}
   - {fileID: 2000681852}

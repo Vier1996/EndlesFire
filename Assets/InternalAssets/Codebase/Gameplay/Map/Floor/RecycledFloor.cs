@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using Codebase.Library.Random;
 using Codebase.Library.SAD;
+using Cysharp.Threading.Tasks;
+using InternalAssets.Codebase.Gameplay.Enums;
 using Sirenix.OdinInspector;
 using UniRx;
 using UnityEditor;
@@ -17,11 +19,12 @@ namespace InternalAssets.Codebase.Gameplay.Map.Floor
         
         [BoxGroup("Offset params"), SerializeField] private RecycledFloorOffsetParams _offsetParams;
         [BoxGroup("Install params"), SerializeField] private RecycledFloorInstallParams _installParams;
-        [BoxGroup("Style params"), SerializeField] private RecycledFloorStyleParams _styleParams;
+        [BoxGroup("Style params"), SerializeField] private List<RecycledFloorStyleParams> _styleParams;
         
         [BoxGroup("Siblings"), SerializeField, ReadOnly] private RecycledFloorElement[] _siblings = Array.Empty<RecycledFloorElement>();
 
         private RecycledFloorElement[,] _floorElements;
+        private RecycledFloorStyleParams _currentStyle;
         private IDisposable _floorUpdatingDisposable;
         private Entity _listeningEntity;
 
@@ -32,7 +35,8 @@ namespace InternalAssets.Codebase.Gameplay.Map.Floor
         public void Initialize(Entity listeningEntity)
         {
             _floorElements = new RecycledFloorElement[_installParams.Length, _installParams.Width];
-
+            _currentStyle = _styleParams.First();
+            
             _listeningEntity = listeningEntity;
 
             for (int i = 0, pickedSiblingIndex = 0; i < _installParams.Length; i++)
@@ -46,6 +50,22 @@ namespace InternalAssets.Codebase.Gameplay.Map.Floor
             
             _floorUpdatingDisposable?.Dispose();
             _floorUpdatingDisposable = Observable.EveryUpdate().Subscribe(_ => UpdateValues());
+        }
+
+        [Button]
+        public async UniTaskVoid ChangeFloorStyle(RoomType roomType)
+        {
+            RecycledFloorStyleParams newStyle = _styleParams.FirstOrDefault(sp => sp.RoomType == roomType);
+
+            _currentStyle = newStyle ?? throw new ArgumentException($"Can not get style with type[{roomType}]");
+            
+            for (int i = 0; i < _installParams.Length; i++)
+            {
+                for (int j = 0; j < _installParams.Width; j++) 
+                    ChangeElementSprite(_floorElements[i, j]);
+                
+                await UniTask.Delay(TimeSpan.FromSeconds(0.035f));
+            }
         }
 
         private void OnDestroy()
@@ -184,7 +204,7 @@ namespace InternalAssets.Codebase.Gameplay.Map.Floor
         }
 
         private void ChangeElementSprite(RecycledFloorElement element) => 
-            element.Renderer.sprite = _styleParams.StyleSprites.Random();
+            element.Renderer.sprite = _currentStyle.StyleSprites.Random();
 
 #if UNITY_EDITOR
 
@@ -255,6 +275,7 @@ namespace InternalAssets.Codebase.Gameplay.Map.Floor
     [Serializable]
     public class RecycledFloorStyleParams
     {
+        [field: SerializeField] public RoomType RoomType { get; private set; }
         [field: SerializeField] public Sprite[] StyleSprites { get; private set; }
     }
 }
