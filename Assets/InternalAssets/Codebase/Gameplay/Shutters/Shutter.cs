@@ -4,6 +4,7 @@ using Codebase.Library.Extension.Dotween;
 using Codebase.Library.Extension.MonoBehavior;
 using Codebase.Library.Extension.Rx;
 using DG.Tweening;
+using InternalAssets.Codebase.Library.Collections;
 using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.UI;
@@ -117,7 +118,7 @@ namespace InternalAssets.Codebase.Gameplay.Shutters
             _changeSpriteDisposable?.Dispose();
             _animationQueueElementsDisposable?.Dispose();
 
-            Shuffle(_possibleIcons);
+            _possibleIcons.Shuffle();
             
             _changeSpriteDisposable = RX.CountedTimer(0f, _betweenChangingSpriteDelay, _icons.Count, 
                 index => ChangeSprite(_icons[index], index),
@@ -166,21 +167,6 @@ namespace InternalAssets.Codebase.Gameplay.Shutters
                                 });
                         });
                 });
-        }
-        
-        private void Shuffle<T>(IList<T> list)
-        {
-            Random random = new Random();
-            
-            int n = list.Count;
-            while (n > 1)
-            {
-                n--;
-                
-                int k = random.Next(n + 1);
-                
-                (list[k], list[n]) = (list[n], list[k]);
-            }
         }
     }
 }

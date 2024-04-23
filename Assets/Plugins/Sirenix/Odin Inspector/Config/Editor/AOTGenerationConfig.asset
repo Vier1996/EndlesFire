@@ -16,42 +16,91 @@ MonoBehaviour:
   deleteDllAfterBuilds: 1
   AutomateForAllAOTPlatforms: 1
   automateForPlatforms: 0900000014000000
-  lastScan: 638486197704000917
+  lastScan: 638495136959848793
   supportSerializedTypes:
+  - TypeName: System.Collections.Generic.Dictionary`2[[InternalAssets.Codebase.Gameplay.Enums.ItemType,
+      Assembly-CSharp],[InternalAssets.Codebase.Gameplay.Items.ItemView, Assembly-CSharp]],
+      mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.Dictionary`2[[InternalAssets.Codebase.Gameplay.Enums.VfxType,
+      Assembly-CSharp],[InternalAssets.Codebase.Gameplay.Sorting.SortableParticle,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.EnumEqualityComparer`1[[InternalAssets.Codebase.Gameplay.Enums.ItemType,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.EnumEqualityComparer`1[[InternalAssets.Codebase.Gameplay.Enums.VfxType,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: InternalAssets.Codebase.Gameplay.Directors.GameExperienceDirectorConfiguration+ChancedGameExperience,
+      Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: InternalAssets.Codebase.Interfaces.IDamageReceiver, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.IEqualityComparer`1[[InternalAssets.Codebase.Gameplay.Enums.ItemType,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.IEqualityComparer`1[[InternalAssets.Codebase.Gameplay.Enums.VfxType,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: InternalAssets.Codebase.Library.GameConditions.IGameCondition, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Int32, mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: InternalAssets.Codebase.Gameplay.Items.ItemData, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: InternalAssets.Codebase.Gameplay.Enums.ItemType, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: InternalAssets.Codebase.Gameplay.Items.ItemView, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.List`1[[InternalAssets.Codebase.Gameplay.Directors.GameExperienceDirectorConfiguration+ChancedGameExperience,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.List`1[[InternalAssets.Codebase.Library.GameConditions.IGameCondition,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Int64, mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: InternalAssets.Codebase.Gameplay.Sorting.SortableParticle, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: InternalAssets.Codebase.Gameplay.Talents.Conditions.TalentNoMaxGradeCondition,
+      Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: InternalAssets.Codebase.Gameplay.Talents.TalentSetup, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: InternalAssets.Codebase.Gameplay.Values.ValueConfig, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: InternalAssets.Codebase.Gameplay.Enums.VfxType, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
   - TypeName: System.Boolean, mscorlib
-    IsCustom: 0
-    Emit: 1
-  - TypeName: InternalAssets.Codebase.Gameplay.Behavior.Enemy.States.EnemyDeathBehavior,
-      Assembly-CSharp
-    IsCustom: 0
-    Emit: 1
-  - TypeName: InternalAssets.Codebase.Gameplay.Behavior.Enemy.States.EnemyInitialBehavior,
-      Assembly-CSharp
-    IsCustom: 0
-    Emit: 1
-  - TypeName: InternalAssets.Codebase.Gameplay.Behavior.Enemy.States.EnemyPursuitBehavior,
-      Assembly-CSharp
-    IsCustom: 0
-    Emit: 1
-  - TypeName: InternalAssets.Codebase.Gameplay.Behavior.Enemy.States.EnemySpearedAttackBehavior,
-      Assembly-CSharp
-    IsCustom: 0
-    Emit: 1
-  - TypeName: System.Single, mscorlib
     IsCustom: 0
     Emit: 1
   - TypeName: InternalAssets.Codebase.Gameplay.Behavior.Player.States.IdlePlayerBehavior,
       Assembly-CSharp
     IsCustom: 0
     Emit: 1
-  - TypeName: InternalAssets.Codebase.Gameplay.Behavior.Enemy.IEnemyBehavior, Assembly-CSharp
-    IsCustom: 0
-    Emit: 1
   - TypeName: InternalAssets.Codebase.Gameplay.Behavior.Player.IPlayerBehavior, Assembly-CSharp
-    IsCustom: 0
-    Emit: 1
-  - TypeName: System.Collections.Generic.List`1[[InternalAssets.Codebase.Gameplay.Behavior.Enemy.IEnemyBehavior,
-      Assembly-CSharp]], mscorlib
     IsCustom: 0
     Emit: 1
   - TypeName: System.Collections.Generic.List`1[[InternalAssets.Codebase.Gameplay.Behavior.Player.IPlayerBehavior,

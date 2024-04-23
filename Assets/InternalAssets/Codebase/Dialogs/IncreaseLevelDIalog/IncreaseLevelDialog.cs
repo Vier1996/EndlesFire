@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using ACS.Core.ServicesContainer;
 using ACS.Dialog.Dialogs.View;
 using InternalAssets.Codebase.Dialogs.Extras;
 using InternalAssets.Codebase.Gameplay.Enums;
@@ -11,10 +12,14 @@ namespace InternalAssets.Codebase.Dialogs.IncreaseLevelDialog
     {
         [SerializeField] private DisplayableParent _displayableParent;
         [SerializeField] private List<TalentGateView> _talentGateViews = new();
+
+        private TalentsService _talentsService;
         
         public override async void Show()
         {
             base.Show();
+
+            ServiceContainer.ForCurrentScene().Get(out _talentsService);
             
             await _displayableParent.Display(1f, 0.9f, 0.5f);
 
@@ -23,13 +28,12 @@ namespace InternalAssets.Codebase.Dialogs.IncreaseLevelDialog
         
         private async void Initialize()
         {
-            TalentsConfig config = await TalentsConfig.GetInstanceAsync();
-            
-            int index = 1;
+            int index = 0;
+            List<TalentType> chosenTalent = await _talentsService.Generator.Generate();
             
             foreach (TalentGateView view in _talentGateViews)
             {
-                view.SetupView(config.Get((TalentType)index));
+                view.SetupView(_talentsService.GetTalentSetup(chosenTalent[index]));
                 
                 await view.RemoveGate();
 
@@ -38,8 +42,6 @@ namespace InternalAssets.Codebase.Dialogs.IncreaseLevelDialog
             
             foreach (TalentGateView view in _talentGateViews) 
                 await view.DisplayButton();
-            
-            config.Release();
         }
     }
 }

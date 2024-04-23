@@ -24,4 +24,4 @@ MonoBehaviour:
   _talentSetups:
   - {fileID: 11400000, guid: 75f919b7efb445f4494c35f9ff1d25cc, type: 2}
   - {fileID: 11400000, guid: 5df5741f8b1bb71478a5c9492ed59585, type: 2}
-  - {fileID: 11400000, guid: 31e905ed245498e4082ecd17a666a244, type: 2}
+  - {fileID: 11400000, guid: 26fee17e50dd1cd41a7ff07438014233, type: 2}

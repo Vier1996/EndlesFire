@@ -10,9 +10,43 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 143014f4f8a44c1596a535d077f28137, type: 3}
-  m_Name: INCREASING_SHOOTING_SPEED
+  m_Name: POISONED_BULLET
   m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 11400000}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: <PickActions>k__BackingField
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[InternalAssets.Codebase.Library.GameConditions.IGameCondition,
+        Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 1|InternalAssets.Codebase.Gameplay.Talents.Conditions.TalentNoMaxGradeCondition,
+        Assembly-CSharp
+    - Name: Setup
+      Entry: 10
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
   <TalentType>k__BackingField: 2
+  <TalentActivityType>k__BackingField: 2
   <TalentNameKey>k__BackingField: "\u0428\u043E \u0437\u0430 \u043F\u0443\u0448\u043A\u0430"
   <TalentDescriptionKey>k__BackingField: "\u0422\u0438\u043F \u043F\u0443\u0448\u043A\u0430
     \u043D\u0430\u0447\u0438\u043D\u0430\u0435\u0442 \u0431\u044B\u0441\u0442\u0440\u0435\u0435

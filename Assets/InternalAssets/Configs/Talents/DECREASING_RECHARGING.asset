@@ -12,7 +12,51 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 143014f4f8a44c1596a535d077f28137, type: 3}
   m_Name: DECREASING_RECHARGING
   m_EditorClassIdentifier: 
-  <TalentType>k__BackingField: 3
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 11400000}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: <PickActions>k__BackingField
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[InternalAssets.Codebase.Library.GameConditions.IGameCondition,
+        Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 1|InternalAssets.Codebase.Gameplay.Talents.Conditions.TalentNoMaxGradeCondition,
+        Assembly-CSharp
+    - Name: Setup
+      Entry: 10
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 2|InternalAssets.Codebase.Gameplay.Talents.Conditions.PersistentTalentCondition,
+        Assembly-CSharp
+    - Name: Setup
+      Entry: 10
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  <TalentType>k__BackingField: 22
+  <TalentActivityType>k__BackingField: 2
   <TalentNameKey>k__BackingField: "\u0411\u044B\u0441\u0442\u0440\u0435\u0439\u0448\u0438\u0435
     \u043A\u043B\u0435\u0448\u043D\u0438"
   <TalentDescriptionKey>k__BackingField: "\u0423\u0441\u043A\u043E\u0440\u044F\u0435\u043C

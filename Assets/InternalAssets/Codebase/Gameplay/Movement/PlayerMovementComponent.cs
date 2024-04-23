@@ -1,7 +1,6 @@
 using System;
 using System.Collections;
 using ACS.Core.ServicesContainer;
-using Codebase.Gameplay.Sorting;
 using Codebase.Library.SAD;
 using Cysharp.Threading.Tasks;
 using DG.Tweening;
@@ -68,7 +67,7 @@ namespace InternalAssets.Codebase.Gameplay.Movement
                 .Get(out _sceneAssetParentsContainer)
                 .Get(out _talentsService);
             
-            _speedProperty = 2f;//speedStat.Value;
+            _speedProperty = 2f;
             _playerBehaviorMachine = playerEntity.GetAbstractComponent<PlayerBehaviorMachine>();
             _movableRigidbody = playerEntity.GetAbstractComponent<Rigidbody2D>();
             _currentFootstepDistance = _footstepTriggerDistance;

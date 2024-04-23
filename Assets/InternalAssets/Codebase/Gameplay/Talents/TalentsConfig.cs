@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using Codebase.Library.Extension.ScriptableObject;
 using InternalAssets.Codebase.Gameplay.Enums;
-using InternalAssets.Codebase.Gameplay.Weapons.Configs;
 using InternalAssets.Codebase.Library.ProjectAssets;
 using Sirenix.OdinInspector;
 using UnityEngine;
@@ -24,7 +23,9 @@ namespace InternalAssets.Codebase.Gameplay.Talents
             
             return setup;
         }
-        
+
+        public List<TalentType> GetAllTypes() => _talentSetups.Select(ts => ts.TalentType).ToList();
+
 #if UNITY_EDITOR
         [Button]
         private void GetAllConfigs()

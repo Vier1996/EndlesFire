@@ -48,4 +48,12 @@ MonoBehaviour:
     ReferenceResolutionY: 1280
     BaseScreenRatio: 1.7777778
     DefaultResources: Dialogs/
-    ActiveDialogs: []
+    ActiveDialogs:
+    - Name: IncreaseLevelDialog
+      TypeFullName: InternalAssets.Codebase.Dialogs.IncreaseLevelDialog.IncreaseLevelDialog
+      AssemblyName: Assembly-CSharp
+      AddressableReference:
+        m_AssetGUID: dadf1da3f58c02846b9f30801db554c5
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0

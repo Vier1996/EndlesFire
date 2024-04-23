@@ -12,7 +12,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 143014f4f8a44c1596a535d077f28137, type: 3}
   m_Name: MOVEMENT_INCREASING_SPEED
   m_EditorClassIdentifier: 
-  <TalentType>k__BackingField: 1
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 11400000}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: <PickActions>k__BackingField
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[InternalAssets.Codebase.Library.GameConditions.IGameCondition,
+        Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 1|InternalAssets.Codebase.Gameplay.Talents.Conditions.TalentNoMaxGradeCondition,
+        Assembly-CSharp
+    - Name: Setup
+      Entry: 10
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  <TalentType>k__BackingField: 20
+  <TalentActivityType>k__BackingField: 2
   <TalentNameKey>k__BackingField: "\u0423\u0441\u043A\u043E\u0440\u044F\u0435\u043C\u0441\u044F"
   <TalentDescriptionKey>k__BackingField: "\u0417\u0430\u043B\u0443\u043F\u0430 \u043A\u043E\u0442\u043E\u0440\u0430\u044F
     \u043D\u0430\u0441 \u0443\u0441\u043A\u043E\u0440\u044F\u0435\u0442"
