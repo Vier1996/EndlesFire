@@ -1,10 +1,12 @@
-﻿using ACS.Core.ServicesContainer;
+﻿using System;
+using ACS.Core.ServicesContainer;
 using Codebase.Library.SAD;
 using InternalAssets.Codebase.Gameplay.Directors;
 using InternalAssets.Codebase.Gameplay.Entities.PlayerFolder;
 using InternalAssets.Codebase.Gameplay.Map.Floor;
 using InternalAssets.Codebase.Gameplay.Parents;
 using InternalAssets.Codebase.Gameplay.Spawners;
+using InternalAssets.Codebase.Gameplay.Talents;
 using InternalAssets.Codebase.Services.Camera;
 using Lean.Pool;
 using Sirenix.OdinInspector;
@@ -27,6 +29,7 @@ namespace InternalAssets.Codebase.ServiceLocators
         {
             Container
                 .Register(new EntityWorld())
+                .Register(new TalentsService())
                 .Register(_sceneAssetParentsContainer)
                 .AsScene();
 
@@ -39,7 +42,9 @@ namespace InternalAssets.Codebase.ServiceLocators
             SetupEnemiesSpawner(player);
             SetupGameplayDirector(player);
         }
-        
+
+        private void OnDisable() => Container.Dispose();
+
         private Player BootstrapPlayer()
         {
             Player player = LeanPool.Spawn(_playerPrefab, _sceneAssetParentsContainer.PlayerParent);
@@ -55,6 +60,7 @@ namespace InternalAssets.Codebase.ServiceLocators
         private void SetupRecycledFloor(Entity listeningEntity) => _recycledFloor.Initialize(listeningEntity);
         
         private void SetupEnemiesSpawner(Entity listeningEntity) => _enemiesSpawner.Initialize(listeningEntity);
+        
         private void SetupGameplayDirector(Entity listeningEntity) => _gameplayDirectorsBootstrapper.Initialize(listeningEntity);
     }
 }

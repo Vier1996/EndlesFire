@@ -7,8 +7,10 @@ using Cysharp.Threading.Tasks;
 using DG.Tweening;
 using InternalAssets.Codebase.Gameplay.Behavior.Player;
 using InternalAssets.Codebase.Gameplay.Behavior.Player.States;
+using InternalAssets.Codebase.Gameplay.Enums;
 using InternalAssets.Codebase.Gameplay.Parents;
 using InternalAssets.Codebase.Gameplay.Sorting;
+using InternalAssets.Codebase.Gameplay.Talents;
 using InternalAssets.Codebase.Services.Input;
 using Lean.Pool;
 using Sirenix.OdinInspector;
@@ -42,6 +44,7 @@ namespace InternalAssets.Codebase.Gameplay.Movement
         private WaitForSeconds _dodgeDelay = new(0.5f);
         private Sequence _dodgeIndicatorSequence;
         private SceneAssetParentsContainer _sceneAssetParentsContainer;
+        private TalentsService _talentsService;
         
         private readonly float _distMultiplierPerFixedUpdate = 2.5f;
         private float _speedProperty;
@@ -57,23 +60,27 @@ namespace InternalAssets.Codebase.Gameplay.Movement
         
         public void Bootstrapp(Entity playerEntity)
         {
+            IsInitialized = true;
+            
             _inputService = new MobilePlayerInputService();
 
-            ServiceContainer.ForCurrentScene().Get(out _sceneAssetParentsContainer);
+            ServiceContainer.ForCurrentScene()
+                .Get(out _sceneAssetParentsContainer)
+                .Get(out _talentsService);
             
             _speedProperty = 2f;//speedStat.Value;
-            
             _playerBehaviorMachine = playerEntity.GetAbstractComponent<PlayerBehaviorMachine>();
             _movableRigidbody = playerEntity.GetAbstractComponent<Rigidbody2D>();
-            
             _currentFootstepDistance = _footstepTriggerDistance;
             
-            IsInitialized = true;
+            _talentsService.Subscribe(TalentType.movement_increasing_speed, OnMovementSkillIncreased);
         }
 
         public void Dispose()
         {
             IsInitialized = false;
+            
+            _talentsService.Unsubscribe(TalentType.movement_increasing_speed, OnMovementSkillIncreased);
         }
 
         public void EnableMovement()
@@ -230,6 +237,11 @@ namespace InternalAssets.Codebase.Gameplay.Movement
             
             if(_dodgeIndicatorSequence != null && _dodgeIndicatorSequence.IsActive())
                 _dodgeIndicatorSequence.Append(_dodgeIndicator.DOFade(1, 0.15f).SetLoops(7, LoopType.Yoyo));
+        }
+        
+        private void OnMovementSkillIncreased(TalentGrade grade)
+        {
+            Debug.Log("Проверка");
         }
     }
 }

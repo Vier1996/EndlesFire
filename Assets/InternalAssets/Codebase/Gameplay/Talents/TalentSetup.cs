@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using InternalAssets.Codebase.Gameplay.Enums;
 using Sirenix.OdinInspector;
@@ -29,6 +30,14 @@ namespace InternalAssets.Codebase.Gameplay.Talents
         [field: SerializeField] public Sprite Icon { get; private set; }
         [field: SerializeField] public bool ContainGrades { get; private set; } = true;
         [field: SerializeField, ShowIf(nameof(ContainGrades))] public List<TalentGrade> Grades { get; private set; } = new();
+
+        public TalentGrade GetGrade(int level)
+        {
+            if (level > Grades.Count || level <= 0)
+                throw new IndexOutOfRangeException($"Level is [{level}], out of range TalentSetups:[{TalentType}]");
+
+            return Grades[level - 1];
+        }
         
 #if UNITY_EDITOR
         private void OnValidate()
