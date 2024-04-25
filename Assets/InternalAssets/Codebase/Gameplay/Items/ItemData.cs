@@ -1,12 +1,13 @@
 using System;
 using InternalAssets.Codebase.Gameplay.Enums;
 using InternalAssets.Codebase.Gameplay.Values;
+using InternalAssets.Codebase.Interfaces;
 using UnityEngine;
 
 namespace InternalAssets.Codebase.Gameplay.Items
 {
     [Serializable]
-    public class ItemData
+    public class ItemData : IItemData
     {
         [field: SerializeField] public ItemType ItemType { get; private set; } = ItemType.none;
         [field: SerializeField] public ValueConfig Value { get; private set; } = new();

@@ -16,32 +16,38 @@ namespace InternalAssets.Codebase.Gameplay.Items
     public abstract class ItemView : SerializedMonoBehaviour, IRecycledClass<ItemView>, ICollectable
     {
         public event Action<ItemView> Despawned;
-        
+
+        [field: SerializeField, BoxGroup("General")] public Transform SelfTransform { get; private set; }
+
         [BoxGroup("General"), SerializeField] protected LayerMask WorkingLayer;
         [BoxGroup("General"), SerializeField] protected bool IsSelfActivated = false;
-        [BoxGroup("General"), OdinSerialize, ShowIf(nameof(IsSelfActivated))] protected ItemData InnerItemData;
+        [BoxGroup("General"), OdinSerialize, ShowIf(nameof(IsSelfActivated))] protected IItemData ItemData;
         
         [BoxGroup("Trigger"), SerializeField] protected CollectorsTrigger CollectorsTrigger;
         
         [BoxGroup("Animation"), SerializeField] private Ease _animationEase;
         [BoxGroup("Animation"), SerializeField] private float _jumpToPlayerDuration = 0.5f;
 
-        public Transform SelfTransform;
-        protected ItemData ItemData = null;
         private IDisposable _jumpToEntityDisposable;
-
-        private void Awake() => SelfTransform = transform;
-
+        
         private void Start()
         {
             if(IsSelfActivated)
                 Enable();
         }
         
+        public virtual ItemView Setup(IItemData data, Vector3 spawnPosition, bool withSpawnAnimation = true)
+        {
+            ItemData = data;
+            SelfTransform.position = spawnPosition;
+
+            return this;
+        }
+        
         public virtual ItemView Enable()
         {
             if(IsSelfActivated)
-                Setup(InnerItemData, SelfTransform.position, false);
+                Setup(ItemData, SelfTransform.position, false);
             
             return this;
         }
@@ -53,16 +59,8 @@ namespace InternalAssets.Codebase.Gameplay.Items
             
             return this;
         }
-
-        public ItemData GetCollectableData() => ItemData;
-
-        public virtual ItemView Setup(ItemData data, Vector3 spawnPosition, bool withSpawnAnimation = true)
-        {
-            ItemData = data;
-            SelfTransform.position = spawnPosition;
-
-            return this;
-        }
+        
+        public IItemData GetCollectableData() => ItemData;
         
         public void Despawn()
         {

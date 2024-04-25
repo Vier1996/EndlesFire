@@ -55,33 +55,10 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes:
-    - Name: InnerItemData
-      Entry: 7
-      Data: 0|InternalAssets.Codebase.Gameplay.Items.ItemData, Assembly-CSharp
-    - Name: <ItemType>k__BackingField
-      Entry: 3
-      Data: 0
-    - Name: <Value>k__BackingField
-      Entry: 7
-      Data: 1|InternalAssets.Codebase.Gameplay.Values.ValueConfig, Assembly-CSharp
-    - Name: _isConstant
-      Entry: 5
-      Data: true
-    - Name: _minCount
-      Entry: 3
-      Data: 0
-    - Name: _maxCount
-      Entry: 3
-      Data: 0
-    - Name: _constantCount
-      Entry: 3
-      Data: 0
-    - Name: 
-      Entry: 8
+    - Name: ItemData
+      Entry: 6
       Data: 
-    - Name: 
-      Entry: 8
-      Data: 
+  <SelfTransform>k__BackingField: {fileID: 5138154931985084373}
   WorkingLayer:
     serializedVersion: 2
     m_Bits: 512

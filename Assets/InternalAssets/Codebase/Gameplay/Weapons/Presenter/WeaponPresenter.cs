@@ -1,4 +1,6 @@
 using System;
+using ACS.Core.ServicesContainer;
+using ACS.SignalBus.SignalBus;
 using Codebase.Gameplay.Sorting;
 using Codebase.Library.Extension.Dotween;
 using Codebase.Library.SAD;
@@ -9,6 +11,7 @@ using InternalAssets.Codebase.Gameplay.Movement;
 using InternalAssets.Codebase.Gameplay.Weapons.Configs;
 using InternalAssets.Codebase.Interfaces;
 using InternalAssets.Codebase.Services._2dModels;
+using InternalAssets.Codebase.Signals;
 using Sirenix.OdinInspector;
 using UniRx;
 using UnityEngine;
@@ -26,10 +29,10 @@ namespace InternalAssets.Codebase.Gameplay.Weapons.Presenter
         private IDetectionSystem _detectionSystem;
         private Transform _selfTransform;
         private Entity _entity;
-
+        private ISignalBusService _signalBusService;
+        
         private WeaponLookingType _lookingType = WeaponLookingType.none;
         private Vector3 _direction;
-        
         private readonly Vector3 _defaultDirection = Vector3.one;
         private readonly Vector3 _flippedDirection = new Vector3(1f, -1f, 1f);
         
@@ -39,6 +42,8 @@ namespace InternalAssets.Codebase.Gameplay.Weapons.Presenter
 
         public void Bootstrapp(Entity entity)
         {
+            ServiceContainer.Core.Get(out _signalBusService);
+            
             _entity = entity;
             _selfTransform = transform;
 
@@ -47,9 +52,16 @@ namespace InternalAssets.Codebase.Gameplay.Weapons.Presenter
             _detectionSystem = _entity.GetAbstractComponent<IDetectionSystem>();
             
             SetJoystickListening();
+            
+            _signalBusService.Subscribe<WeaponItemRegistred>(OnWeaponItemRegistred);
         }
 
-        public override void Dispose() => Disable();
+        public override void Dispose()
+        {
+            Disable();
+            
+            _signalBusService.Unsubscribe<WeaponItemRegistred>(OnWeaponItemRegistred);
+        }
 
         public override IWeaponPresenter Enable()
         {
@@ -165,7 +177,9 @@ namespace InternalAssets.Codebase.Gameplay.Weapons.Presenter
             _lastAngle = angle;
 
         }
-        
+
+        private void OnWeaponItemRegistred(WeaponItemRegistred signal) => PresentWeapon(signal.Type);
+
         private void SetJoystickListening()
         {
             _target = null;

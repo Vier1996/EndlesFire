@@ -1,15 +1,11 @@
 using InternalAssets.Codebase.Interfaces;
-using InternalAssets.Codebase.Services.Animation;
-using Sirenix.OdinInspector;
 using UnityEngine;
 
 namespace InternalAssets.Codebase.Gameplay.Items
 {
-    public class ResourceItemView : ItemView
+    public class WeaponItemData : ItemView
     {
-        [BoxGroup("General"), SerializeField] private SpriteSheetAnimator _modelRenderer;
-        [BoxGroup("Effects"), SerializeField] private ParticleSystem _trailParticle;
-        [BoxGroup("Effects"), SerializeField] private ParticleSystem _idleParticle;
+        private WeaponData _weaponData;
         
         public override ItemView Setup(IItemData data, Vector3 spawnPosition, bool withSpawnAnimation = true)
         {
@@ -28,52 +24,39 @@ namespace InternalAssets.Codebase.Gameplay.Items
         
         public override ItemView Enable()
         {
-            _modelRenderer.Activate();
+            CollectorsTrigger.Iteracted += OnInteracted;
             
             return base.Enable();
         }
         
         public override ItemView Disable()
         {
-            _modelRenderer.Deactivate();
-            
-            _trailParticle.Stop();
-            _idleParticle.Stop();
+            CollectorsTrigger.Iteracted -= OnInteracted;
             
             return base.Disable();
         }
-        
+
         protected override void Initialize()
         {
-            base.Initialize();
-            
-            _idleParticle.Play();
+            CollectorsTrigger.EnableInteraction();
         }
 
         protected override void OnSpawnAnimationStart()
         {
             CollectorsTrigger.DisableInteraction();
-
-            _trailParticle.Play();
         }
 
         protected override void OnSpawnAnimationComplete()
         {
-            CollectorsTrigger.EnableInteraction();
-            
             Initialize();
-        }
-
-        protected override void OnJumpToCollectorStart()
-        {
-            _idleParticle.Stop();
-        }
-
-        protected override void OnJumpToCollectorComplete()
-        {
-            _trailParticle.Play();
         }
         
         protected override void DispatchCollecting(ICollector collector) => collector.Collect(this);
+
+        private void OnInteracted(ICollector collector)
+        {
+            DispatchCollecting(collector);
+            Despawn();
+        }
     }
 }
