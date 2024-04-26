@@ -4,6 +4,15 @@ namespace InternalAssets.Codebase.Library.Vectors
 {
     public static class VectorExtension
     {
+        public static Vector3 GetPointInRadius(this Vector3 from, float minRadius, float maxRadius)
+        {
+            float randomAngle = Random.Range(0f, 360f);
+            float x = from.x + Random.Range(minRadius, maxRadius) * Mathf.Cos(randomAngle * Mathf.Deg2Rad);
+            float y = from.y + Random.Range(minRadius, maxRadius) * Mathf.Sin(randomAngle * Mathf.Deg2Rad);
+            
+            return new Vector3(x, y, 0);    
+        }
+        
         public static float DistanceXY(this Vector3 from, Vector3 to)
         {
             return CalculateDistance(to.x, from.x, to.y, from.y);

@@ -1380,6 +1380,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 327526955}
+  - {fileID: 1488885896}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1400,6 +1401,7 @@ MonoBehaviour:
     SerializedBytes: 
     ReferencedUnityObjects:
     - {fileID: 327526956}
+    - {fileID: 1488885897}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -1411,10 +1413,13 @@ MonoBehaviour:
         Assembly-CSharp]], mscorlib
     - Name: 
       Entry: 12
-      Data: 1
+      Data: 2
     - Name: 
       Entry: 10
       Data: 0
+    - Name: 
+      Entry: 10
+      Data: 1
     - Name: 
       Entry: 13
       Data: 
@@ -18894,6 +18899,51 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 783ab57006b440429422e47b5a602d7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1488885895
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1488885896}
+  - component: {fileID: 1488885897}
+  m_Layer: 0
+  m_Name: WeaponsDirector
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1488885896
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1488885895}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 108888120}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1488885897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1488885895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3456c0b93ee4da28e1915a4ed38a934, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _weaponItemViewPrefav: {fileID: 4519741488079901469, guid: 23495f59c80d08e4b8eab5c74590899f, type: 3}
 --- !u!1001 &1503538460
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27337,80 +27387,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6846f1c714bd7848b587924ac203ada, type: 3}
---- !u!1001 &6315766472984273071
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 459761137579081369, guid: 23495f59c80d08e4b8eab5c74590899f, type: 3}
-      propertyPath: m_RootOrder
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 459761137579081369, guid: 23495f59c80d08e4b8eab5c74590899f, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -9.53
-      objectReference: {fileID: 0}
-    - target: {fileID: 459761137579081369, guid: 23495f59c80d08e4b8eab5c74590899f, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -3.74
-      objectReference: {fileID: 0}
-    - target: {fileID: 459761137579081369, guid: 23495f59c80d08e4b8eab5c74590899f, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 459761137579081369, guid: 23495f59c80d08e4b8eab5c74590899f, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 459761137579081369, guid: 23495f59c80d08e4b8eab5c74590899f, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 459761137579081369, guid: 23495f59c80d08e4b8eab5c74590899f, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 459761137579081369, guid: 23495f59c80d08e4b8eab5c74590899f, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 459761137579081369, guid: 23495f59c80d08e4b8eab5c74590899f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 459761137579081369, guid: 23495f59c80d08e4b8eab5c74590899f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 459761137579081369, guid: 23495f59c80d08e4b8eab5c74590899f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4519741488079901469, guid: 23495f59c80d08e4b8eab5c74590899f, type: 3}
-      propertyPath: serializationData.Prefab
-      value: 
-      objectReference: {fileID: 4519741488079901469, guid: 23495f59c80d08e4b8eab5c74590899f, type: 3}
-    - target: {fileID: 4519741488079901469, guid: 23495f59c80d08e4b8eab5c74590899f, type: 3}
-      propertyPath: serializationData.PrefabModifications.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4519741488079901469, guid: 23495f59c80d08e4b8eab5c74590899f, type: 3}
-      propertyPath: serializationData.PrefabModifications.Array.data[0]
-      value: '"path":"ItemData.<WeaponType>k__BackingField","value":{"$id":0,"$type":"InternalAssets.Codebase.Gameplay.Enums.WeaponType,
-        Assembly-CSharp",2}'
-      objectReference: {fileID: 0}
-    - target: {fileID: 4519741488079901469, guid: 23495f59c80d08e4b8eab5c74590899f, type: 3}
-      propertyPath: serializationData.PrefabModificationsReferencedUnityObjects.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4519741488079901470, guid: 23495f59c80d08e4b8eab5c74590899f, type: 3}
-      propertyPath: m_Name
-      value: WeaponItemView
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 23495f59c80d08e4b8eab5c74590899f, type: 3}
 --- !u!1001 &6650051518260651002
 PrefabInstance:
   m_ObjectHideFlags: 0

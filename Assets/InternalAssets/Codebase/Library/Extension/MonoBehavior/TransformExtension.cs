@@ -27,6 +27,10 @@ namespace Codebase.Library.Extension.MonoBehavior
                 .SetDelay(delay)
                 .OnComplete(() => self
                     .DOScale(defaultScale, duration * 0.5f)
-                    .OnComplete(() => onComplete?.Invoke()));
+                    .OnComplete(() =>
+                    {
+                        onComplete?.Invoke();
+                        onComplete = null;
+                    }));
     }
 }

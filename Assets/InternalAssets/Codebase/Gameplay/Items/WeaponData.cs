@@ -10,5 +10,7 @@ namespace InternalAssets.Codebase.Gameplay.Items
     {
         [field: SerializeField] public WeaponType WeaponType { get; private set; } = WeaponType.none;
         [field: SerializeField] public bool CanBePlacedToInventory { get; private set; } = true;
-        [field: SerializeField] public bool CanBeSignaled { get; private set; } = false;    }
+        [field: SerializeField] public bool CanBeSignaled { get; private set; } = false;
+        [field: SerializeField] public float UnlockTime { get; private set; } = 1f;
+    }
 }

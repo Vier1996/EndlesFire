@@ -32,8 +32,11 @@ namespace InternalAssets.Codebase.Gameplay.Items
         
         private void Start()
         {
-            if(IsSelfActivated)
+            if (IsSelfActivated)
+            {
+                Setup(ItemData, SelfTransform.position, false);
                 Enable();
+            }
         }
         
         public virtual ItemView Setup(IItemData data, Vector3 spawnPosition, bool withSpawnAnimation = true)
@@ -44,13 +47,7 @@ namespace InternalAssets.Codebase.Gameplay.Items
             return this;
         }
         
-        public virtual ItemView Enable()
-        {
-            if(IsSelfActivated)
-                Setup(ItemData, SelfTransform.position, false);
-            
-            return this;
-        }
+        public virtual ItemView Enable() => this;
 
         public virtual ItemView Disable()
         {
@@ -62,7 +59,7 @@ namespace InternalAssets.Codebase.Gameplay.Items
         
         public IItemData GetCollectableData() => ItemData;
         
-        public void Despawn()
+        public virtual void Despawn()
         {
             Disable();
             
@@ -73,7 +70,7 @@ namespace InternalAssets.Codebase.Gameplay.Items
 
         protected virtual void Initialize()
         {
-            CollectorsTrigger.Iteracted += JumpToCollector;
+            CollectorsTrigger.InteractionStarted += JumpToCollector;
         }
         
         protected void AnimatedSpawning()
@@ -114,7 +111,7 @@ namespace InternalAssets.Codebase.Gameplay.Items
         {
             OnJumpToCollectorStart();
             
-            CollectorsTrigger.Iteracted -= JumpToCollector;
+            CollectorsTrigger.InteractionStarted -= JumpToCollector;
 
             SelfTransform.KillTween();
             

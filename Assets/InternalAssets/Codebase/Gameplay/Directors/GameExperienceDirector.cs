@@ -76,11 +76,7 @@ namespace InternalAssets.Codebase.Gameplay.Directors
         {
             if(_listeningEntity == null || _spawnedItems.Count >= _configuration.MaxItemsCount) return;
 
-            Vector3 entityPosition = _listeningEntity.Transform.position;
-            float randomAngle = Random.Range(0f, 360f);
-            float x = entityPosition.x + Random.Range(minDistance, maxDistance) * Mathf.Cos(randomAngle * Mathf.Deg2Rad);
-            float y = entityPosition.y + Random.Range(minDistance, maxDistance) * Mathf.Sin(randomAngle * Mathf.Deg2Rad);
-            Vector3 spawnPosition = new Vector3(x, y, 0);
+            Vector3 spawnPosition = _listeningEntity.Transform.position.GetPointInRadius(minDistance, maxDistance);
             
             GameExperienceDirectorConfiguration.ChancedGameExperience experienceValue = _configuration.GameExperienceChanced.Random();
             

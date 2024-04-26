@@ -94,6 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5920678914165918746}
   - component: {fileID: 5920678914165918749}
+  - component: {fileID: 3531977932968071331}
   m_Layer: 0
   m_Name: ProgressTimerView
   m_TagString: Untagged
@@ -169,3 +170,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &3531977932968071331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5920678914165918747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ada798597843b74ba80ae7e6ec7d2c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _selfTransform: {fileID: 5920678914165918746}
+  _maxScale: 0.3
+  _animationDuration: 0.25
+  _selfRenderer: {fileID: 5920678913090987919}

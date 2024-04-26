@@ -57,3 +57,11 @@ MonoBehaviour:
         m_SubObjectName: 
         m_SubObjectType: 
         m_EditorAssetChanged: 0
+    - Name: ChangeWeaponDialog
+      TypeFullName: InternalAssets.Codebase.Dialogs.ChangeWeaponDialog.ChangeWeaponDialog
+      AssemblyName: Assembly-CSharp
+      AddressableReference:
+        m_AssetGUID: 0e3c00b937e2d864ca46a1a6f0456f4e
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
