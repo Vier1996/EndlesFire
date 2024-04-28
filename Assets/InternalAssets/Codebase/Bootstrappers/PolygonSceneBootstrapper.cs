@@ -5,7 +5,7 @@ using InternalAssets.Codebase.Services.Camera;
 using Lean.Pool;
 using UnityEngine;
 
-namespace InternalAssets.Codebase.ServiceLocators
+namespace InternalAssets.Codebase.Bootstrappers
 {
     public class PolygonSceneBootstrapper : ServiceContainerLocal
     {

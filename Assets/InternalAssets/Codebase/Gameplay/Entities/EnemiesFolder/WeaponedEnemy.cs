@@ -26,8 +26,10 @@ namespace InternalAssets.Codebase.Gameplay.Entities.EnemiesFolder
         public override Entity Bootstrapp()
         {
             if (IsBootstapped) return this;
+
+            BindComponents(_components);
             
-            base.Bootstrapp().BindComponents(_components);
+            base.Bootstrapp();
 
             ServiceContainer.Global.Get(out _vfxFactoryProvider);
             

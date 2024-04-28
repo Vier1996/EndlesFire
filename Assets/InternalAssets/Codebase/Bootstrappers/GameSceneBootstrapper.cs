@@ -1,5 +1,4 @@
-﻿using System;
-using ACS.Core.ServicesContainer;
+﻿using ACS.Core.ServicesContainer;
 using Codebase.Library.SAD;
 using InternalAssets.Codebase.Gameplay.Directors;
 using InternalAssets.Codebase.Gameplay.Entities.PlayerFolder;
@@ -13,7 +12,7 @@ using Lean.Pool;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
-namespace InternalAssets.Codebase.ServiceLocators
+namespace InternalAssets.Codebase.Bootstrappers
 {
     public class GameSceneBootstrapper : ServiceContainerLocal
     {

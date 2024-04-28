@@ -1,4 +1,6 @@
 using Codebase.Library.SAD;
+using InternalAssets.Codebase.Gameplay.Characteristics;
+using InternalAssets.Codebase.Gameplay.Configs;
 using InternalAssets.Codebase.Gameplay.Damage;
 using InternalAssets.Codebase.Gameplay.Enums;
 using InternalAssets.Codebase.Gameplay.HealthLogic;
@@ -15,8 +17,15 @@ namespace InternalAssets.Codebase.Gameplay.Entities.PlayerFolder
         private bool _isEnabled = false;
         
         [Button]
-        public override Entity Bootstrapp() => base.Bootstrapp().BindComponents(_playerComponents);
-        
+        public override Entity Bootstrapp()
+        {
+            BindComponents(_playerComponents);
+            
+            base.Bootstrapp();
+            
+            return this;
+        }
+
         public Player Initialize()
         {
             Enable();
@@ -84,5 +93,15 @@ namespace InternalAssets.Codebase.Gameplay.Entities.PlayerFolder
             
             GameObject.SetActive(false);
         }
+        
+#if UNITY_EDITOR
+
+        [Button]
+        private void GetCharacteristicsInfo() =>
+            GetAbstractComponent<CharacteristicsContainer>()
+                .GetAll()
+                .ForEach(crt => Debug.Log($"Characteristic:[{crt.Type}] has value:[{crt.Value}]"));
+
+#endif
     }
 }

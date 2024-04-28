@@ -6,6 +6,7 @@ using Cysharp.Threading.Tasks;
 using DG.Tweening;
 using InternalAssets.Codebase.Gameplay.Behavior.Player;
 using InternalAssets.Codebase.Gameplay.Behavior.Player.States;
+using InternalAssets.Codebase.Gameplay.Characteristics;
 using InternalAssets.Codebase.Gameplay.Enums;
 using InternalAssets.Codebase.Gameplay.Parents;
 using InternalAssets.Codebase.Gameplay.Sorting;
@@ -37,25 +38,24 @@ namespace InternalAssets.Codebase.Gameplay.Movement
         public Vector2 CurrentSpeed { get; private set; }
         public Vector3 CurrentSpeedV3 => CurrentSpeed;
 
-        private PlayerBehaviorMachine _playerBehaviorMachine;
-        private Rigidbody2D _movableRigidbody;
-        private IInputService _inputService;
-        private WaitForSeconds _dodgeDelay = new(0.5f);
-        private Sequence _dodgeIndicatorSequence;
-        private SceneAssetParentsContainer _sceneAssetParentsContainer;
-        private TalentsService _talentsService;
-        
-        private readonly float _distMultiplierPerFixedUpdate = 2.5f;
-        private float _speedProperty;
-        private bool _isDodgeOnCoolDown = false;
-        private float _currentFootstepDistance;
-        
         private TimeSpan _tickOnUp = TimeSpan.Zero;
         private TimeSpan _tickOnDown = TimeSpan.Zero;
         private Vector2 _lastDirection = Vector2.zero;
         private Vector3 _lastPosition = Vector3.zero;
         
-        private bool _isCanMove = true;
+        private PlayerBehaviorMachine _playerBehaviorMachine;
+        private CharacteristicsContainer _playerCharacteristicsContainer;
+        private Rigidbody2D _movableRigidbody;
+        private IInputService _inputService;
+        private Sequence _dodgeIndicatorSequence;
+        private SceneAssetParentsContainer _sceneAssetParentsContainer;
+        private TalentsService _talentsService;
+        private readonly WaitForSeconds _dodgeDelay = new(0.5f);
+
+        private readonly float _distMultiplierPerFixedUpdate = 2.5f;
+        private float _speedProperty;
+        private bool _isDodgeOnCoolDown = false;
+        private float _currentFootstepDistance;
         
         public void Bootstrapp(Entity playerEntity)
         {
@@ -67,10 +67,12 @@ namespace InternalAssets.Codebase.Gameplay.Movement
                 .Get(out _sceneAssetParentsContainer)
                 .Get(out _talentsService);
             
-            _speedProperty = 2f;
             _playerBehaviorMachine = playerEntity.GetAbstractComponent<PlayerBehaviorMachine>();
             _movableRigidbody = playerEntity.GetAbstractComponent<Rigidbody2D>();
+            _playerCharacteristicsContainer = playerEntity.GetAbstractComponent<CharacteristicsContainer>();
             _currentFootstepDistance = _footstepTriggerDistance;
+
+            _speedProperty = _playerCharacteristicsContainer.GetValue(CharacteristicType.movement_speed);
             
             _talentsService.Subscribe(TalentType.movement_increasing_speed, OnMovementSkillIncreased);
         }
@@ -99,7 +101,7 @@ namespace InternalAssets.Codebase.Gameplay.Movement
         
         private void FixedUpdate()
         {
-            if (!IsInitialized || !_isCanMove) return;
+            if (!IsInitialized) return;
             
             Vector2 axis = _inputService.Axis.normalized;
             
@@ -177,8 +179,6 @@ namespace InternalAssets.Codebase.Gameplay.Movement
             
             while (duration > 0)
             {
-                if (!_isCanMove) break;
-                
                 await UniTask.WaitForFixedUpdate();
 
                 if (_movableRigidbody == null)

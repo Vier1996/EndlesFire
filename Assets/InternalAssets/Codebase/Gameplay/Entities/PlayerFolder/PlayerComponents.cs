@@ -2,6 +2,7 @@
 using Codebase.Gameplay.Sorting;
 using Codebase.Library.SAD;
 using InternalAssets.Codebase.Gameplay.Behavior.Player;
+using InternalAssets.Codebase.Gameplay.Configs;
 using InternalAssets.Codebase.Gameplay.Dodge;
 using InternalAssets.Codebase.Gameplay.HealthLogic;
 using InternalAssets.Codebase.Gameplay.ModelsView;
@@ -29,7 +30,10 @@ namespace InternalAssets.Codebase.Gameplay.Entities.PlayerFolder
         
         public override EntityComponents Declare(Entity abstractEntity)
         {
+            PlayerConfig playerConfig = PlayerConfig.GetInstance();
+            
             Add(abstractEntity);
+            Add(playerConfig.CharacteristicsContainer.Clone());
             Add(_healthComponent);
             Add(_rigidbody2D);
             Add(_modelViewProvider);
@@ -38,6 +42,8 @@ namespace InternalAssets.Codebase.Gameplay.Entities.PlayerFolder
             Add(typeof(IWeaponPresenter), _weaponPresenter);
             Add(_dodgeComponent);
             Add(typeof(IDetectionSystem), _playerDetectionSystem);
+            
+            playerConfig.Release();
             
             return this;
         }

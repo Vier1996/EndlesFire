@@ -64,3 +64,9 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
+  <CharacteristicsContainer>k__BackingField:
+    _characteristics:
+    - <Type>k__BackingField: 1
+      <Value>k__BackingField: 100
+    - <Type>k__BackingField: 3
+      <Value>k__BackingField: 4

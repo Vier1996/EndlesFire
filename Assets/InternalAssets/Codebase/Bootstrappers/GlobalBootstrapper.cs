@@ -8,7 +8,7 @@ using InternalAssets.Codebase.Interfaces;
 using InternalAssets.Codebase.Services.Scenes;
 using UnityEngine;
 
-namespace InternalAssets.Codebase.ServiceLocators
+namespace InternalAssets.Codebase.Bootstrappers
 {
     public class GlobalBootstrapper : ServiceContainerGlobal
     {

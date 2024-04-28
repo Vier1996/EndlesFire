@@ -37,6 +37,12 @@ namespace Codebase.Library.SAD
             Transform = transform;
             GameObject = gameObject;
             
+            foreach (var innerComponent in _components.GetAllComponents())
+            {
+                if(innerComponent.Value is IDerivedEntityComponent derivedEntityComponent) 
+                    derivedEntityComponent.Bootstrapp(this);
+            }
+            
             return this;
         }
 
@@ -60,12 +66,6 @@ namespace Codebase.Library.SAD
                 return this;
             
             _components = components.Declare(this);
-
-            foreach (var innerComponent in _components.GetAllComponents())
-            {
-                if(innerComponent.Value is IDerivedEntityComponent derivedEntityComponent) 
-                    derivedEntityComponent.Bootstrapp(this);
-            }
             
             return this;
         }

@@ -5,11 +5,10 @@ using InternalAssets.Codebase.Interfaces;
 using InternalAssets.Codebase.Library.CustomSliders;
 using InternalAssets.Codebase.Services.Scenes;
 using InternalAssets.Codebase.Services.Scenes.Enum;
-using Sirenix.OdinInspector;
 using UniRx;
 using UnityEngine;
 
-namespace InternalAssets.Codebase.ServiceLocators
+namespace InternalAssets.Codebase.Bootstrappers
 {
     public class LoadingSceneBootstrapper : ServiceContainerLocal
     {
