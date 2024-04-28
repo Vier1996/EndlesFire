@@ -27,6 +27,8 @@ namespace InternalAssets.Codebase.ServiceLocators
         
         protected override void Bootstrap()
         {
+            Container.AsScene();
+            
             Container
                 .Register(new EntityWorld())
                 .Register(new TalentsService())

@@ -3,16 +3,18 @@ using System.Collections.Generic;
 using Codebase.Library.Extension.Dotween;
 using Codebase.Library.Extension.MonoBehavior;
 using Codebase.Library.Extension.Rx;
+using Cysharp.Threading.Tasks;
 using DG.Tweening;
+using InternalAssets.Codebase.Interfaces;
 using InternalAssets.Codebase.Library.Collections;
 using Sirenix.OdinInspector;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-using Random = System.Random;
 
 namespace InternalAssets.Codebase.Gameplay.Shutters
 {
-    public class Shutter : MonoBehaviour
+    public class Shutter : MonoBehaviour, IShutter
     {
         public event Action ShutterOpen;
         public event Action ShutterClosed;
@@ -31,7 +33,49 @@ namespace InternalAssets.Codebase.Gameplay.Shutters
         private IDisposable _animationQueueElementsDisposable;
         private IDisposable _changeSpriteDisposable;
 
+        private bool _isActivated = false;
+
         private void Awake()
+        {
+            InstantHide();
+            
+            SceneManager.activeSceneChanged += OnSceneChanged;
+        }
+
+        private void OnDestroy()
+        {
+            SceneManager.activeSceneChanged -= OnSceneChanged;
+        }
+
+        [Button]
+        public async UniTask DisplayShutter()
+        {
+            if(_isActivated) return;
+
+            _isActivated = true;
+            
+            gameObject.SetActive(true);
+            
+            _background.KillTween();
+            
+            await _background.DOFade(1f, 0.5f).AsyncWaitForCompletion();
+            
+            DisplayItems(StartAnimation);
+        }
+
+        [Button]
+        public void HideShutter()
+        {
+            if(_isActivated == false) return;
+
+            _isActivated = false;
+            
+            StopAnimation();
+            
+            HideItems(HideBackground);
+        }
+
+        private void InstantHide()
         {
             Color currentBackgroundColor = _background.color;
             
@@ -40,39 +84,30 @@ namespace InternalAssets.Codebase.Gameplay.Shutters
                 currentBackgroundColor.g,
                 currentBackgroundColor.b,
                 0
-                );
+            );
             
             foreach (Image targetImage in _icons)
                 targetImage.transform.localScale = Vector3.zero;
-        }
-
-        [Button]
-        public async void DisplayShutter()
-        {
-            await _background.DOFade(1f, 0.5f).AsyncWaitForCompletion();
             
-            ShutterOpen?.Invoke();
-            
-            DisplayItems(StartAnimation);
-        }
-
-        [Button]
-        public void HideShutter()
-        {
-            StopAnimation();
-            
-            HideItems(HideBackground);
+            gameObject.SetActive(false);
         }
 
         private void HideBackground() =>
             _background
                 .DOFade(0f, 0.5f)
-                .OnComplete(() => ShutterClosed?.Invoke());
+                .OnComplete(() =>
+                {
+                    gameObject.SetActive(false);
+                    
+                    ShutterClosed?.Invoke();
+                });
 
         private void StartAnimation()
         {
             _animateDisposable?.Dispose();
             _animateDisposable = RX.LoopedTimer(0.25f, _delayBetweenCommonJumping, AnimateElements);
+            
+            ShutterOpen?.Invoke();
         }
         
         private void StopAnimation()
@@ -167,6 +202,11 @@ namespace InternalAssets.Codebase.Gameplay.Shutters
                                 });
                         });
                 });
+        }
+        
+        private void OnSceneChanged(Scene s1, Scene s2)
+        {
+            HideShutter();
         }
     }
 }

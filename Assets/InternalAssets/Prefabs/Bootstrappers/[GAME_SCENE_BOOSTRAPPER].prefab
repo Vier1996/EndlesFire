@@ -126,7 +126,7 @@ GameObject:
   - component: {fileID: 7915946744389907922}
   - component: {fileID: 7915946744389907920}
   m_Layer: 0
-  m_Name: '[SCENE_BOOSTRAPPER]'
+  m_Name: '[GAME_SCENE_BOOSTRAPPER]'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
