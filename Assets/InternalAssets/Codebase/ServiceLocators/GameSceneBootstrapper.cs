@@ -3,6 +3,7 @@ using ACS.Core.ServicesContainer;
 using Codebase.Library.SAD;
 using InternalAssets.Codebase.Gameplay.Directors;
 using InternalAssets.Codebase.Gameplay.Entities.PlayerFolder;
+using InternalAssets.Codebase.Gameplay.HUDs;
 using InternalAssets.Codebase.Gameplay.Map.Floor;
 using InternalAssets.Codebase.Gameplay.Parents;
 using InternalAssets.Codebase.Gameplay.Spawners;
@@ -20,10 +21,9 @@ namespace InternalAssets.Codebase.ServiceLocators
         [BoxGroup("Components"), SerializeField] private RecycledFloor _recycledFloor;
         [BoxGroup("Components"), SerializeField] private AbstractSpawner _enemiesSpawner;
         [BoxGroup("Components"), SerializeField] private GameplayDirectorsBootstrapper _gameplayDirectorsBootstrapper;
-        
+        [BoxGroup("Components"), SerializeField] private CameraCenterer _cameraCenterer;
         [BoxGroup("Player"), SerializeField] private Player _playerPrefab;
-        
-        [SerializeField] private CameraCenterer _cameraCenterer;
+        [BoxGroup("HUD"), SerializeField] private HUD _hud;
         
         protected override void Bootstrap()
         {
@@ -43,7 +43,16 @@ namespace InternalAssets.Codebase.ServiceLocators
             SetupGameplayDirector(player);
         }
 
-        private void OnDisable() => Container.Dispose();
+        private void Start()
+        {
+            SetupHud();
+        }
+
+        private void OnDisable()
+        {
+            Container.Dispose();
+            _hud.Dispose();
+        }
 
         private Player BootstrapPlayer()
         {
@@ -62,5 +71,7 @@ namespace InternalAssets.Codebase.ServiceLocators
         private void SetupEnemiesSpawner(Entity listeningEntity) => _enemiesSpawner.Initialize(listeningEntity);
         
         private void SetupGameplayDirector(Entity listeningEntity) => _gameplayDirectorsBootstrapper.Initialize(listeningEntity);
+
+        private void SetupHud() => _hud.Bootstrapp();
     }
 }
