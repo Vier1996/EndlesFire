@@ -71,9 +71,8 @@ namespace InternalAssets.Codebase.Gameplay.Movement
             _movableRigidbody = playerEntity.GetAbstractComponent<Rigidbody2D>();
             _playerCharacteristicsContainer = playerEntity.GetAbstractComponent<CharacteristicsContainer>();
             _currentFootstepDistance = _footstepTriggerDistance;
-
             _speedProperty = _playerCharacteristicsContainer.GetValue(CharacteristicType.movement_speed);
-            
+
             _talentsService.Subscribe(TalentType.movement_increasing_speed, OnMovementSkillIncreased);
         }
 
@@ -238,9 +237,7 @@ namespace InternalAssets.Codebase.Gameplay.Movement
                 _dodgeIndicatorSequence.Append(_dodgeIndicator.DOFade(1, 0.15f).SetLoops(7, LoopType.Yoyo));
         }
         
-        private void OnMovementSkillIncreased(TalentGrade grade)
-        {
-            Debug.Log("Проверка");
-        }
+        private void OnMovementSkillIncreased(TalentGrade grade) => 
+            _speedProperty = _playerCharacteristicsContainer.GetModifiedValue(CharacteristicType.movement_speed, grade.Percent);
     }
 }

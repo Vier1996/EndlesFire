@@ -6,6 +6,8 @@ using InternalAssets.Codebase.Dialogs.IncreaseLevelDialog;
 using InternalAssets.Codebase.Gameplay.Enums;
 using InternalAssets.Codebase.Gameplay.Talents;
 using Sirenix.OdinInspector;
+using UnityEngine;
+using Logger = InternalAssets.Codebase.Library.Logging.Logger;
 
 namespace InternalAssets.Codebase.DebugFolder
 {
@@ -28,5 +30,11 @@ namespace InternalAssets.Codebase.DebugFolder
 
         [Button]
         private void ApplyTalent(TalentType talentType) => _talentsService.ApplyTalent(talentType);
+
+        [Button]
+        private void Log(string message, LogType logType)
+        {
+            Logger.Log(message, logType);
+        }
     }
 }

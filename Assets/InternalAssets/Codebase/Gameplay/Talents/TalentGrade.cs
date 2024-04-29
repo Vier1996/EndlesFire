@@ -7,6 +7,6 @@ namespace InternalAssets.Codebase.Gameplay.Talents
     public class TalentGrade
     {
         [field: SerializeField] public int Level { get; private set; } = 1;
-        [field: SerializeField] public float Factor { get; private set; } = 1f;
+        [field: SerializeField] public float Percent { get; private set; } = 1f;
     }
 }
