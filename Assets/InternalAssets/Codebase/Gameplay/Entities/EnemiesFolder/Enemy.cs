@@ -1,6 +1,5 @@
 ﻿using System;
 using Codebase.Gameplay.Sorting;
-using Codebase.Library.SAD;
 using InternalAssets.Codebase.Gameplay.Configs.Enemy;
 using InternalAssets.Codebase.Gameplay.CustomComponents;
 using InternalAssets.Codebase.Gameplay.Damage;
@@ -9,6 +8,9 @@ using InternalAssets.Codebase.Gameplay.HealthLogic;
 using InternalAssets.Codebase.Gameplay.ModelsView;
 using InternalAssets.Codebase.Gameplay.Targets;
 using InternalAssets.Codebase.Interfaces;
+using InternalAssets.Codebase.Library.MonoEntity;
+using InternalAssets.Codebase.Library.MonoEntity.Entities;
+using InternalAssets.Codebase.Library.MonoEntity.EntityComponent;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
@@ -24,7 +26,7 @@ namespace InternalAssets.Codebase.Gameplay.Entities.EnemiesFolder
 
         public virtual Enemy Initialize(EnemyType enemyType)
         {
-            TryGetAbstractComponent(out _targetView);
+            Components.TryGetAbstractComponent(out _targetView);
             
             EnemyConfigsContainer configsContainer = EnemyConfigsContainer.GetInstance();
 

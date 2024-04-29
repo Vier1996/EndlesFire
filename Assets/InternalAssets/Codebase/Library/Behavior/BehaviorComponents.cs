@@ -1,5 +1,6 @@
 using System;
-using Codebase.Library.SAD;
+using InternalAssets.Codebase.Library.MonoEntity;
+using InternalAssets.Codebase.Library.MonoEntity.EntityComponent;
 
 namespace InternalAssets.Codebase.Library.Behavior
 {

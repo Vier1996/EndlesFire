@@ -1,9 +1,10 @@
 using System;
-using Codebase.Library.SAD;
 using InternalAssets.Codebase.Gameplay.Entities.PlayerFolder;
 using InternalAssets.Codebase.Gameplay.Enums;
 using InternalAssets.Codebase.Gameplay.ModelsView;
 using InternalAssets.Codebase.Library.Behavior;
+using InternalAssets.Codebase.Library.MonoEntity;
+using InternalAssets.Codebase.Library.MonoEntity.EntityComponent;
 
 namespace InternalAssets.Codebase.Gameplay.Behavior.Player.States
 {

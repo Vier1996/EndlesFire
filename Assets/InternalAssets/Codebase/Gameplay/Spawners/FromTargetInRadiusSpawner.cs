@@ -1,8 +1,9 @@
 using ACS.Core.ServicesContainer;
-using Codebase.Library.SAD;
 using InternalAssets.Codebase.Gameplay.Entities.EnemiesFolder;
 using InternalAssets.Codebase.Gameplay.Enums;
 using InternalAssets.Codebase.Gameplay.Parents;
+using InternalAssets.Codebase.Library.MonoEntity;
+using InternalAssets.Codebase.Library.MonoEntity.Entities;
 using Lean.Pool;
 using Sirenix.OdinInspector;
 using UnityEngine;

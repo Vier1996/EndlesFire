@@ -1,3 +1,4 @@
+using InternalAssets.Codebase.Library.Addressable;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.AddressableAssets;

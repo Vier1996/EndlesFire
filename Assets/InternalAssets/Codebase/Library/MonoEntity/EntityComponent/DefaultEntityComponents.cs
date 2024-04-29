@@ -1,4 +1,6 @@
-namespace Codebase.Library.SAD
+using InternalAssets.Codebase.Library.MonoEntity.Entities;
+
+namespace InternalAssets.Codebase.Library.MonoEntity.EntityComponent
 {
     public class DefaultEntityComponents : EntityComponents
     {

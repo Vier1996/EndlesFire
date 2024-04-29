@@ -1,9 +1,9 @@
 ﻿using UnityEngine;
 
-namespace Codebase.Library.Addressable
+namespace InternalAssets.Codebase.Library.Addressable
 {
     public interface IComponentReferenceInstance
     {
-        GameObject GetObject();
+        public GameObject GameObject { get; }
     }
 }

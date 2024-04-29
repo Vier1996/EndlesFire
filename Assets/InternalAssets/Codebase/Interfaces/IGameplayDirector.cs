@@ -1,4 +1,5 @@
-﻿using Codebase.Library.SAD;
+﻿using InternalAssets.Codebase.Library.MonoEntity;
+using InternalAssets.Codebase.Library.MonoEntity.Entities;
 
 namespace InternalAssets.Codebase.Interfaces
 {

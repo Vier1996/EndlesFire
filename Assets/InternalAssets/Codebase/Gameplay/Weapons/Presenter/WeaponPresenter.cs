@@ -3,13 +3,15 @@ using ACS.Core.ServicesContainer;
 using ACS.SignalBus.SignalBus;
 using Codebase.Gameplay.Sorting;
 using Codebase.Library.Extension.Dotween;
-using Codebase.Library.SAD;
 using DG.Tweening;
 using InternalAssets.Codebase.Gameplay.Enums;
 using InternalAssets.Codebase.Gameplay.ModelsView;
 using InternalAssets.Codebase.Gameplay.Movement;
 using InternalAssets.Codebase.Gameplay.Weapons.Configs;
 using InternalAssets.Codebase.Interfaces;
+using InternalAssets.Codebase.Library.MonoEntity;
+using InternalAssets.Codebase.Library.MonoEntity.Entities;
+using InternalAssets.Codebase.Library.MonoEntity.Interfaces;
 using InternalAssets.Codebase.Services._2dModels;
 using InternalAssets.Codebase.Signals;
 using Sirenix.OdinInspector;
@@ -40,16 +42,16 @@ namespace InternalAssets.Codebase.Gameplay.Weapons.Presenter
         private float _lerpSpeed = 0.25f;
         private bool _isEnabled = false;
 
-        public void Bootstrapp(Entity entity)
+        public override void Bootstrapp(Entity entity)
         {
             ServiceContainer.Core.Get(out _signalBusService);
             
             _entity = entity;
             _selfTransform = transform;
 
-            _playerMovementComponent = _entity.GetAbstractComponent<PlayerMovementComponent>();
-            _modelViewProvider = _entity.GetAbstractComponent<ModelViewProvider>();
-            _detectionSystem = _entity.GetAbstractComponent<IDetectionSystem>();
+            _entity.Components.TryGetAbstractComponent(out _playerMovementComponent);
+            _entity.Components.TryGetAbstractComponent(out _modelViewProvider);
+            _entity.Components.TryGetAbstractComponent(out _detectionSystem);
             
             SetJoystickListening();
             

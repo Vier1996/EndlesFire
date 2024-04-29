@@ -1,11 +1,12 @@
 using System;
 using Codebase.Library.Extension.Dotween;
 using Codebase.Library.Extension.Rx;
-using Codebase.Library.SAD;
 using DG.Tweening;
 using InternalAssets.Codebase.Gameplay.Bullets;
 using InternalAssets.Codebase.Gameplay.Weapons.Configs;
 using InternalAssets.Codebase.Interfaces;
+using InternalAssets.Codebase.Library.MonoEntity;
+using InternalAssets.Codebase.Library.MonoEntity.Entities;
 using Lean.Pool;
 using Sirenix.OdinInspector;
 using UniRx;

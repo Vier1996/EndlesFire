@@ -1,9 +1,10 @@
 using System;
 using Cinemachine;
 using Codebase.Library.Extension.Rx;
-using Codebase.Library.SAD;
 using InternalAssets.Codebase.Gameplay.Entities.PlayerFolder;
 using InternalAssets.Codebase.Interfaces;
+using InternalAssets.Codebase.Library.MonoEntity;
+using InternalAssets.Codebase.Library.MonoEntity.Entities;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
@@ -39,7 +40,8 @@ namespace InternalAssets.Codebase.Services.Camera
         public void Initialize(Entity entity)
         {
             _targetEntity = entity;
-            _detectionSystem = _targetEntity.GetAbstractComponent<IDetectionSystem>();
+            _targetEntity.Components.TryGetAbstractComponent(out _detectionSystem);
+            
             _cinemachineTransposer = virtualCamera.GetCinemachineComponent<CinemachineFramingTransposer>();
             
             SetDeadZoneValues(0, 0);

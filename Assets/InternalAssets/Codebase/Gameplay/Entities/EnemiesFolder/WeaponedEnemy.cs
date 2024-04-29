@@ -1,6 +1,5 @@
 ﻿using System;
 using ACS.Core.ServicesContainer;
-using Codebase.Library.SAD;
 using InternalAssets.Codebase.Gameplay.Configs.Enemy;
 using InternalAssets.Codebase.Gameplay.Damage;
 using InternalAssets.Codebase.Gameplay.Entities.PlayerFolder;
@@ -9,6 +8,9 @@ using InternalAssets.Codebase.Gameplay.Factory.Vfx;
 using InternalAssets.Codebase.Gameplay.Sorting;
 using InternalAssets.Codebase.Gameplay.Weapons.Presenter;
 using InternalAssets.Codebase.Interfaces;
+using InternalAssets.Codebase.Library.MonoEntity;
+using InternalAssets.Codebase.Library.MonoEntity.Entities;
+using InternalAssets.Codebase.Library.MonoEntity.EntityComponent;
 using Lean.Pool;
 using Sirenix.OdinInspector;
 using UnityEngine;
@@ -23,22 +25,21 @@ namespace InternalAssets.Codebase.Gameplay.Entities.EnemiesFolder
         private IDetectionSystem _detectionSystem;
         private VfxFactoryProvider _vfxFactoryProvider;
         
-        public override Entity Bootstrapp()
+        public override Entity Bootstrapp(EntityComponents components = null)
         {
-            if (IsBootstapped) return this;
-
-            BindComponents(_components);
+            if (IsBootstrapped) return this;
             
-            base.Bootstrapp();
+            base.Bootstrapp(_components);
 
             ServiceContainer.Global.Get(out _vfxFactoryProvider);
             
-            _weaponPresenter = (EnemyWeaponPresenter)GetAbstractComponent<IWeaponPresenter>();
-            
-            TryGetAbstractComponent(out _detectionSystem);
-            TryGetAbstractComponent(out EnemyTranslationComponent);
-            TryGetAbstractComponent(out ModelViewProvider);
-            TryGetAbstractComponent(out HealthComponent);
+            Components.TryGetAbstractComponent(out _detectionSystem);
+            Components.TryGetAbstractComponent(out EnemyTranslationComponent);
+            Components.TryGetAbstractComponent(out ModelViewProvider);
+            Components.TryGetAbstractComponent(out HealthComponent);
+            Components.TryGetAbstractComponent(out IWeaponPresenter presenter);
+
+            _weaponPresenter = (EnemyWeaponPresenter)presenter;
             
             return this;
         }

@@ -1,7 +1,8 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Codebase.Library.SAD;
+using InternalAssets.Codebase.Library.MonoEntity;
+using InternalAssets.Codebase.Library.MonoEntity.EntityComponent;
 
 namespace InternalAssets.Codebase.Library.Behavior
 {

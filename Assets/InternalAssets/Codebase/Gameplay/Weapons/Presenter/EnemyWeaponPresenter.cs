@@ -1,13 +1,15 @@
 ﻿using System;
 using Codebase.Gameplay.Sorting;
 using Codebase.Library.Extension.Dotween;
-using Codebase.Library.SAD;
 using DG.Tweening;
 using InternalAssets.Codebase.Gameplay.Entities.EnemiesFolder;
 using InternalAssets.Codebase.Gameplay.Enums;
 using InternalAssets.Codebase.Gameplay.ModelsView;
 using InternalAssets.Codebase.Gameplay.Weapons.Configs;
 using InternalAssets.Codebase.Interfaces;
+using InternalAssets.Codebase.Library.MonoEntity;
+using InternalAssets.Codebase.Library.MonoEntity.Entities;
+using InternalAssets.Codebase.Library.MonoEntity.Interfaces;
 using Sirenix.OdinInspector;
 using UniRx;
 using UnityEngine;
@@ -33,14 +35,14 @@ namespace InternalAssets.Codebase.Gameplay.Weapons.Presenter
         private float _lastAngle = 0;
         private bool _isEnabled = false;
         
-        public void Bootstrapp(Entity entity)
+        public override void Bootstrapp(Entity entity)
         {
             _enemy = entity as Enemy;
             _selfTransform = transform;
             
             _lookingType = WeaponLookingType.marked_target;
-            
-            _modelViewProvider = entity.GetAbstractComponent<ModelViewProvider>();
+
+            entity.Components.TryGetAbstractComponent(out _modelViewProvider);
         }
 
         public override void Dispose()

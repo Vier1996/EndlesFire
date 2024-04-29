@@ -1,4 +1,5 @@
-﻿using Codebase.Library.SAD;
+﻿using InternalAssets.Codebase.Library.MonoEntity;
+using InternalAssets.Codebase.Library.MonoEntity.Entities;
 using UnityEngine;
 
 namespace InternalAssets.Codebase.Gameplay.Spawners

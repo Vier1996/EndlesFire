@@ -1,8 +1,9 @@
 ﻿using System;
-using Codebase.Library.SAD;
 using InternalAssets.Codebase.Gameplay.Enums;
 using InternalAssets.Codebase.Gameplay.Weapons.Configs;
 using InternalAssets.Codebase.Interfaces;
+using InternalAssets.Codebase.Library.MonoEntity.Entities;
+using InternalAssets.Codebase.Library.MonoEntity.Interfaces;
 using UnityEngine;
 
 namespace InternalAssets.Codebase.Gameplay.Weapons.Presenter
@@ -11,6 +12,7 @@ namespace InternalAssets.Codebase.Gameplay.Weapons.Presenter
     {
         public event Action<WeaponConfig> WeaponUpdated;
         
+        public abstract void Bootstrapp(Entity entity);
         public virtual void Dispose() { }
         
         public virtual IWeaponPresenter Enable() => this;

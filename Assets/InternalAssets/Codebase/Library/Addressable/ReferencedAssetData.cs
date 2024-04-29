@@ -1,4 +1,5 @@
 ﻿using System;
+using InternalAssets.Codebase.Library.Addressable;
 using UnityEngine.AddressableAssets;
 using UnityEngine.ResourceManagement.AsyncOperations;
 using Object = UnityEngine.Object;
@@ -20,9 +21,9 @@ namespace Codebase.Library.Addressable
 
         public void Dispose()
         {
-            if (AssetInstance == null || AssetInstance.GetObject() == null) return;
+            if (AssetInstance == null || AssetInstance.GameObject == null) return;
             
-            Object.Destroy(AssetInstance.GetObject());
+            Object.Destroy(AssetInstance.GameObject);
                 
             if(InstantiateHandle.IsValid())
                 Addressables.Release(InstantiateHandle);

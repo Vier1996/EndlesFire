@@ -1,8 +1,10 @@
 ﻿using System;
-using Codebase.Library.SAD;
 using InternalAssets.Codebase.Gameplay.Damage;
 using InternalAssets.Codebase.Gameplay.Enums;
 using InternalAssets.Codebase.Interfaces;
+using InternalAssets.Codebase.Library.MonoEntity;
+using InternalAssets.Codebase.Library.MonoEntity.Entities;
+using InternalAssets.Codebase.Library.MonoEntity.Interfaces;
 using UnityEngine;
 
 namespace InternalAssets.Codebase.Gameplay.HealthLogic

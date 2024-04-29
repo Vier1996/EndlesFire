@@ -1,8 +1,10 @@
 ﻿using System;
-using Codebase.Library.SAD;
 using InternalAssets.Codebase.Gameplay.Enums;
 using InternalAssets.Codebase.Gameplay.ModelsView;
 using InternalAssets.Codebase.Interfaces;
+using InternalAssets.Codebase.Library.MonoEntity;
+using InternalAssets.Codebase.Library.MonoEntity.Entities;
+using InternalAssets.Codebase.Library.MonoEntity.EntityComponent;
 using Sirenix.OdinInspector;
 using UnityEngine;
 

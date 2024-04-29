@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using ACS.Core.ServicesContainer;
 using Codebase.Library.Extension.Rx;
-using Codebase.Library.SAD;
 using InternalAssets.Codebase.Gameplay.Entities.EnemiesFolder;
 using InternalAssets.Codebase.Interfaces;
+using InternalAssets.Codebase.Library.MonoEntity;
+using InternalAssets.Codebase.Library.MonoEntity.Entities;
+using InternalAssets.Codebase.Library.MonoEntity.Tools.World;
 using Sirenix.OdinInspector;
 using Sirenix.Serialization;
 using UnityEngine;

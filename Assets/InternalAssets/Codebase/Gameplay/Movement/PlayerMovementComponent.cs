@@ -1,7 +1,6 @@
 using System;
 using System.Collections;
 using ACS.Core.ServicesContainer;
-using Codebase.Library.SAD;
 using Cysharp.Threading.Tasks;
 using DG.Tweening;
 using InternalAssets.Codebase.Gameplay.Behavior.Player;
@@ -11,6 +10,9 @@ using InternalAssets.Codebase.Gameplay.Enums;
 using InternalAssets.Codebase.Gameplay.Parents;
 using InternalAssets.Codebase.Gameplay.Sorting;
 using InternalAssets.Codebase.Gameplay.Talents;
+using InternalAssets.Codebase.Library.MonoEntity;
+using InternalAssets.Codebase.Library.MonoEntity.Entities;
+using InternalAssets.Codebase.Library.MonoEntity.Interfaces;
 using InternalAssets.Codebase.Services.Input;
 using Lean.Pool;
 using Sirenix.OdinInspector;
@@ -57,7 +59,7 @@ namespace InternalAssets.Codebase.Gameplay.Movement
         private bool _isDodgeOnCoolDown = false;
         private float _currentFootstepDistance;
         
-        public void Bootstrapp(Entity playerEntity)
+        public void Bootstrapp(Entity entity)
         {
             IsInitialized = true;
             
@@ -67,9 +69,10 @@ namespace InternalAssets.Codebase.Gameplay.Movement
                 .Get(out _sceneAssetParentsContainer)
                 .Get(out _talentsService);
             
-            _playerBehaviorMachine = playerEntity.GetAbstractComponent<PlayerBehaviorMachine>();
-            _movableRigidbody = playerEntity.GetAbstractComponent<Rigidbody2D>();
-            _playerCharacteristicsContainer = playerEntity.GetAbstractComponent<CharacteristicsContainer>();
+            entity.Components.TryGetAbstractComponent(out _playerBehaviorMachine);
+            entity.Components.TryGetAbstractComponent(out _movableRigidbody);
+            entity.Components.TryGetAbstractComponent(out _playerCharacteristicsContainer);
+            
             _currentFootstepDistance = _footstepTriggerDistance;
             _speedProperty = _playerCharacteristicsContainer.GetValue(CharacteristicType.movement_speed);
 

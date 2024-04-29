@@ -1,10 +1,11 @@
 ﻿using Codebase.Library.Addressable;
 using Codebase.Library.Extension.Native;
 using Cysharp.Threading.Tasks;
+using InternalAssets.Codebase.Library.Addressable;
 using UnityEngine;
 using UnityEngine.ResourceManagement.AsyncOperations;
 
-namespace Codebase.Library.Extension.Addressable
+namespace InternalAssets.Codebase.Library.Extension.Addressable
 {
     public static class AssetReferenceExtension
     {
@@ -18,7 +19,7 @@ namespace Codebase.Library.Extension.Addressable
             ReferencedAssetData<T> referencedAssetData = new ReferencedAssetData<T>(instantiateHandle);
             
             referencedAssetData.AssetInstance
-                .GetObject().transform
+                .GameObject.transform
                 .With(tr => tr.SetParent(parent))
                 .With(tr => tr.localScale = (localScale == default ? Vector3.one : localScale))
                 .With(tr => tr.localEulerAngles = localRotation)

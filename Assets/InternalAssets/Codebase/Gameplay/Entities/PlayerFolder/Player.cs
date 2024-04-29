@@ -1,10 +1,12 @@
-using Codebase.Library.SAD;
 using InternalAssets.Codebase.Gameplay.Characteristics;
 using InternalAssets.Codebase.Gameplay.Configs;
 using InternalAssets.Codebase.Gameplay.Damage;
 using InternalAssets.Codebase.Gameplay.Enums;
 using InternalAssets.Codebase.Gameplay.HealthLogic;
 using InternalAssets.Codebase.Interfaces;
+using InternalAssets.Codebase.Library.MonoEntity;
+using InternalAssets.Codebase.Library.MonoEntity.Entities;
+using InternalAssets.Codebase.Library.MonoEntity.EntityComponent;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
@@ -14,24 +16,25 @@ namespace InternalAssets.Codebase.Gameplay.Entities.PlayerFolder
     {
         [SerializeField] private PlayerComponents _playerComponents;
 
+        private IDetectionSystem _detectionSystem;
+        private IWeaponPresenter _weaponPresenter;
+        private HealthComponent _healthComponent;
+        
         private bool _isEnabled = false;
         
         [Button]
-        public override Entity Bootstrapp()
-        {
-            BindComponents(_playerComponents);
-            
-            base.Bootstrapp();
-            
-            return this;
-        }
+        public override Entity Bootstrapp(EntityComponents components = null) => 
+            base.Bootstrapp(_playerComponents);
 
         public Player Initialize()
         {
             Enable();
-            
-            HealthComponent healthComponent = GetAbstractComponent<HealthComponent>();
-            healthComponent.Initialize(20);
+
+            Components.TryGetAbstractComponent(out _healthComponent);
+            Components.TryGetAbstractComponent(out _detectionSystem);
+            Components.TryGetAbstractComponent(out _weaponPresenter);
+
+            _healthComponent.Initialize(20);
             
             return this;
         }
@@ -42,13 +45,11 @@ namespace InternalAssets.Codebase.Gameplay.Entities.PlayerFolder
 
             _isEnabled = true;
 
-            GetAbstractComponent<IDetectionSystem>().Enable();
-            GetAbstractComponent<IWeaponPresenter>().Enable().PresentWeapon(WeaponType.prototype_1);
-            HealthComponent healthComponent = GetAbstractComponent<HealthComponent>();
+            _detectionSystem.Enable();
+            _weaponPresenter.Enable().PresentWeapon(WeaponType.prototype_1);
+            _healthComponent.Enable();
 
-            healthComponent.Enable();
-
-            healthComponent.HealthEmpty += OnKilled;
+            _healthComponent.HealthEmpty += OnKilled;
 
             return this;
         }
@@ -59,17 +60,17 @@ namespace InternalAssets.Codebase.Gameplay.Entities.PlayerFolder
 
             _isEnabled = false;
 
-            GetAbstractComponent<IDetectionSystem>().Disable();
-            GetAbstractComponent<IWeaponPresenter>().Disable();
+            _detectionSystem.Disable();
+            _weaponPresenter.Disable();
             
             return this;
         }
 
         public void ReceiveDamage(DamageArgs damageArgs)
         {
-            if (TryGetAbstractComponent(out HealthComponent healthComponent) == false) return;
+            if (_healthComponent == null) return;
             
-            healthComponent.Operate(damageArgs);
+            _healthComponent.Operate(damageArgs);
         }
 
         public Transform GetTargetTransform() => _playerComponents.TargetTransform;
@@ -84,10 +85,8 @@ namespace InternalAssets.Codebase.Gameplay.Entities.PlayerFolder
         
         protected virtual void OnKilled()
         {
-            HealthComponent healthComponent = GetAbstractComponent<HealthComponent>();
-
-            healthComponent.HealthEmpty -= OnKilled;
-            healthComponent.Disable();
+            _healthComponent.HealthEmpty -= OnKilled;
+            _healthComponent.Disable();
 
             Disable();
             
@@ -97,10 +96,14 @@ namespace InternalAssets.Codebase.Gameplay.Entities.PlayerFolder
 #if UNITY_EDITOR
 
         [Button]
-        private void GetCharacteristicsInfo() =>
-            GetAbstractComponent<CharacteristicsContainer>()
+        private void GetCharacteristicsInfo()
+        {
+            Components.TryGetAbstractComponent(out CharacteristicsContainer characteristicsContainer);
+            
+            characteristicsContainer 
                 .GetAll()
                 .ForEach(crt => Debug.Log($"Characteristic:[{crt.Type}] has value:[{crt.Value}]"));
+        }
 
 #endif
     }

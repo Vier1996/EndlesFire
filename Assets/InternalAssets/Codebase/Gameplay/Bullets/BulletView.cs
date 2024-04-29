@@ -1,6 +1,5 @@
 ﻿using System;
 using Codebase.Library.Extension.Rx;
-using Codebase.Library.SAD;
 using InternalAssets.Codebase.Gameplay.Damage;
 using InternalAssets.Codebase.Gameplay.Enums;
 using InternalAssets.Codebase.Gameplay.Sorting;

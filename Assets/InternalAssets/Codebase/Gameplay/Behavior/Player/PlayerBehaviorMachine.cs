@@ -1,7 +1,9 @@
 ﻿using System;
-using Codebase.Library.SAD;
 using InternalAssets.Codebase.Gameplay.Configs;
 using InternalAssets.Codebase.Library.Behavior;
+using InternalAssets.Codebase.Library.MonoEntity;
+using InternalAssets.Codebase.Library.MonoEntity.Entities;
+using InternalAssets.Codebase.Library.MonoEntity.Interfaces;
 
 namespace InternalAssets.Codebase.Gameplay.Behavior.Player
 {

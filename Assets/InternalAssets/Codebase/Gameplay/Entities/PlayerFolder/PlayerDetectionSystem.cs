@@ -1,9 +1,11 @@
 ﻿using System;
-using Codebase.Library.SAD;
 using InternalAssets.Codebase.Gameplay.Entities.EnemiesFolder;
 using InternalAssets.Codebase.Gameplay.Scanning;
 using InternalAssets.Codebase.Gameplay.Weapons.Configs;
 using InternalAssets.Codebase.Interfaces;
+using InternalAssets.Codebase.Library.MonoEntity;
+using InternalAssets.Codebase.Library.MonoEntity.Entities;
+using InternalAssets.Codebase.Library.MonoEntity.Interfaces;
 using UnityEngine;
 
 namespace InternalAssets.Codebase.Gameplay.Entities.PlayerFolder
@@ -23,7 +25,7 @@ namespace InternalAssets.Codebase.Gameplay.Entities.PlayerFolder
             ScanComponent.Bootstrapp();
             CircleView.Bootstrapp();
 
-            _weaponPresenter = entity.GetAbstractComponent<IWeaponPresenter>();
+            entity.Components.TryGetAbstractComponent(out _weaponPresenter);
         }
 
         public void Dispose()

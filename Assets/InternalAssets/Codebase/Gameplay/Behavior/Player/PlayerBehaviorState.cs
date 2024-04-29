@@ -1,6 +1,7 @@
-using Codebase.Library.SAD;
 using InternalAssets.Codebase.Gameplay.Entities.PlayerFolder;
 using InternalAssets.Codebase.Library.Behavior;
+using InternalAssets.Codebase.Library.MonoEntity;
+using InternalAssets.Codebase.Library.MonoEntity.EntityComponent;
 using UnityEngine;
 
 namespace InternalAssets.Codebase.Gameplay.Behavior.Player

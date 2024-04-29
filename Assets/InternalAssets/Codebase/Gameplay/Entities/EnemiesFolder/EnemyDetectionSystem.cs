@@ -1,8 +1,10 @@
 ﻿using System;
-using Codebase.Library.SAD;
 using Cysharp.Threading.Tasks.Triggers;
 using InternalAssets.Codebase.Gameplay.Scanning;
 using InternalAssets.Codebase.Interfaces;
+using InternalAssets.Codebase.Library.MonoEntity;
+using InternalAssets.Codebase.Library.MonoEntity.Entities;
+using InternalAssets.Codebase.Library.MonoEntity.Interfaces;
 using UnityEngine;
 
 namespace InternalAssets.Codebase.Gameplay.Entities.EnemiesFolder

@@ -1,7 +1,8 @@
 using System;
 using System.Collections.Generic;
+using InternalAssets.Codebase.Library.MonoEntity.Entities;
 
-namespace Codebase.Library.SAD
+namespace InternalAssets.Codebase.Library.MonoEntity.EntityComponent
 {
     [Serializable]
     public abstract class EntityComponents

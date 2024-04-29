@@ -1,13 +1,15 @@
 using System;
 using ACS.Core.ServicesContainer;
 using Codebase.Gameplay.Sorting;
-using Codebase.Library.SAD;
 using InternalAssets.Codebase.Gameplay.Enums;
 using InternalAssets.Codebase.Gameplay.Factory.Vfx;
 using InternalAssets.Codebase.Gameplay.Movement;
 using InternalAssets.Codebase.Gameplay.Parents;
 using InternalAssets.Codebase.Gameplay.Sorting;
 using InternalAssets.Codebase.Interfaces;
+using InternalAssets.Codebase.Library.MonoEntity;
+using InternalAssets.Codebase.Library.MonoEntity.Entities;
+using InternalAssets.Codebase.Library.MonoEntity.Interfaces;
 using Lean.Pool;
 using Sirenix.OdinInspector;
 using UnityEngine;
@@ -31,8 +33,8 @@ namespace InternalAssets.Codebase.Gameplay.Dodge
             ServiceContainer.Global.Get(out _vfxFactoryProvider);
             ServiceContainer.ForCurrentScene().Get(out _sceneAssetParentsContainer);
             
-            entity.TryGetAbstractComponent(out _playerMovement);
-            entity.TryGetAbstractComponent(out _weaponPresenter);
+            entity.Components.TryGetAbstractComponent(out _playerMovement);
+            entity.Components.TryGetAbstractComponent(out _weaponPresenter);
             
             _playerMovement.OnDodgeStart += OnDodgeStart;
             _playerMovement.OnDodgeStart += DisableWeaponPresenter;

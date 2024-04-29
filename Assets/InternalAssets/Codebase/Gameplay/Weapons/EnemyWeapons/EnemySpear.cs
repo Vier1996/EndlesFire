@@ -1,7 +1,6 @@
 using System;
 using System.Collections.Generic;
 using Codebase.Library.Extension.Dotween;
-using Codebase.Library.SAD;
 using DG.Tweening;
 using InternalAssets.Codebase.Gameplay.Damage;
 using InternalAssets.Codebase.Gameplay.Entities.PlayerFolder;
@@ -9,6 +8,8 @@ using InternalAssets.Codebase.Gameplay.Enums;
 using InternalAssets.Codebase.Gameplay.Triggers;
 using InternalAssets.Codebase.Gameplay.Weapons.Configs;
 using InternalAssets.Codebase.Interfaces;
+using InternalAssets.Codebase.Library.MonoEntity;
+using InternalAssets.Codebase.Library.MonoEntity.Entities;
 using Sirenix.OdinInspector;
 using UniRx;
 using UnityEngine;
@@ -41,7 +42,7 @@ namespace InternalAssets.Codebase.Gameplay.Weapons.EnemyWeapons
         {
             base.Bootstrapp(weaponConfig, ownerEntity);
 
-            _detectionSystem = ownerEntity.GetAbstractComponent<IDetectionSystem>();
+            ownerEntity.Components.TryGetAbstractComponent(out _detectionSystem);
             
             InShootingStatus = false;
             InShootingProcess = false;

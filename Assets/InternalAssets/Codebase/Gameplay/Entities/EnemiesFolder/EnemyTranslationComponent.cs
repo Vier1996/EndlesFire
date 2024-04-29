@@ -1,8 +1,10 @@
 ﻿using System;
 using Codebase.Library.Extension.Dotween;
-using Codebase.Library.SAD;
 using InternalAssets.Codebase.Gameplay.CustomComponents;
 using InternalAssets.Codebase.Interfaces;
+using InternalAssets.Codebase.Library.MonoEntity;
+using InternalAssets.Codebase.Library.MonoEntity.Entities;
+using InternalAssets.Codebase.Library.MonoEntity.Interfaces;
 using InternalAssets.Codebase.Library.Vectors;
 using UniRx;
 using UnityEngine;
@@ -28,7 +30,7 @@ namespace InternalAssets.Codebase.Gameplay.Entities.EnemiesFolder
         {
             _selfTransform = entity.Transform;
             
-            entity.TryGetAbstractComponent(out _physicPairComponent);
+            entity.Components.TryGetAbstractComponent(out _physicPairComponent);
         }
 
         public void Dispose()

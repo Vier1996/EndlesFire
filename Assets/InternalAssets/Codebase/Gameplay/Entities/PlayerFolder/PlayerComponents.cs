@@ -1,6 +1,5 @@
 ﻿using System;
 using Codebase.Gameplay.Sorting;
-using Codebase.Library.SAD;
 using InternalAssets.Codebase.Gameplay.Behavior.Player;
 using InternalAssets.Codebase.Gameplay.Configs;
 using InternalAssets.Codebase.Gameplay.Dodge;
@@ -9,6 +8,9 @@ using InternalAssets.Codebase.Gameplay.ModelsView;
 using InternalAssets.Codebase.Gameplay.Movement;
 using InternalAssets.Codebase.Gameplay.Weapons.Presenter;
 using InternalAssets.Codebase.Interfaces;
+using InternalAssets.Codebase.Library.MonoEntity;
+using InternalAssets.Codebase.Library.MonoEntity.Entities;
+using InternalAssets.Codebase.Library.MonoEntity.EntityComponent;
 using Sirenix.OdinInspector;
 using UnityEngine;
 

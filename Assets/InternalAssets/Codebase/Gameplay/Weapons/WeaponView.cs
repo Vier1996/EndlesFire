@@ -1,8 +1,9 @@
 using System;
 using System.Collections.Generic;
-using Codebase.Library.SAD;
 using InternalAssets.Codebase.Gameplay.Weapons.Configs;
 using InternalAssets.Codebase.Interfaces;
+using InternalAssets.Codebase.Library.MonoEntity;
+using InternalAssets.Codebase.Library.MonoEntity.Entities;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
