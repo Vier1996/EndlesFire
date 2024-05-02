@@ -35,7 +35,7 @@ namespace InternalAssets.Codebase.Gameplay.Weapons
         {
             base.Bootstrapp(weaponConfig, ownerEntity);
 
-             ownerEntity.Components.TryGetAbstractComponent(out _detectionSystem);
+            ownerEntity.Components.TryGetAbstractComponent(out _detectionSystem);
             
             _shootingInProcess = false;
             _busyByShooting = false;

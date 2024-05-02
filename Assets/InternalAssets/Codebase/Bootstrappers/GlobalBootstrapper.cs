@@ -4,6 +4,7 @@ using InternalAssets.Codebase.Gameplay.Factory.itemViews;
 using InternalAssets.Codebase.Gameplay.Factory.Vfx;
 using InternalAssets.Codebase.Gameplay.SceneLoader;
 using InternalAssets.Codebase.Gameplay.Shutters;
+using InternalAssets.Codebase.Gameplay.SkillsTree;
 using InternalAssets.Codebase.Interfaces;
 using InternalAssets.Codebase.Services.Scenes;
 using UnityEngine;
@@ -19,9 +20,10 @@ namespace InternalAssets.Codebase.Bootstrappers
             Container.AsGlobal(true);
 
             Container
-                .Register(type: typeof(IShutter), _shutter)
+                .Register(typeof(IShutter), _shutter)
                 .Register(new SortingService())
-                .Register(type: typeof(ISceneLoader), new EndlessFireSceneLoader())
+                .Register(new SkillsService())
+                .Register(typeof(ISceneLoader), new EndlessFireSceneLoader())
                 ;
 
             RegisterFactories();

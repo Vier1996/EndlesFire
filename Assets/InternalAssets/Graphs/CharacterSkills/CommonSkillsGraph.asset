@@ -1,0 +1,470 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8344046858380173866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 289144971a056014aaab1646fb58c48f, type: 3}
+  m_Name: Skill
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -1032, y: -1032}
+  ports:
+    keys:
+    - <Exit>k__BackingField
+    - <Entry>k__BackingField
+    values:
+    - _fieldName: <Exit>k__BackingField
+      _node: {fileID: -8344046858380173866}
+      _typeQualifiedName: System.Collections.Generic.List`1[[InternalAssets.Codebase.Gameplay.SkillsTree.Nodes.SkillNode,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: <Entry>k__BackingField
+        node: {fileID: 6629729728266900183}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: <Entry>k__BackingField
+      _node: {fileID: -8344046858380173866}
+      _typeQualifiedName: System.Collections.Generic.List`1[[InternalAssets.Codebase.Gameplay.SkillsTree.Nodes.SkillNode,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: <Exit>k__BackingField
+        node: {fileID: -240261195686321416}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  <SkillType>k__BackingField: 2
+  <NameKey>k__BackingField: 
+  <DescriptionKey>k__BackingField: 
+  <Icon>k__BackingField: {fileID: 0}
+  <CharacteristicType>k__BackingField: 1
+  <Value>k__BackingField: 3
+  <Entry>k__BackingField:
+  - {fileID: 0}
+  <Exit>k__BackingField:
+  - {fileID: 0}
+--- !u!114 &-827002478388199229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 289144971a056014aaab1646fb58c48f, type: 3}
+  m_Name: Skill
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -392, y: -1432}
+  ports:
+    keys:
+    - <Exit>k__BackingField
+    - <Entry>k__BackingField
+    values:
+    - _fieldName: <Exit>k__BackingField
+      _node: {fileID: -827002478388199229}
+      _typeQualifiedName: System.Collections.Generic.List`1[[InternalAssets.Codebase.Gameplay.SkillsTree.Nodes.SkillNode,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: <Entry>k__BackingField
+        node: {fileID: 5527559731012085158}
+        reroutePoints: []
+      - fieldName: <Entry>k__BackingField
+        node: {fileID: 3114216382343175345}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: <Entry>k__BackingField
+      _node: {fileID: -827002478388199229}
+      _typeQualifiedName: System.Collections.Generic.List`1[[InternalAssets.Codebase.Gameplay.SkillsTree.Nodes.SkillNode,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: <Exit>k__BackingField
+        node: {fileID: 6629729728266900183}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  <SkillType>k__BackingField: 4
+  <NameKey>k__BackingField: 
+  <DescriptionKey>k__BackingField: 
+  <Icon>k__BackingField: {fileID: 0}
+  <CharacteristicType>k__BackingField: 1
+  <Value>k__BackingField: 3
+  <Entry>k__BackingField:
+  - {fileID: 0}
+  <Exit>k__BackingField:
+  - {fileID: 0}
+--- !u!114 &-240261195686321416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 289144971a056014aaab1646fb58c48f, type: 3}
+  m_Name: Skill
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -1288, y: -1032}
+  ports:
+    keys:
+    - <Exit>k__BackingField
+    - <Entry>k__BackingField
+    values:
+    - _fieldName: <Exit>k__BackingField
+      _node: {fileID: -240261195686321416}
+      _typeQualifiedName: System.Collections.Generic.List`1[[InternalAssets.Codebase.Gameplay.SkillsTree.Nodes.SkillNode,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: <Entry>k__BackingField
+        node: {fileID: -8344046858380173866}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: <Entry>k__BackingField
+      _node: {fileID: -240261195686321416}
+      _typeQualifiedName: System.Collections.Generic.List`1[[InternalAssets.Codebase.Gameplay.SkillsTree.Nodes.SkillNode,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  <SkillType>k__BackingField: 1
+  <NameKey>k__BackingField: 
+  <DescriptionKey>k__BackingField: 
+  <Icon>k__BackingField: {fileID: 0}
+  <CharacteristicType>k__BackingField: 4
+  <Value>k__BackingField: 1
+  <Entry>k__BackingField:
+  - {fileID: 0}
+  <Exit>k__BackingField:
+  - {fileID: 0}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 890c16b3507546d9a2e31edafd068072, type: 3}
+  m_Name: CommonSkillsGraph
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: -240261195686321416}
+  - {fileID: -8344046858380173866}
+  - {fileID: 6629729728266900183}
+  - {fileID: -827002478388199229}
+  - {fileID: 307331255087295966}
+  - {fileID: 5527559731012085158}
+  - {fileID: 3114216382343175345}
+  - {fileID: 2432232573808284345}
+  Current: {fileID: 0}
+--- !u!114 &307331255087295966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 289144971a056014aaab1646fb58c48f, type: 3}
+  m_Name: Skill
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -296, y: -616}
+  ports:
+    keys:
+    - <Exit>k__BackingField
+    - <Entry>k__BackingField
+    values:
+    - _fieldName: <Exit>k__BackingField
+      _node: {fileID: 307331255087295966}
+      _typeQualifiedName: System.Collections.Generic.List`1[[InternalAssets.Codebase.Gameplay.SkillsTree.Nodes.SkillNode,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: <Entry>k__BackingField
+        node: {fileID: 2432232573808284345}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: <Entry>k__BackingField
+      _node: {fileID: 307331255087295966}
+      _typeQualifiedName: System.Collections.Generic.List`1[[InternalAssets.Codebase.Gameplay.SkillsTree.Nodes.SkillNode,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: <Exit>k__BackingField
+        node: {fileID: 6629729728266900183}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  <SkillType>k__BackingField: 7
+  <NameKey>k__BackingField: 
+  <DescriptionKey>k__BackingField: 
+  <Icon>k__BackingField: {fileID: 0}
+  <CharacteristicType>k__BackingField: 1
+  <Value>k__BackingField: 3
+  <Entry>k__BackingField:
+  - {fileID: 0}
+  <Exit>k__BackingField:
+  - {fileID: 0}
+--- !u!114 &2432232573808284345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 289144971a056014aaab1646fb58c48f, type: 3}
+  m_Name: Skill
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 248, y: -1096}
+  ports:
+    keys:
+    - <Exit>k__BackingField
+    - <Entry>k__BackingField
+    values:
+    - _fieldName: <Exit>k__BackingField
+      _node: {fileID: 2432232573808284345}
+      _typeQualifiedName: System.Collections.Generic.List`1[[InternalAssets.Codebase.Gameplay.SkillsTree.Nodes.SkillNode,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: <Entry>k__BackingField
+      _node: {fileID: 2432232573808284345}
+      _typeQualifiedName: System.Collections.Generic.List`1[[InternalAssets.Codebase.Gameplay.SkillsTree.Nodes.SkillNode,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: <Exit>k__BackingField
+        node: {fileID: 5527559731012085158}
+        reroutePoints: []
+      - fieldName: <Exit>k__BackingField
+        node: {fileID: 3114216382343175345}
+        reroutePoints: []
+      - fieldName: <Exit>k__BackingField
+        node: {fileID: 307331255087295966}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  <SkillType>k__BackingField: 8
+  <NameKey>k__BackingField: 
+  <DescriptionKey>k__BackingField: 
+  <Icon>k__BackingField: {fileID: 0}
+  <CharacteristicType>k__BackingField: 1
+  <Value>k__BackingField: 3
+  <Entry>k__BackingField:
+  - {fileID: 0}
+  <Exit>k__BackingField:
+  - {fileID: 0}
+--- !u!114 &3114216382343175345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 289144971a056014aaab1646fb58c48f, type: 3}
+  m_Name: Skill
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -136, y: -1208}
+  ports:
+    keys:
+    - <Exit>k__BackingField
+    - <Entry>k__BackingField
+    values:
+    - _fieldName: <Exit>k__BackingField
+      _node: {fileID: 3114216382343175345}
+      _typeQualifiedName: System.Collections.Generic.List`1[[InternalAssets.Codebase.Gameplay.SkillsTree.Nodes.SkillNode,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: <Entry>k__BackingField
+        node: {fileID: 2432232573808284345}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: <Entry>k__BackingField
+      _node: {fileID: 3114216382343175345}
+      _typeQualifiedName: System.Collections.Generic.List`1[[InternalAssets.Codebase.Gameplay.SkillsTree.Nodes.SkillNode,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: <Exit>k__BackingField
+        node: {fileID: -827002478388199229}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  <SkillType>k__BackingField: 6
+  <NameKey>k__BackingField: 
+  <DescriptionKey>k__BackingField: 
+  <Icon>k__BackingField: {fileID: 0}
+  <CharacteristicType>k__BackingField: 1
+  <Value>k__BackingField: 3
+  <Entry>k__BackingField:
+  - {fileID: 0}
+  <Exit>k__BackingField:
+  - {fileID: 0}
+--- !u!114 &5527559731012085158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 289144971a056014aaab1646fb58c48f, type: 3}
+  m_Name: Skill
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -136, y: -1624}
+  ports:
+    keys:
+    - <Exit>k__BackingField
+    - <Entry>k__BackingField
+    values:
+    - _fieldName: <Exit>k__BackingField
+      _node: {fileID: 5527559731012085158}
+      _typeQualifiedName: System.Collections.Generic.List`1[[InternalAssets.Codebase.Gameplay.SkillsTree.Nodes.SkillNode,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: <Entry>k__BackingField
+        node: {fileID: 2432232573808284345}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: <Entry>k__BackingField
+      _node: {fileID: 5527559731012085158}
+      _typeQualifiedName: System.Collections.Generic.List`1[[InternalAssets.Codebase.Gameplay.SkillsTree.Nodes.SkillNode,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: <Exit>k__BackingField
+        node: {fileID: -827002478388199229}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  <SkillType>k__BackingField: 5
+  <NameKey>k__BackingField: 
+  <DescriptionKey>k__BackingField: 
+  <Icon>k__BackingField: {fileID: 0}
+  <CharacteristicType>k__BackingField: 1
+  <Value>k__BackingField: 3
+  <Entry>k__BackingField:
+  - {fileID: 0}
+  <Exit>k__BackingField:
+  - {fileID: 0}
+--- !u!114 &6629729728266900183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 289144971a056014aaab1646fb58c48f, type: 3}
+  m_Name: Skill
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -776, y: -1032}
+  ports:
+    keys:
+    - <Exit>k__BackingField
+    - <Entry>k__BackingField
+    values:
+    - _fieldName: <Exit>k__BackingField
+      _node: {fileID: 6629729728266900183}
+      _typeQualifiedName: System.Collections.Generic.List`1[[InternalAssets.Codebase.Gameplay.SkillsTree.Nodes.SkillNode,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: <Entry>k__BackingField
+        node: {fileID: -827002478388199229}
+        reroutePoints: []
+      - fieldName: <Entry>k__BackingField
+        node: {fileID: 307331255087295966}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: <Entry>k__BackingField
+      _node: {fileID: 6629729728266900183}
+      _typeQualifiedName: System.Collections.Generic.List`1[[InternalAssets.Codebase.Gameplay.SkillsTree.Nodes.SkillNode,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: <Exit>k__BackingField
+        node: {fileID: -8344046858380173866}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  <SkillType>k__BackingField: 3
+  <NameKey>k__BackingField: 
+  <DescriptionKey>k__BackingField: 
+  <Icon>k__BackingField: {fileID: 0}
+  <CharacteristicType>k__BackingField: 1
+  <Value>k__BackingField: 3
+  <Entry>k__BackingField:
+  - {fileID: 0}
+  <Exit>k__BackingField:
+  - {fileID: 0}

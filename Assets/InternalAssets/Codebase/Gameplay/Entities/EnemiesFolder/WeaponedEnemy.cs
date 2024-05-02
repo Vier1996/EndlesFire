@@ -110,3 +110,15 @@ namespace InternalAssets.Codebase.Gameplay.Entities.EnemiesFolder
         }
     }
 }
+
+// 1.2 1.3
+
+// Requirements (specifications) to the developing software and other results of Works, time
+// limits of performing of Works (phases of Works) and the cost of Works are set forth in the
+// Annexes/Invoices to this Agreement which become an integral part of this Agreement from
+// the moment of signing thereof.
+
+// Requirements (specifications) to the developing software and other results of Works, time
+// limits of performing of Works (phases of Works) and the cost of Works are set forth in the
+// Annexes/Invoices to this Agreement which become an integral part of this Agreement from
+// the moment of signing thereof.

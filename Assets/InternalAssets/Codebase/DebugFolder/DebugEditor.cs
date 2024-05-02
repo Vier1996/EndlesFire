@@ -4,9 +4,11 @@ using ACS.Dialog.Dialogs;
 using ACS.Dialog.Dialogs.Arguments;
 using InternalAssets.Codebase.Dialogs.IncreaseLevelDialog;
 using InternalAssets.Codebase.Gameplay.Enums;
+using InternalAssets.Codebase.Gameplay.SkillsTree.Nodes;
 using InternalAssets.Codebase.Gameplay.Talents;
 using Sirenix.OdinInspector;
 using UnityEngine;
+using XNode;
 using Logger = InternalAssets.Codebase.Library.Logging.Logger;
 
 namespace InternalAssets.Codebase.DebugFolder
@@ -35,6 +37,13 @@ namespace InternalAssets.Codebase.DebugFolder
         private void Log(string message, LogType logType)
         {
             Logger.Log(message, logType);
+        }
+        
+        [Button]
+        private void CheckGraph(NodeGraph nodeGraph)
+        {
+            foreach (SkillNode node in nodeGraph.nodes) 
+                Logger.Log(node.SkillType.ToString());
         }
     }
 }
