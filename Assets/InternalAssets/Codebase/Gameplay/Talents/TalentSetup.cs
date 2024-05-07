@@ -14,10 +14,12 @@ namespace InternalAssets.Codebase.Gameplay.Talents
     {
         [field: SerializeField] public TalentType TalentType { get; private set; } = TalentType.none;
         [field: SerializeField] public TalentActivityType TalentActivityType { get; private set; } = TalentActivityType.none;
+        
         [field: SerializeField] public string TalentNameKey { get; private set; } = "";
         [field: SerializeField] public string TalentDescriptionKey { get; private set; } = "";
         [field: SerializeField] public Sprite Icon { get; private set; }
         [field: SerializeField] public bool ContainGrades { get; private set; } = true;
+        
         [field: SerializeField, ShowIf(nameof(ContainGrades))] public List<TalentGrade> Grades { get; private set; } = new();
         [field: OdinSerialize, ShowIf(nameof(ContainGrades))] public List<IGameCondition> PickActions { get; private set; } = new();
 

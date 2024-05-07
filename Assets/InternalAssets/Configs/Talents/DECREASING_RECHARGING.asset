@@ -65,8 +65,8 @@ MonoBehaviour:
   <ContainGrades>k__BackingField: 1
   <Grades>k__BackingField:
   - <Level>k__BackingField: 1
-    <Factor>k__BackingField: 0.1
+    <Percent>k__BackingField: 1
   - <Level>k__BackingField: 2
-    <Factor>k__BackingField: 0.2
+    <Percent>k__BackingField: 1
   - <Level>k__BackingField: 3
-    <Factor>k__BackingField: 0.4
+    <Percent>k__BackingField: 1

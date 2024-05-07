@@ -23,18 +23,17 @@ namespace InternalAssets.Codebase.Gameplay.Entities.PlayerFolder
         private bool _isEnabled = false;
         
         [Button]
-        public override Entity Bootstrapp(EntityComponents components = null) => 
-            base.Bootstrapp(_playerComponents);
+        public override Entity Bootstrapp(EntityComponents components = null) => base.Bootstrapp(_playerComponents);
 
         public Player Initialize()
         {
-            Enable();
-
             Components.TryGetAbstractComponent(out _healthComponent);
             Components.TryGetAbstractComponent(out _detectionSystem);
             Components.TryGetAbstractComponent(out _weaponPresenter);
 
             _healthComponent.Initialize(20);
+         
+            Enable();
             
             return this;
         }

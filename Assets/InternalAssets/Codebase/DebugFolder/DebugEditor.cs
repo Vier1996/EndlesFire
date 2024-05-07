@@ -2,6 +2,7 @@ using System;
 using ACS.Core.ServicesContainer;
 using ACS.Dialog.Dialogs;
 using ACS.Dialog.Dialogs.Arguments;
+using InternalAssets.Codebase.Dialogs.GridInventoryDialog;
 using InternalAssets.Codebase.Dialogs.IncreaseLevelDialog;
 using InternalAssets.Codebase.Gameplay.Enums;
 using InternalAssets.Codebase.Gameplay.SkillsTree.Nodes;
@@ -29,6 +30,9 @@ namespace InternalAssets.Codebase.DebugFolder
 
         [Button]
         private void CallIncreaseLevelDialog() => _dialogService.CallDialog(typeof(IncreaseLevelDialog));
+        
+        [Button]
+        private void CallInventoryDialog() => _dialogService.CallDialog(typeof(GridInventoryDialog));
 
         [Button]
         private void ApplyTalent(TalentType talentType) => _talentsService.ApplyTalent(talentType);
